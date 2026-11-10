@@ -1,0 +1,9 @@
+Package: com.filterkit.manager
+Name: FilterKit
+Version: 0.0.1
+Architecture: iphoneos-arm64
+Description: RootHide / Rootless 环境只读检测 PoC
+Maintainer: FilterKit
+Author: FilterKit
+Section: Utilities
+Depends: firmware (>= 15.0)
