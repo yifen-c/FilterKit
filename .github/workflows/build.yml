@@ -1,1 +1,85 @@
+name: FilterKit 手动构建
 
+on:
+  workflow_dispatch:
+    inputs:
+      package_target:
+        description: 选择要构建的越狱环境
+        required: true
+        type: choice
+        default: roothide
+        options:
+          - roothide
+          - rootless
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: 构建 ${{ inputs.package_target }}
+    runs-on: macos-latest
+    timeout-minutes: 45
+    env:
+      THEOS: ${{ github.workspace }}/theos
+      PACKAGE_TARGET: ${{ inputs.package_target }}
+
+    steps:
+      - name: 获取源码
+        uses: actions/checkout@v7
+
+      - name: 安装最新版 Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: latest
+          check-latest: true
+          package-manager-cache: false
+
+      - name: 检查项目结构
+        run: node scripts/validate-project.js
+
+      - name: 安装 Theos
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ "$PACKAGE_TARGET" == "roothide" ]]; then
+            git clone --depth 1 https://github.com/roothide/theos.git "$THEOS"
+          else
+            git clone --depth 1 https://github.com/theos/theos.git "$THEOS"
+          fi
+          rm -rf "$THEOS/sdks"
+          git clone --depth 1 https://github.com/theos/sdks.git "$THEOS/sdks"
+          echo "THEOS=$THEOS" >> "$GITHUB_ENV"
+          echo "$THEOS/bin" >> "$GITHUB_PATH"
+          brew install ldid dpkg
+
+      - name: 构建 RootHide arm64e
+        if: inputs.package_target == 'roothide'
+        run: |
+          set -euo pipefail
+          make clean
+          make package THEOS_PACKAGE_SCHEME=roothide ARCHS=arm64e FINALPACKAGE=1
+
+      - name: 构建 Rootless arm64
+        if: inputs.package_target == 'rootless'
+        run: |
+          set -euo pipefail
+          make clean
+          make package THEOS_PACKAGE_SCHEME=rootless ARCHS=arm64 FINALPACKAGE=1
+
+      - name: 检查并整理 DEB
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p output
+          find packages -maxdepth 1 -type f -name '*.deb' -print -exec cp {} output/ \;
+          test -n "$(find output -maxdepth 1 -name '*.deb' -print -quit)"
+          dpkg-deb --info output/*.deb
+
+      - name: 上传构建产物
+        uses: actions/upload-artifact@v6
+        with:
+          name: FilterKit-0.0.1-${{ inputs.package_target }}
+          path: output/*.deb
+          if-no-files-found: error
+          retention-days: 30
