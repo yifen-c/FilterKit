@@ -1,0 +1,16 @@
+{
+  "fixtureId": "S1-03-RH-UNREADABLE-001",
+  "expected": {
+    "route": "roothide",
+    "tiPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "tiExists": true,
+    "tiReadable": false,
+    "tiEnumerable": false,
+    "tiStatus": "partial",
+    "dlState": "resolved",
+    "dlTargetMatch": true,
+    "outcome": "partial"
+  },
+  "expectedWarnings": ["access_limited"],
+  "expectedOutcome": "partial"
+}

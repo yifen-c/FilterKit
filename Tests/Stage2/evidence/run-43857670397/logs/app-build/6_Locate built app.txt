@@ -1,0 +1,21 @@
+﻿2026-11-16T11:30:44.7787150Z ##[group]Run APP_PATH=$(find build/DerivedData/Build/Products -name 'FilterKit.app' -maxdepth 3 | head -1)
+2026-11-16T11:30:44.7788070Z [36;1mAPP_PATH=$(find build/DerivedData/Build/Products -name 'FilterKit.app' -maxdepth 3 | head -1)[0m
+2026-11-16T11:30:44.7788710Z [36;1mif [ -z "$APP_PATH" ]; then[0m
+2026-11-16T11:30:44.7789060Z [36;1m  echo "::error::FilterKit.app not found under build/DerivedData"[0m
+2026-11-16T11:30:44.7789490Z [36;1m  exit 1[0m
+2026-11-16T11:30:44.7789690Z [36;1mfi[0m
+2026-11-16T11:30:44.7789970Z [36;1mecho "app_path=$APP_PATH" >> "$GITHUB_OUTPUT"[0m
+2026-11-16T11:30:44.7790340Z [36;1mecho "Built app: $APP_PATH"[0m
+2026-11-16T11:30:44.7790580Z [36;1mls -la "$APP_PATH"[0m
+2026-11-16T11:30:44.8115370Z shell: /bin/bash -e {0}
+2026-11-16T11:30:44.8115770Z ##[endgroup]
+2026-11-16T11:30:45.0847740Z Built app: build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app
+2026-11-16T11:30:45.0986370Z total 8896
+2026-11-16T11:30:45.1005560Z -rwxr-xr-x   1 runner  staff    83952 Nov 16 11:30 __preview.dylib
+2026-11-16T11:30:45.1013450Z drwxr-xr-x   3 runner  staff       96 Nov 16 11:30 _CodeSignature
+2026-11-16T11:30:45.1014530Z drwxr-xr-x   8 runner  staff      256 Nov 16 11:30 .
+2026-11-16T11:30:45.1015590Z drwxr-xr-x@ 11 runner  staff      352 Nov 16 11:30 ..
+2026-11-16T11:30:45.1016480Z -rwxr-xr-x   1 runner  staff   123808 Nov 16 11:30 FilterKit
+2026-11-16T11:30:45.1017680Z -rwxr-xr-x   1 runner  staff  4332640 Nov 16 11:30 FilterKit.debug.dylib
+2026-11-16T11:30:45.1018920Z -rw-r--r--   1 runner  staff      756 Nov 16 11:30 Info.plist
+2026-11-16T11:30:45.1020190Z -rw-r--r--   1 runner  staff        8 Nov 16 11:30 PkgInfo

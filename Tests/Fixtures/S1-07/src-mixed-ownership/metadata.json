@@ -1,0 +1,49 @@
+{
+  "fixtureId": "S1-07-OWN-007",
+  "expected": {
+    "route": "rootless",
+    "sourceDirectory": "/var/jb/usr/lib/TweakInject/",
+    "status": "enumerated",
+    "counts": {
+      "owned_package": 1,
+      "filterkit_managed": 0,
+      "manual_import": 0,
+      "unknown": 0,
+      "conflict": 0,
+      "dpkg_unavailable": 0
+    },
+    "byBase": {
+      "M": {
+        "sourceType": "dpkg_sileo",
+        "ownership": "owned_package",
+        "packageID": null,
+        "listPath": null,
+        "confidence": "exact_record",
+        "writablePolicy": "read_only",
+        "fileOwnership": {
+          "dylib": {
+            "owners": [
+              "pkg.dylib"
+            ],
+            "match": "exact"
+          },
+          "plist": {
+            "owners": [
+              "pkg.plist"
+            ],
+            "match": "exact"
+          }
+        },
+        "markers": {
+          "filterkit": "absent",
+          "manual": "absent"
+        },
+        "notesIncludes": [
+          "mixed_package_ownership"
+        ]
+      }
+    }
+  },
+  "expectedWarnings": [],
+  "expectedStatus": "enumerated"
+}

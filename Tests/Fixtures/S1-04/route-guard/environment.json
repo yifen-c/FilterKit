@@ -1,0 +1,19 @@
+{
+  "fixtureId": "S1-04-ROUTE-GUARD-001",
+  "fixtureKind": "route-guard",
+  "upstream": {
+    "route": "roothide",
+    "sourceDirectory": null,
+    "enumerationStatus": "unresolved"
+  },
+  "fs": {
+    "enumerable": false,
+    "entries": [],
+    "foreignRootless": {
+      "root": "/var/jb",
+      "tweakInject": "/var/jb/usr/lib/TweakInject/",
+      "exists": true,
+      "note": "陷阱信号：Rootless 根存在，但 S1-03 目录未定位，禁止回退扫描"
+    }
+  }
+}

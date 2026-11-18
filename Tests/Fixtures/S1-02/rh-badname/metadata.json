@@ -1,0 +1,14 @@
+{
+  "fixtureId": "S1-02-RH-BADNAME-001",
+  "expected": {
+    "jbroot": null,
+    "jbrand": null,
+    "realpath": null,
+    "ambiguous": false,
+    "outcome": "no_candidate",
+    "selectedSource": null,
+    "candidateCount": 1
+  },
+  "expectedWarnings": ["invalid_container_name"],
+  "expectedOutcome": "no_candidate"
+}

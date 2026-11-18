@@ -1,0 +1,17 @@
+{
+  "fixtureId": "S1-02-ROOTFUL-001",
+  "fixtureKind": "rootful-root",
+  "signals": {
+    "candidates": [
+      {
+        "root": "/",
+        "source": "rootful",
+        "exists": true,
+        "structureMatch": true,
+        "readable": true,
+        "realpath": "/",
+        "symlinkState": "none"
+      }
+    ]
+  }
+}

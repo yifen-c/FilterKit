@@ -1,0 +1,31 @@
+{
+  "fixtureId": "S1-06-PARSE-BINARY",
+  "expected": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "status": "enumerated",
+    "counts": {
+      "valid": 1,
+      "parse_failed": 0,
+      "type_mismatch": 0,
+      "read_failed": 0,
+      "not_parsed": 0
+    },
+    "statusByBase": {
+      "Bin": "valid"
+    },
+    "filterByBase": {
+      "Bin": {
+        "bundles": [
+          "com.bin.app"
+        ],
+        "classes": [],
+        "executables": []
+      }
+    },
+    "otherKeysByBase": {},
+    "skippedFieldsByBase": {}
+  },
+  "expectedWarnings": [],
+  "expectedStatus": "enumerated"
+}

@@ -1,0 +1,12 @@
+{
+  "fixtureId": "S1-01-ROOTFUL-001",
+  "fixtureKind": "rootful",
+  "signals": {
+    "jailbreakType": { "value": "rootful", "source": "fixture", "present": true },
+    "architecture": { "value": "arm64", "source": "fixture", "present": true },
+    "iosVersion": { "value": "15.0", "source": "fixture", "present": true },
+    "bootstrap": { "name": null, "version": null, "source": "fixture", "present": false },
+    "ellekitImplementation": { "value": "unknown", "source": "fixture", "present": false },
+    "ellekitVersion": { "value": null, "source": "fixture", "present": false, "readability": "absent" }
+  }
+}

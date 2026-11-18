@@ -1,0 +1,17 @@
+{
+  "fixtureId": "S1-02-RH-BADNAME-001",
+  "fixtureKind": "rh-badname",
+  "signals": {
+    "candidates": [
+      {
+        "root": "/var/containers/Bundle/Application/.jbroot-76484591DA3078C2",
+        "source": "scan",
+        "exists": true,
+        "structureMatch": true,
+        "readable": true,
+        "realpath": "/private/var/containers/Bundle/Application/.jbroot-76484591DA3078C2",
+        "symlinkState": "none"
+      }
+    ]
+  }
+}

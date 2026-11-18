@@ -1,0 +1,37 @@
+{
+  "upstream": {
+    "route": "rootful",
+    "sourceDirectory": "/usr/lib/TweakInject/",
+    "inventoryStatus": "enumerated"
+  },
+  "dpkg": {
+    "dbStatus": "ok",
+    "statusPath": "/var/lib/dpkg/status",
+    "packages": []
+  },
+  "markers": {
+    "filterkit": {
+      "byBase": {
+        "MI": {
+          "state": "absent"
+        }
+      }
+    },
+    "manual": {
+      "byBase": {
+        "MI": {
+          "state": "present"
+        }
+      }
+    }
+  },
+  "entries": [
+    {
+      "base": "MI",
+      "dylibPath": "/usr/lib/TweakInject/MI.dylib",
+      "plistPath": "/usr/lib/TweakInject/MI.plist",
+      "parseStatus": "valid",
+      "pairing": "paired"
+    }
+  ]
+}

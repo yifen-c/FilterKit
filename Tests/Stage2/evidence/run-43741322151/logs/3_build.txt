@@ -1,0 +1,190 @@
+﻿2026-11-15T17:29:15.7415780Z Current runner version: '2.338.2'
+2026-11-15T17:29:15.7428810Z ##[group]Runner Image Provisioner
+2026-11-15T17:29:15.7429250Z Hosted Compute Agent
+2026-11-15T17:29:15.7429580Z Version: 20261028.624
+2026-11-15T17:29:15.7429930Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+2026-11-15T17:29:15.7430330Z Build Date: 2026-10-28T21:51:42Z
+2026-11-15T17:29:15.7430710Z Worker ID: {03eb0118-f6d8-4077-a4fe-3390624d96ab}
+2026-11-15T17:29:15.7431090Z Region: westus
+2026-11-15T17:29:15.7431460Z Cloud: MacCloud
+2026-11-15T17:29:15.7431780Z ##[endgroup]
+2026-11-15T17:29:15.7432550Z ##[group]Operating System
+2026-11-15T17:29:15.7432890Z macOS
+2026-11-15T17:29:15.7433170Z 26.7.2
+2026-11-15T17:29:15.7433460Z 25G332
+2026-11-15T17:29:15.7433750Z ##[endgroup]
+2026-11-15T17:29:15.7434060Z ##[group]Runner Image
+2026-11-15T17:29:15.7434380Z Image: macos-26-arm64
+2026-11-15T17:29:15.7434710Z Version: 20261102.0473.1
+2026-11-15T17:29:15.7435470Z Included Software: https://github.com/actions/runner-images/blob/macos-26-arm64/20261102.0473/images/macos/macos-26-arm64-Readme.md
+2026-11-15T17:29:15.7436430Z Image Release: https://github.com/actions/runner-images/releases/tag/macos-26-arm64%2F20261102.0473
+2026-11-15T17:29:15.7437110Z ##[endgroup]
+2026-11-15T17:29:15.7438960Z ##[group]GITHUB_TOKEN Permissions
+2026-11-15T17:29:15.7439880Z Actions: write
+2026-11-15T17:29:15.7440190Z ArtifactMetadata: write
+2026-11-15T17:29:15.7440600Z Attestations: write
+2026-11-15T17:29:15.7440950Z Checks: write
+2026-11-15T17:29:15.7441360Z CodeQuality: write
+2026-11-15T17:29:15.7441710Z Contents: write
+2026-11-15T17:29:15.7442030Z CopilotRequests: write
+2026-11-15T17:29:15.7442430Z Deployments: write
+2026-11-15T17:29:15.7442840Z Discussions: write
+2026-11-15T17:29:15.7443150Z Drives: write
+2026-11-15T17:29:15.7443440Z Issues: write
+2026-11-15T17:29:15.7477370Z Metadata: read
+2026-11-15T17:29:15.7477710Z Models: read
+2026-11-15T17:29:15.7478080Z Packages: write
+2026-11-15T17:29:15.7478420Z Pages: write
+2026-11-15T17:29:15.7478800Z PullRequests: write
+2026-11-15T17:29:15.7479170Z RepositoryProjects: write
+2026-11-15T17:29:15.7479550Z SecurityEvents: write
+2026-11-15T17:29:15.7479880Z Statuses: write
+2026-11-15T17:29:15.7480260Z VulnerabilityAlerts: read
+2026-11-15T17:29:15.7480600Z ##[endgroup]
+2026-11-15T17:29:15.7481950Z Secret source: Actions
+2026-11-15T17:29:15.7482440Z Cache mode: write
+2026-11-15T17:29:15.7482810Z Prepare workflow directory
+2026-11-15T17:29:15.7702150Z Prepare all required actions
+2026-11-15T17:29:15.7739020Z Getting action download info
+2026-11-15T17:29:15.9682340Z Download action repository 'actions/checkout@v6' (SHA:d23441a48e516b6c34aea4fa41551a30e30af803)
+2026-11-15T17:29:16.1505430Z Complete job name: build
+2026-11-15T17:29:16.1905000Z ##[group]Run actions/checkout@v6
+2026-11-15T17:29:16.1905590Z with:
+2026-11-15T17:29:16.1905870Z   repository: yi-fen/005
+2026-11-15T17:29:16.1908020Z   token: ***
+2026-11-15T17:29:16.1908300Z   ssh-strict: true
+2026-11-15T17:29:16.1908580Z   ssh-user: git
+2026-11-15T17:29:16.1908870Z   persist-credentials: true
+2026-11-15T17:29:16.1909190Z   clean: true
+2026-11-15T17:29:16.1909480Z   sparse-checkout-cone-mode: true
+2026-11-15T17:29:16.1909810Z   fetch-depth: 1
+2026-11-15T17:29:16.1910090Z   fetch-tags: false
+2026-11-15T17:29:16.1910380Z   show-progress: true
+2026-11-15T17:29:16.1910670Z   lfs: false
+2026-11-15T17:29:16.1910940Z   submodules: false
+2026-11-15T17:29:16.1911230Z   set-safe-directory: true
+2026-11-15T17:29:16.1911560Z   allow-unsafe-pr-checkout: false
+2026-11-15T17:29:16.1912010Z ##[endgroup]
+2026-11-15T17:29:16.3078030Z Syncing repository: yi-fen/005
+2026-11-15T17:29:16.3079110Z ##[group]Getting Git version info
+2026-11-15T17:29:16.3079640Z Working directory is '/Users/runner/work/005/005'
+2026-11-15T17:29:16.3080380Z [command]/opt/homebrew/bin/git version
+2026-11-15T17:29:16.3556810Z git version 2.56.0
+2026-11-15T17:29:16.3569850Z ##[endgroup]
+2026-11-15T17:29:16.3577240Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/a4a616e3-858e-4751-b40d-5240fb6bdc36/.gitconfig'
+2026-11-15T17:29:16.3584330Z Temporarily overriding HOME='/Users/runner/work/_temp/a4a616e3-858e-4751-b40d-5240fb6bdc36' before making global git config changes
+2026-11-15T17:29:16.3585250Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-15T17:29:16.3588110Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/005/005
+2026-11-15T17:29:16.3680420Z Deleting the contents of '/Users/runner/work/005/005'
+2026-11-15T17:29:16.3683060Z ##[group]Determining repository object format
+2026-11-15T17:29:16.3684390Z ##[endgroup]
+2026-11-15T17:29:16.3685060Z ##[group]Initializing the repository
+2026-11-15T17:29:16.3688080Z [command]/opt/homebrew/bin/git init /Users/runner/work/005/005
+2026-11-15T17:29:16.3868630Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-15T17:29:16.3869350Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-15T17:29:16.3870010Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-15T17:29:16.3870760Z hint: call:
+2026-11-15T17:29:16.3871190Z hint:
+2026-11-15T17:29:16.3871630Z hint: 	git config --global init.defaultBranch <name>
+2026-11-15T17:29:16.3872170Z hint:
+2026-11-15T17:29:16.3872770Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-15T17:29:16.3873430Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-15T17:29:16.3873950Z hint:
+2026-11-15T17:29:16.3874250Z hint: 	git branch -m <name>
+2026-11-15T17:29:16.3874660Z hint:
+2026-11-15T17:29:16.3875220Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-15T17:29:16.3875910Z Initialized empty Git repository in /Users/runner/work/005/005/.git/
+2026-11-15T17:29:16.3892010Z [command]/opt/homebrew/bin/git remote add origin https://github.com/yi-fen/005
+2026-11-15T17:29:16.3951470Z ##[endgroup]
+2026-11-15T17:29:16.3952020Z ##[group]Disabling automatic garbage collection
+2026-11-15T17:29:16.3953940Z [command]/opt/homebrew/bin/git config --local gc.auto 0
+2026-11-15T17:29:16.4000450Z ##[endgroup]
+2026-11-15T17:29:16.4000960Z ##[group]Setting up auth
+2026-11-15T17:29:16.4001350Z Removing SSH command configuration
+2026-11-15T17:29:16.4006470Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-15T17:29:16.4066890Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-15T17:29:16.4733730Z Removing HTTP extra header
+2026-11-15T17:29:16.4738580Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-15T17:29:16.4784880Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-15T17:29:16.5412490Z Removing includeIf entries pointing to credentials config files
+2026-11-15T17:29:16.5417350Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-15T17:29:16.5466530Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-15T17:29:16.6098350Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/_temp/git-credentials-e345b8a5-c3fc-4bde-992e-68dcde34d562.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-15T17:29:16.6153320Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/Users/runner/work/005/005/.git.path /Users/runner/work/_temp/git-credentials-e345b8a5-c3fc-4bde-992e-68dcde34d562.config
+2026-11-15T17:29:16.6214590Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/Users/runner/work/005/005/.git/worktrees/*.path /Users/runner/work/_temp/git-credentials-e345b8a5-c3fc-4bde-992e-68dcde34d562.config
+2026-11-15T17:29:16.6346090Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-e345b8a5-c3fc-4bde-992e-68dcde34d562.config
+2026-11-15T17:29:16.6464280Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-e345b8a5-c3fc-4bde-992e-68dcde34d562.config
+2026-11-15T17:29:16.6518060Z ##[endgroup]
+2026-11-15T17:29:16.6518650Z ##[group]Fetching the repository
+2026-11-15T17:29:16.6522870Z [command]/opt/homebrew/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +f28b67001f5201ffbf6d51e8715bdab5d1b6b3e4:refs/remotes/origin/main
+2026-11-15T17:29:17.3980810Z From https://github.com/yi-fen/005
+2026-11-15T17:29:17.3981650Z  * [new ref]         f28b67001f5201ffbf6d51e8715bdab5d1b6b3e4 -> origin/main
+2026-11-15T17:29:17.3988420Z [command]/opt/homebrew/bin/git branch --list --remote origin/main
+2026-11-15T17:29:17.4051150Z   origin/main
+2026-11-15T17:29:17.4057430Z [command]/opt/homebrew/bin/git rev-parse refs/remotes/origin/main
+2026-11-15T17:29:17.4100220Z f28b67001f5201ffbf6d51e8715bdab5d1b6b3e4
+2026-11-15T17:29:17.4102710Z ##[endgroup]
+2026-11-15T17:29:17.4103310Z ##[group]Determining the checkout info
+2026-11-15T17:29:17.4103910Z ##[endgroup]
+2026-11-15T17:29:17.4112660Z [command]/opt/homebrew/bin/git sparse-checkout disable
+2026-11-15T17:29:17.4170710Z [command]/opt/homebrew/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-15T17:29:17.4229670Z ##[group]Checking out the ref
+2026-11-15T17:29:17.4232990Z [command]/opt/homebrew/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-15T17:29:17.5137990Z Switched to a new branch 'main'
+2026-11-15T17:29:17.5141300Z branch 'main' set up to track 'origin/main'.
+2026-11-15T17:29:17.5145200Z ##[endgroup]
+2026-11-15T17:29:17.5220870Z [command]/opt/homebrew/bin/git log -1 --format=%H
+2026-11-15T17:29:17.5275580Z f28b67001f5201ffbf6d51e8715bdab5d1b6b3e4
+2026-11-15T17:29:17.5412830Z ##[group]Run swift build
+2026-11-15T17:29:17.5413240Z [36;1mswift build[0m
+2026-11-15T17:29:17.5458380Z shell: /bin/bash -e {0}
+2026-11-15T17:29:17.5458860Z ##[endgroup]
+2026-11-15T17:29:27.6194100Z Building for debugging...
+2026-11-15T17:29:27.6227880Z [0/4] Write sources
+2026-11-15T17:29:27.7281500Z [3/4] Write swift-version-7974D3F7F03D5E95.txt
+2026-11-15T17:29:30.6103340Z [5/9] Compiling Models PluginModels.swift
+2026-11-15T17:29:30.6103920Z [6/9] Compiling Models EnvironmentModels.swift
+2026-11-15T17:29:30.6104260Z [7/9] Emitting module Models
+2026-11-15T17:29:30.6104580Z [8/9] Compiling Models ReportEnvelope.swift
+2026-11-15T17:29:30.6104880Z [9/9] Compiling Models ModelEnums.swift
+2026-11-15T17:29:30.8744400Z [10/13] Compiling Adapters ElleKitAdapter.swift
+2026-11-15T17:29:30.8744930Z [11/13] Compiling Adapters RootHideAdapter.swift
+2026-11-15T17:29:30.8745270Z [12/13] Emitting module Adapters
+2026-11-15T17:29:30.8745540Z [13/13] Compiling Adapters RootlessAdapter.swift
+2026-11-15T17:29:31.0560560Z [14/15] Compiling Core CoreServices.swift
+2026-11-15T17:29:31.0561050Z [15/15] Emitting module Core
+2026-11-15T17:29:31.0613340Z Build complete! (4.47s)
+2026-11-15T17:29:31.0743190Z Post job cleanup.
+2026-11-15T17:29:31.1530010Z [command]/opt/homebrew/bin/git version
+2026-11-15T17:29:31.1587430Z git version 2.56.0
+2026-11-15T17:29:31.1604750Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/28e70580-cedb-473d-b332-ddb91ccda026/.gitconfig'
+2026-11-15T17:29:31.1611920Z Temporarily overriding HOME='/Users/runner/work/_temp/28e70580-cedb-473d-b332-ddb91ccda026' before making global git config changes
+2026-11-15T17:29:31.1612610Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-15T17:29:31.1616010Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/005/005
+2026-11-15T17:29:31.1665820Z Removing SSH command configuration
+2026-11-15T17:29:31.1670200Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-15T17:29:31.1721020Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-15T17:29:31.2325690Z Removing HTTP extra header
+2026-11-15T17:29:31.2330210Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-15T17:29:31.2382220Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-15T17:29:31.3010610Z Removing includeIf entries pointing to credentials config files
+2026-11-15T17:29:31.3015580Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-15T17:29:31.3060890Z includeif.gitdir:/Users/runner/work/005/005/.git.path
+2026-11-15T17:29:31.3061230Z includeif.gitdir:/Users/runner/work/005/005/.git/worktrees/*.path
+2026-11-15T17:29:31.3061550Z includeif.gitdir:/github/workspace/.git.path
+2026-11-15T17:29:31.3061890Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-15T17:29:31.3066910Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/Users/runner/work/005/005/.git.path
+2026-11-15T17:29:31.3112050Z /Users/runner/work/_temp/git-credentials-e345b8a5-c3fc-4bde-992e-68dcde34d562.config
+2026-11-15T17:29:31.3120600Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/Users/runner/work/005/005/.git.path /Users/runner/work/_temp/git-credentials-e345b8a5-c3fc-4bde-992e-68dcde34d562.config
+2026-11-15T17:29:31.3174980Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/Users/runner/work/005/005/.git/worktrees/*.path
+2026-11-15T17:29:31.3217100Z /Users/runner/work/_temp/git-credentials-e345b8a5-c3fc-4bde-992e-68dcde34d562.config
+2026-11-15T17:29:31.3224070Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/Users/runner/work/005/005/.git/worktrees/*.path /Users/runner/work/_temp/git-credentials-e345b8a5-c3fc-4bde-992e-68dcde34d562.config
+2026-11-15T17:29:31.3274870Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-15T17:29:31.3314120Z /github/runner_temp/git-credentials-e345b8a5-c3fc-4bde-992e-68dcde34d562.config
+2026-11-15T17:29:31.3319180Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-e345b8a5-c3fc-4bde-992e-68dcde34d562.config
+2026-11-15T17:29:31.3366010Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-15T17:29:31.3406600Z /github/runner_temp/git-credentials-e345b8a5-c3fc-4bde-992e-68dcde34d562.config
+2026-11-15T17:29:31.3411380Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-e345b8a5-c3fc-4bde-992e-68dcde34d562.config
+2026-11-15T17:29:31.3462360Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-15T17:29:31.4147270Z Removing credentials config '/Users/runner/work/_temp/git-credentials-e345b8a5-c3fc-4bde-992e-68dcde34d562.config'
+2026-11-15T17:29:31.4243950Z Cleaning up orphan processes

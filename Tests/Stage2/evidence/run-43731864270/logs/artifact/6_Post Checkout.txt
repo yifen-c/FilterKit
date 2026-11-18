@@ -1,0 +1,33 @@
+﻿2026-11-15T15:50:44.4485960Z Post job cleanup.
+2026-11-15T15:50:44.5649260Z [command]/opt/homebrew/bin/git version
+2026-11-15T15:50:44.5715030Z git version 2.56.0
+2026-11-15T15:50:44.5735060Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/38aba0de-648a-4a61-9aec-3b80017f0f18/.gitconfig'
+2026-11-15T15:50:44.5741770Z Temporarily overriding HOME='/Users/runner/work/_temp/38aba0de-648a-4a61-9aec-3b80017f0f18' before making global git config changes
+2026-11-15T15:50:44.5742820Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-15T15:50:44.5745340Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/004/004
+2026-11-15T15:50:44.5817030Z Removing SSH command configuration
+2026-11-15T15:50:44.5821870Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-15T15:50:44.5893100Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-15T15:50:44.6697420Z Removing HTTP extra header
+2026-11-15T15:50:44.6700690Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-15T15:50:44.6767640Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-15T15:50:44.8102090Z Removing includeIf entries pointing to credentials config files
+2026-11-15T15:50:44.8136470Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-15T15:50:44.8149450Z includeif.gitdir:/Users/runner/work/004/004/.git.path
+2026-11-15T15:50:44.8166060Z includeif.gitdir:/Users/runner/work/004/004/.git/worktrees/*.path
+2026-11-15T15:50:44.8172740Z includeif.gitdir:/github/workspace/.git.path
+2026-11-15T15:50:44.8202680Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-15T15:50:44.8253710Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/Users/runner/work/004/004/.git.path
+2026-11-15T15:50:44.8268460Z /Users/runner/work/_temp/git-credentials-8bc51359-443a-4e75-b4cc-62392323b22c.config
+2026-11-15T15:50:44.8314280Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/Users/runner/work/004/004/.git.path /Users/runner/work/_temp/git-credentials-8bc51359-443a-4e75-b4cc-62392323b22c.config
+2026-11-15T15:50:44.8384210Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/Users/runner/work/004/004/.git/worktrees/*.path
+2026-11-15T15:50:44.8451510Z /Users/runner/work/_temp/git-credentials-8bc51359-443a-4e75-b4cc-62392323b22c.config
+2026-11-15T15:50:44.8458620Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/Users/runner/work/004/004/.git/worktrees/*.path /Users/runner/work/_temp/git-credentials-8bc51359-443a-4e75-b4cc-62392323b22c.config
+2026-11-15T15:50:44.8528240Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-15T15:50:44.8587900Z /github/runner_temp/git-credentials-8bc51359-443a-4e75-b4cc-62392323b22c.config
+2026-11-15T15:50:44.8593280Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-8bc51359-443a-4e75-b4cc-62392323b22c.config
+2026-11-15T15:50:44.8661470Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-15T15:50:44.8723890Z /github/runner_temp/git-credentials-8bc51359-443a-4e75-b4cc-62392323b22c.config
+2026-11-15T15:50:44.8729560Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-8bc51359-443a-4e75-b4cc-62392323b22c.config
+2026-11-15T15:50:44.8800890Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-15T15:50:44.9670740Z Removing credentials config '/Users/runner/work/_temp/git-credentials-8bc51359-443a-4e75-b4cc-62392323b22c.config'

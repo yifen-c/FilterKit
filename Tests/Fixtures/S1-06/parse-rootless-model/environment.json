@@ -1,0 +1,52 @@
+{
+  "fixtureId": "S1-06-PARSE-ROOTLESS-MODEL",
+  "fixtureKind": "parse-rootless-model",
+  "upstream": {
+    "route": "rootless",
+    "sourceDirectory": "/var/jb/usr/lib/TweakInject/",
+    "inventoryStatus": "enumerated"
+  },
+  "pairing": {
+    "pairs": [
+      {
+        "base": "RL",
+        "dylibPath": "/var/jb/usr/lib/TweakInject/RL.dylib",
+        "plistPath": "/var/jb/usr/lib/TweakInject/RL.plist",
+        "pairing": "paired",
+        "dylibIsSymlink": false,
+        "plistIsSymlink": false,
+        "status": "ok"
+      }
+    ],
+    "missingPlist": [],
+    "orphanPlist": [],
+    "ambiguous": [],
+    "uncertain": []
+  },
+  "plists": [
+    {
+      "plistPath": "/var/jb/usr/lib/TweakInject/RL.plist",
+      "format": "xml",
+      "readStatus": "ok",
+      "payloadInvalid": false,
+      "root": {
+        "UnloadAfter": true,
+        "IsTweakManager": true,
+        "Classes": [
+          "RLClass"
+        ],
+        "CoreFoundationVersion": [
+          1600
+        ],
+        "Filter": {
+          "Bundles": [
+            "Com.Example.App"
+          ],
+          "Executables": [
+            "RLApp"
+          ]
+        }
+      }
+    }
+  ]
+}

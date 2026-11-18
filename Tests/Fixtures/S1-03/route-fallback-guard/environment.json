@@ -1,0 +1,27 @@
+{
+  "fixtureId": "S1-03-FALLBACK-GUARD-001",
+  "fixtureKind": "route-fallback-guard",
+  "upstream": { "route": "roothide", "jbroot": null },
+  "fs": {
+    "tweakInject": {
+      "exists": false,
+      "readable": false,
+      "enumerable": false,
+      "realpath": null,
+      "structureMatch": false
+    },
+    "dynamicLibraries": {
+      "exists": false,
+      "isSymlink": false,
+      "symlinkTarget": null,
+      "realpath": null,
+      "symlinkState": "not_symlink"
+    },
+    "foreignRootless": {
+      "root": "/var/jb",
+      "tweakInject": "/var/jb/usr/lib/TweakInject/",
+      "exists": true,
+      "note": "陷阱信号：Rootless 根存在，但 RootHide 上游 jbroot 未定位，禁止回退"
+    }
+  }
+}

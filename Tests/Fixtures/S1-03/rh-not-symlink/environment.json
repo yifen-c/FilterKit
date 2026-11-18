@@ -1,0 +1,21 @@
+{
+  "fixtureId": "S1-03-RH-NOTSYMLINK-001",
+  "fixtureKind": "rh-not-symlink",
+  "upstream": { "route": "roothide", "jbroot": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4" },
+  "fs": {
+    "tweakInject": {
+      "exists": true,
+      "readable": true,
+      "enumerable": true,
+      "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+      "structureMatch": true
+    },
+    "dynamicLibraries": {
+      "exists": true,
+      "isSymlink": false,
+      "symlinkTarget": null,
+      "realpath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/Library/MobileSubstrate/DynamicLibraries",
+      "symlinkState": "not_symlink"
+    }
+  }
+}

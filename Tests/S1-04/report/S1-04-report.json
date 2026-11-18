@@ -1,0 +1,1423 @@
+{
+  "schemaVersion": "0.1.0",
+  "generatedAt": "2026-11-15T13:06:50.743Z",
+  "stage": "Stage 1 / S1-04",
+  "evidenceNote": "全部为离线 fixture 合成样本；不构成 RootHide 真机验证，Rootless 结果不代表真机兼容。",
+  "summary": {
+    "total": 23,
+    "passed": 23,
+    "failed": 0,
+    "routesCovered": [
+      "roothide",
+      "rootless"
+    ],
+    "missingRoutes": [],
+    "nestedLeakCount": 0,
+    "regression": {
+      "S1-01": "passed",
+      "S1-02": "passed",
+      "S1-03": "passed"
+    }
+  },
+  "cases": [
+    {
+      "enumId": "ENUM-008",
+      "source": "fixture:rh-bad-permission",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "enumeration": {
+          "recursive": false,
+          "status": "partial",
+          "warnings": [
+            "partial_enumeration"
+          ]
+        },
+        "items": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Good.dylib",
+            "name": "Good.dylib",
+            "extension": "dylib",
+            "kind": "dylib",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Good.dylib",
+            "size": 11264,
+            "hash": "sha256:fff666",
+            "hidden": false,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Locked.dylib",
+            "name": "Locked.dylib",
+            "extension": "dylib",
+            "kind": "dylib",
+            "exists": true,
+            "readable": false,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": null,
+            "size": null,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "access_denied"
+          }
+        ],
+        "unknownItems": [],
+        "counts": {
+          "dylib": 2,
+          "plist": 0,
+          "directory": 0,
+          "symlink": 0,
+          "other": 0
+        },
+        "warnings": [
+          "partial_enumeration"
+        ]
+      }
+    },
+    {
+      "enumId": "ENUM-012",
+      "source": "fixture:rh-bad-permission",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "enumeration": {
+          "recursive": false,
+          "status": "partial",
+          "warnings": [
+            "partial_enumeration"
+          ]
+        },
+        "items": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Good.dylib",
+            "name": "Good.dylib",
+            "extension": "dylib",
+            "kind": "dylib",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Good.dylib",
+            "size": 11264,
+            "hash": "sha256:fff666",
+            "hidden": false,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Locked.dylib",
+            "name": "Locked.dylib",
+            "extension": "dylib",
+            "kind": "dylib",
+            "exists": true,
+            "readable": false,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": null,
+            "size": null,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "access_denied"
+          }
+        ],
+        "unknownItems": [],
+        "counts": {
+          "dylib": 2,
+          "plist": 0,
+          "directory": 0,
+          "symlink": 0,
+          "other": 0
+        },
+        "warnings": [
+          "partial_enumeration"
+        ]
+      }
+    },
+    {
+      "enumId": "ENUM-003",
+      "source": "fixture:rh-dir-entry",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "enumeration": {
+          "recursive": false,
+          "status": "enumerated",
+          "warnings": []
+        },
+        "items": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Plugins",
+            "name": "Plugins",
+            "extension": null,
+            "kind": "directory",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Plugins",
+            "size": null,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "ok"
+          }
+        ],
+        "unknownItems": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Plugins",
+            "name": "Plugins",
+            "reason": "directory"
+          }
+        ],
+        "counts": {
+          "dylib": 0,
+          "plist": 0,
+          "directory": 1,
+          "symlink": 0,
+          "other": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "enumId": "ENUM-006",
+      "source": "fixture:rh-dir-entry",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "enumeration": {
+          "recursive": false,
+          "status": "enumerated",
+          "warnings": []
+        },
+        "items": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Plugins",
+            "name": "Plugins",
+            "extension": null,
+            "kind": "directory",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Plugins",
+            "size": null,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "ok"
+          }
+        ],
+        "unknownItems": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Plugins",
+            "name": "Plugins",
+            "reason": "directory"
+          }
+        ],
+        "counts": {
+          "dylib": 0,
+          "plist": 0,
+          "directory": 1,
+          "symlink": 0,
+          "other": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "enumId": "ENUM-008",
+      "source": "fixture:rh-enum-failed",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "enumeration": {
+          "recursive": false,
+          "status": "enumeration_failed",
+          "warnings": [
+            "enumeration_failed"
+          ]
+        },
+        "items": [],
+        "unknownItems": [],
+        "counts": {
+          "dylib": 0,
+          "plist": 0,
+          "directory": 0,
+          "symlink": 0,
+          "other": 0
+        },
+        "warnings": [
+          "enumeration_failed"
+        ]
+      }
+    },
+    {
+      "enumId": "ENUM-005",
+      "source": "fixture:rh-hidden-file",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "enumeration": {
+          "recursive": false,
+          "status": "enumerated",
+          "warnings": []
+        },
+        "items": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/.hidden.dylib",
+            "name": ".hidden.dylib",
+            "extension": "dylib",
+            "kind": "dylib",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../.hidden.dylib",
+            "size": 1024,
+            "hash": "sha256:eee555",
+            "hidden": true,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/.plist",
+            "name": ".plist",
+            "extension": null,
+            "kind": "other",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../.plist",
+            "size": 64,
+            "hash": null,
+            "hidden": true,
+            "entryStatus": "ok"
+          }
+        ],
+        "unknownItems": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/.plist",
+            "name": ".plist",
+            "reason": "other"
+          }
+        ],
+        "counts": {
+          "dylib": 1,
+          "plist": 0,
+          "directory": 0,
+          "symlink": 0,
+          "other": 1
+        },
+        "warnings": []
+      }
+    },
+    {
+      "enumId": "ENUM-009",
+      "source": "fixture:rh-metadata-missing",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "enumeration": {
+          "recursive": false,
+          "status": "partial",
+          "warnings": [
+            "partial_enumeration"
+          ]
+        },
+        "items": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Meta.dylib",
+            "name": "Meta.dylib",
+            "extension": "dylib",
+            "kind": "dylib",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": null,
+            "size": null,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "metadata_unavailable"
+          }
+        ],
+        "unknownItems": [],
+        "counts": {
+          "dylib": 1,
+          "plist": 0,
+          "directory": 0,
+          "symlink": 0,
+          "other": 0
+        },
+        "warnings": [
+          "partial_enumeration"
+        ]
+      }
+    },
+    {
+      "enumId": "ENUM-010",
+      "source": "fixture:rh-metadata-missing",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "enumeration": {
+          "recursive": false,
+          "status": "partial",
+          "warnings": [
+            "partial_enumeration"
+          ]
+        },
+        "items": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Meta.dylib",
+            "name": "Meta.dylib",
+            "extension": "dylib",
+            "kind": "dylib",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": null,
+            "size": null,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "metadata_unavailable"
+          }
+        ],
+        "unknownItems": [],
+        "counts": {
+          "dylib": 1,
+          "plist": 0,
+          "directory": 0,
+          "symlink": 0,
+          "other": 0
+        },
+        "warnings": [
+          "partial_enumeration"
+        ]
+      }
+    },
+    {
+      "enumId": "ENUM-001",
+      "source": "fixture:rh-mixed",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "enumeration": {
+          "recursive": false,
+          "status": "enumerated",
+          "warnings": []
+        },
+        "items": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Example.dylib",
+            "name": "Example.dylib",
+            "extension": "dylib",
+            "kind": "dylib",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Example.dylib",
+            "size": 20480,
+            "hash": "sha256:aaa111",
+            "hidden": false,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Example.plist",
+            "name": "Example.plist",
+            "extension": "plist",
+            "kind": "plist",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Example.plist",
+            "size": 512,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Helper.dylib",
+            "name": "Helper.dylib",
+            "extension": "dylib",
+            "kind": "dylib",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Helper.dylib",
+            "size": 16384,
+            "hash": "sha256:bbb222",
+            "hidden": false,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Notes.txt",
+            "name": "Notes.txt",
+            "extension": "txt",
+            "kind": "other",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Notes.txt",
+            "size": 128,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "ok"
+          }
+        ],
+        "unknownItems": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Notes.txt",
+            "name": "Notes.txt",
+            "reason": "other"
+          }
+        ],
+        "counts": {
+          "dylib": 2,
+          "plist": 1,
+          "directory": 0,
+          "symlink": 0,
+          "other": 1
+        },
+        "warnings": []
+      }
+    },
+    {
+      "enumId": "ENUM-002",
+      "source": "fixture:rh-mixed",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "enumeration": {
+          "recursive": false,
+          "status": "enumerated",
+          "warnings": []
+        },
+        "items": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Example.dylib",
+            "name": "Example.dylib",
+            "extension": "dylib",
+            "kind": "dylib",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Example.dylib",
+            "size": 20480,
+            "hash": "sha256:aaa111",
+            "hidden": false,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Example.plist",
+            "name": "Example.plist",
+            "extension": "plist",
+            "kind": "plist",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Example.plist",
+            "size": 512,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Helper.dylib",
+            "name": "Helper.dylib",
+            "extension": "dylib",
+            "kind": "dylib",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Helper.dylib",
+            "size": 16384,
+            "hash": "sha256:bbb222",
+            "hidden": false,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Notes.txt",
+            "name": "Notes.txt",
+            "extension": "txt",
+            "kind": "other",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Notes.txt",
+            "size": 128,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "ok"
+          }
+        ],
+        "unknownItems": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Notes.txt",
+            "name": "Notes.txt",
+            "reason": "other"
+          }
+        ],
+        "counts": {
+          "dylib": 2,
+          "plist": 1,
+          "directory": 0,
+          "symlink": 0,
+          "other": 1
+        },
+        "warnings": []
+      }
+    },
+    {
+      "enumId": "ENUM-004",
+      "source": "fixture:rh-mixed",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "enumeration": {
+          "recursive": false,
+          "status": "enumerated",
+          "warnings": []
+        },
+        "items": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Example.dylib",
+            "name": "Example.dylib",
+            "extension": "dylib",
+            "kind": "dylib",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Example.dylib",
+            "size": 20480,
+            "hash": "sha256:aaa111",
+            "hidden": false,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Example.plist",
+            "name": "Example.plist",
+            "extension": "plist",
+            "kind": "plist",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Example.plist",
+            "size": 512,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Helper.dylib",
+            "name": "Helper.dylib",
+            "extension": "dylib",
+            "kind": "dylib",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Helper.dylib",
+            "size": 16384,
+            "hash": "sha256:bbb222",
+            "hidden": false,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Notes.txt",
+            "name": "Notes.txt",
+            "extension": "txt",
+            "kind": "other",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Notes.txt",
+            "size": 128,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "ok"
+          }
+        ],
+        "unknownItems": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Notes.txt",
+            "name": "Notes.txt",
+            "reason": "other"
+          }
+        ],
+        "counts": {
+          "dylib": 2,
+          "plist": 1,
+          "directory": 0,
+          "symlink": 0,
+          "other": 1
+        },
+        "warnings": []
+      }
+    },
+    {
+      "enumId": "ENUM-009",
+      "source": "fixture:rh-mixed",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "enumeration": {
+          "recursive": false,
+          "status": "enumerated",
+          "warnings": []
+        },
+        "items": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Example.dylib",
+            "name": "Example.dylib",
+            "extension": "dylib",
+            "kind": "dylib",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Example.dylib",
+            "size": 20480,
+            "hash": "sha256:aaa111",
+            "hidden": false,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Example.plist",
+            "name": "Example.plist",
+            "extension": "plist",
+            "kind": "plist",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Example.plist",
+            "size": 512,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Helper.dylib",
+            "name": "Helper.dylib",
+            "extension": "dylib",
+            "kind": "dylib",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Helper.dylib",
+            "size": 16384,
+            "hash": "sha256:bbb222",
+            "hidden": false,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Notes.txt",
+            "name": "Notes.txt",
+            "extension": "txt",
+            "kind": "other",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Notes.txt",
+            "size": 128,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "ok"
+          }
+        ],
+        "unknownItems": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Notes.txt",
+            "name": "Notes.txt",
+            "reason": "other"
+          }
+        ],
+        "counts": {
+          "dylib": 2,
+          "plist": 1,
+          "directory": 0,
+          "symlink": 0,
+          "other": 1
+        },
+        "warnings": []
+      }
+    },
+    {
+      "enumId": "ENUM-010",
+      "source": "fixture:rh-mixed",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "enumeration": {
+          "recursive": false,
+          "status": "enumerated",
+          "warnings": []
+        },
+        "items": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Example.dylib",
+            "name": "Example.dylib",
+            "extension": "dylib",
+            "kind": "dylib",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Example.dylib",
+            "size": 20480,
+            "hash": "sha256:aaa111",
+            "hidden": false,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Example.plist",
+            "name": "Example.plist",
+            "extension": "plist",
+            "kind": "plist",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Example.plist",
+            "size": 512,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Helper.dylib",
+            "name": "Helper.dylib",
+            "extension": "dylib",
+            "kind": "dylib",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Helper.dylib",
+            "size": 16384,
+            "hash": "sha256:bbb222",
+            "hidden": false,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Notes.txt",
+            "name": "Notes.txt",
+            "extension": "txt",
+            "kind": "other",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Notes.txt",
+            "size": 128,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "ok"
+          }
+        ],
+        "unknownItems": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Notes.txt",
+            "name": "Notes.txt",
+            "reason": "other"
+          }
+        ],
+        "counts": {
+          "dylib": 2,
+          "plist": 1,
+          "directory": 0,
+          "symlink": 0,
+          "other": 1
+        },
+        "warnings": []
+      }
+    },
+    {
+      "enumId": "ENUM-001",
+      "source": "fixture:rh-orphan-dylib",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "enumeration": {
+          "recursive": false,
+          "status": "enumerated",
+          "warnings": []
+        },
+        "items": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Lone.dylib",
+            "name": "Lone.dylib",
+            "extension": "dylib",
+            "kind": "dylib",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Lone.dylib",
+            "size": 12288,
+            "hash": "sha256:ccc333",
+            "hidden": false,
+            "entryStatus": "ok"
+          }
+        ],
+        "unknownItems": [],
+        "counts": {
+          "dylib": 1,
+          "plist": 0,
+          "directory": 0,
+          "symlink": 0,
+          "other": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "enumId": "ENUM-002",
+      "source": "fixture:rh-orphan-plist",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "enumeration": {
+          "recursive": false,
+          "status": "enumerated",
+          "warnings": []
+        },
+        "items": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Orphan.plist",
+            "name": "Orphan.plist",
+            "extension": "plist",
+            "kind": "plist",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Orphan.plist",
+            "size": 256,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "ok"
+          }
+        ],
+        "unknownItems": [],
+        "counts": {
+          "dylib": 0,
+          "plist": 1,
+          "directory": 0,
+          "symlink": 0,
+          "other": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "enumId": "ENUM-003",
+      "source": "fixture:rh-other-extension",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "enumeration": {
+          "recursive": false,
+          "status": "enumerated",
+          "warnings": []
+        },
+        "items": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Bad.DYLIB",
+            "name": "Bad.DYLIB",
+            "extension": "DYLIB",
+            "kind": "other",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Bad.DYLIB",
+            "size": 2048,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/README.txt",
+            "name": "README.txt",
+            "extension": "txt",
+            "kind": "other",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../README.txt",
+            "size": 96,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Tweak.deb",
+            "name": "Tweak.deb",
+            "extension": "deb",
+            "kind": "other",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Tweak.deb",
+            "size": 4096,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "ok"
+          }
+        ],
+        "unknownItems": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Bad.DYLIB",
+            "name": "Bad.DYLIB",
+            "reason": "other"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/README.txt",
+            "name": "README.txt",
+            "reason": "other"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Tweak.deb",
+            "name": "Tweak.deb",
+            "reason": "other"
+          }
+        ],
+        "counts": {
+          "dylib": 0,
+          "plist": 0,
+          "directory": 0,
+          "symlink": 0,
+          "other": 3
+        },
+        "warnings": []
+      }
+    },
+    {
+      "enumId": "ENUM-007",
+      "source": "fixture:rh-symlink-broken",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "enumeration": {
+          "recursive": false,
+          "status": "enumerated",
+          "warnings": []
+        },
+        "items": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Broken.dylib",
+            "name": "Broken.dylib",
+            "extension": "dylib",
+            "kind": "symlink",
+            "exists": true,
+            "readable": true,
+            "isSymlink": true,
+            "symlinkTarget": "Missing.dylib",
+            "symlinkState": "broken",
+            "realpath": null,
+            "size": null,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "ok"
+          }
+        ],
+        "unknownItems": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Broken.dylib",
+            "name": "Broken.dylib",
+            "reason": "symlink"
+          }
+        ],
+        "counts": {
+          "dylib": 0,
+          "plist": 0,
+          "directory": 0,
+          "symlink": 1,
+          "other": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "enumId": "ENUM-007",
+      "source": "fixture:rh-symlink-valid",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "enumeration": {
+          "recursive": false,
+          "status": "enumerated",
+          "warnings": []
+        },
+        "items": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Link.dylib",
+            "name": "Link.dylib",
+            "extension": "dylib",
+            "kind": "symlink",
+            "exists": true,
+            "readable": true,
+            "isSymlink": true,
+            "symlinkTarget": "Real.dylib",
+            "symlinkState": "resolved",
+            "realpath": "/private/var/.../Real.dylib",
+            "size": 14336,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Real.dylib",
+            "name": "Real.dylib",
+            "extension": "dylib",
+            "kind": "dylib",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Real.dylib",
+            "size": 14336,
+            "hash": "sha256:ddd444",
+            "hidden": false,
+            "entryStatus": "ok"
+          }
+        ],
+        "unknownItems": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Link.dylib",
+            "name": "Link.dylib",
+            "reason": "symlink"
+          }
+        ],
+        "counts": {
+          "dylib": 1,
+          "plist": 0,
+          "directory": 0,
+          "symlink": 1,
+          "other": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "enumId": "ENUM-013",
+      "source": "fixture:rootless-mixed",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "rootless",
+        "sourceDirectory": "/var/jb/usr/lib/TweakInject/",
+        "enumeration": {
+          "recursive": false,
+          "status": "enumerated",
+          "warnings": []
+        },
+        "items": [
+          {
+            "path": "/var/jb/usr/lib/TweakInject/Rootless.dylib",
+            "name": "Rootless.dylib",
+            "extension": "dylib",
+            "kind": "dylib",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/var/jb/usr/lib/TweakInject/Rootless.dylib",
+            "size": 13107,
+            "hash": "sha256:ggg777",
+            "hidden": false,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/jb/usr/lib/TweakInject/Rootless.plist",
+            "name": "Rootless.plist",
+            "extension": "plist",
+            "kind": "plist",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/var/jb/usr/lib/TweakInject/Rootless.plist",
+            "size": 384,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "ok"
+          }
+        ],
+        "unknownItems": [],
+        "counts": {
+          "dylib": 1,
+          "plist": 1,
+          "directory": 0,
+          "symlink": 0,
+          "other": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "enumId": "ENUM-013",
+      "source": "fixture:route-guard",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": null,
+        "enumeration": {
+          "recursive": false,
+          "status": "unresolved",
+          "warnings": [
+            "directory_unresolved"
+          ]
+        },
+        "items": [],
+        "unknownItems": [],
+        "counts": {
+          "dylib": 0,
+          "plist": 0,
+          "directory": 0,
+          "symlink": 0,
+          "other": 0
+        },
+        "warnings": [
+          "directory_unresolved"
+        ]
+      }
+    },
+    {
+      "enumId": "ENUM-011",
+      "source": "synthetic:path-identity",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "paths": [
+          "/root/A/usr/lib/TweakInject/Same.dylib",
+          "/root/B/usr/lib/TweakInject/Same.dylib"
+        ]
+      }
+    },
+    {
+      "enumId": "ENUM-014",
+      "source": "synthetic:determinism",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "enumeration": {
+          "recursive": false,
+          "status": "enumerated",
+          "warnings": []
+        },
+        "items": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Example.dylib",
+            "name": "Example.dylib",
+            "extension": "dylib",
+            "kind": "dylib",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Example.dylib",
+            "size": 20480,
+            "hash": "sha256:aaa111",
+            "hidden": false,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Example.plist",
+            "name": "Example.plist",
+            "extension": "plist",
+            "kind": "plist",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Example.plist",
+            "size": 512,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Helper.dylib",
+            "name": "Helper.dylib",
+            "extension": "dylib",
+            "kind": "dylib",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Helper.dylib",
+            "size": 16384,
+            "hash": "sha256:bbb222",
+            "hidden": false,
+            "entryStatus": "ok"
+          },
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Notes.txt",
+            "name": "Notes.txt",
+            "extension": "txt",
+            "kind": "other",
+            "exists": true,
+            "readable": true,
+            "isSymlink": false,
+            "symlinkTarget": null,
+            "symlinkState": null,
+            "realpath": "/private/var/.../Notes.txt",
+            "size": 128,
+            "hash": null,
+            "hidden": false,
+            "entryStatus": "ok"
+          }
+        ],
+        "unknownItems": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Notes.txt",
+            "name": "Notes.txt",
+            "reason": "other"
+          }
+        ],
+        "counts": {
+          "dylib": 2,
+          "plist": 1,
+          "directory": 0,
+          "symlink": 0,
+          "other": 1
+        },
+        "warnings": []
+      }
+    },
+    {
+      "enumId": "ENUM-013",
+      "source": "synthetic:route-isolation",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "sourceDirectory": null,
+        "itemCount": 0
+      }
+    }
+  ]
+}

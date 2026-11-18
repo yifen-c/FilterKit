@@ -1,0 +1,16 @@
+{
+  "fixtureId": "S1-03-ROOTFUL-001",
+  "expected": {
+    "route": "rootful",
+    "tiPath": "/usr/lib/TweakInject/",
+    "tiExists": true,
+    "tiReadable": true,
+    "tiEnumerable": true,
+    "tiStatus": "confirmed",
+    "dlState": "resolved",
+    "dlTargetMatch": true,
+    "outcome": "rootful_diagnostic"
+  },
+  "expectedWarnings": ["rootful_route_not_profile"],
+  "expectedOutcome": "rootful_diagnostic"
+}

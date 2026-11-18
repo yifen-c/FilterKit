@@ -1,0 +1,536 @@
+{
+  "schemaVersion": "0.1.0",
+  "generatedAt": "2026-11-15T13:06:50.761Z",
+  "stage": "Stage 1 / S1-05",
+  "evidenceNote": "全部为离线 fixture 合成样本；不构成 RootHide 真机验证，Rootless 结果不代表真机兼容。",
+  "summary": {
+    "total": 15,
+    "passed": 15,
+    "failed": 0,
+    "routesCovered": [
+      "roothide"
+    ],
+    "missingRoutes": [],
+    "mutualLeakCount": 0,
+    "regression": {
+      "S1-01": "passed",
+      "S1-02": "passed",
+      "S1-03": "passed",
+      "S1-04": "passed"
+    }
+  },
+  "cases": [
+    {
+      "pairId": "PAIR-011",
+      "source": "fixture:pair-access-denied",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "pairs": [],
+        "missingPlist": [],
+        "orphanPlist": [],
+        "ambiguous": [],
+        "uncertain": [
+          {
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Locked.dylib",
+            "reason": "access_denied"
+          }
+        ],
+        "counts": {
+          "paired": 0,
+          "missing_plist": 0,
+          "orphan_plist": 0,
+          "ambiguous": 0,
+          "uncertain": 1
+        },
+        "warnings": [
+          "partial_pairing"
+        ],
+        "status": "partial"
+      }
+    },
+    {
+      "pairId": "PAIR-005",
+      "source": "fixture:pair-case-mismatch",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "pairs": [],
+        "missingPlist": [
+          {
+            "base": "Example",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Example.dylib",
+            "pairing": "missing_plist",
+            "dylibIsSymlink": false
+          }
+        ],
+        "orphanPlist": [
+          {
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/example.plist",
+            "pairing": "orphan_plist",
+            "reason": "missing_dylib"
+          }
+        ],
+        "ambiguous": [],
+        "uncertain": [],
+        "counts": {
+          "paired": 0,
+          "missing_plist": 1,
+          "orphan_plist": 1,
+          "ambiguous": 0,
+          "uncertain": 0
+        },
+        "warnings": [],
+        "status": "enumerated"
+      }
+    },
+    {
+      "pairId": "PAIR-006",
+      "source": "fixture:pair-cross-path",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "pairs": [
+          {
+            "base": "Shared",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Shared.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Shared.plist",
+            "pairing": "paired",
+            "dylibIsSymlink": false,
+            "plistIsSymlink": false,
+            "status": "ok"
+          }
+        ],
+        "missingPlist": [],
+        "orphanPlist": [],
+        "ambiguous": [],
+        "uncertain": [],
+        "counts": {
+          "paired": 1,
+          "missing_plist": 0,
+          "orphan_plist": 0,
+          "ambiguous": 0,
+          "uncertain": 0
+        },
+        "warnings": [],
+        "status": "enumerated"
+      }
+    },
+    {
+      "pairId": "PAIR-013",
+      "source": "fixture:pair-determinism",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "pairs": [
+          {
+            "base": "Delta",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Delta.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Delta.plist",
+            "pairing": "paired",
+            "dylibIsSymlink": false,
+            "plistIsSymlink": false,
+            "status": "ok"
+          }
+        ],
+        "missingPlist": [
+          {
+            "base": "Echo",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Echo.dylib",
+            "pairing": "missing_plist",
+            "dylibIsSymlink": false
+          }
+        ],
+        "orphanPlist": [],
+        "ambiguous": [],
+        "uncertain": [],
+        "counts": {
+          "paired": 1,
+          "missing_plist": 1,
+          "orphan_plist": 0,
+          "ambiguous": 0,
+          "uncertain": 0
+        },
+        "warnings": [],
+        "status": "enumerated"
+      }
+    },
+    {
+      "pairId": "PAIR-010",
+      "source": "fixture:pair-duplicate",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "pairs": [],
+        "missingPlist": [],
+        "orphanPlist": [],
+        "ambiguous": [
+          {
+            "base": "Case",
+            "candidates": [
+              "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Case.plist",
+              "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/Library/MobileSubstrate/DynamicLibraries/Case.plist"
+            ]
+          }
+        ],
+        "uncertain": [],
+        "counts": {
+          "paired": 0,
+          "missing_plist": 0,
+          "orphan_plist": 0,
+          "ambiguous": 1,
+          "uncertain": 0
+        },
+        "warnings": [],
+        "status": "enumerated"
+      }
+    },
+    {
+      "pairId": "PAIR-007",
+      "source": "fixture:pair-hidden",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "pairs": [
+          {
+            "base": ".hidden",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/.hidden.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/.hidden.plist",
+            "pairing": "paired",
+            "dylibIsSymlink": false,
+            "plistIsSymlink": false,
+            "status": "ok"
+          }
+        ],
+        "missingPlist": [],
+        "orphanPlist": [],
+        "ambiguous": [],
+        "uncertain": [],
+        "counts": {
+          "paired": 1,
+          "missing_plist": 0,
+          "orphan_plist": 0,
+          "ambiguous": 0,
+          "uncertain": 0
+        },
+        "warnings": [],
+        "status": "enumerated"
+      }
+    },
+    {
+      "pairId": "PAIR-002",
+      "source": "fixture:pair-missing-plist",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "pairs": [],
+        "missingPlist": [
+          {
+            "base": "Unmatched",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Unmatched.dylib",
+            "pairing": "missing_plist",
+            "dylibIsSymlink": false
+          }
+        ],
+        "orphanPlist": [],
+        "ambiguous": [],
+        "uncertain": [],
+        "counts": {
+          "paired": 0,
+          "missing_plist": 1,
+          "orphan_plist": 0,
+          "ambiguous": 0,
+          "uncertain": 0
+        },
+        "warnings": [],
+        "status": "enumerated"
+      }
+    },
+    {
+      "pairId": "PAIR-004",
+      "source": "fixture:pair-multi",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "pairs": [
+          {
+            "base": "Alpha",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Alpha.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Alpha.plist",
+            "pairing": "paired",
+            "dylibIsSymlink": false,
+            "plistIsSymlink": false,
+            "status": "ok"
+          },
+          {
+            "base": "Beta",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Beta.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Beta.plist",
+            "pairing": "paired",
+            "dylibIsSymlink": false,
+            "plistIsSymlink": false,
+            "status": "ok"
+          },
+          {
+            "base": "Gamma",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Gamma.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Gamma.plist",
+            "pairing": "paired",
+            "dylibIsSymlink": false,
+            "plistIsSymlink": false,
+            "status": "ok"
+          }
+        ],
+        "missingPlist": [],
+        "orphanPlist": [],
+        "ambiguous": [],
+        "uncertain": [],
+        "counts": {
+          "paired": 3,
+          "missing_plist": 0,
+          "orphan_plist": 0,
+          "ambiguous": 0,
+          "uncertain": 0
+        },
+        "warnings": [],
+        "status": "enumerated"
+      }
+    },
+    {
+      "pairId": "PAIR-003",
+      "source": "fixture:pair-orphan-plist",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "pairs": [],
+        "missingPlist": [],
+        "orphanPlist": [
+          {
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Orphan.plist",
+            "pairing": "orphan_plist",
+            "reason": "missing_dylib"
+          }
+        ],
+        "ambiguous": [],
+        "uncertain": [],
+        "counts": {
+          "paired": 0,
+          "missing_plist": 0,
+          "orphan_plist": 1,
+          "ambiguous": 0,
+          "uncertain": 0
+        },
+        "warnings": [],
+        "status": "enumerated"
+      }
+    },
+    {
+      "pairId": "PAIR-009",
+      "source": "fixture:pair-other-ext",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "pairs": [],
+        "missingPlist": [],
+        "orphanPlist": [],
+        "ambiguous": [],
+        "uncertain": [],
+        "counts": {
+          "paired": 0,
+          "missing_plist": 0,
+          "orphan_plist": 0,
+          "ambiguous": 0,
+          "uncertain": 0
+        },
+        "warnings": [],
+        "status": "enumerated"
+      }
+    },
+    {
+      "pairId": "PAIR-008",
+      "source": "fixture:pair-symlink",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "pairs": [
+          {
+            "base": "Link",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Link.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Link.plist",
+            "pairing": "paired",
+            "dylibIsSymlink": true,
+            "plistIsSymlink": false,
+            "status": "ok"
+          }
+        ],
+        "missingPlist": [],
+        "orphanPlist": [],
+        "ambiguous": [],
+        "uncertain": [],
+        "counts": {
+          "paired": 1,
+          "missing_plist": 0,
+          "orphan_plist": 0,
+          "ambiguous": 0,
+          "uncertain": 0
+        },
+        "warnings": [],
+        "status": "enumerated"
+      }
+    },
+    {
+      "pairId": "PAIR-001",
+      "source": "fixture:pair-valid",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "pairs": [
+          {
+            "base": "Example",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Example.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Example.plist",
+            "pairing": "paired",
+            "dylibIsSymlink": false,
+            "plistIsSymlink": false,
+            "status": "ok"
+          }
+        ],
+        "missingPlist": [],
+        "orphanPlist": [],
+        "ambiguous": [],
+        "uncertain": [],
+        "counts": {
+          "paired": 1,
+          "missing_plist": 0,
+          "orphan_plist": 0,
+          "ambiguous": 0,
+          "uncertain": 0
+        },
+        "warnings": [],
+        "status": "enumerated"
+      }
+    },
+    {
+      "pairId": "PAIR-012",
+      "source": "fixture:route-guard",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": null,
+        "pairs": [],
+        "missingPlist": [],
+        "orphanPlist": [],
+        "ambiguous": [],
+        "uncertain": [],
+        "counts": {
+          "paired": 0,
+          "missing_plist": 0,
+          "orphan_plist": 0,
+          "ambiguous": 0,
+          "uncertain": 0
+        },
+        "warnings": [
+          "inventory_unresolved"
+        ],
+        "status": "unresolved"
+      }
+    },
+    {
+      "pairId": "PAIR-013",
+      "source": "synthetic:determinism",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "pairs": [
+          {
+            "base": "Delta",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Delta.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Delta.plist",
+            "pairing": "paired",
+            "dylibIsSymlink": false,
+            "plistIsSymlink": false,
+            "status": "ok"
+          }
+        ],
+        "missingPlist": [
+          {
+            "base": "Echo",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Echo.dylib",
+            "pairing": "missing_plist",
+            "dylibIsSymlink": false
+          }
+        ],
+        "orphanPlist": [],
+        "ambiguous": [],
+        "uncertain": [],
+        "counts": {
+          "paired": 1,
+          "missing_plist": 1,
+          "orphan_plist": 0,
+          "ambiguous": 0,
+          "uncertain": 0
+        },
+        "warnings": [],
+        "status": "enumerated"
+      }
+    },
+    {
+      "pairId": "PAIR-006",
+      "source": "synthetic:route-isolation",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "sourceDirectory": null,
+        "counts": {
+          "paired": 0,
+          "missing_plist": 0,
+          "orphan_plist": 0,
+          "ambiguous": 0,
+          "uncertain": 0
+        }
+      }
+    }
+  ]
+}

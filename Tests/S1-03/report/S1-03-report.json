@@ -1,0 +1,474 @@
+{
+  "schemaVersion": "0.1.0",
+  "generatedAt": "2026-11-15T13:06:50.724Z",
+  "stage": "Stage 1 / S1-03",
+  "evidenceNote": "全部为离线 fixture 合成样本；不构成 RootHide 真机验证，Rootless/Rootful 结果不代表真机兼容。",
+  "summary": {
+    "total": 15,
+    "passed": 15,
+    "failed": 0,
+    "routesCovered": [
+      "rootful",
+      "roothide",
+      "rootless"
+    ],
+    "missingRoutes": [],
+    "fallbackLeakCount": 0,
+    "layerViolationCount": 0
+  },
+  "cases": [
+    {
+      "dirId": "DIR-006",
+      "source": "fixture:rh-broken-link",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "tweakInject": {
+          "value": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "exists": true,
+          "readable": true,
+          "enumerable": true,
+          "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "structureMatch": true,
+          "status": "confirmed"
+        },
+        "dynamicLibraries": {
+          "value": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/Library/MobileSubstrate/DynamicLibraries",
+          "isSymlink": true,
+          "symlinkTarget": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "realpath": null,
+          "symlinkState": "broken",
+          "targetMatch": false
+        },
+        "outcome": "partial",
+        "warnings": [
+          "symlink_broken"
+        ]
+      }
+    },
+    {
+      "dirId": "DIR-007",
+      "source": "fixture:rh-loop",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "tweakInject": {
+          "value": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "exists": true,
+          "readable": true,
+          "enumerable": true,
+          "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "structureMatch": true,
+          "status": "confirmed"
+        },
+        "dynamicLibraries": {
+          "value": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/Library/MobileSubstrate/DynamicLibraries",
+          "isSymlink": true,
+          "symlinkTarget": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/Library/MobileSubstrate/DynamicLibraries",
+          "realpath": null,
+          "symlinkState": "loop",
+          "targetMatch": false
+        },
+        "outcome": "partial",
+        "warnings": [
+          "symlink_loop"
+        ]
+      }
+    },
+    {
+      "dirId": "DIR-002",
+      "source": "fixture:rh-missing",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "tweakInject": {
+          "value": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "exists": false,
+          "readable": false,
+          "enumerable": false,
+          "realpath": null,
+          "structureMatch": false,
+          "status": "not_found"
+        },
+        "dynamicLibraries": {
+          "value": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/Library/MobileSubstrate/DynamicLibraries",
+          "isSymlink": false,
+          "symlinkTarget": null,
+          "realpath": null,
+          "symlinkState": "not_symlink",
+          "targetMatch": false
+        },
+        "outcome": "not_found",
+        "warnings": [
+          "directory_not_found"
+        ]
+      }
+    },
+    {
+      "dirId": "DIR-009",
+      "source": "fixture:rh-not-symlink",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "tweakInject": {
+          "value": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "exists": true,
+          "readable": true,
+          "enumerable": true,
+          "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "structureMatch": true,
+          "status": "confirmed"
+        },
+        "dynamicLibraries": {
+          "value": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/Library/MobileSubstrate/DynamicLibraries",
+          "isSymlink": false,
+          "symlinkTarget": null,
+          "realpath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/Library/MobileSubstrate/DynamicLibraries",
+          "symlinkState": "not_symlink",
+          "targetMatch": false
+        },
+        "outcome": "partial",
+        "warnings": [
+          "not_a_symlink"
+        ]
+      }
+    },
+    {
+      "dirId": "DIR-008",
+      "source": "fixture:rh-target-denied",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "tweakInject": {
+          "value": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "exists": true,
+          "readable": true,
+          "enumerable": true,
+          "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "structureMatch": true,
+          "status": "confirmed"
+        },
+        "dynamicLibraries": {
+          "value": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/Library/MobileSubstrate/DynamicLibraries",
+          "isSymlink": true,
+          "symlinkTarget": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "realpath": null,
+          "symlinkState": "denied",
+          "targetMatch": false
+        },
+        "outcome": "partial",
+        "warnings": [
+          "symlink_target_denied"
+        ]
+      }
+    },
+    {
+      "dirId": "DIR-003",
+      "source": "fixture:rh-unreadable",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "tweakInject": {
+          "value": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "exists": true,
+          "readable": false,
+          "enumerable": false,
+          "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "structureMatch": true,
+          "status": "partial"
+        },
+        "dynamicLibraries": {
+          "value": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/Library/MobileSubstrate/DynamicLibraries",
+          "isSymlink": true,
+          "symlinkTarget": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "symlinkState": "resolved",
+          "targetMatch": true
+        },
+        "outcome": "partial",
+        "warnings": [
+          "access_limited"
+        ]
+      }
+    },
+    {
+      "dirId": "DIR-001",
+      "source": "fixture:rh-valid",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "tweakInject": {
+          "value": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "exists": true,
+          "readable": true,
+          "enumerable": true,
+          "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "structureMatch": true,
+          "status": "confirmed"
+        },
+        "dynamicLibraries": {
+          "value": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/Library/MobileSubstrate/DynamicLibraries",
+          "isSymlink": true,
+          "symlinkTarget": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "symlinkState": "resolved",
+          "targetMatch": true
+        },
+        "outcome": "resolved",
+        "warnings": []
+      }
+    },
+    {
+      "dirId": "DIR-004",
+      "source": "fixture:rh-valid",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "tweakInject": {
+          "value": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "exists": true,
+          "readable": true,
+          "enumerable": true,
+          "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "structureMatch": true,
+          "status": "confirmed"
+        },
+        "dynamicLibraries": {
+          "value": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/Library/MobileSubstrate/DynamicLibraries",
+          "isSymlink": true,
+          "symlinkTarget": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "symlinkState": "resolved",
+          "targetMatch": true
+        },
+        "outcome": "resolved",
+        "warnings": []
+      }
+    },
+    {
+      "dirId": "DIR-005",
+      "source": "fixture:rh-valid",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "tweakInject": {
+          "value": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "exists": true,
+          "readable": true,
+          "enumerable": true,
+          "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "structureMatch": true,
+          "status": "confirmed"
+        },
+        "dynamicLibraries": {
+          "value": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/Library/MobileSubstrate/DynamicLibraries",
+          "isSymlink": true,
+          "symlinkTarget": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "symlinkState": "resolved",
+          "targetMatch": true
+        },
+        "outcome": "resolved",
+        "warnings": []
+      }
+    },
+    {
+      "dirId": "DIR-001",
+      "source": "fixture:rootful-valid",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "rootful",
+        "tweakInject": {
+          "value": "/usr/lib/TweakInject/",
+          "exists": true,
+          "readable": true,
+          "enumerable": true,
+          "realpath": "/usr/lib/TweakInject/",
+          "structureMatch": true,
+          "status": "confirmed"
+        },
+        "dynamicLibraries": {
+          "value": "/Library/MobileSubstrate/DynamicLibraries",
+          "isSymlink": true,
+          "symlinkTarget": "/usr/lib/TweakInject/",
+          "realpath": "/usr/lib/TweakInject/",
+          "symlinkState": "resolved",
+          "targetMatch": true
+        },
+        "outcome": "rootful_diagnostic",
+        "warnings": [
+          "rootful_route_not_profile"
+        ]
+      }
+    },
+    {
+      "dirId": "DIR-001",
+      "source": "fixture:rootless-valid",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "rootless",
+        "tweakInject": {
+          "value": "/var/jb/usr/lib/TweakInject/",
+          "exists": true,
+          "readable": true,
+          "enumerable": true,
+          "realpath": "/var/jb/usr/lib/TweakInject/",
+          "structureMatch": true,
+          "status": "confirmed"
+        },
+        "dynamicLibraries": {
+          "value": "/var/jb/Library/MobileSubstrate/DynamicLibraries",
+          "isSymlink": true,
+          "symlinkTarget": "/var/jb/usr/lib/TweakInject/",
+          "realpath": "/var/jb/usr/lib/TweakInject/",
+          "symlinkState": "resolved",
+          "targetMatch": true
+        },
+        "outcome": "resolved",
+        "warnings": []
+      }
+    },
+    {
+      "dirId": "DIR-010",
+      "source": "fixture:route-fallback-guard",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "tweakInject": {
+          "value": null,
+          "exists": false,
+          "readable": false,
+          "enumerable": false,
+          "realpath": null,
+          "structureMatch": false,
+          "status": "unresolved"
+        },
+        "dynamicLibraries": {
+          "value": null,
+          "isSymlink": false,
+          "symlinkTarget": null,
+          "realpath": null,
+          "symlinkState": "not_symlink",
+          "targetMatch": false
+        },
+        "outcome": "unresolved",
+        "warnings": [
+          "directory_unresolved"
+        ]
+      }
+    },
+    {
+      "dirId": "DIR-011",
+      "source": "fixture:structure-conflict",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "tweakInject": {
+          "value": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "exists": true,
+          "readable": true,
+          "enumerable": true,
+          "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "structureMatch": true,
+          "status": "confirmed"
+        },
+        "dynamicLibraries": {
+          "value": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/Library/MobileSubstrate/DynamicLibraries",
+          "isSymlink": true,
+          "symlinkTarget": "/var/mobile/Library/pkgmirror/usr/lib/TweakInject/",
+          "realpath": "/var/mobile/Library/pkgmirror/usr/lib/TweakInject/",
+          "symlinkState": "resolved",
+          "targetMatch": false
+        },
+        "outcome": "structure_conflict",
+        "warnings": [
+          "structure_conflict"
+        ]
+      }
+    },
+    {
+      "dirId": "DIR-012",
+      "source": "synthetic:determinism",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "tweakInject": {
+          "value": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "exists": true,
+          "readable": true,
+          "enumerable": true,
+          "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "structureMatch": true,
+          "status": "confirmed"
+        },
+        "dynamicLibraries": {
+          "value": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/Library/MobileSubstrate/DynamicLibraries",
+          "isSymlink": true,
+          "symlinkTarget": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "symlinkState": "resolved",
+          "targetMatch": true
+        },
+        "outcome": "resolved",
+        "warnings": []
+      }
+    },
+    {
+      "dirId": "DIR-013",
+      "source": "synthetic:id-mismatch",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "tweakInject": {
+          "value": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "exists": true,
+          "readable": true,
+          "enumerable": true,
+          "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "structureMatch": true,
+          "status": "confirmed"
+        },
+        "dynamicLibraries": {
+          "value": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/Library/MobileSubstrate/DynamicLibraries",
+          "isSymlink": true,
+          "symlinkTarget": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+          "symlinkState": "resolved",
+          "targetMatch": true
+        },
+        "outcome": "resolved",
+        "warnings": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,519 @@
+﻿2026-11-18T16:14:24.2090790Z ##[debug]Starting: artifact
+2026-11-18T16:14:24.2114680Z ##[debug]Cleaning runner temp folder: /Users/runner/work/_temp
+2026-11-18T16:14:24.2531650Z ##[debug]Starting: Set up job
+2026-11-18T16:14:24.2532540Z Current runner version: '2.338.2'
+2026-11-18T16:14:24.2548430Z ##[group]Runner Image Provisioner
+2026-11-18T16:14:24.2548950Z Hosted Compute Agent
+2026-11-18T16:14:24.2549330Z Version: 20261103.629
+2026-11-18T16:14:24.2549810Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+2026-11-18T16:14:24.2550310Z Build Date: 2026-11-03T17:26:59Z
+2026-11-18T16:14:24.2550760Z Worker ID: {bd4a01bd-f5a2-4e3c-b16c-8efaabdd8848}
+2026-11-18T16:14:24.2551250Z Region: westus
+2026-11-18T16:14:24.2551640Z Cloud: MacCloud
+2026-11-18T16:14:24.2551980Z ##[endgroup]
+2026-11-18T16:14:24.2552950Z ##[group]Operating System
+2026-11-18T16:14:24.2553380Z macOS
+2026-11-18T16:14:24.2553700Z 26.7.2
+2026-11-18T16:14:24.2554030Z 25G332
+2026-11-18T16:14:24.2554550Z ##[endgroup]
+2026-11-18T16:14:24.2554910Z ##[group]Runner Image
+2026-11-18T16:14:24.2555510Z Image: macos-26-arm64
+2026-11-18T16:14:24.2555930Z Version: 20261112.0504.1
+2026-11-18T16:14:24.2556770Z Included Software: https://github.com/actions/runner-images/blob/macos-26-arm64/20261112.0504/images/macos/macos-26-arm64-Readme.md
+2026-11-18T16:14:24.2558070Z Image Release: https://github.com/actions/runner-images/releases/tag/macos-26-arm64%2F20261112.0504
+2026-11-18T16:14:24.2558870Z ##[endgroup]
+2026-11-18T16:14:24.2561200Z ##[group]GITHUB_TOKEN Permissions
+2026-11-18T16:14:24.2564670Z Actions: write
+2026-11-18T16:14:24.2565110Z ArtifactMetadata: write
+2026-11-18T16:14:24.2565500Z Attestations: write
+2026-11-18T16:14:24.2565940Z Checks: write
+2026-11-18T16:14:24.2566280Z CodeQuality: write
+2026-11-18T16:14:24.2566630Z Contents: write
+2026-11-18T16:14:24.2567020Z CopilotRequests: write
+2026-11-18T16:14:24.2567870Z Deployments: write
+2026-11-18T16:14:24.2568370Z Discussions: write
+2026-11-18T16:14:24.2568760Z Drives: write
+2026-11-18T16:14:24.2569180Z Issues: write
+2026-11-18T16:14:24.2569570Z Metadata: read
+2026-11-18T16:14:24.2570000Z Models: read
+2026-11-18T16:14:24.2570490Z Packages: write
+2026-11-18T16:14:24.2571130Z Pages: write
+2026-11-18T16:14:24.2572960Z PullRequests: write
+2026-11-18T16:14:24.2574140Z RepositoryProjects: write
+2026-11-18T16:14:24.2575010Z SecurityEvents: write
+2026-11-18T16:14:24.2575820Z Statuses: write
+2026-11-18T16:14:24.2576740Z VulnerabilityAlerts: read
+2026-11-18T16:14:24.2578490Z ##[endgroup]
+2026-11-18T16:14:24.2584020Z Secret source: Actions
+2026-11-18T16:14:24.2586970Z Cache mode: write
+2026-11-18T16:14:24.2588680Z ##[debug]Primary repository: yi-fen/FilterKit
+2026-11-18T16:14:24.2590390Z Prepare workflow directory
+2026-11-18T16:14:24.2660040Z ##[debug]Creating pipeline directory: '/Users/runner/work/FilterKit'
+2026-11-18T16:14:24.2663190Z ##[debug]Creating workspace directory: '/Users/runner/work/FilterKit/FilterKit'
+2026-11-18T16:14:24.2664490Z ##[debug]Update context data
+2026-11-18T16:14:24.2667290Z ##[debug]Evaluating job-level environment variables
+2026-11-18T16:14:24.2884180Z ##[debug]Evaluating job container
+2026-11-18T16:14:24.2886660Z ##[debug]Evaluating job service containers
+2026-11-18T16:14:24.2888810Z ##[debug]Evaluating job defaults
+2026-11-18T16:14:24.2919750Z Prepare all required actions
+2026-11-18T16:14:24.2974240Z Getting action download info
+2026-11-18T16:14:24.8238200Z Download action repository 'actions/checkout@v6' (SHA:d23441a48e516b6c34aea4fa41551a30e30af803)
+2026-11-18T16:14:24.8495060Z ##[debug]Copied action archive '/Users/runner/actionarchivecache/actions_checkout/d23441a48e516b6c34aea4fa41551a30e30af803.tar.gz' to '/Users/runner/work/_actions/_temp_66eee53e-fdc8-4a87-9367-c43a00381f4d/8333d319-bac9-4db6-83f9-bb5a9901d0ce.tar.gz'
+2026-11-18T16:14:26.3111960Z ##[debug]Unwrap 'actions-checkout-d23441a' to '/Users/runner/work/_actions/actions/checkout/v6'
+2026-11-18T16:14:26.3336770Z ##[debug]Archive '/Users/runner/work/_actions/_temp_66eee53e-fdc8-4a87-9367-c43a00381f4d/8333d319-bac9-4db6-83f9-bb5a9901d0ce.tar.gz' has been unzipped into '/Users/runner/work/_actions/actions/checkout/v6'.
+2026-11-18T16:14:26.3530310Z Download action repository 'actions/upload-artifact@v7' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+2026-11-18T16:14:26.3564250Z ##[debug]Copied action archive '/Users/runner/actionarchivecache/actions_upload-artifact/cf430e030ddbb5b0abf93d22962f4752f3646cd9.tar.gz' to '/Users/runner/work/_actions/_temp_827f2079-aebd-4c89-9813-48f798988f43/7b1d1271-19ef-45c8-8db3-fa430486d72c.tar.gz'
+2026-11-18T16:14:26.4473430Z ##[debug]Unwrap 'actions-upload-artifact-cf430e0' to '/Users/runner/work/_actions/actions/upload-artifact/v7'
+2026-11-18T16:14:26.4602450Z ##[debug]Archive '/Users/runner/work/_actions/_temp_827f2079-aebd-4c89-9813-48f798988f43/7b1d1271-19ef-45c8-8db3-fa430486d72c.tar.gz' has been unzipped into '/Users/runner/work/_actions/actions/upload-artifact/v7'.
+2026-11-18T16:14:26.4668770Z ##[debug]action.yml for action: '/Users/runner/work/_actions/actions/checkout/v6/action.yml'.
+2026-11-18T16:14:26.5540200Z ##[debug]action.yml for action: '/Users/runner/work/_actions/actions/upload-artifact/v7/action.yml'.
+2026-11-18T16:14:26.5664980Z ##[debug]Set step '__actions_checkout' display name to: 'Checkout'
+2026-11-18T16:14:26.5668650Z ##[debug]Set step '__actions_upload-artifact' display name to: 'Upload build metadata'
+2026-11-18T16:14:26.5669430Z Complete job name: artifact
+2026-11-18T16:14:26.5681560Z ##[debug]Collect running processes for tracking orphan processes.
+2026-11-18T16:14:26.5853580Z ##[debug]Finishing: Set up job
+2026-11-18T16:14:26.6042160Z ##[debug]Evaluating condition for step: 'Checkout'
+2026-11-18T16:14:26.6066670Z ##[debug]Evaluating: success()
+2026-11-18T16:14:26.6070410Z ##[debug]Evaluating success:
+2026-11-18T16:14:26.6080940Z ##[debug]=> true
+2026-11-18T16:14:26.6092780Z ##[debug]Result: true
+2026-11-18T16:14:26.6138820Z ##[debug]Starting: Checkout
+2026-11-18T16:14:26.6204710Z ##[debug]Register post job cleanup for action: actions/checkout@v6
+2026-11-18T16:14:26.6290520Z ##[debug]Loading inputs
+2026-11-18T16:14:26.6300980Z ##[debug]Evaluating: github.repository
+2026-11-18T16:14:26.6301940Z ##[debug]Evaluating Index:
+2026-11-18T16:14:26.6303400Z ##[debug]..Evaluating github:
+2026-11-18T16:14:26.6304270Z ##[debug]..=> Object
+2026-11-18T16:14:26.6308410Z ##[debug]..Evaluating String:
+2026-11-18T16:14:26.6309620Z ##[debug]..=> 'repository'
+2026-11-18T16:14:26.6313270Z ##[debug]=> 'yi-fen/FilterKit'
+2026-11-18T16:14:26.6314560Z ##[debug]Result: 'yi-fen/FilterKit'
+2026-11-18T16:14:26.6319110Z ##[debug]Evaluating: github.token
+2026-11-18T16:14:26.6319590Z ##[debug]Evaluating Index:
+2026-11-18T16:14:26.6320030Z ##[debug]..Evaluating github:
+2026-11-18T16:14:26.6320530Z ##[debug]..=> Object
+2026-11-18T16:14:26.6320930Z ##[debug]..Evaluating String:
+2026-11-18T16:14:26.6321340Z ##[debug]..=> 'token'
+2026-11-18T16:14:26.6324390Z ##[debug]=> '***'
+2026-11-18T16:14:26.6327410Z ##[debug]Result: '***'
+2026-11-18T16:14:26.6351790Z ##[debug]Loading env
+2026-11-18T16:14:26.6419300Z ##[group]Run actions/checkout@v6
+2026-11-18T16:14:26.6420740Z with:
+2026-11-18T16:14:26.6421110Z   repository: yi-fen/FilterKit
+2026-11-18T16:14:26.6424270Z   token: ***
+2026-11-18T16:14:26.6424610Z   ssh-strict: true
+2026-11-18T16:14:26.6424960Z   ssh-user: git
+2026-11-18T16:14:26.6425310Z   persist-credentials: true
+2026-11-18T16:14:26.6425700Z   clean: true
+2026-11-18T16:14:26.6426090Z   sparse-checkout-cone-mode: true
+2026-11-18T16:14:26.6426560Z   fetch-depth: 1
+2026-11-18T16:14:26.6426910Z   fetch-tags: false
+2026-11-18T16:14:26.6427290Z   show-progress: true
+2026-11-18T16:14:26.6427720Z   lfs: false
+2026-11-18T16:14:26.6428050Z   submodules: false
+2026-11-18T16:14:26.6428410Z   set-safe-directory: true
+2026-11-18T16:14:26.6428900Z   allow-unsafe-pr-checkout: false
+2026-11-18T16:14:26.6429710Z ##[endgroup]
+2026-11-18T16:14:27.1037640Z ##[debug]GITHUB_WORKSPACE = '/Users/runner/work/FilterKit/FilterKit'
+2026-11-18T16:14:27.1039350Z ##[debug]qualified repository = 'yi-fen/FilterKit'
+2026-11-18T16:14:27.1040150Z ##[debug]ref = 'refs/heads/main'
+2026-11-18T16:14:27.1042280Z ##[debug]commit = 'f50c284dfe9b6b40a0b877eeb5d6588dbb9f78a4'
+2026-11-18T16:14:27.1043100Z ##[debug]clean = true
+2026-11-18T16:14:27.1043740Z ##[debug]filter = undefined
+2026-11-18T16:14:27.1044630Z ##[debug]fetch depth = 1
+2026-11-18T16:14:27.1045320Z ##[debug]fetch tags = false
+2026-11-18T16:14:27.1046080Z ##[debug]show progress = true
+2026-11-18T16:14:27.1046730Z ##[debug]lfs = false
+2026-11-18T16:14:27.1047390Z ##[debug]submodules = false
+2026-11-18T16:14:27.1048260Z ##[debug]recursive submodules = false
+2026-11-18T16:14:27.1049100Z ##[debug]GitHub Host URL = 
+2026-11-18T16:14:27.1051120Z ##[debug]allow unsafe PR checkout = false
+2026-11-18T16:14:27.1055980Z ::add-matcher::/Users/runner/work/_actions/actions/checkout/v6/dist/problem-matcher.json
+2026-11-18T16:14:27.1144830Z ##[debug]Added matchers: 'checkout-git'. Problem matchers scan action output for known warning or error strings and report these inline.
+2026-11-18T16:14:27.1171550Z Syncing repository: yi-fen/FilterKit
+2026-11-18T16:14:27.1172850Z ::group::Getting Git version info
+2026-11-18T16:14:27.1174030Z ##[group]Getting Git version info
+2026-11-18T16:14:27.1174670Z Working directory is '/Users/runner/work/FilterKit/FilterKit'
+2026-11-18T16:14:27.1175610Z ##[debug]Getting git version
+2026-11-18T16:14:27.1176070Z [command]/opt/homebrew/bin/git version
+2026-11-18T16:14:27.1525610Z git version 2.56.1
+2026-11-18T16:14:27.1538010Z ##[debug]0
+2026-11-18T16:14:27.1539700Z ##[debug]git version 2.56.1
+2026-11-18T16:14:27.1540920Z ##[debug]
+2026-11-18T16:14:27.1623880Z ##[debug]Set git useragent to: git/2.56.1 (github-actions-checkout) actions_orchestration_id/891d921e-cdc0-821e-a24c-cb0c86c13f82.artifact.__default
+2026-11-18T16:14:27.1625790Z ::endgroup::
+2026-11-18T16:14:27.1626480Z ##[endgroup]
+2026-11-18T16:14:27.1633200Z ::add-mask::***
+2026-11-18T16:14:27.1634780Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/d9be842a-ef4d-4355-9eef-1ec1599817c0/.gitconfig'
+2026-11-18T16:14:27.1635960Z Temporarily overriding HOME='/Users/runner/work/_temp/d9be842a-ef4d-4355-9eef-1ec1599817c0' before making global git config changes
+2026-11-18T16:14:27.1637310Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-18T16:14:27.1638440Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/FilterKit/FilterKit
+2026-11-18T16:14:27.1733060Z ##[debug]0
+2026-11-18T16:14:27.1734110Z ##[debug]
+2026-11-18T16:14:27.1741610Z Deleting the contents of '/Users/runner/work/FilterKit/FilterKit'
+2026-11-18T16:14:27.1746920Z ::group::Determining repository object format
+2026-11-18T16:14:27.1748610Z ##[group]Determining repository object format
+2026-11-18T16:14:27.1751300Z ::endgroup::
+2026-11-18T16:14:27.1752820Z ##[endgroup]
+2026-11-18T16:14:27.1754840Z ::group::Initializing the repository
+2026-11-18T16:14:27.1756420Z ##[group]Initializing the repository
+2026-11-18T16:14:27.1758360Z [command]/opt/homebrew/bin/git init /Users/runner/work/FilterKit/FilterKit
+2026-11-18T16:14:27.2036110Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-18T16:14:27.2037270Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-18T16:14:27.2038070Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-18T16:14:27.2038660Z hint: call:
+2026-11-18T16:14:27.2039000Z hint:
+2026-11-18T16:14:27.2039460Z hint: 	git config --global init.defaultBranch <name>
+2026-11-18T16:14:27.2039990Z hint:
+2026-11-18T16:14:27.2040570Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-18T16:14:27.2041510Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-18T16:14:27.2042240Z hint:
+2026-11-18T16:14:27.2042850Z hint: 	git branch -m <name>
+2026-11-18T16:14:27.2043330Z hint:
+2026-11-18T16:14:27.2044020Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-18T16:14:27.2061980Z Initialized empty Git repository in /Users/runner/work/FilterKit/FilterKit/.git/
+2026-11-18T16:14:27.2071040Z ##[debug]0
+2026-11-18T16:14:27.2072910Z ##[debug]Initialized empty Git repository in /Users/runner/work/FilterKit/FilterKit/.git/
+2026-11-18T16:14:27.2073790Z ##[debug]
+2026-11-18T16:14:27.2074660Z [command]/opt/homebrew/bin/git remote add origin https://github.com/yi-fen/FilterKit
+2026-11-18T16:14:27.2187160Z ##[debug]0
+2026-11-18T16:14:27.2189000Z ##[debug]
+2026-11-18T16:14:27.2190660Z ::endgroup::
+2026-11-18T16:14:27.2191670Z ##[endgroup]
+2026-11-18T16:14:27.2194020Z ::group::Disabling automatic garbage collection
+2026-11-18T16:14:27.2195790Z ##[group]Disabling automatic garbage collection
+2026-11-18T16:14:27.2197990Z [command]/opt/homebrew/bin/git config --local gc.auto 0
+2026-11-18T16:14:27.2290330Z ##[debug]0
+2026-11-18T16:14:27.2291140Z ##[debug]
+2026-11-18T16:14:27.2291820Z ::endgroup::
+2026-11-18T16:14:27.2292240Z ##[endgroup]
+2026-11-18T16:14:27.2292820Z ::group::Setting up auth
+2026-11-18T16:14:27.2293480Z ##[group]Setting up auth
+2026-11-18T16:14:27.2294160Z Removing SSH command configuration
+2026-11-18T16:14:27.2297910Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-18T16:14:27.2384420Z ##[debug]1
+2026-11-18T16:14:27.2385360Z ##[debug]
+2026-11-18T16:14:27.2388140Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-18T16:14:27.4104560Z ##[debug]0
+2026-11-18T16:14:27.4108380Z ##[debug]
+2026-11-18T16:14:27.4110340Z Removing HTTP extra header
+2026-11-18T16:14:27.4113280Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-18T16:14:27.4251300Z ##[debug]1
+2026-11-18T16:14:27.4254300Z ##[debug]
+2026-11-18T16:14:27.4265400Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-18T16:14:27.5903010Z ##[debug]0
+2026-11-18T16:14:27.5904910Z ##[debug]
+2026-11-18T16:14:27.5905880Z Removing includeIf entries pointing to credentials config files
+2026-11-18T16:14:27.5909060Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-18T16:14:27.6008790Z ##[debug]1
+2026-11-18T16:14:27.6009720Z ##[debug]
+2026-11-18T16:14:27.6011390Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-18T16:14:27.7330560Z ##[debug]0
+2026-11-18T16:14:27.7335130Z ##[debug]
+2026-11-18T16:14:27.7338800Z ##[debug]Credentials config path: /Users/runner/work/_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:27.7344840Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-18T16:14:27.7416550Z ##[debug]0
+2026-11-18T16:14:27.7421100Z ##[debug]
+2026-11-18T16:14:27.7430300Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/Users/runner/work/FilterKit/FilterKit/.git.path /Users/runner/work/_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:27.7532130Z ##[debug]0
+2026-11-18T16:14:27.7533900Z ##[debug]
+2026-11-18T16:14:27.7545430Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/Users/runner/work/FilterKit/FilterKit/.git/worktrees/*.path /Users/runner/work/_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:27.7628440Z ##[debug]0
+2026-11-18T16:14:27.7630950Z ##[debug]
+2026-11-18T16:14:27.7634250Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:27.7709830Z ##[debug]0
+2026-11-18T16:14:27.7712550Z ##[debug]
+2026-11-18T16:14:27.7719430Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:27.7786920Z ##[debug]0
+2026-11-18T16:14:27.7790350Z ##[debug]
+2026-11-18T16:14:27.7792120Z ::endgroup::
+2026-11-18T16:14:27.7792990Z ##[endgroup]
+2026-11-18T16:14:27.7794670Z ::group::Fetching the repository
+2026-11-18T16:14:27.7795900Z ##[group]Fetching the repository
+2026-11-18T16:14:27.7798780Z [command]/opt/homebrew/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +f50c284dfe9b6b40a0b877eeb5d6588dbb9f78a4:refs/remotes/origin/main
+2026-11-18T16:14:28.6902670Z From https://github.com/yi-fen/FilterKit
+2026-11-18T16:14:28.6907120Z  * [new ref]         f50c284dfe9b6b40a0b877eeb5d6588dbb9f78a4 -> origin/main
+2026-11-18T16:14:28.6912590Z ##[debug]0
+2026-11-18T16:14:28.6914490Z ##[debug]
+2026-11-18T16:14:28.6915760Z [command]/opt/homebrew/bin/git branch --list --remote origin/main
+2026-11-18T16:14:28.7079810Z   origin/main
+2026-11-18T16:14:28.7097100Z ##[debug]0
+2026-11-18T16:14:28.7101470Z ##[debug]  origin/main
+2026-11-18T16:14:28.7103510Z ##[debug]
+2026-11-18T16:14:28.7107090Z [command]/opt/homebrew/bin/git rev-parse refs/remotes/origin/main
+2026-11-18T16:14:28.7189780Z f50c284dfe9b6b40a0b877eeb5d6588dbb9f78a4
+2026-11-18T16:14:28.7205750Z ##[debug]0
+2026-11-18T16:14:28.7221660Z ##[debug]f50c284dfe9b6b40a0b877eeb5d6588dbb9f78a4
+2026-11-18T16:14:28.7224380Z ##[debug]
+2026-11-18T16:14:28.7229870Z ::endgroup::
+2026-11-18T16:14:28.7231800Z ##[endgroup]
+2026-11-18T16:14:28.7234780Z ::group::Determining the checkout info
+2026-11-18T16:14:28.7237560Z ##[group]Determining the checkout info
+2026-11-18T16:14:28.7243790Z ::endgroup::
+2026-11-18T16:14:28.7245120Z ##[endgroup]
+2026-11-18T16:14:28.7247730Z [command]/opt/homebrew/bin/git sparse-checkout disable
+2026-11-18T16:14:28.7332850Z ##[debug]0
+2026-11-18T16:14:28.7335690Z ##[debug]
+2026-11-18T16:14:28.7338840Z [command]/opt/homebrew/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-18T16:14:28.7444270Z ##[debug]0
+2026-11-18T16:14:28.7446980Z ##[debug]
+2026-11-18T16:14:28.7449520Z ::group::Checking out the ref
+2026-11-18T16:14:28.7464600Z ##[group]Checking out the ref
+2026-11-18T16:14:28.7466440Z [command]/opt/homebrew/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-18T16:14:29.2128420Z Switched to a new branch 'main'
+2026-11-18T16:14:29.2130400Z branch 'main' set up to track 'origin/main'.
+2026-11-18T16:14:29.2137630Z ##[debug]0
+2026-11-18T16:14:29.2139530Z ##[debug]branch 'main' set up to track 'origin/main'.
+2026-11-18T16:14:29.2140800Z ##[debug]
+2026-11-18T16:14:29.2142360Z ::endgroup::
+2026-11-18T16:14:29.2143210Z ##[endgroup]
+2026-11-18T16:14:29.2361260Z ##[debug]0
+2026-11-18T16:14:29.2465100Z ##[debug]commit f50c284dfe9b6b40a0b877eeb5d6588dbb9f78a4
+2026-11-18T16:14:29.2469580Z ##[debug]Author: yi-fen <78313660+yi-fen@users.noreply.github.com>
+2026-11-18T16:14:29.2472860Z ##[debug]Date:   Wed Nov 18 23:28:13 2026 +0800
+2026-11-18T16:14:29.2475090Z ##[debug]
+2026-11-18T16:14:29.2476770Z ##[debug]    Add files via upload
+2026-11-18T16:14:29.2479370Z ##[debug]
+2026-11-18T16:14:29.2534370Z [command]/opt/homebrew/bin/git log -1 --format=%H
+2026-11-18T16:14:29.2536550Z f50c284dfe9b6b40a0b877eeb5d6588dbb9f78a4
+2026-11-18T16:14:29.2538560Z ##[debug]0
+2026-11-18T16:14:29.2540230Z ##[debug]f50c284dfe9b6b40a0b877eeb5d6588dbb9f78a4
+2026-11-18T16:14:29.2541300Z ##[debug]
+2026-11-18T16:14:29.2542980Z ##[debug]Unsetting HOME override
+2026-11-18T16:14:29.2612920Z ::remove-matcher owner=checkout-git::
+2026-11-18T16:14:29.2646180Z ##[debug]Removed matchers: 'checkout-git'
+2026-11-18T16:14:29.2724870Z ##[debug]Node Action run completed with exit code 0
+2026-11-18T16:14:29.2758410Z ##[debug]Save intra-action state isPost = true
+2026-11-18T16:14:29.2759710Z ##[debug]Save intra-action state setSafeDirectory = true
+2026-11-18T16:14:29.2761360Z ##[debug]Save intra-action state repositoryPath = /Users/runner/work/FilterKit/FilterKit
+2026-11-18T16:14:29.2766590Z ##[debug]Set output commit = f50c284dfe9b6b40a0b877eeb5d6588dbb9f78a4
+2026-11-18T16:14:29.2767930Z ##[debug]Set output ref = refs/heads/main
+2026-11-18T16:14:29.2784840Z ##[debug]Finishing: Checkout
+2026-11-18T16:14:29.2831440Z ##[debug]Evaluating condition for step: 'Upload build metadata'
+2026-11-18T16:14:29.2847840Z ##[debug]Evaluating: success()
+2026-11-18T16:14:29.2850530Z ##[debug]Evaluating success:
+2026-11-18T16:14:29.2873450Z ##[debug]=> true
+2026-11-18T16:14:29.2875210Z ##[debug]Result: true
+2026-11-18T16:14:29.2877000Z ##[debug]Starting: Upload build metadata
+2026-11-18T16:14:29.2985730Z ##[debug]Loading inputs
+2026-11-18T16:14:29.3049910Z ##[debug]Loading env
+2026-11-18T16:14:29.3073020Z ##[group]Run actions/upload-artifact@v7
+2026-11-18T16:14:29.3073810Z with:
+2026-11-18T16:14:29.3074420Z   name: filterkit-build-metadata
+2026-11-18T16:14:29.3075450Z   path: Package.swift
+Makefile
+control
+project.yml
+.github/workflows/
+
+2026-11-18T16:14:29.3076550Z   retention-days: 14
+2026-11-18T16:14:29.3077230Z   if-no-files-found: warn
+2026-11-18T16:14:29.3077930Z   compression-level: 6
+2026-11-18T16:14:29.3078700Z   overwrite: false
+2026-11-18T16:14:29.3079410Z   include-hidden-files: false
+2026-11-18T16:14:29.3080230Z   archive: true
+2026-11-18T16:14:29.3080870Z ##[endgroup]
+2026-11-18T16:14:29.5419670Z ##[debug]followSymbolicLinks 'true'
+2026-11-18T16:14:29.5438440Z ##[debug]implicitDescendants 'true'
+2026-11-18T16:14:29.5439980Z ##[debug]omitBrokenSymbolicLinks 'true'
+2026-11-18T16:14:29.5441610Z ##[debug]excludeHiddenFiles 'true'
+2026-11-18T16:14:29.5443080Z ##[debug]followSymbolicLinks 'true'
+2026-11-18T16:14:29.5444350Z ##[debug]implicitDescendants 'true'
+2026-11-18T16:14:29.5445610Z ##[debug]matchDirectories 'true'
+2026-11-18T16:14:29.5446900Z ##[debug]omitBrokenSymbolicLinks 'true'
+2026-11-18T16:14:29.5448270Z ##[debug]excludeHiddenFiles 'true'
+2026-11-18T16:14:29.5449960Z ##[debug]Search path '/Users/runner/work/FilterKit/FilterKit/Package.swift'
+2026-11-18T16:14:29.5452820Z ##[debug]Search path '/Users/runner/work/FilterKit/FilterKit/Makefile'
+2026-11-18T16:14:29.5457240Z ##[debug]Search path '/Users/runner/work/FilterKit/FilterKit/control'
+2026-11-18T16:14:29.5459250Z ##[debug]Search path '/Users/runner/work/FilterKit/FilterKit/project.yml'
+2026-11-18T16:14:29.5461310Z ##[debug]Search path '/Users/runner/work/FilterKit/FilterKit/.github/workflows'
+2026-11-18T16:14:29.5463780Z ##[debug]File:/Users/runner/work/FilterKit/FilterKit/Package.swift was found using the provided searchPath
+2026-11-18T16:14:29.5466540Z ##[debug]File:/Users/runner/work/FilterKit/FilterKit/Makefile was found using the provided searchPath
+2026-11-18T16:14:29.5469060Z ##[debug]File:/Users/runner/work/FilterKit/FilterKit/control was found using the provided searchPath
+2026-11-18T16:14:29.5471460Z ##[debug]File:/Users/runner/work/FilterKit/FilterKit/project.yml was found using the provided searchPath
+2026-11-18T16:14:29.5474120Z ##[debug]Removing /Users/runner/work/FilterKit/FilterKit/.github/workflows from rawSearchResults because it is a directory
+2026-11-18T16:14:29.5477040Z ##[debug]File:/Users/runner/work/FilterKit/FilterKit/.github/workflows/filterkit-build.yml was found using the provided searchPath
+2026-11-18T16:14:29.5479250Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-18T16:14:29.5481220Z ##[debug]Using search path /Users/runner/work/FilterKit/FilterKit/Package.swift
+2026-11-18T16:14:29.5483110Z ##[debug]Using search path /Users/runner/work/FilterKit/FilterKit/Makefile
+2026-11-18T16:14:29.5485020Z ##[debug]Using search path /Users/runner/work/FilterKit/FilterKit/control
+2026-11-18T16:14:29.5486820Z ##[debug]Using search path /Users/runner/work/FilterKit/FilterKit/project.yml
+2026-11-18T16:14:29.5488740Z ##[debug]Using search path /Users/runner/work/FilterKit/FilterKit/.github/workflows
+2026-11-18T16:14:29.5491090Z The least common ancestor is /Users/runner/work/FilterKit/FilterKit. This will be the root directory of the artifact
+2026-11-18T16:14:29.5493810Z With the provided path, there will be 5 files uploaded
+2026-11-18T16:14:29.5495460Z ##[debug]Root artifact directory is /Users/runner/work/FilterKit/FilterKit
+2026-11-18T16:14:29.5496570Z Artifact name is valid!
+2026-11-18T16:14:29.5497980Z Root directory input is valid!
+2026-11-18T16:14:29.5499540Z ##[debug]Workflow Run Backend ID: 891d921e-cdc0-821e-a24c-cb0c86c13f82
+2026-11-18T16:14:29.5502350Z ##[debug]Workflow Job Run Backend ID: 39842f43-af3a-5a72-be47-4d75e6fc0ee0
+2026-11-18T16:14:29.5594980Z ##[debug][Request] CreateArtifact https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/CreateArtifact
+2026-11-18T16:14:29.9411200Z ##[debug][Response] - 200
+2026-11-18T16:14:29.9491320Z ##[debug]Headers: {
+2026-11-18T16:14:29.9491590Z ##[debug]  "content-length": "578",
+2026-11-18T16:14:29.9491890Z ##[debug]  "content-type": "application/json",
+2026-11-18T16:14:29.9492240Z ##[debug]  "date": "Wed, 18 Nov 2026 16:14:30 GMT",
+2026-11-18T16:14:29.9492550Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-11-18T16:14:29.9492890Z ##[debug]  "x-github-request-id": "8C6C:35EC79:507E4F:53C63C:6AFDCEE6",
+2026-11-18T16:14:29.9493210Z ##[debug]  "x-github-edge-region": "iad",
+2026-11-18T16:14:29.9493470Z ##[debug]  "server": "github.com"
+2026-11-18T16:14:29.9493670Z ##[debug]}
+2026-11-18T16:14:29.9592730Z ::add-mask::***
+2026-11-18T16:14:29.9696310Z ::add-mask::***
+2026-11-18T16:14:29.9798170Z ##[debug]Body: {
+2026-11-18T16:14:29.9798730Z ##[debug]  "ok": true,
+2026-11-18T16:14:29.9805130Z ##[debug]  "signed_upload_url": "https://productionresultssa11.blob.core.windows.net/actions-results/891d921e-cdc0-821e-a24c-cb0c86c13f82/workflow-job-run-39842f43-af3a-5a72-be47-4d75e6fc0ee0/artifacts/bf8b47c232a0c591d8f93ede2b14b6b18ea8030e7973a7f76cf893650dcde8ec.zip?se=2026-11-18T17%3A14%3A30Z&sig=***&ske=2026-11-18T18%3A04%3A38Z&skoid=ca7593d4-ee42-46cd-af88-8b886a2f84eb&sks=b&skt=2026-11-18T14%3A04%3A38Z&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skv=2025-11-05&sp=cw&spr=https&sr=b&st=2026-11-18T16%3A14%3A25Z&sv=2025-11-05"
+2026-11-18T16:14:29.9810010Z ##[debug]}
+2026-11-18T16:14:29.9812540Z ##[debug]Creating Artifact archive with compressionLevel: 6
+2026-11-18T16:14:29.9826560Z ##[debug]Zip write high watermark value 8388608
+2026-11-18T16:14:29.9828460Z ##[debug]Zip read high watermark value 8388608
+2026-11-18T16:14:29.9829650Z Uploading artifact: filterkit-build-metadata.zip
+2026-11-18T16:14:29.9831940Z ##[debug]Uploading artifact to blob storage with maxConcurrency: 5, bufferSize: 8388608, contentType: application/zip
+2026-11-18T16:14:29.9833620Z Beginning upload of artifact content to blob storage
+2026-11-18T16:14:29.9850490Z ##[debug]Zip stream for upload has ended.
+2026-11-18T16:14:29.9863070Z ##[debug]Zip stream for upload has finished.
+2026-11-18T16:14:30.2860020Z Uploaded bytes 7778
+2026-11-18T16:14:30.3654440Z Finished uploading artifact content to blob storage!
+2026-11-18T16:14:30.3663300Z SHA256 digest of uploaded artifact is 0205b72e2f0ba0bd9d072703d50b7201ca9887a50bab98c9507c553da8345c23
+2026-11-18T16:14:30.3664070Z Finalizing artifact upload
+2026-11-18T16:14:30.3665400Z ##[debug][Request] FinalizeArtifact https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/FinalizeArtifact
+2026-11-18T16:14:30.9402510Z ##[debug][Response] - 200
+2026-11-18T16:14:30.9403280Z ##[debug]Headers: {
+2026-11-18T16:14:30.9403540Z ##[debug]  "content-length": "39",
+2026-11-18T16:14:30.9403800Z ##[debug]  "content-type": "application/json",
+2026-11-18T16:14:30.9404090Z ##[debug]  "date": "Wed, 18 Nov 2026 16:14:31 GMT",
+2026-11-18T16:14:30.9404350Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-11-18T16:14:30.9405100Z ##[debug]  "x-github-request-id": "B406:3DB963:4D3EC2:5086D6:6AFDCEE6",
+2026-11-18T16:14:30.9405590Z ##[debug]  "x-github-edge-region": "iad",
+2026-11-18T16:14:30.9405850Z ##[debug]  "server": "github.com"
+2026-11-18T16:14:30.9406140Z ##[debug]}
+2026-11-18T16:14:30.9406670Z ##[debug]Body: {
+2026-11-18T16:14:30.9407910Z ##[debug]  "ok": true,
+2026-11-18T16:14:30.9408330Z ##[debug]  "artifact_id": "14445901083"
+2026-11-18T16:14:30.9408620Z ##[debug]}
+2026-11-18T16:14:30.9409020Z Artifact filterkit-build-metadata successfully finalized. Artifact ID 14445901083
+2026-11-18T16:14:30.9410530Z Artifact filterkit-build-metadata has been successfully uploaded! Final size is 7778 bytes. Artifact ID is 14445901083
+2026-11-18T16:14:30.9416410Z Artifact download URL: https://github.com/yi-fen/FilterKit/actions/runs/44336059068/artifacts/14445901083
+2026-11-18T16:14:30.9508560Z ##[debug]Node Action run completed with exit code 0
+2026-11-18T16:14:30.9516770Z ##[debug]Set output artifact-id = 14445901083
+2026-11-18T16:14:30.9518420Z ##[debug]Set output artifact-digest = 0205b72e2f0ba0bd9d072703d50b7201ca9887a50bab98c9507c553da8345c23
+2026-11-18T16:14:30.9519310Z ##[debug]Set output artifact-url = https://github.com/yi-fen/FilterKit/actions/runs/44336059068/artifacts/14445901083
+2026-11-18T16:14:30.9524810Z ##[debug]Finishing: Upload build metadata
+2026-11-18T16:14:30.9607740Z ##[debug]Evaluating condition for step: 'Post Checkout'
+2026-11-18T16:14:30.9651990Z ##[debug]Evaluating: always()
+2026-11-18T16:14:30.9653060Z ##[debug]Evaluating always:
+2026-11-18T16:14:30.9657730Z ##[debug]=> true
+2026-11-18T16:14:30.9659420Z ##[debug]Result: true
+2026-11-18T16:14:30.9661230Z ##[debug]Starting: Post Checkout
+2026-11-18T16:14:30.9788850Z ##[debug]Loading inputs
+2026-11-18T16:14:30.9790850Z ##[debug]Evaluating: github.repository
+2026-11-18T16:14:30.9791260Z ##[debug]Evaluating Index:
+2026-11-18T16:14:30.9791580Z ##[debug]..Evaluating github:
+2026-11-18T16:14:30.9791870Z ##[debug]..=> Object
+2026-11-18T16:14:30.9792060Z ##[debug]..Evaluating String:
+2026-11-18T16:14:30.9792390Z ##[debug]..=> 'repository'
+2026-11-18T16:14:30.9792770Z ##[debug]=> 'yi-fen/FilterKit'
+2026-11-18T16:14:30.9793000Z ##[debug]Result: 'yi-fen/FilterKit'
+2026-11-18T16:14:30.9794730Z ##[debug]Evaluating: github.token
+2026-11-18T16:14:30.9795010Z ##[debug]Evaluating Index:
+2026-11-18T16:14:30.9795390Z ##[debug]..Evaluating github:
+2026-11-18T16:14:30.9795710Z ##[debug]..=> Object
+2026-11-18T16:14:30.9795960Z ##[debug]..Evaluating String:
+2026-11-18T16:14:30.9796150Z ##[debug]..=> 'token'
+2026-11-18T16:14:30.9798340Z ##[debug]=> '***'
+2026-11-18T16:14:30.9800380Z ##[debug]Result: '***'
+2026-11-18T16:14:30.9813840Z ##[debug]Loading env
+2026-11-18T16:14:30.9819200Z Post job cleanup.
+2026-11-18T16:14:31.1376840Z ##[debug]Getting git version
+2026-11-18T16:14:31.1397930Z [command]/opt/homebrew/bin/git version
+2026-11-18T16:14:31.1507840Z git version 2.56.1
+2026-11-18T16:14:31.1518420Z ##[debug]0
+2026-11-18T16:14:31.1519320Z ##[debug]git version 2.56.1
+2026-11-18T16:14:31.1519960Z ##[debug]
+2026-11-18T16:14:31.1521700Z ##[debug]Set git useragent to: git/2.56.1 (github-actions-checkout) actions_orchestration_id/891d921e-cdc0-821e-a24c-cb0c86c13f82.artifact.__default
+2026-11-18T16:14:31.1523510Z ::add-mask::***
+2026-11-18T16:14:31.1531250Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/9b7c2d60-0a66-411b-9c9b-be1539150909/.gitconfig'
+2026-11-18T16:14:31.1542040Z Temporarily overriding HOME='/Users/runner/work/_temp/9b7c2d60-0a66-411b-9c9b-be1539150909' before making global git config changes
+2026-11-18T16:14:31.1544260Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-18T16:14:31.1546690Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/FilterKit/FilterKit
+2026-11-18T16:14:31.1625730Z ##[debug]0
+2026-11-18T16:14:31.1626520Z ##[debug]
+2026-11-18T16:14:31.1627030Z Removing SSH command configuration
+2026-11-18T16:14:31.1631240Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-18T16:14:31.1711030Z ##[debug]1
+2026-11-18T16:14:31.1712350Z ##[debug]
+2026-11-18T16:14:31.1716920Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-18T16:14:31.3392250Z ##[debug]0
+2026-11-18T16:14:31.3494300Z ##[debug]
+2026-11-18T16:14:31.3595690Z Removing HTTP extra header
+2026-11-18T16:14:31.3689090Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-18T16:14:31.3733080Z ##[debug]1
+2026-11-18T16:14:31.3789430Z ##[debug]
+2026-11-18T16:14:31.3797540Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-18T16:14:31.5295790Z ##[debug]0
+2026-11-18T16:14:31.5398910Z ##[debug]
+2026-11-18T16:14:31.5618550Z Removing includeIf entries pointing to credentials config files
+2026-11-18T16:14:31.5620340Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-18T16:14:31.5722220Z includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git.path
+2026-11-18T16:14:31.5825440Z includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git/worktrees/*.path
+2026-11-18T16:14:31.5926750Z includeif.gitdir:/github/workspace/.git.path
+2026-11-18T16:14:31.6027400Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-18T16:14:31.6129980Z ##[debug]0
+2026-11-18T16:14:31.6234460Z ##[debug]includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git.path
+2026-11-18T16:14:31.6236090Z ##[debug]includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git/worktrees/*.path
+2026-11-18T16:14:31.6237430Z ##[debug]includeif.gitdir:/github/workspace/.git.path
+2026-11-18T16:14:31.6238570Z ##[debug]includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-18T16:14:31.6239680Z ##[debug]
+2026-11-18T16:14:31.6356160Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git.path
+2026-11-18T16:14:31.6457940Z /Users/runner/work/_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:31.6464590Z ##[debug]0
+2026-11-18T16:14:31.6467070Z ##[debug]/Users/runner/work/_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:31.6468360Z ##[debug]
+2026-11-18T16:14:31.6491730Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git.path /Users/runner/work/_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:31.6495170Z ##[debug]0
+2026-11-18T16:14:31.6496980Z ##[debug]
+2026-11-18T16:14:31.6497750Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git/worktrees/*.path
+2026-11-18T16:14:31.6499580Z /Users/runner/work/_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:31.6501420Z ##[debug]0
+2026-11-18T16:14:31.6503250Z ##[debug]/Users/runner/work/_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:31.6504290Z ##[debug]
+2026-11-18T16:14:31.6506630Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git/worktrees/*.path /Users/runner/work/_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:31.6509520Z ##[debug]0
+2026-11-18T16:14:31.6510920Z ##[debug]
+2026-11-18T16:14:31.6512170Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-18T16:14:31.6514080Z /github/runner_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:31.6515670Z ##[debug]0
+2026-11-18T16:14:31.6517170Z ##[debug]/github/runner_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:31.6518120Z ##[debug]
+2026-11-18T16:14:31.6519920Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:31.6618620Z ##[debug]0
+2026-11-18T16:14:31.6619640Z ##[debug]
+2026-11-18T16:14:31.6622490Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-18T16:14:31.6631370Z /github/runner_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:31.6633380Z ##[debug]0
+2026-11-18T16:14:31.6635080Z ##[debug]/github/runner_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:31.6636050Z ##[debug]
+2026-11-18T16:14:31.6637990Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:31.6640340Z ##[debug]0
+2026-11-18T16:14:31.6641340Z ##[debug]
+2026-11-18T16:14:31.6642810Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-18T16:14:31.8905340Z ##[debug]0
+2026-11-18T16:14:31.8981280Z ##[debug]
+2026-11-18T16:14:31.8985800Z Removing credentials config '/Users/runner/work/_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config'
+2026-11-18T16:14:31.8987100Z ##[debug]Skipping removal of credentials config '/github/runner_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config' - not under RUNNER_TEMP
+2026-11-18T16:14:31.8988520Z ##[debug]Unsetting HOME override
+2026-11-18T16:14:31.8993570Z ##[debug]Node Action run completed with exit code 0
+2026-11-18T16:14:31.8998040Z ##[debug]Finishing: Post Checkout
+2026-11-18T16:14:31.9112880Z ##[debug]Starting: Complete job
+2026-11-18T16:14:31.9116320Z Uploading runner diagnostic logs
+2026-11-18T16:14:31.9142020Z ##[debug]Starting diagnostic file upload.
+2026-11-18T16:14:31.9142420Z ##[debug]Setting up diagnostic log folders.
+2026-11-18T16:14:31.9145690Z ##[debug]Creating diagnostic log files folder.
+2026-11-18T16:14:31.9155200Z ##[debug]Copying 1 worker diagnostic logs.
+2026-11-18T16:14:31.9165230Z ##[debug]Copying 1 runner diagnostic logs.
+2026-11-18T16:14:31.9167090Z ##[debug]Zipping diagnostic files.
+2026-11-18T16:14:31.9463520Z ##[debug]Uploading diagnostic metadata file.
+2026-11-18T16:14:31.9539550Z ##[debug]Diagnostic file upload complete.
+2026-11-18T16:14:31.9542000Z Completed runner diagnostic log upload
+2026-11-18T16:14:31.9542850Z Cleaning up orphan processes
+2026-11-18T16:14:32.1645960Z ##[debug]Finishing: Complete job
+2026-11-18T16:14:32.1674180Z ##[debug]Finishing: artifact

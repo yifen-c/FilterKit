@@ -1,0 +1,41 @@
+{
+  "upstream": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "inventoryStatus": "enumerated"
+  },
+  "dpkg": {
+    "dbStatus": "ok",
+    "statusPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4var/lib/dpkg/status",
+    "packages": [
+      {
+        "id": "det.pkg",
+        "version": "1.0",
+        "architecture": "iphoneos-arm64e",
+        "state": "install ok installed",
+        "listPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/var/lib/dpkg/info/det.pkg.list",
+        "files": [
+          "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Det.dylib",
+          "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Det.plist"
+        ]
+      }
+    ]
+  },
+  "markers": {
+    "filterkit": {
+      "byBase": {}
+    },
+    "manual": {
+      "byBase": {}
+    }
+  },
+  "entries": [
+    {
+      "base": "Det",
+      "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Det.dylib",
+      "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Det.plist",
+      "parseStatus": "valid",
+      "pairing": "paired"
+    }
+  ]
+}

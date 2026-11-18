@@ -1,0 +1,17 @@
+{
+  "fixtureId": "S1-02-RH-BROKEN-001",
+  "fixtureKind": "rh-broken-link",
+  "signals": {
+    "candidates": [
+      {
+        "root": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+        "source": "scan",
+        "exists": true,
+        "structureMatch": true,
+        "readable": false,
+        "realpath": null,
+        "symlinkState": "broken"
+      }
+    ]
+  }
+}

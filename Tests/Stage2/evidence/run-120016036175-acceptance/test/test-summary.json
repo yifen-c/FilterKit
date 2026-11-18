@@ -1,0 +1,234 @@
+{
+  "evidenceRole": "C-F1 补证：第三轮统一验收 run 120016036175（SHA f50c284d）的 SwiftPM XCTest 全量日志与 S1-05 过滤日志；此前该轮 test-log 未随包上传，本次由用户回传附件补归档。",
+  "workflowRun": "GitHub Actions run 120016036175（API run id 44336059068）；app-build check_run 134932122496",
+  "checkedOutSha": "f50c284dfe9b6b40a0b877eeb5d6588dbb9f78a4",
+  "logTimeUtc": "2026-11-18 15:45:57.541.",
+  "targetPlatform": "arm64e-apple-macos14.0",
+  "testingLibrary": "1902",
+  "command": "swift test（Stage2Tests）；S1-05 为 swift test --filter PluginPairingS105FixtureTests",
+  "result": {
+    "totalTests": 405,
+    "failures": 0,
+    "unexpectedFailures": 0,
+    "skipped": 0,
+    "note": "全日志无 XCTSkip / skipped 记录；汇总行 Executed 405 tests, with 0 failures (0 unexpected)。"
+  },
+  "breakdown": {
+    "baselineRegression": 397,
+    "guiPresentation": 8,
+    "reporting": 18,
+    "s105IndependentFilter": 15,
+    "note": "S1-05 15 例已计入 397 基线；GUI 8 例为 0.1-C 新增；Reporting 18 例（Builder 6 / Validator 4 / Exporter 5 / Service 3）含在基线内。"
+  },
+  "keySuites": {
+    "GUIPresentationTests": 8,
+    "PluginPairingS105FixtureTests": 15,
+    "ReportBuilderTests": 6,
+    "ReportValidatorTests": 4,
+    "ReportExporterTests": 5,
+    "ReportServiceTests": 3
+  },
+  "suites": [
+    {
+      "suite": "B5DeterminismTests",
+      "passed": 6,
+      "failed": 0
+    },
+    {
+      "suite": "B5FixtureComparisonTests",
+      "passed": 4,
+      "failed": 0
+    },
+    {
+      "suite": "B5IntegrationTests",
+      "passed": 10,
+      "failed": 0
+    },
+    {
+      "suite": "ElleKitDirectoryTests",
+      "passed": 15,
+      "failed": 0
+    },
+    {
+      "suite": "EngineC1EngineBaselineTests",
+      "passed": 7,
+      "failed": 0
+    },
+    {
+      "suite": "EngineC1ParserBaselineTests",
+      "passed": 8,
+      "failed": 0
+    },
+    {
+      "suite": "EngineC2BaselineIntegrationTests",
+      "passed": 2,
+      "failed": 0
+    },
+    {
+      "suite": "EngineC2BatchIsolationTests",
+      "passed": 4,
+      "failed": 0
+    },
+    {
+      "suite": "EngineC2CombinedScenarioTests",
+      "passed": 5,
+      "failed": 0
+    },
+    {
+      "suite": "EngineC2ERegressionPlanTests",
+      "passed": 11,
+      "failed": 0
+    },
+    {
+      "suite": "EngineC2EndToEndTests",
+      "passed": 6,
+      "failed": 0
+    },
+    {
+      "suite": "EngineC2EvidenceTraceTests",
+      "passed": 8,
+      "failed": 0
+    },
+    {
+      "suite": "EngineC2RouteSymmetryTests",
+      "passed": 6,
+      "failed": 0
+    },
+    {
+      "suite": "EngineC2SnapshotWarningsTests",
+      "passed": 6,
+      "failed": 0
+    },
+    {
+      "suite": "EnvironmentDetectionTests",
+      "passed": 7,
+      "failed": 0
+    },
+    {
+      "suite": "FilterParseEngineTests",
+      "passed": 19,
+      "failed": 0
+    },
+    {
+      "suite": "FilterParseResultTests",
+      "passed": 7,
+      "failed": 0
+    },
+    {
+      "suite": "GUIPresentationTests",
+      "passed": 8,
+      "failed": 0
+    },
+    {
+      "suite": "JBRootCandidateCollectionTests",
+      "passed": 10,
+      "failed": 0
+    },
+    {
+      "suite": "JBRootValidationTests",
+      "passed": 18,
+      "failed": 0
+    },
+    {
+      "suite": "ModelsCodableTests",
+      "passed": 21,
+      "failed": 0
+    },
+    {
+      "suite": "PlistDecoderTests",
+      "passed": 9,
+      "failed": 0
+    },
+    {
+      "suite": "PlistReaderTests",
+      "passed": 6,
+      "failed": 0
+    },
+    {
+      "suite": "PlistValueKindTests",
+      "passed": 11,
+      "failed": 0
+    },
+    {
+      "suite": "PluginEnumerationTests",
+      "passed": 14,
+      "failed": 0
+    },
+    {
+      "suite": "PluginInventoryCodableTests",
+      "passed": 9,
+      "failed": 0
+    },
+    {
+      "suite": "PluginPairingCodableTests",
+      "passed": 12,
+      "failed": 0
+    },
+    {
+      "suite": "PluginPairingEngineTests",
+      "passed": 21,
+      "failed": 0
+    },
+    {
+      "suite": "PluginPairingIndexTests",
+      "passed": 5,
+      "failed": 0
+    },
+    {
+      "suite": "PluginPairingIntegrationTests",
+      "passed": 32,
+      "failed": 0
+    },
+    {
+      "suite": "PluginPairingKeyTests",
+      "passed": 11,
+      "failed": 0
+    },
+    {
+      "suite": "PluginPairingS105FixtureTests",
+      "passed": 15,
+      "failed": 0
+    },
+    {
+      "suite": "ReportBuilderTests",
+      "passed": 6,
+      "failed": 0
+    },
+    {
+      "suite": "ReportExporterTests",
+      "passed": 5,
+      "failed": 0
+    },
+    {
+      "suite": "ReportServiceTests",
+      "passed": 3,
+      "failed": 0
+    },
+    {
+      "suite": "ReportValidatorTests",
+      "passed": 4,
+      "failed": 0
+    },
+    {
+      "suite": "RootHideFilterParserTests",
+      "passed": 32,
+      "failed": 0
+    },
+    {
+      "suite": "RootlessFilterParserTests",
+      "passed": 22,
+      "failed": 0
+    }
+  ],
+  "artifacts": {
+    "test-log.txt": {
+      "sha256": "27e6158272331aa7acc7e795540968ec6ff5f52daf628a066f66d5a01a65fc84",
+      "lines": 1086
+    },
+    "test-log-s105.txt": {
+      "sha256": "904a43732d628ebae3370c7be6dd74eb9c2259dba00a92dab4cc703a35033661",
+      "lines": 47
+    }
+  },
+  "scopeNote": "SwiftPM test 目标不编译 App SwiftUI 视图；本日志不覆盖 App target 编译与模拟器交互。本日志归属 f50c284d 远程树；本地 HEAD 9e26a6e 尚未推送，不能以本批 405 结论替代 HEAD 基线的 Runner 复核。"
+}

@@ -1,0 +1,23 @@
+{
+  "fixtureId": "S1-06-ROUTE-GUARD",
+  "expected": {
+    "route": "roothide",
+    "sourceDirectory": null,
+    "status": "unresolved",
+    "counts": {
+      "valid": 0,
+      "parse_failed": 0,
+      "type_mismatch": 0,
+      "read_failed": 0,
+      "not_parsed": 0
+    },
+    "statusByBase": {},
+    "filterByBase": {},
+    "otherKeysByBase": {},
+    "skippedFieldsByBase": {}
+  },
+  "expectedWarnings": [
+    "inventory_unresolved"
+  ],
+  "expectedStatus": "unresolved"
+}

@@ -1,0 +1,180 @@
+// swift-tools-version:5.7
+//
+// Package.swift — Stage 2.1 离线草稿（未在 Apple 工具链验证）。
+//
+// 用途：为 macOS runner 提供一个不依赖 Xcode 工程文件的编译入口，先编译
+// Models / Adapters / Core 非界面层并跑 Models Codable 往返测试；UI App target
+// 待 SwiftUI/UIKit 选型（子规格 B4）与 Xcode 工程补齐后再接入。
+//
+// 注意：tools-version、Deployment Target、Theos/Swift 工具链配置均为待确认项
+// （Stage-2.1 子规格 §14 B1/B2/B5）；本文件不得视为已可构建。
+
+import PackageDescription
+
+let package = Package(
+    name: "FilterKit",
+    products: [
+        // 供 Xcode App target 链接的本地库产品；非界面层编译路径不变。
+        .library(name: "Models", targets: ["Models"]),
+        .library(name: "Adapters", targets: ["Adapters"]),
+        .library(name: "Core", targets: ["Core"])
+    ],
+    targets: [
+        // 公共模型：无路线依赖
+        .target(
+            name: "Models",
+            path: "Models"
+        ),
+        // 双路线 Adapter：依赖 Models；RootHide / Rootless 独立编译、互不引用
+        .target(
+            name: "Adapters",
+            dependencies: ["Models"],
+            path: "Adapters",
+            sources: [
+                "ElleKitAdapter.swift",
+                "RootHide/RootHideAdapter.swift",
+                "Rootless/RootlessAdapter.swift"
+            ]
+        ),
+        // 共享核心：依赖 Models 与 Adapters 协议
+        .target(
+            name: "Core",
+            dependencies: ["Models", "Adapters"],
+            path: "Core",
+            exclude: [
+                "README.md",
+                "Environment/.gitkeep",
+                "OwnershipResolver/.gitkeep",
+                "PathResolver/.gitkeep",
+                "PlistParser/.gitkeep",
+                "PluginPairing/.gitkeep",
+                "PluginScanner/.gitkeep",
+                "ReportExporter/.gitkeep"
+            ],
+            sources: [
+                "CoreServices.swift",
+                "Environment/EnvironmentSnapshot.swift",
+                "Environment/VersionParser.swift",
+                "Environment/EnvironmentDetector.swift",
+                "PathResolver/JBRoot/JBRootCandidateSnapshot.swift",
+                "PathResolver/JBRoot/JBRootCandidateCollector.swift",
+                "PathResolver/JBRoot/JBRootNameValidator.swift",
+                "PathResolver/JBRoot/JBRootStatusClassifier.swift",
+                "PathResolver/JBRoot/JBRootValidator.swift",
+                "PathResolver/JBRoot/JBRootDecisionResolver.swift",
+                "PathResolver/JBRoot/JBRootResolver.swift",
+                "PathResolver/ElleKit/ElleKitDirectorySnapshot.swift",
+                "PathResolver/ElleKit/ElleKitPathDeriver.swift",
+                "PathResolver/ElleKit/ElleKitDirectoryValidator.swift",
+                "PathResolver/ElleKit/ElleKitSymlinkInspector.swift",
+                "PathResolver/ElleKit/ElleKitDirectoryResolution.swift",
+                "PathResolver/ElleKit/ElleKitDirectoryResolver.swift",
+                "PathResolver/Pipeline/EnvironmentRouteMapper.swift",
+                "PathResolver/Pipeline/JBRootToDirectoryBridge.swift",
+                "PathResolver/Pipeline/ElleKitDirectoryPipeline.swift",
+                "PluginScanner/Enumeration/EnumerationStatus.swift",
+                "PluginScanner/Enumeration/PluginKindCounts.swift",
+                "PluginScanner/Enumeration/PluginInventoryFixtureSignal.swift",
+                "PluginScanner/Enumeration/PluginEntryClassifier.swift",
+                "PluginScanner/Enumeration/PluginFileEvidenceBuilder.swift",
+                "PluginScanner/Enumeration/PluginInventorySnapshot.swift",
+                "PluginScanner/Enumeration/PluginInventoryBuilder.swift",
+                "PluginScanner/Enumeration/PluginDirectoryEnumerator.swift",
+                "PluginPairing/PairingCategory.swift",
+                "PluginPairing/PairingStatus.swift",
+                "PluginPairing/PluginPairingCounts.swift",
+                "PluginPairing/PairingEvidenceBasis.swift",
+                "PluginPairing/PluginPairingRecord.swift",
+                "PluginPairing/PluginPairingSnapshot.swift",
+                "PluginPairing/Key/PluginPairingKeyBuilder.swift",
+                "PluginPairing/Index/PluginPairingIndex.swift",
+                "PluginPairing/Index/PluginPairingIndexBuilder.swift",
+                "PluginPairing/Engine/PluginPairingClassifier.swift",
+                "PluginPairing/Engine/PluginPairingEngine.swift",
+                "PluginPairing/Engine/PluginPairingSnapshotBuilder.swift",
+                "PluginPairing/Integration/PluginPairingInput.swift",
+                "PluginPairing/Integration/PluginPairingInputAdapter.swift",
+                "PluginPairing/Integration/PluginPairingIntegrationResult.swift",
+                "PluginPairing/Integration/PluginPairingIntegrationValidator.swift",
+                "PluginPairing/Integration/PluginPairingPipeline.swift",
+                "PlistParser/Reader/PlistReadStatus.swift",
+                "PlistParser/Reader/PlistReadResult.swift",
+                "PlistParser/Reader/PlistDataReader.swift",
+                "PlistParser/Decoder/PlistDecodeStatus.swift",
+                "PlistParser/Decoder/PlistDecodedObject.swift",
+                "PlistParser/Decoder/PlistDecodeResult.swift",
+                "PlistParser/Decoder/PlistDecoder.swift",
+                "PlistParser/Decoder/PlistValueKind.swift",
+                "PlistParser/Result/FilterParseStatus.swift",
+                "PlistParser/Result/SkippedField.swift",
+                "PlistParser/Result/FilterParseResult.swift",
+                "PlistParser/Result/FilterParseCounts.swift",
+                "PlistParser/Result/FilterParseSnapshot.swift",
+                "PlistParser/RootHide/RootHideFilterTypeChecker.swift",
+                "PlistParser/RootHide/RootHideFilterValidator.swift",
+                "PlistParser/RootHide/RootHideFilterMapper.swift",
+                "PlistParser/RootHide/RootHideFilterParser.swift",
+                "PlistParser/Rootless/RootlessFilterCodable.swift",
+                "PlistParser/Rootless/RootlessFilterMapper.swift",
+                "PlistParser/Rootless/RootlessFilterParser.swift",
+                "PlistParser/Engine/FilterParseRoute.swift",
+                "PlistParser/Engine/FilterParsing.swift",
+                "PlistParser/Engine/FilterParseRouteResolver.swift",
+                "PlistParser/Engine/PluginFilterParseEngine.swift",
+                "PlistParser/Engine/FilterParseSnapshotBuilder.swift",
+                "PlistParser/Engine/FilterParseIntegrationValidator.swift"
+            ]
+        ),
+        // 骨架阶段模型单测（Codable 往返 / 枚举口径）；2.2 接入 Stage 1 夹具回归
+        .testTarget(
+            name: "Stage2Tests",
+            dependencies: ["Models", "Adapters", "Core"],
+            path: "Tests/Stage2",
+            exclude: [
+                "evidence",
+                "README.md",
+                "repo-boundary.md",
+                "2.1-bootstrap-acceptance.md",
+                "Stage-2.1-CI-Acceptance.md",
+                "Stage-2.1-Final-Acceptance.md"
+            ],
+            sources: [
+                "ModelsCodableTests.swift",
+                "EnvironmentDetectionTests.swift",
+                "JBRootCandidateCollectionTests.swift",
+                "JBRootValidationTests.swift",
+                "ElleKitDirectoryTests.swift",
+                "B5IntegrationTests.swift",
+                "B5FixtureComparisonTests.swift",
+                "B5DeterminismTests.swift",
+                "PluginEnumerationTests.swift",
+                "PluginInventoryCodableTests.swift",
+                "PluginPairingCodableTests.swift",
+                "PluginPairingKeyTests.swift",
+                "PluginPairingIndexTests.swift",
+                "PluginPairingEngineTests.swift",
+                "PluginPairingIntegrationTests.swift",
+                "PlistReaderTests.swift",
+                "PlistDecoderTests.swift",
+                "PlistValueKindTests.swift",
+                "S105FixtureLoader.swift",
+                "PluginPairingS105FixtureTests.swift",
+                "FilterParseResultTests.swift",
+                "RootHideFilterParserTests.swift",
+                "RootlessFilterParserTests.swift",
+                "FilterParseEngineTests.swift",
+                "EngineC1-BaselineModels.swift",
+                "EngineC1-BaselineLoader.swift",
+                "EngineC1-BaselineRegistry.swift",
+                "EngineC1-ResultComparator.swift",
+                "EngineC1-ParserBaselineTests.swift",
+                "EngineC1-EngineStubs.swift",
+                "EngineC1-EngineBaselineTests.swift",
+                "EngineC2-TestSupport.swift",
+                "EngineC2-EndToEndTests.swift",
+                "EngineC2-BatchIsolationTests.swift",
+                "EngineC2-SnapshotWarningsTests.swift"
+            ]
+        )
+    ]
+)

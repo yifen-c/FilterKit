@@ -1,0 +1,180 @@
+﻿2026-11-18T16:08:20.6437540Z ##[debug]Evaluating condition for step: 'Verify app alive and capture screenshot'
+2026-11-18T16:08:20.6663150Z ##[debug]Evaluating: success()
+2026-11-18T16:08:20.6666190Z ##[debug]Evaluating success:
+2026-11-18T16:08:20.6668790Z ##[debug]=> true
+2026-11-18T16:08:20.6670160Z ##[debug]Result: true
+2026-11-18T16:08:20.6680190Z ##[debug]Starting: Verify app alive and capture screenshot
+2026-11-18T16:08:20.6739020Z ##[debug]Loading inputs
+2026-11-18T16:08:20.6773190Z ##[debug]Evaluating: format('set -euo pipefail
+2026-11-18T16:08:20.6773890Z ##[debug]DEVICE_ID="{0}"
+2026-11-18T16:08:20.6774400Z ##[debug]APP_PID="{1}"
+2026-11-18T16:08:20.6774760Z ##[debug]BUNDLE=com.filterkit.manager
+2026-11-18T16:08:20.6775230Z ##[debug]# 留短暂窗口让 App 完成冷启动，再做存活复查（取证，不等同于稳定性验证）。
+2026-11-18T16:08:20.6775850Z ##[debug]sleep 3
+2026-11-18T16:08:20.6776200Z ##[debug]RUN_LIST=$(xcrun simctl spawn "$DEVICE_ID" launchctl list || true)
+2026-11-18T16:08:20.6777000Z ##[debug]ALIVE_LINE=$(echo "$RUN_LIST" | grep -E "$BUNDLE|FilterKit" || true)
+2026-11-18T16:08:20.6777690Z ##[debug]{{
+2026-11-18T16:08:20.6778060Z ##[debug]  echo "--- alive check $(date -u +%FT%TZ) ---"
+2026-11-18T16:08:20.6778570Z ##[debug]  echo "device_id=$DEVICE_ID app_pid=$APP_PID bundle=$BUNDLE"
+2026-11-18T16:08:20.6779200Z ##[debug]  echo "$ALIVE_LINE"
+2026-11-18T16:08:20.6779550Z ##[debug]}} | tee -a build/sim-launch.log
+2026-11-18T16:08:20.6780180Z ##[debug]if [ -z "$ALIVE_LINE" ]; then
+2026-11-18T16:08:20.6780830Z ##[debug]  echo "::error::App $BUNDLE not found in launchctl list after launch (PID $APP_PID may have exited)"
+2026-11-18T16:08:20.6781460Z ##[debug]  exit 1
+2026-11-18T16:08:20.6781860Z ##[debug]fi
+2026-11-18T16:08:20.6782210Z ##[debug]ALIVE_PID=$(echo "$ALIVE_LINE" | awk ''{{print $1}}'')
+2026-11-18T16:08:20.6782830Z ##[debug]if [ "$ALIVE_PID" = "-" ] || [ -z "$ALIVE_PID" ]; then
+2026-11-18T16:08:20.6783360Z ##[debug]  echo "::error::App $BUNDLE registered but PID is ''-'' (not running)"
+2026-11-18T16:08:20.6783890Z ##[debug]  exit 1
+2026-11-18T16:08:20.6784240Z ##[debug]fi
+2026-11-18T16:08:20.6784980Z ##[debug]echo "App alive: PID $ALIVE_PID (launch PID $APP_PID)"
+2026-11-18T16:08:20.6785440Z ##[debug]xcrun simctl io "$DEVICE_ID" screenshot build/dashboard.png
+2026-11-18T16:08:20.6786020Z ##[debug]echo "Screenshot: build/dashboard.png"
+2026-11-18T16:08:20.6787090Z ##[debug]', steps.sim.outputs.device_id, steps.sim.outputs.app_pid)
+2026-11-18T16:08:20.6788200Z ##[debug]Evaluating format:
+2026-11-18T16:08:20.6790610Z ##[debug]..Evaluating String:
+2026-11-18T16:08:20.6792810Z ##[debug]..=> 'set -euo pipefail
+2026-11-18T16:08:20.6794220Z ##[debug]DEVICE_ID="{0}"
+2026-11-18T16:08:20.6795410Z ##[debug]APP_PID="{1}"
+2026-11-18T16:08:20.6796650Z ##[debug]BUNDLE=com.filterkit.manager
+2026-11-18T16:08:20.6798480Z ##[debug]# 留短暂窗口让 App 完成冷启动，再做存活复查（取证，不等同于稳定性验证）。
+2026-11-18T16:08:20.6799510Z ##[debug]sleep 3
+2026-11-18T16:08:20.6800800Z ##[debug]RUN_LIST=$(xcrun simctl spawn "$DEVICE_ID" launchctl list || true)
+2026-11-18T16:08:20.6815140Z ##[debug]ALIVE_LINE=$(echo "$RUN_LIST" | grep -E "$BUNDLE|FilterKit" || true)
+2026-11-18T16:08:20.6817620Z ##[debug]{{
+2026-11-18T16:08:20.6820070Z ##[debug]  echo "--- alive check $(date -u +%FT%TZ) ---"
+2026-11-18T16:08:20.6821270Z ##[debug]  echo "device_id=$DEVICE_ID app_pid=$APP_PID bundle=$BUNDLE"
+2026-11-18T16:08:20.6824120Z ##[debug]  echo "$ALIVE_LINE"
+2026-11-18T16:08:20.6824540Z ##[debug]}} | tee -a build/sim-launch.log
+2026-11-18T16:08:20.6824880Z ##[debug]if [ -z "$ALIVE_LINE" ]; then
+2026-11-18T16:08:20.6826100Z ##[debug]  echo "::error::App $BUNDLE not found in launchctl list after launch (PID $APP_PID may have exited)"
+2026-11-18T16:08:20.6827790Z ##[debug]  exit 1
+2026-11-18T16:08:20.6831620Z ##[debug]fi
+2026-11-18T16:08:20.6833010Z ##[debug]ALIVE_PID=$(echo "$ALIVE_LINE" | awk ''{{print $1}}'')
+2026-11-18T16:08:20.6834220Z ##[debug]if [ "$ALIVE_PID" = "-" ] || [ -z "$ALIVE_PID" ]; then
+2026-11-18T16:08:20.6836440Z ##[debug]  echo "::error::App $BUNDLE registered but PID is ''-'' (not running)"
+2026-11-18T16:08:20.7030550Z ##[debug]  exit 1
+2026-11-18T16:08:20.7033440Z ##[debug]fi
+2026-11-18T16:08:20.7035410Z ##[debug]echo "App alive: PID $ALIVE_PID (launch PID $APP_PID)"
+2026-11-18T16:08:20.7037700Z ##[debug]xcrun simctl io "$DEVICE_ID" screenshot build/dashboard.png
+2026-11-18T16:08:20.7039450Z ##[debug]echo "Screenshot: build/dashboard.png"
+2026-11-18T16:08:20.7040560Z ##[debug]'
+2026-11-18T16:08:20.7049550Z ##[debug]..Evaluating Index:
+2026-11-18T16:08:20.7050250Z ##[debug]....Evaluating Index:
+2026-11-18T16:08:20.7050510Z ##[debug]......Evaluating Index:
+2026-11-18T16:08:20.7050790Z ##[debug]........Evaluating steps:
+2026-11-18T16:08:20.7052040Z ##[debug]........=> Object
+2026-11-18T16:08:20.7052710Z ##[debug]........Evaluating String:
+2026-11-18T16:08:20.7057710Z ##[debug]........=> 'sim'
+2026-11-18T16:08:20.7058430Z ##[debug]......=> Object
+2026-11-18T16:08:20.7058700Z ##[debug]......Evaluating String:
+2026-11-18T16:08:20.7058940Z ##[debug]......=> 'outputs'
+2026-11-18T16:08:20.7059180Z ##[debug]....=> Object
+2026-11-18T16:08:20.7059370Z ##[debug]....Evaluating String:
+2026-11-18T16:08:20.7059580Z ##[debug]....=> 'device_id'
+2026-11-18T16:08:20.7060160Z ##[debug]..=> '5AB3DACF-C352-49D1-BF9A-3C0104FA4ED3'
+2026-11-18T16:08:20.7060510Z ##[debug]..Evaluating Index:
+2026-11-18T16:08:20.7060720Z ##[debug]....Evaluating Index:
+2026-11-18T16:08:20.7060910Z ##[debug]......Evaluating Index:
+2026-11-18T16:08:20.7061400Z ##[debug]........Evaluating steps:
+2026-11-18T16:08:20.7061970Z ##[debug]........=> Object
+2026-11-18T16:08:20.7062330Z ##[debug]........Evaluating String:
+2026-11-18T16:08:20.7063080Z ##[debug]........=> 'sim'
+2026-11-18T16:08:20.7063360Z ##[debug]......=> Object
+2026-11-18T16:08:20.7064100Z ##[debug]......Evaluating String:
+2026-11-18T16:08:20.7064290Z ##[debug]......=> 'outputs'
+2026-11-18T16:08:20.7064800Z ##[debug]....=> Object
+2026-11-18T16:08:20.7065220Z ##[debug]....Evaluating String:
+2026-11-18T16:08:20.7068270Z ##[debug]....=> 'app_pid'
+2026-11-18T16:08:20.7069000Z ##[debug]..=> '13225'
+2026-11-18T16:08:20.7069910Z ##[debug]=> 'set -euo pipefail
+2026-11-18T16:08:20.7070550Z ##[debug]DEVICE_ID="5AB3DACF-C352-49D1-BF9A-3C0104FA4ED3"
+2026-11-18T16:08:20.7072010Z ##[debug]APP_PID="13225"
+2026-11-18T16:08:20.7072540Z ##[debug]BUNDLE=com.filterkit.manager
+2026-11-18T16:08:20.7074370Z ##[debug]# 留短暂窗口让 App 完成冷启动，再做存活复查（取证，不等同于稳定性验证）。
+2026-11-18T16:08:20.7074670Z ##[debug]sleep 3
+2026-11-18T16:08:20.7075030Z ##[debug]RUN_LIST=$(xcrun simctl spawn "$DEVICE_ID" launchctl list || true)
+2026-11-18T16:08:20.7075500Z ##[debug]ALIVE_LINE=$(echo "$RUN_LIST" | grep -E "$BUNDLE|FilterKit" || true)
+2026-11-18T16:08:20.7076300Z ##[debug]{
+2026-11-18T16:08:20.7076640Z ##[debug]  echo "--- alive check $(date -u +%FT%TZ) ---"
+2026-11-18T16:08:20.7077090Z ##[debug]  echo "device_id=$DEVICE_ID app_pid=$APP_PID bundle=$BUNDLE"
+2026-11-18T16:08:20.7077690Z ##[debug]  echo "$ALIVE_LINE"
+2026-11-18T16:08:20.7077950Z ##[debug]} | tee -a build/sim-launch.log
+2026-11-18T16:08:20.7079050Z ##[debug]if [ -z "$ALIVE_LINE" ]; then
+2026-11-18T16:08:20.7079800Z ##[debug]  echo "::error::App $BUNDLE not found in launchctl list after launch (PID $APP_PID may have exited)"
+2026-11-18T16:08:20.7081050Z ##[debug]  exit 1
+2026-11-18T16:08:20.7081310Z ##[debug]fi
+2026-11-18T16:08:20.7082270Z ##[debug]ALIVE_PID=$(echo "$ALIVE_LINE" | awk ''{print $1}'')
+2026-11-18T16:08:20.7082820Z ##[debug]if [ "$ALIVE_PID" = "-" ] || [ -z "$ALIVE_PID" ]; then
+2026-11-18T16:08:20.7083310Z ##[debug]  echo "::error::App $BUNDLE registered but PID is ''-'' (not running)"
+2026-11-18T16:08:20.7083690Z ##[debug]  exit 1
+2026-11-18T16:08:20.7084370Z ##[debug]fi
+2026-11-18T16:08:20.7085280Z ##[debug]echo "App alive: PID $ALIVE_PID (launch PID $APP_PID)"
+2026-11-18T16:08:20.7086340Z ##[debug]xcrun simctl io "$DEVICE_ID" screenshot build/dashboard.png
+2026-11-18T16:08:20.7087650Z ##[debug]echo "Screenshot: build/dashboard.png"
+2026-11-18T16:08:20.7088120Z ##[debug]'
+2026-11-18T16:08:20.7094900Z ##[debug]Result: 'set -euo pipefail
+2026-11-18T16:08:20.7095390Z ##[debug]DEVICE_ID="5AB3DACF-C352-49D1-BF9A-3C0104FA4ED3"
+2026-11-18T16:08:20.7100010Z ##[debug]APP_PID="13225"
+2026-11-18T16:08:20.7100470Z ##[debug]BUNDLE=com.filterkit.manager
+2026-11-18T16:08:20.7101060Z ##[debug]# 留短暂窗口让 App 完成冷启动，再做存活复查（取证，不等同于稳定性验证）。
+2026-11-18T16:08:20.7102320Z ##[debug]sleep 3
+2026-11-18T16:08:20.7102870Z ##[debug]RUN_LIST=$(xcrun simctl spawn "$DEVICE_ID" launchctl list || true)
+2026-11-18T16:08:20.7103450Z ##[debug]ALIVE_LINE=$(echo "$RUN_LIST" | grep -E "$BUNDLE|FilterKit" || true)
+2026-11-18T16:08:20.7103960Z ##[debug]{
+2026-11-18T16:08:20.7104280Z ##[debug]  echo "--- alive check $(date -u +%FT%TZ) ---"
+2026-11-18T16:08:20.7104970Z ##[debug]  echo "device_id=$DEVICE_ID app_pid=$APP_PID bundle=$BUNDLE"
+2026-11-18T16:08:20.7105820Z ##[debug]  echo "$ALIVE_LINE"
+2026-11-18T16:08:20.7106140Z ##[debug]} | tee -a build/sim-launch.log
+2026-11-18T16:08:20.7106680Z ##[debug]if [ -z "$ALIVE_LINE" ]; then
+2026-11-18T16:08:20.7107450Z ##[debug]  echo "::error::App $BUNDLE not found in launchctl list after launch (PID $APP_PID may have exited)"
+2026-11-18T16:08:20.7108360Z ##[debug]  exit 1
+2026-11-18T16:08:20.7109030Z ##[debug]fi
+2026-11-18T16:08:20.7109370Z ##[debug]ALIVE_PID=$(echo "$ALIVE_LINE" | awk ''{print $1}'')
+2026-11-18T16:08:20.7110090Z ##[debug]if [ "$ALIVE_PID" = "-" ] || [ -z "$ALIVE_PID" ]; then
+2026-11-18T16:08:20.7110720Z ##[debug]  echo "::error::App $BUNDLE registered but PID is ''-'' (not running)"
+2026-11-18T16:08:20.7112560Z ##[debug]  exit 1
+2026-11-18T16:08:20.7113520Z ##[debug]fi
+2026-11-18T16:08:20.7113910Z ##[debug]echo "App alive: PID $ALIVE_PID (launch PID $APP_PID)"
+2026-11-18T16:08:20.7114940Z ##[debug]xcrun simctl io "$DEVICE_ID" screenshot build/dashboard.png
+2026-11-18T16:08:20.7115440Z ##[debug]echo "Screenshot: build/dashboard.png"
+2026-11-18T16:08:20.7116760Z ##[debug]'
+2026-11-18T16:08:20.7118390Z ##[debug]Loading env
+2026-11-18T16:08:20.7138680Z ##[group]Run set -euo pipefail
+2026-11-18T16:08:20.7141530Z [36;1mset -euo pipefail[0m
+2026-11-18T16:08:20.7141960Z [36;1mDEVICE_ID="5AB3DACF-C352-49D1-BF9A-3C0104FA4ED3"[0m
+2026-11-18T16:08:20.7142330Z [36;1mAPP_PID="13225"[0m
+2026-11-18T16:08:20.7142780Z [36;1mBUNDLE=com.filterkit.manager[0m
+2026-11-18T16:08:20.7143680Z [36;1m# 留短暂窗口让 App 完成冷启动，再做存活复查（取证，不等同于稳定性验证）。[0m
+2026-11-18T16:08:20.7144040Z [36;1msleep 3[0m
+2026-11-18T16:08:20.7144570Z [36;1mRUN_LIST=$(xcrun simctl spawn "$DEVICE_ID" launchctl list || true)[0m
+2026-11-18T16:08:20.7145310Z [36;1mALIVE_LINE=$(echo "$RUN_LIST" | grep -E "$BUNDLE|FilterKit" || true)[0m
+2026-11-18T16:08:20.7145950Z [36;1m{[0m
+2026-11-18T16:08:20.7146330Z [36;1m  echo "--- alive check $(date -u +%FT%TZ) ---"[0m
+2026-11-18T16:08:20.7146980Z [36;1m  echo "device_id=$DEVICE_ID app_pid=$APP_PID bundle=$BUNDLE"[0m
+2026-11-18T16:08:20.7147390Z [36;1m  echo "$ALIVE_LINE"[0m
+2026-11-18T16:08:20.7148310Z [36;1m} | tee -a build/sim-launch.log[0m
+2026-11-18T16:08:20.7149060Z [36;1mif [ -z "$ALIVE_LINE" ]; then[0m
+2026-11-18T16:08:20.7150030Z [36;1m  echo "::error::App $BUNDLE not found in launchctl list after launch (PID $APP_PID may have exited)"[0m
+2026-11-18T16:08:20.7150550Z [36;1m  exit 1[0m
+2026-11-18T16:08:20.7150790Z [36;1mfi[0m
+2026-11-18T16:08:20.7151630Z [36;1mALIVE_PID=$(echo "$ALIVE_LINE" | awk '{print $1}')[0m
+2026-11-18T16:08:20.7152060Z [36;1mif [ "$ALIVE_PID" = "-" ] || [ -z "$ALIVE_PID" ]; then[0m
+2026-11-18T16:08:20.7153970Z [36;1m  echo "::error::App $BUNDLE registered but PID is '-' (not running)"[0m
+2026-11-18T16:08:20.7154580Z [36;1m  exit 1[0m
+2026-11-18T16:08:20.7154940Z [36;1mfi[0m
+2026-11-18T16:08:20.7155420Z [36;1mecho "App alive: PID $ALIVE_PID (launch PID $APP_PID)"[0m
+2026-11-18T16:08:20.7156460Z [36;1mxcrun simctl io "$DEVICE_ID" screenshot build/dashboard.png[0m
+2026-11-18T16:08:20.7157050Z [36;1mecho "Screenshot: build/dashboard.png"[0m
+2026-11-18T16:08:21.5474380Z shell: /bin/bash -e {0}
+2026-11-18T16:08:21.5474930Z ##[endgroup]
+2026-11-18T16:08:21.5582030Z ##[debug]/bin/bash -e /Users/runner/work/_temp/f42dfba5-2d0d-4d4d-a304-a78ca2b77f01.sh
+2026-11-18T16:08:31.8583180Z --- alive check 2026-11-18T16:08:31Z ---
+2026-11-18T16:08:31.8727470Z device_id=5AB3DACF-C352-49D1-BF9A-3C0104FA4ED3 app_pid=13225 bundle=com.filterkit.manager
+2026-11-18T16:08:31.9036490Z 13225	0	UIKitApplication:com.filterkit.manager[134d][rb-legacy]
+2026-11-18T16:08:31.9140960Z App alive: PID 13225 (launch PID 13225)
+2026-11-18T16:08:32.5811510Z Detected file type from extension: PNG
+2026-11-18T16:08:32.8176520Z Note: No display specified. Defaulting to display: 9F988DEF-1AF1-418B-A4C9-C5B149548ED8 (screenID: 1, name: LCD)
+2026-11-18T16:08:33.4276530Z Wrote screenshot to: /Users/runner/work/FilterKit/FilterKit/build/dashboard.png
+2026-11-18T16:08:33.4373200Z Screenshot: build/dashboard.png
+2026-11-18T16:08:33.4393890Z ##[debug]Finishing: Verify app alive and capture screenshot

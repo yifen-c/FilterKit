@@ -1,0 +1,29 @@
+﻿2026-11-15T16:38:08.4908460Z ##[group]Run actions/upload-artifact@v7
+2026-11-15T16:38:08.4910020Z with:
+2026-11-15T16:38:08.4913210Z   name: filterkit-app-build
+2026-11-15T16:38:08.4920710Z   path: build/app-xcodebuild.log
+build/sim-launch.log
+build/dashboard.png
+build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app
+
+2026-11-15T16:38:08.4924640Z   retention-days: 14
+2026-11-15T16:38:08.4925690Z   if-no-files-found: warn
+2026-11-15T16:38:08.4926710Z   compression-level: 6
+2026-11-15T16:38:08.4927490Z   overwrite: false
+2026-11-15T16:38:08.4927780Z   include-hidden-files: false
+2026-11-15T16:38:08.4929280Z   archive: true
+2026-11-15T16:38:08.4930250Z ##[endgroup]
+2026-11-15T16:38:09.8003580Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-15T16:38:09.8010580Z The least common ancestor is /Users/runner/work/004/004/build. This will be the root directory of the artifact
+2026-11-15T16:38:09.8011230Z With the provided path, there will be 9 files uploaded
+2026-11-15T16:38:09.8011970Z Artifact name is valid!
+2026-11-15T16:38:09.8012540Z Root directory input is valid!
+2026-11-15T16:38:10.1793660Z Uploading artifact: filterkit-app-build.zip
+2026-11-15T16:38:10.1814330Z Beginning upload of artifact content to blob storage
+2026-11-15T16:38:10.9064890Z Uploaded bytes 449341
+2026-11-15T16:38:10.9540560Z Finished uploading artifact content to blob storage!
+2026-11-15T16:38:10.9546510Z SHA256 digest of uploaded artifact is df812d8dece5c271a6f4ba50d2ad6908b9084d07125079684f3f945946c93bf8
+2026-11-15T16:38:10.9548820Z Finalizing artifact upload
+2026-11-15T16:38:11.4737250Z Artifact filterkit-app-build successfully finalized. Artifact ID 14170656670
+2026-11-15T16:38:11.4833420Z Artifact filterkit-app-build has been successfully uploaded! Final size is 449341 bytes. Artifact ID is 14170656670
+2026-11-15T16:38:11.4854850Z Artifact download URL: https://github.com/yi-fen/004/actions/runs/43736107678/artifacts/14170656670

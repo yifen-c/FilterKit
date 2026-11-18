@@ -1,0 +1,1162 @@
+{
+  "schemaVersion": "0.1.0",
+  "generatedAt": "2026-11-15T13:06:50.531Z",
+  "stage": "Stage 1 / S1-01",
+  "evidenceNote": "全部为离线 fixture 合成样本；不构成 RootHide 真机验证，Rootless 结果不代表 Rootless 真机兼容。",
+  "summary": {
+    "total": 15,
+    "passed": 15,
+    "failed": 0,
+    "versionStatusesCovered": [
+      "conflicted",
+      "not_installed",
+      "parsed",
+      "unparsable",
+      "unreadable"
+    ],
+    "missingVersionStatuses": [],
+    "missingConflictWarnings": []
+  },
+  "cases": [
+    {
+      "envId": "ENV-008",
+      "source": "fixture:conflicting",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jailbreakType": "unknown",
+        "architecture": "arm64e",
+        "iosVersion": "17.0.2",
+        "bootstrap": {
+          "name": "dopamine-roothide",
+          "version": "3.0.13-30"
+        },
+        "ellekitImplementation": "unknown",
+        "ellekitVersion": null,
+        "ellekitVersionStatus": "conflicted",
+        "adapterProfile": null,
+        "outcome": "conflict_no_profile",
+        "warnings": [
+          "route_signal_conflict",
+          "impl_version_conflict"
+        ],
+        "evidence": {
+          "jailbreakType": {
+            "value": "unknown",
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-CONFLICT-001"
+          },
+          "architecture": {
+            "value": "arm64e",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-CONFLICT-001"
+          },
+          "iosVersion": {
+            "value": "17.0.2",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-CONFLICT-001"
+          },
+          "bootstrap": {
+            "name": {
+              "value": "dopamine-roothide",
+              "status": "confirmed",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-CONFLICT-001"
+            },
+            "version": {
+              "value": "3.0.13-30",
+              "status": "confirmed",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-CONFLICT-001"
+            }
+          },
+          "ellekitImplementation": {
+            "value": "unknown",
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-CONFLICT-001"
+          },
+          "ellekitVersion": {
+            "value": null,
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-CONFLICT-001"
+          },
+          "adapterProfile": {
+            "value": null,
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-CONFLICT-001"
+          }
+        }
+      }
+    },
+    {
+      "envId": "ENV-009",
+      "source": "fixture:conflicting",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jailbreakType": "unknown",
+        "architecture": "arm64e",
+        "iosVersion": "17.0.2",
+        "bootstrap": {
+          "name": "dopamine-roothide",
+          "version": "3.0.13-30"
+        },
+        "ellekitImplementation": "unknown",
+        "ellekitVersion": null,
+        "ellekitVersionStatus": "conflicted",
+        "adapterProfile": null,
+        "outcome": "conflict_no_profile",
+        "warnings": [
+          "route_signal_conflict",
+          "impl_version_conflict"
+        ],
+        "evidence": {
+          "jailbreakType": {
+            "value": "unknown",
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-CONFLICT-001"
+          },
+          "architecture": {
+            "value": "arm64e",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-CONFLICT-001"
+          },
+          "iosVersion": {
+            "value": "17.0.2",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-CONFLICT-001"
+          },
+          "bootstrap": {
+            "name": {
+              "value": "dopamine-roothide",
+              "status": "confirmed",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-CONFLICT-001"
+            },
+            "version": {
+              "value": "3.0.13-30",
+              "status": "confirmed",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-CONFLICT-001"
+            }
+          },
+          "ellekitImplementation": {
+            "value": "unknown",
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-CONFLICT-001"
+          },
+          "ellekitVersion": {
+            "value": null,
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-CONFLICT-001"
+          },
+          "adapterProfile": {
+            "value": null,
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-CONFLICT-001"
+          }
+        }
+      }
+    },
+    {
+      "envId": "ENV-006",
+      "source": "fixture:incomplete",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jailbreakType": "roothide",
+        "architecture": "arm64e",
+        "iosVersion": "17.0.2",
+        "bootstrap": {
+          "name": null,
+          "version": null
+        },
+        "ellekitImplementation": "unknown",
+        "ellekitVersion": null,
+        "ellekitVersionStatus": "unparsable",
+        "adapterProfile": null,
+        "outcome": "partial",
+        "warnings": [
+          "bootstrap_missing",
+          "implementation_missing",
+          "version_unparsable"
+        ],
+        "evidence": {
+          "jailbreakType": {
+            "value": "roothide",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-INCOMPLETE-001"
+          },
+          "architecture": {
+            "value": "arm64e",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-INCOMPLETE-001"
+          },
+          "iosVersion": {
+            "value": "17.0.2",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-INCOMPLETE-001"
+          },
+          "bootstrap": {
+            "name": {
+              "value": null,
+              "status": "unknown",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-INCOMPLETE-001"
+            },
+            "version": {
+              "value": null,
+              "status": "unknown",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-INCOMPLETE-001"
+            }
+          },
+          "ellekitImplementation": {
+            "value": "unknown",
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-INCOMPLETE-001"
+          },
+          "ellekitVersion": {
+            "value": null,
+            "status": "partial",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-INCOMPLETE-001"
+          },
+          "adapterProfile": {
+            "value": null,
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-INCOMPLETE-001"
+          }
+        }
+      }
+    },
+    {
+      "envId": "ENV-010",
+      "source": "fixture:incomplete",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jailbreakType": "roothide",
+        "architecture": "arm64e",
+        "iosVersion": "17.0.2",
+        "bootstrap": {
+          "name": null,
+          "version": null
+        },
+        "ellekitImplementation": "unknown",
+        "ellekitVersion": null,
+        "ellekitVersionStatus": "unparsable",
+        "adapterProfile": null,
+        "outcome": "partial",
+        "warnings": [
+          "bootstrap_missing",
+          "implementation_missing",
+          "version_unparsable"
+        ],
+        "evidence": {
+          "jailbreakType": {
+            "value": "roothide",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-INCOMPLETE-001"
+          },
+          "architecture": {
+            "value": "arm64e",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-INCOMPLETE-001"
+          },
+          "iosVersion": {
+            "value": "17.0.2",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-INCOMPLETE-001"
+          },
+          "bootstrap": {
+            "name": {
+              "value": null,
+              "status": "unknown",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-INCOMPLETE-001"
+            },
+            "version": {
+              "value": null,
+              "status": "unknown",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-INCOMPLETE-001"
+            }
+          },
+          "ellekitImplementation": {
+            "value": "unknown",
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-INCOMPLETE-001"
+          },
+          "ellekitVersion": {
+            "value": null,
+            "status": "partial",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-INCOMPLETE-001"
+          },
+          "adapterProfile": {
+            "value": null,
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-INCOMPLETE-001"
+          }
+        }
+      }
+    },
+    {
+      "envId": "ENV-014",
+      "source": "fixture:incomplete",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jailbreakType": "roothide",
+        "architecture": "arm64e",
+        "iosVersion": "17.0.2",
+        "bootstrap": {
+          "name": null,
+          "version": null
+        },
+        "ellekitImplementation": "unknown",
+        "ellekitVersion": null,
+        "ellekitVersionStatus": "unparsable",
+        "adapterProfile": null,
+        "outcome": "partial",
+        "warnings": [
+          "bootstrap_missing",
+          "implementation_missing",
+          "version_unparsable"
+        ],
+        "evidence": {
+          "jailbreakType": {
+            "value": "roothide",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-INCOMPLETE-001"
+          },
+          "architecture": {
+            "value": "arm64e",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-INCOMPLETE-001"
+          },
+          "iosVersion": {
+            "value": "17.0.2",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-INCOMPLETE-001"
+          },
+          "bootstrap": {
+            "name": {
+              "value": null,
+              "status": "unknown",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-INCOMPLETE-001"
+            },
+            "version": {
+              "value": null,
+              "status": "unknown",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-INCOMPLETE-001"
+            }
+          },
+          "ellekitImplementation": {
+            "value": "unknown",
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-INCOMPLETE-001"
+          },
+          "ellekitVersion": {
+            "value": null,
+            "status": "partial",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-INCOMPLETE-001"
+          },
+          "adapterProfile": {
+            "value": null,
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-INCOMPLETE-001"
+          }
+        }
+      }
+    },
+    {
+      "envId": "ENV-003",
+      "source": "fixture:rootful",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jailbreakType": "rootful",
+        "architecture": "arm64",
+        "iosVersion": "15.0",
+        "bootstrap": {
+          "name": null,
+          "version": null
+        },
+        "ellekitImplementation": "unknown",
+        "ellekitVersion": null,
+        "ellekitVersionStatus": "not_installed",
+        "adapterProfile": null,
+        "outcome": "unsupported_profile",
+        "warnings": [
+          "unsupported_rootful"
+        ],
+        "evidence": {
+          "jailbreakType": {
+            "value": "rootful",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTFUL-001"
+          },
+          "architecture": {
+            "value": "arm64",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTFUL-001"
+          },
+          "iosVersion": {
+            "value": "15.0",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTFUL-001"
+          },
+          "bootstrap": {
+            "name": {
+              "value": null,
+              "status": "unknown",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-ROOTFUL-001"
+            },
+            "version": {
+              "value": null,
+              "status": "unknown",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-ROOTFUL-001"
+            }
+          },
+          "ellekitImplementation": {
+            "value": "unknown",
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTFUL-001"
+          },
+          "ellekitVersion": {
+            "value": null,
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTFUL-001"
+          },
+          "adapterProfile": {
+            "value": null,
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTFUL-001"
+          }
+        }
+      }
+    },
+    {
+      "envId": "ENV-001",
+      "source": "fixture:roothide",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jailbreakType": "roothide",
+        "architecture": "arm64e",
+        "iosVersion": "17.0.2",
+        "bootstrap": {
+          "name": "dopamine-roothide",
+          "version": "3.0.13-30"
+        },
+        "ellekitImplementation": "roothide",
+        "ellekitVersion": "1.2-3",
+        "ellekitVersionStatus": "parsed",
+        "adapterProfile": "RootHideProfile_1_2_3",
+        "outcome": "profile_candidate",
+        "warnings": [],
+        "evidence": {
+          "jailbreakType": {
+            "value": "roothide",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTHIDE-001"
+          },
+          "architecture": {
+            "value": "arm64e",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTHIDE-001"
+          },
+          "iosVersion": {
+            "value": "17.0.2",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTHIDE-001"
+          },
+          "bootstrap": {
+            "name": {
+              "value": "dopamine-roothide",
+              "status": "confirmed",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-ROOTHIDE-001"
+            },
+            "version": {
+              "value": "3.0.13-30",
+              "status": "confirmed",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-ROOTHIDE-001"
+            }
+          },
+          "ellekitImplementation": {
+            "value": "roothide",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTHIDE-001"
+          },
+          "ellekitVersion": {
+            "value": "1.2-3",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTHIDE-001"
+          },
+          "adapterProfile": {
+            "value": "RootHideProfile_1_2_3",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "profile-mapping"
+          }
+        }
+      }
+    },
+    {
+      "envId": "ENV-002",
+      "source": "fixture:rootless",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jailbreakType": "rootless",
+        "architecture": "arm64",
+        "iosVersion": "17.0.2",
+        "bootstrap": {
+          "name": "procursus",
+          "version": "fixture-version"
+        },
+        "ellekitImplementation": "upstream",
+        "ellekitVersion": "1.0.0",
+        "ellekitVersionStatus": "parsed",
+        "adapterProfile": "RootlessProfile_upstream",
+        "outcome": "profile_candidate",
+        "warnings": [],
+        "evidence": {
+          "jailbreakType": {
+            "value": "rootless",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTLESS-001"
+          },
+          "architecture": {
+            "value": "arm64",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTLESS-001"
+          },
+          "iosVersion": {
+            "value": "17.0.2",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTLESS-001"
+          },
+          "bootstrap": {
+            "name": {
+              "value": "procursus",
+              "status": "confirmed",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-ROOTLESS-001"
+            },
+            "version": {
+              "value": "fixture-version",
+              "status": "confirmed",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-ROOTLESS-001"
+            }
+          },
+          "ellekitImplementation": {
+            "value": "upstream",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTLESS-001"
+          },
+          "ellekitVersion": {
+            "value": "1.0.0",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTLESS-001"
+          },
+          "adapterProfile": {
+            "value": "RootlessProfile_upstream",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "profile-mapping"
+          }
+        }
+      }
+    },
+    {
+      "envId": "ENV-004",
+      "source": "fixture:unknown",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jailbreakType": "unknown",
+        "architecture": "unknown",
+        "iosVersion": "unknown",
+        "bootstrap": {
+          "name": null,
+          "version": null
+        },
+        "ellekitImplementation": "unknown",
+        "ellekitVersion": null,
+        "ellekitVersionStatus": "not_installed",
+        "adapterProfile": null,
+        "outcome": "unknown",
+        "warnings": [
+          "no_jailbreak_signals"
+        ],
+        "evidence": {
+          "jailbreakType": {
+            "value": "unknown",
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-UNKNOWN-001"
+          },
+          "architecture": {
+            "value": "unknown",
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-UNKNOWN-001"
+          },
+          "iosVersion": {
+            "value": "unknown",
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-UNKNOWN-001"
+          },
+          "bootstrap": {
+            "name": {
+              "value": null,
+              "status": "unknown",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-UNKNOWN-001"
+            },
+            "version": {
+              "value": null,
+              "status": "unknown",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-UNKNOWN-001"
+            }
+          },
+          "ellekitImplementation": {
+            "value": "unknown",
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-UNKNOWN-001"
+          },
+          "ellekitVersion": {
+            "value": null,
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-UNKNOWN-001"
+          },
+          "adapterProfile": {
+            "value": null,
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-UNKNOWN-001"
+          }
+        }
+      }
+    },
+    {
+      "envId": "ENV-005",
+      "source": "fixture:unknown",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jailbreakType": "unknown",
+        "architecture": "unknown",
+        "iosVersion": "unknown",
+        "bootstrap": {
+          "name": null,
+          "version": null
+        },
+        "ellekitImplementation": "unknown",
+        "ellekitVersion": null,
+        "ellekitVersionStatus": "not_installed",
+        "adapterProfile": null,
+        "outcome": "unknown",
+        "warnings": [
+          "no_jailbreak_signals"
+        ],
+        "evidence": {
+          "jailbreakType": {
+            "value": "unknown",
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-UNKNOWN-001"
+          },
+          "architecture": {
+            "value": "unknown",
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-UNKNOWN-001"
+          },
+          "iosVersion": {
+            "value": "unknown",
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-UNKNOWN-001"
+          },
+          "bootstrap": {
+            "name": {
+              "value": null,
+              "status": "unknown",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-UNKNOWN-001"
+            },
+            "version": {
+              "value": null,
+              "status": "unknown",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-UNKNOWN-001"
+            }
+          },
+          "ellekitImplementation": {
+            "value": "unknown",
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-UNKNOWN-001"
+          },
+          "ellekitVersion": {
+            "value": null,
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-UNKNOWN-001"
+          },
+          "adapterProfile": {
+            "value": null,
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-UNKNOWN-001"
+          }
+        }
+      }
+    },
+    {
+      "envId": "ENV-007",
+      "source": "fixture:unknown",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jailbreakType": "unknown",
+        "architecture": "unknown",
+        "iosVersion": "unknown",
+        "bootstrap": {
+          "name": null,
+          "version": null
+        },
+        "ellekitImplementation": "unknown",
+        "ellekitVersion": null,
+        "ellekitVersionStatus": "not_installed",
+        "adapterProfile": null,
+        "outcome": "unknown",
+        "warnings": [
+          "no_jailbreak_signals"
+        ],
+        "evidence": {
+          "jailbreakType": {
+            "value": "unknown",
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-UNKNOWN-001"
+          },
+          "architecture": {
+            "value": "unknown",
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-UNKNOWN-001"
+          },
+          "iosVersion": {
+            "value": "unknown",
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-UNKNOWN-001"
+          },
+          "bootstrap": {
+            "name": {
+              "value": null,
+              "status": "unknown",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-UNKNOWN-001"
+            },
+            "version": {
+              "value": null,
+              "status": "unknown",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-UNKNOWN-001"
+            }
+          },
+          "ellekitImplementation": {
+            "value": "unknown",
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-UNKNOWN-001"
+          },
+          "ellekitVersion": {
+            "value": null,
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-UNKNOWN-001"
+          },
+          "adapterProfile": {
+            "value": null,
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-UNKNOWN-001"
+          }
+        }
+      }
+    },
+    {
+      "envId": "ENV-011",
+      "source": "synthetic:malformed-input",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jailbreakType": "unknown",
+        "architecture": "unknown",
+        "iosVersion": "unknown",
+        "bootstrap": {
+          "name": null,
+          "version": null
+        },
+        "ellekitImplementation": "unknown",
+        "ellekitVersion": null,
+        "ellekitVersionStatus": "not_installed",
+        "adapterProfile": null,
+        "outcome": "unknown",
+        "warnings": [
+          "no_jailbreak_signals"
+        ],
+        "evidence": {
+          "jailbreakType": {
+            "value": "unknown",
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "synthetic"
+          },
+          "architecture": {
+            "value": "unknown",
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "synthetic"
+          },
+          "iosVersion": {
+            "value": "unknown",
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "synthetic"
+          },
+          "bootstrap": {
+            "name": {
+              "value": null,
+              "status": "unknown",
+              "evidenceType": "fixture",
+              "evidenceSource": "synthetic"
+            },
+            "version": {
+              "value": null,
+              "status": "unknown",
+              "evidenceType": "fixture",
+              "evidenceSource": "synthetic"
+            }
+          },
+          "ellekitImplementation": {
+            "value": "unknown",
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "synthetic"
+          },
+          "ellekitVersion": {
+            "value": null,
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "synthetic"
+          },
+          "adapterProfile": {
+            "value": null,
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "synthetic"
+          }
+        }
+      }
+    },
+    {
+      "envId": "ENV-012",
+      "source": "synthetic:version-unreadable",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jailbreakType": "roothide",
+        "architecture": "arm64e",
+        "iosVersion": "17.0.2",
+        "bootstrap": {
+          "name": "dopamine-roothide",
+          "version": "3.0.13-30"
+        },
+        "ellekitImplementation": "roothide",
+        "ellekitVersion": null,
+        "ellekitVersionStatus": "unreadable",
+        "adapterProfile": null,
+        "outcome": "partial",
+        "warnings": [
+          "access_limited"
+        ],
+        "evidence": {
+          "jailbreakType": {
+            "value": "roothide",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "synthetic"
+          },
+          "architecture": {
+            "value": "arm64e",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "synthetic"
+          },
+          "iosVersion": {
+            "value": "17.0.2",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "synthetic"
+          },
+          "bootstrap": {
+            "name": {
+              "value": "dopamine-roothide",
+              "status": "confirmed",
+              "evidenceType": "fixture",
+              "evidenceSource": "synthetic"
+            },
+            "version": {
+              "value": "3.0.13-30",
+              "status": "confirmed",
+              "evidenceType": "fixture",
+              "evidenceSource": "synthetic"
+            }
+          },
+          "ellekitImplementation": {
+            "value": "roothide",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "synthetic"
+          },
+          "ellekitVersion": {
+            "value": null,
+            "status": "unverified",
+            "evidenceType": "fixture",
+            "evidenceSource": "synthetic"
+          },
+          "adapterProfile": {
+            "value": null,
+            "status": "unknown",
+            "evidenceType": "fixture",
+            "evidenceSource": "synthetic"
+          }
+        }
+      }
+    },
+    {
+      "envId": "ENV-013",
+      "source": "synthetic:determinism",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jailbreakType": "roothide",
+        "architecture": "arm64e",
+        "iosVersion": "17.0.2",
+        "bootstrap": {
+          "name": "dopamine-roothide",
+          "version": "3.0.13-30"
+        },
+        "ellekitImplementation": "roothide",
+        "ellekitVersion": "1.2-3",
+        "ellekitVersionStatus": "parsed",
+        "adapterProfile": "RootHideProfile_1_2_3",
+        "outcome": "profile_candidate",
+        "warnings": [],
+        "evidence": {
+          "jailbreakType": {
+            "value": "roothide",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTHIDE-001"
+          },
+          "architecture": {
+            "value": "arm64e",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTHIDE-001"
+          },
+          "iosVersion": {
+            "value": "17.0.2",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTHIDE-001"
+          },
+          "bootstrap": {
+            "name": {
+              "value": "dopamine-roothide",
+              "status": "confirmed",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-ROOTHIDE-001"
+            },
+            "version": {
+              "value": "3.0.13-30",
+              "status": "confirmed",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-ROOTHIDE-001"
+            }
+          },
+          "ellekitImplementation": {
+            "value": "roothide",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTHIDE-001"
+          },
+          "ellekitVersion": {
+            "value": "1.2-3",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTHIDE-001"
+          },
+          "adapterProfile": {
+            "value": "RootHideProfile_1_2_3",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "profile-mapping"
+          }
+        }
+      }
+    },
+    {
+      "envId": "ENV-015",
+      "source": "synthetic:id-mismatch",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jailbreakType": "roothide",
+        "architecture": "arm64e",
+        "iosVersion": "17.0.2",
+        "bootstrap": {
+          "name": "dopamine-roothide",
+          "version": "3.0.13-30"
+        },
+        "ellekitImplementation": "roothide",
+        "ellekitVersion": "1.2-3",
+        "ellekitVersionStatus": "parsed",
+        "adapterProfile": "RootHideProfile_1_2_3",
+        "outcome": "profile_candidate",
+        "warnings": [],
+        "evidence": {
+          "jailbreakType": {
+            "value": "roothide",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTHIDE-001"
+          },
+          "architecture": {
+            "value": "arm64e",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTHIDE-001"
+          },
+          "iosVersion": {
+            "value": "17.0.2",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTHIDE-001"
+          },
+          "bootstrap": {
+            "name": {
+              "value": "dopamine-roothide",
+              "status": "confirmed",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-ROOTHIDE-001"
+            },
+            "version": {
+              "value": "3.0.13-30",
+              "status": "confirmed",
+              "evidenceType": "fixture",
+              "evidenceSource": "S1-01-ROOTHIDE-001"
+            }
+          },
+          "ellekitImplementation": {
+            "value": "roothide",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTHIDE-001"
+          },
+          "ellekitVersion": {
+            "value": "1.2-3",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "S1-01-ROOTHIDE-001"
+          },
+          "adapterProfile": {
+            "value": "RootHideProfile_1_2_3",
+            "status": "confirmed",
+            "evidenceType": "fixture",
+            "evidenceSource": "profile-mapping"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "fixtureId": "S1-04-RH-MIXED-001",
+  "expected": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "status": "enumerated",
+    "counts": { "dylib": 2, "plist": 1, "directory": 0, "symlink": 0, "other": 1 },
+    "itemCount": 4,
+    "unknownCount": 1,
+    "names": ["Example.dylib", "Example.plist", "Helper.dylib", "Notes.txt"]
+  },
+  "expectedWarnings": [],
+  "expectedStatus": "enumerated"
+}

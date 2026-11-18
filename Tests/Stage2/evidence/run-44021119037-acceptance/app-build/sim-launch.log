@@ -1,0 +1,4 @@
+com.filterkit.manager: 10662
+--- alive check 2026-11-17T05:06:15Z ---
+device_id=5AB3DACF-C352-49D1-BF9A-3C0104FA4ED3 app_pid=10662 bundle=com.filterkit.manager
+10662	0	UIKitApplication:com.filterkit.manager[1b6d][rb-legacy]

@@ -1,0 +1,14 @@
+{
+  "fixtureId": "S1-05-HIDDEN-001",
+  "expected": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "status": "enumerated",
+    "counts": { "paired": 1, "missing_plist": 0, "orphan_plist": 0, "ambiguous": 0, "uncertain": 0 },
+    "pairedBases": [".hidden"],
+    "missingBases": [],
+    "orphanNames": []
+  },
+  "expectedWarnings": [],
+  "expectedStatus": "enumerated"
+}

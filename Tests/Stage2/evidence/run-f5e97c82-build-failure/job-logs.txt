@@ -1,0 +1,1056 @@
+﻿2026-11-17T03:20:23.3765840Z Current runner version: '2.338.2'
+2026-11-17T03:20:23.3796240Z ##[group]Runner Image Provisioner
+2026-11-17T03:20:23.3798040Z Hosted Compute Agent
+2026-11-17T03:20:23.3799080Z Version: 20261028.624
+2026-11-17T03:20:23.3800170Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+2026-11-17T03:20:23.3801450Z Build Date: 2026-10-28T21:51:42Z
+2026-11-17T03:20:23.3802660Z Worker ID: {a68fef2a-5123-4ae3-a9c0-2ea6dcbfdaf2}
+2026-11-17T03:20:23.3803920Z Region: westus
+2026-11-17T03:20:23.3804870Z Cloud: MacCloud
+2026-11-17T03:20:23.3805830Z ##[endgroup]
+2026-11-17T03:20:23.3809370Z ##[group]Operating System
+2026-11-17T03:20:23.3810470Z macOS
+2026-11-17T03:20:23.3811360Z 26.7.2
+2026-11-17T03:20:23.3812490Z 25G332
+2026-11-17T03:20:23.3813380Z ##[endgroup]
+2026-11-17T03:20:23.3814320Z ##[group]Runner Image
+2026-11-17T03:20:23.3815360Z Image: macos-26-arm64
+2026-11-17T03:20:23.3816390Z Version: 20261102.0473.1
+2026-11-17T03:20:23.3818770Z Included Software: https://github.com/actions/runner-images/blob/macos-26-arm64/20261102.0473/images/macos/macos-26-arm64-Readme.md
+2026-11-17T03:20:23.3821840Z Image Release: https://github.com/actions/runner-images/releases/tag/macos-26-arm64%2F20261102.0473
+2026-11-17T03:20:23.3823780Z ##[endgroup]
+2026-11-17T03:20:23.3829840Z ##[group]GITHUB_TOKEN Permissions
+2026-11-17T03:20:23.3836070Z Actions: write
+2026-11-17T03:20:23.3838280Z ArtifactMetadata: write
+2026-11-17T03:20:23.3839790Z Attestations: write
+2026-11-17T03:20:23.3841200Z Checks: write
+2026-11-17T03:20:23.3842740Z CodeQuality: write
+2026-11-17T03:20:23.3843930Z Contents: write
+2026-11-17T03:20:23.3845020Z CopilotRequests: write
+2026-11-17T03:20:23.3846190Z Deployments: write
+2026-11-17T03:20:23.3847540Z Discussions: write
+2026-11-17T03:20:23.3848730Z Drives: write
+2026-11-17T03:20:23.3849790Z Issues: write
+2026-11-17T03:20:23.3851310Z Metadata: read
+2026-11-17T03:20:23.3852440Z Models: read
+2026-11-17T03:20:23.3853500Z Packages: write
+2026-11-17T03:20:23.3854540Z Pages: write
+2026-11-17T03:20:23.3855640Z PullRequests: write
+2026-11-17T03:20:23.3857420Z RepositoryProjects: write
+2026-11-17T03:20:23.3859130Z SecurityEvents: write
+2026-11-17T03:20:23.3860580Z Statuses: write
+2026-11-17T03:20:23.3862110Z VulnerabilityAlerts: read
+2026-11-17T03:20:23.3863540Z ##[endgroup]
+2026-11-17T03:20:23.3869470Z Secret source: Actions
+2026-11-17T03:20:23.3872750Z Cache mode: write
+2026-11-17T03:20:23.3874660Z Prepare workflow directory
+2026-11-17T03:20:23.4291980Z Prepare all required actions
+2026-11-17T03:20:23.4342050Z Getting action download info
+2026-11-17T03:20:24.1772040Z Download action repository 'actions/checkout@v6' (SHA:d23441a48e516b6c34aea4fa41551a30e30af803)
+2026-11-17T03:20:24.8051390Z Complete job name: build
+2026-11-17T03:20:24.9007480Z ##[group]Run actions/checkout@v6
+2026-11-17T03:20:24.9008400Z with:
+2026-11-17T03:20:24.9008820Z   repository: yi-fen/FilterKit
+2026-11-17T03:20:24.9012420Z   token: ***
+2026-11-17T03:20:24.9012810Z   ssh-strict: true
+2026-11-17T03:20:24.9013300Z   ssh-user: git
+2026-11-17T03:20:24.9013720Z   persist-credentials: true
+2026-11-17T03:20:24.9014200Z   clean: true
+2026-11-17T03:20:24.9014610Z   sparse-checkout-cone-mode: true
+2026-11-17T03:20:24.9015190Z   fetch-depth: 1
+2026-11-17T03:20:24.9015570Z   fetch-tags: false
+2026-11-17T03:20:24.9015970Z   show-progress: true
+2026-11-17T03:20:24.9016390Z   lfs: false
+2026-11-17T03:20:24.9016780Z   submodules: false
+2026-11-17T03:20:24.9017180Z   set-safe-directory: true
+2026-11-17T03:20:24.9017620Z   allow-unsafe-pr-checkout: false
+2026-11-17T03:20:24.9020920Z ##[endgroup]
+2026-11-17T03:20:25.6163750Z Syncing repository: yi-fen/FilterKit
+2026-11-17T03:20:25.6169450Z ##[group]Getting Git version info
+2026-11-17T03:20:25.6174940Z Working directory is '/Users/runner/work/FilterKit/FilterKit'
+2026-11-17T03:20:25.6177460Z [command]/opt/homebrew/bin/git version
+2026-11-17T03:20:25.6867030Z git version 2.56.0
+2026-11-17T03:20:25.6895120Z ##[endgroup]
+2026-11-17T03:20:25.6910020Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/b51a6eb7-3080-4c1f-85b2-e963a325af31/.gitconfig'
+2026-11-17T03:20:25.6923510Z Temporarily overriding HOME='/Users/runner/work/_temp/b51a6eb7-3080-4c1f-85b2-e963a325af31' before making global git config changes
+2026-11-17T03:20:25.6926110Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-17T03:20:25.6930020Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/FilterKit/FilterKit
+2026-11-17T03:20:25.7083350Z Deleting the contents of '/Users/runner/work/FilterKit/FilterKit'
+2026-11-17T03:20:25.7091080Z ##[group]Determining repository object format
+2026-11-17T03:20:25.7093400Z ##[endgroup]
+2026-11-17T03:20:25.7095450Z ##[group]Initializing the repository
+2026-11-17T03:20:25.7096320Z [command]/opt/homebrew/bin/git init /Users/runner/work/FilterKit/FilterKit
+2026-11-17T03:20:25.7423100Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-17T03:20:25.7426540Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-17T03:20:25.7427750Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-17T03:20:25.7428540Z hint: call:
+2026-11-17T03:20:25.7429580Z hint:
+2026-11-17T03:20:25.7430390Z hint: 	git config --global init.defaultBranch <name>
+2026-11-17T03:20:25.7431640Z hint:
+2026-11-17T03:20:25.7433070Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-17T03:20:25.7433930Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-17T03:20:25.7434800Z hint:
+2026-11-17T03:20:25.7435320Z hint: 	git branch -m <name>
+2026-11-17T03:20:25.7435790Z hint:
+2026-11-17T03:20:25.7436540Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-17T03:20:25.7440290Z Initialized empty Git repository in /Users/runner/work/FilterKit/FilterKit/.git/
+2026-11-17T03:20:25.7451970Z [command]/opt/homebrew/bin/git remote add origin https://github.com/yi-fen/FilterKit
+2026-11-17T03:20:25.7559910Z ##[endgroup]
+2026-11-17T03:20:25.7560910Z ##[group]Disabling automatic garbage collection
+2026-11-17T03:20:25.7563060Z [command]/opt/homebrew/bin/git config --local gc.auto 0
+2026-11-17T03:20:25.7649090Z ##[endgroup]
+2026-11-17T03:20:25.7649840Z ##[group]Setting up auth
+2026-11-17T03:20:25.7650410Z Removing SSH command configuration
+2026-11-17T03:20:25.7658690Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-17T03:20:25.7744220Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-17T03:20:25.9398190Z Removing HTTP extra header
+2026-11-17T03:20:25.9400980Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-17T03:20:25.9502040Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-17T03:20:26.1165980Z Removing includeIf entries pointing to credentials config files
+2026-11-17T03:20:26.1167320Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-17T03:20:26.1452940Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-17T03:20:26.2636990Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/_temp/git-credentials-112f7604-776d-4908-9cff-4f2a55bf8b54.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-17T03:20:26.2736480Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/Users/runner/work/FilterKit/FilterKit/.git.path /Users/runner/work/_temp/git-credentials-112f7604-776d-4908-9cff-4f2a55bf8b54.config
+2026-11-17T03:20:26.2834960Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/Users/runner/work/FilterKit/FilterKit/.git/worktrees/*.path /Users/runner/work/_temp/git-credentials-112f7604-776d-4908-9cff-4f2a55bf8b54.config
+2026-11-17T03:20:26.2930120Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-112f7604-776d-4908-9cff-4f2a55bf8b54.config
+2026-11-17T03:20:26.3041920Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-112f7604-776d-4908-9cff-4f2a55bf8b54.config
+2026-11-17T03:20:26.3107000Z ##[endgroup]
+2026-11-17T03:20:26.3107930Z ##[group]Fetching the repository
+2026-11-17T03:20:26.3113940Z [command]/opt/homebrew/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +4b3e71c0e3a1e046d27a7d46a6cf3982fbfe0ded:refs/remotes/origin/C2-C3
+2026-11-17T03:20:27.1374920Z From https://github.com/yi-fen/FilterKit
+2026-11-17T03:20:27.1377450Z  * [new ref]         4b3e71c0e3a1e046d27a7d46a6cf3982fbfe0ded -> origin/C2-C3
+2026-11-17T03:20:27.1383330Z [command]/opt/homebrew/bin/git branch --list --remote origin/C2-C3
+2026-11-17T03:20:27.1501510Z   origin/C2-C3
+2026-11-17T03:20:27.1510550Z [command]/opt/homebrew/bin/git rev-parse refs/remotes/origin/C2-C3
+2026-11-17T03:20:27.1607980Z 4b3e71c0e3a1e046d27a7d46a6cf3982fbfe0ded
+2026-11-17T03:20:27.1616460Z ##[endgroup]
+2026-11-17T03:20:27.1617780Z ##[group]Determining the checkout info
+2026-11-17T03:20:27.1619280Z ##[endgroup]
+2026-11-17T03:20:27.1619980Z [command]/opt/homebrew/bin/git sparse-checkout disable
+2026-11-17T03:20:27.1747160Z [command]/opt/homebrew/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-17T03:20:27.1896810Z ##[group]Checking out the ref
+2026-11-17T03:20:27.1899300Z [command]/opt/homebrew/bin/git checkout --progress --force -B C2-C3 refs/remotes/origin/C2-C3
+2026-11-17T03:20:27.5954910Z Switched to a new branch 'C2-C3'
+2026-11-17T03:20:27.5996390Z branch 'C2-C3' set up to track 'origin/C2-C3'.
+2026-11-17T03:20:27.6089600Z ##[endgroup]
+2026-11-17T03:20:27.6223950Z [command]/opt/homebrew/bin/git log -1 --format=%H
+2026-11-17T03:20:27.6336270Z 4b3e71c0e3a1e046d27a7d46a6cf3982fbfe0ded
+2026-11-17T03:20:27.6638050Z ##[group]Run swift build
+2026-11-17T03:20:27.6639270Z [36;1mswift build[0m
+2026-11-17T03:20:27.6710930Z shell: /bin/bash -e {0}
+2026-11-17T03:20:27.6712520Z ##[endgroup]
+2026-11-17T03:20:59.7482520Z Building for debugging...
+2026-11-17T03:20:59.7612430Z [0/4] Write sources
+2026-11-17T03:20:59.9733070Z [3/4] Write swift-version-7974D3F7F03D5E95.txt
+2026-11-17T03:21:12.7978470Z [5/11] Compiling Models PluginEntryStatus.swift
+2026-11-17T03:21:12.8006110Z [6/11] Compiling Models PluginFileEvidence.swift
+2026-11-17T03:21:12.8239020Z [7/11] Compiling Models PluginFileKind.swift
+2026-11-17T03:21:12.8272540Z [8/11] Emitting module Models
+2026-11-17T03:21:12.8376120Z [9/11] Compiling Models EnvironmentAdvisor.swift
+2026-11-17T03:21:12.8490420Z [10/11] Compiling Models EnvironmentModels.swift
+2026-11-17T03:21:12.8615400Z [11/11] Compiling Models ModelEnums.swift
+2026-11-17T03:21:13.8933140Z [12/13] Compiling Models PluginModels.swift
+2026-11-17T03:21:13.9037380Z [13/13] Compiling Models ReportEnvelope.swift
+2026-11-17T03:21:14.6037650Z [14/16] Compiling Adapters RootHideAdapter.swift
+2026-11-17T03:21:14.6924010Z [15/17] Emitting module Adapters
+2026-11-17T03:21:14.7027390Z [16/17] Compiling Adapters ElleKitAdapter.swift
+2026-11-17T03:21:14.8120630Z [17/17] Compiling Adapters RootlessAdapter.swift
+2026-11-17T03:21:16.2210090Z [18/66] Compiling Core PlistValueKind.swift
+2026-11-17T03:21:16.2318420Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Engine/PluginFilterParseEngine.swift:72:44: error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:16.2420870Z  70 |                     from: record,
+2026-11-17T03:21:16.2521570Z  71 |                     reason: "unknown_route",
+2026-11-17T03:21:16.2623270Z  72 |                     extraDetail: ["route": snapshotRouteValue(snapshot.route)]
+2026-11-17T03:21:16.2727400Z     |                                            `- error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:16.2830540Z  73 |                 ))
+2026-11-17T03:21:16.2934890Z  74 |                 continue
+2026-11-17T03:21:16.3049660Z 
+2026-11-17T03:21:16.3151320Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:85:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:16.3257230Z  83 |         // 3. 字段级类型核对（先产出结构化证据，再进入 Codable 边界）。
+2026-11-17T03:21:16.3358680Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:16.3502940Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:16.3628810Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:16.3752070Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:16.3870730Z  87 | 
+2026-11-17T03:21:16.4004680Z 
+2026-11-17T03:21:16.4118900Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:86:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:16.4263310Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:16.4379430Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:16.4484210Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:16.4628920Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:16.4731970Z  87 | 
+2026-11-17T03:21:16.4839850Z  88 |         // UnloadAfter：缺失 / 空指针容忍；出现且非布尔 → field_type 证据。
+2026-11-17T03:21:16.4941280Z 
+2026-11-17T03:21:16.5043270Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:106:44: error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:16.5208090Z 104 |             return Self.failed(
+2026-11-17T03:21:16.5310650Z 105 |                 pairingKey: pairingKey, dylibPath: dylibPath, plistPath: plistPath,
+2026-11-17T03:21:16.5413610Z 106 |                 route: route, reason: Self.topLevelReason(for: skipped.first),
+2026-11-17T03:21:16.5522060Z     |                                            |- error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:16.5624770Z     |                                            |- note: coalesce using '??' to provide a default when the optional value contains 'nil'
+2026-11-17T03:21:16.5626830Z     |                                            `- note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+2026-11-17T03:21:16.5729540Z 107 |                 skipped: skipped,
+2026-11-17T03:21:16.5832020Z 108 |                 plistFormat: plistFormat, readStatus: readStatus)
+2026-11-17T03:21:16.5967740Z [19/66] Compiling Core FilterParseIntegrationValidator.swift
+2026-11-17T03:21:16.6090480Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Engine/PluginFilterParseEngine.swift:72:44: error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:16.6213890Z  70 |                     from: record,
+2026-11-17T03:21:16.6340460Z  71 |                     reason: "unknown_route",
+2026-11-17T03:21:16.6481220Z  72 |                     extraDetail: ["route": snapshotRouteValue(snapshot.route)]
+2026-11-17T03:21:16.6604250Z     |                                            `- error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:16.6761150Z  73 |                 ))
+2026-11-17T03:21:16.6920280Z  74 |                 continue
+2026-11-17T03:21:16.7052740Z 
+2026-11-17T03:21:16.7157970Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:85:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:16.7324770Z  83 |         // 3. 字段级类型核对（先产出结构化证据，再进入 Codable 边界）。
+2026-11-17T03:21:16.7492420Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:16.7647560Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:16.7767600Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:16.7908250Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:16.8049890Z  87 | 
+2026-11-17T03:21:16.8181090Z 
+2026-11-17T03:21:16.8340410Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:86:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:16.8468120Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:16.8608770Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:16.8732550Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:16.8862050Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:16.9007600Z  87 | 
+2026-11-17T03:21:16.9134970Z  88 |         // UnloadAfter：缺失 / 空指针容忍；出现且非布尔 → field_type 证据。
+2026-11-17T03:21:16.9257820Z 
+2026-11-17T03:21:16.9379950Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:106:44: error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:16.9524190Z 104 |             return Self.failed(
+2026-11-17T03:21:16.9654640Z 105 |                 pairingKey: pairingKey, dylibPath: dylibPath, plistPath: plistPath,
+2026-11-17T03:21:16.9757000Z 106 |                 route: route, reason: Self.topLevelReason(for: skipped.first),
+2026-11-17T03:21:16.9859710Z     |                                            |- error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:16.9962610Z     |                                            |- note: coalesce using '??' to provide a default when the optional value contains 'nil'
+2026-11-17T03:21:17.0066530Z     |                                            `- note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+2026-11-17T03:21:17.0169400Z 107 |                 skipped: skipped,
+2026-11-17T03:21:17.0272260Z 108 |                 plistFormat: plistFormat, readStatus: readStatus)
+2026-11-17T03:21:17.0374880Z [20/66] Compiling Core FilterParseRoute.swift
+2026-11-17T03:21:17.0477120Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Engine/PluginFilterParseEngine.swift:72:44: error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:17.0580710Z  70 |                     from: record,
+2026-11-17T03:21:17.0684990Z  71 |                     reason: "unknown_route",
+2026-11-17T03:21:17.0794880Z  72 |                     extraDetail: ["route": snapshotRouteValue(snapshot.route)]
+2026-11-17T03:21:17.0897370Z     |                                            `- error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:17.1032640Z  73 |                 ))
+2026-11-17T03:21:17.1136810Z  74 |                 continue
+2026-11-17T03:21:17.1254710Z 
+2026-11-17T03:21:17.1381300Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:85:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:17.1522040Z  83 |         // 3. 字段级类型核对（先产出结构化证据，再进入 Codable 边界）。
+2026-11-17T03:21:17.1653070Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:17.1793490Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:17.1928730Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:17.2064990Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:17.2216910Z  87 | 
+2026-11-17T03:21:17.2317780Z 
+2026-11-17T03:21:17.2419590Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:86:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:17.2521460Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:17.2623910Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:17.2726400Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:17.2789460Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:17.3010460Z  87 | 
+2026-11-17T03:21:17.3112490Z  88 |         // UnloadAfter：缺失 / 空指针容忍；出现且非布尔 → field_type 证据。
+2026-11-17T03:21:17.3213960Z 
+2026-11-17T03:21:17.3317680Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:106:44: error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:17.3419400Z 104 |             return Self.failed(
+2026-11-17T03:21:17.3520920Z 105 |                 pairingKey: pairingKey, dylibPath: dylibPath, plistPath: plistPath,
+2026-11-17T03:21:17.3622350Z 106 |                 route: route, reason: Self.topLevelReason(for: skipped.first),
+2026-11-17T03:21:17.3724010Z     |                                            |- error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:17.3724870Z     |                                            |- note: coalesce using '??' to provide a default when the optional value contains 'nil'
+2026-11-17T03:21:17.3828160Z     |                                            `- note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+2026-11-17T03:21:17.3930510Z 107 |                 skipped: skipped,
+2026-11-17T03:21:17.4036440Z 108 |                 plistFormat: plistFormat, readStatus: readStatus)
+2026-11-17T03:21:17.4139540Z [21/66] Compiling Core FilterParseRouteResolver.swift
+2026-11-17T03:21:17.4330060Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Engine/PluginFilterParseEngine.swift:72:44: error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:17.4431810Z  70 |                     from: record,
+2026-11-17T03:21:17.4533260Z  71 |                     reason: "unknown_route",
+2026-11-17T03:21:17.4634680Z  72 |                     extraDetail: ["route": snapshotRouteValue(snapshot.route)]
+2026-11-17T03:21:17.4767670Z     |                                            `- error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:17.4899280Z  73 |                 ))
+2026-11-17T03:21:17.5028830Z  74 |                 continue
+2026-11-17T03:21:17.5160760Z 
+2026-11-17T03:21:17.5301000Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:85:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:17.5441910Z  83 |         // 3. 字段级类型核对（先产出结构化证据，再进入 Codable 边界）。
+2026-11-17T03:21:17.5575740Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:17.5678610Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:17.5853790Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:17.5975350Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:17.6080330Z  87 | 
+2026-11-17T03:21:17.6181800Z 
+2026-11-17T03:21:17.6283340Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:86:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:17.6384930Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:17.6487010Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:17.6590100Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:17.6699430Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:17.6802990Z  87 | 
+2026-11-17T03:21:17.6803590Z  88 |         // UnloadAfter：缺失 / 空指针容忍；出现且非布尔 → field_type 证据。
+2026-11-17T03:21:17.6803980Z 
+2026-11-17T03:21:17.6804460Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:106:44: error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:17.6805310Z 104 |             return Self.failed(
+2026-11-17T03:21:17.6805720Z 105 |                 pairingKey: pairingKey, dylibPath: dylibPath, plistPath: plistPath,
+2026-11-17T03:21:17.6806140Z 106 |                 route: route, reason: Self.topLevelReason(for: skipped.first),
+2026-11-17T03:21:17.6806740Z     |                                            |- error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:17.6807490Z     |                                            |- note: coalesce using '??' to provide a default when the optional value contains 'nil'
+2026-11-17T03:21:17.6808100Z     |                                            `- note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+2026-11-17T03:21:17.6808640Z 107 |                 skipped: skipped,
+2026-11-17T03:21:17.6809070Z 108 |                 plistFormat: plistFormat, readStatus: readStatus)
+2026-11-17T03:21:17.6809680Z [22/66] Compiling Core FilterParseSnapshotBuilder.swift
+2026-11-17T03:21:17.6811110Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Engine/PluginFilterParseEngine.swift:72:44: error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:17.6812150Z  70 |                     from: record,
+2026-11-17T03:21:17.6812490Z  71 |                     reason: "unknown_route",
+2026-11-17T03:21:17.6812910Z  72 |                     extraDetail: ["route": snapshotRouteValue(snapshot.route)]
+2026-11-17T03:21:17.6813570Z     |                                            `- error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:17.6814210Z  73 |                 ))
+2026-11-17T03:21:17.6814540Z  74 |                 continue
+2026-11-17T03:21:17.6814660Z 
+2026-11-17T03:21:17.6815290Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:85:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:17.6816220Z  83 |         // 3. 字段级类型核对（先产出结构化证据，再进入 Codable 边界）。
+2026-11-17T03:21:17.6816690Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:17.6918050Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:17.7020020Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:17.7122060Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:17.7223770Z  87 | 
+2026-11-17T03:21:17.7360130Z 
+2026-11-17T03:21:17.7492460Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:86:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:17.7621860Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:17.7746000Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:17.7890360Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:17.8025500Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:17.8152740Z  87 | 
+2026-11-17T03:21:17.8299850Z  88 |         // UnloadAfter：缺失 / 空指针容忍；出现且非布尔 → field_type 证据。
+2026-11-17T03:21:17.8438600Z 
+2026-11-17T03:21:17.8542070Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:106:44: error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:17.8643840Z 104 |             return Self.failed(
+2026-11-17T03:21:17.8746570Z 105 |                 pairingKey: pairingKey, dylibPath: dylibPath, plistPath: plistPath,
+2026-11-17T03:21:17.8849730Z 106 |                 route: route, reason: Self.topLevelReason(for: skipped.first),
+2026-11-17T03:21:17.8951990Z     |                                            |- error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:17.9053490Z     |                                            |- note: coalesce using '??' to provide a default when the optional value contains 'nil'
+2026-11-17T03:21:17.9156110Z     |                                            `- note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+2026-11-17T03:21:17.9268450Z 107 |                 skipped: skipped,
+2026-11-17T03:21:17.9371940Z 108 |                 plistFormat: plistFormat, readStatus: readStatus)
+2026-11-17T03:21:17.9474520Z [23/66] Compiling Core FilterParsing.swift
+2026-11-17T03:21:17.9578890Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Engine/PluginFilterParseEngine.swift:72:44: error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:17.9682740Z  70 |                     from: record,
+2026-11-17T03:21:17.9798750Z  71 |                     reason: "unknown_route",
+2026-11-17T03:21:17.9928860Z  72 |                     extraDetail: ["route": snapshotRouteValue(snapshot.route)]
+2026-11-17T03:21:18.0040620Z     |                                            `- error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:18.0165480Z  73 |                 ))
+2026-11-17T03:21:18.0311740Z  74 |                 continue
+2026-11-17T03:21:18.0465470Z 
+2026-11-17T03:21:18.0597780Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:85:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:18.0748400Z  83 |         // 3. 字段级类型核对（先产出结构化证据，再进入 Codable 边界）。
+2026-11-17T03:21:18.0862570Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:18.0997910Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:18.1120940Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:18.1239840Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:18.1376340Z  87 | 
+2026-11-17T03:21:18.1496840Z 
+2026-11-17T03:21:18.1638200Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:86:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:18.1767960Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:18.1903420Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:18.2027280Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:18.2169710Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:18.2308000Z  87 | 
+2026-11-17T03:21:18.2436010Z  88 |         // UnloadAfter：缺失 / 空指针容忍；出现且非布尔 → field_type 证据。
+2026-11-17T03:21:18.2597860Z 
+2026-11-17T03:21:18.2746490Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:106:44: error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:18.2917100Z 104 |             return Self.failed(
+2026-11-17T03:21:18.3044460Z 105 |                 pairingKey: pairingKey, dylibPath: dylibPath, plistPath: plistPath,
+2026-11-17T03:21:18.3160870Z 106 |                 route: route, reason: Self.topLevelReason(for: skipped.first),
+2026-11-17T03:21:18.3282990Z     |                                            |- error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:18.3422040Z     |                                            |- note: coalesce using '??' to provide a default when the optional value contains 'nil'
+2026-11-17T03:21:18.3527770Z     |                                            `- note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+2026-11-17T03:21:18.3629410Z 107 |                 skipped: skipped,
+2026-11-17T03:21:18.3629950Z 108 |                 plistFormat: plistFormat, readStatus: readStatus)
+2026-11-17T03:21:18.3731740Z [24/66] Compiling Core PluginFilterParseEngine.swift
+2026-11-17T03:21:18.3833790Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Engine/PluginFilterParseEngine.swift:72:44: error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:18.3936370Z  70 |                     from: record,
+2026-11-17T03:21:18.4037680Z  71 |                     reason: "unknown_route",
+2026-11-17T03:21:18.4138940Z  72 |                     extraDetail: ["route": snapshotRouteValue(snapshot.route)]
+2026-11-17T03:21:18.4240810Z     |                                            `- error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:18.4342090Z  73 |                 ))
+2026-11-17T03:21:18.4445080Z  74 |                 continue
+2026-11-17T03:21:18.4546630Z 
+2026-11-17T03:21:18.4647970Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:85:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:18.4750590Z  83 |         // 3. 字段级类型核对（先产出结构化证据，再进入 Codable 边界）。
+2026-11-17T03:21:18.4891840Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:18.5016850Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:18.5129360Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:18.5240150Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:18.5366520Z  87 | 
+2026-11-17T03:21:18.5490730Z 
+2026-11-17T03:21:18.5616220Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:86:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:18.5740610Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:18.5874440Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:18.6001350Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:18.6137990Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:18.6287700Z  87 | 
+2026-11-17T03:21:18.6405250Z  88 |         // UnloadAfter：缺失 / 空指针容忍；出现且非布尔 → field_type 证据。
+2026-11-17T03:21:18.6531300Z 
+2026-11-17T03:21:18.6654930Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:106:44: error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:18.6802870Z 104 |             return Self.failed(
+2026-11-17T03:21:18.6939720Z 105 |                 pairingKey: pairingKey, dylibPath: dylibPath, plistPath: plistPath,
+2026-11-17T03:21:18.7060450Z 106 |                 route: route, reason: Self.topLevelReason(for: skipped.first),
+2026-11-17T03:21:18.7173320Z     |                                            |- error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:18.7287860Z     |                                            |- note: coalesce using '??' to provide a default when the optional value contains 'nil'
+2026-11-17T03:21:18.7389360Z     |                                            `- note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+2026-11-17T03:21:18.7490590Z 107 |                 skipped: skipped,
+2026-11-17T03:21:18.7592470Z 108 |                 plistFormat: plistFormat, readStatus: readStatus)
+2026-11-17T03:21:18.7694810Z [25/66] Compiling Core PlistDataReader.swift
+2026-11-17T03:21:18.7799010Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Engine/PluginFilterParseEngine.swift:72:44: error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:18.7934080Z  70 |                     from: record,
+2026-11-17T03:21:18.8035120Z  71 |                     reason: "unknown_route",
+2026-11-17T03:21:18.8137440Z  72 |                     extraDetail: ["route": snapshotRouteValue(snapshot.route)]
+2026-11-17T03:21:18.8249110Z     |                                            `- error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:18.8350660Z  73 |                 ))
+2026-11-17T03:21:18.8451680Z  74 |                 continue
+2026-11-17T03:21:18.8588420Z 
+2026-11-17T03:21:18.8738130Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:85:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:18.8865610Z  83 |         // 3. 字段级类型核对（先产出结构化证据，再进入 Codable 边界）。
+2026-11-17T03:21:18.8999130Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:18.9133370Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:18.9239790Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:18.9355020Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:18.9472070Z  87 | 
+2026-11-17T03:21:18.9639290Z 
+2026-11-17T03:21:18.9781450Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:86:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:18.9882950Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:18.9984060Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.0085410Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.0186590Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.0307700Z  87 | 
+2026-11-17T03:21:19.0409190Z  88 |         // UnloadAfter：缺失 / 空指针容忍；出现且非布尔 → field_type 证据。
+2026-11-17T03:21:19.0510140Z 
+2026-11-17T03:21:19.0611440Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:106:44: error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.0712600Z 104 |             return Self.failed(
+2026-11-17T03:21:19.0814280Z 105 |                 pairingKey: pairingKey, dylibPath: dylibPath, plistPath: plistPath,
+2026-11-17T03:21:19.0915940Z 106 |                 route: route, reason: Self.topLevelReason(for: skipped.first),
+2026-11-17T03:21:19.1024930Z     |                                            |- error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.1131850Z     |                                            |- note: coalesce using '??' to provide a default when the optional value contains 'nil'
+2026-11-17T03:21:19.1235670Z     |                                            `- note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+2026-11-17T03:21:19.1349970Z 107 |                 skipped: skipped,
+2026-11-17T03:21:19.1453430Z 108 |                 plistFormat: plistFormat, readStatus: readStatus)
+2026-11-17T03:21:19.1574030Z [26/66] Compiling Core PlistReadResult.swift
+2026-11-17T03:21:19.1697220Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Engine/PluginFilterParseEngine.swift:72:44: error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.1807750Z  70 |                     from: record,
+2026-11-17T03:21:19.1929690Z  71 |                     reason: "unknown_route",
+2026-11-17T03:21:19.2043970Z  72 |                     extraDetail: ["route": snapshotRouteValue(snapshot.route)]
+2026-11-17T03:21:19.2144340Z     |                                            `- error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.2242690Z  73 |                 ))
+2026-11-17T03:21:19.2243780Z  74 |                 continue
+2026-11-17T03:21:19.2345550Z 
+2026-11-17T03:21:19.2368900Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:85:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2369950Z  83 |         // 3. 字段级类型核对（先产出结构化证据，再进入 Codable 边界）。
+2026-11-17T03:21:19.2370350Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.2370880Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.2373240Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2375120Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.2375680Z  87 | 
+2026-11-17T03:21:19.2375850Z 
+2026-11-17T03:21:19.2376430Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:86:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2377290Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.2377730Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.2378300Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.2378880Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2379310Z  87 | 
+2026-11-17T03:21:19.2379760Z  88 |         // UnloadAfter：缺失 / 空指针容忍；出现且非布尔 → field_type 证据。
+2026-11-17T03:21:19.2380040Z 
+2026-11-17T03:21:19.2380880Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:106:44: error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.2381620Z 104 |             return Self.failed(
+2026-11-17T03:21:19.2382030Z 105 |                 pairingKey: pairingKey, dylibPath: dylibPath, plistPath: plistPath,
+2026-11-17T03:21:19.2382540Z 106 |                 route: route, reason: Self.topLevelReason(for: skipped.first),
+2026-11-17T03:21:19.2383110Z     |                                            |- error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.2383830Z     |                                            |- note: coalesce using '??' to provide a default when the optional value contains 'nil'
+2026-11-17T03:21:19.2388120Z     |                                            `- note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+2026-11-17T03:21:19.2390610Z 107 |                 skipped: skipped,
+2026-11-17T03:21:19.2391520Z 108 |                 plistFormat: plistFormat, readStatus: readStatus)
+2026-11-17T03:21:19.2392500Z [27/66] Compiling Core PlistReadStatus.swift
+2026-11-17T03:21:19.2394920Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Engine/PluginFilterParseEngine.swift:72:44: error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.2396760Z  70 |                     from: record,
+2026-11-17T03:21:19.2397110Z  71 |                     reason: "unknown_route",
+2026-11-17T03:21:19.2397560Z  72 |                     extraDetail: ["route": snapshotRouteValue(snapshot.route)]
+2026-11-17T03:21:19.2398250Z     |                                            `- error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.2398800Z  73 |                 ))
+2026-11-17T03:21:19.2399060Z  74 |                 continue
+2026-11-17T03:21:19.2399310Z 
+2026-11-17T03:21:19.2399950Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:85:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2400850Z  83 |         // 3. 字段级类型核对（先产出结构化证据，再进入 Codable 边界）。
+2026-11-17T03:21:19.2401190Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.2401620Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.2402200Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2402810Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.2403300Z  87 | 
+2026-11-17T03:21:19.2403500Z 
+2026-11-17T03:21:19.2404310Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:86:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2410740Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.2411980Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.2415150Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.2416650Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2417740Z  87 | 
+2026-11-17T03:21:19.2418720Z  88 |         // UnloadAfter：缺失 / 空指针容忍；出现且非布尔 → field_type 证据。
+2026-11-17T03:21:19.2419430Z 
+2026-11-17T03:21:19.2420920Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:106:44: error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.2422820Z 104 |             return Self.failed(
+2026-11-17T03:21:19.2424590Z 105 |                 pairingKey: pairingKey, dylibPath: dylibPath, plistPath: plistPath,
+2026-11-17T03:21:19.2425260Z 106 |                 route: route, reason: Self.topLevelReason(for: skipped.first),
+2026-11-17T03:21:19.2425960Z     |                                            |- error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.2426700Z     |                                            |- note: coalesce using '??' to provide a default when the optional value contains 'nil'
+2026-11-17T03:21:19.2427330Z     |                                            `- note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+2026-11-17T03:21:19.2427910Z 107 |                 skipped: skipped,
+2026-11-17T03:21:19.2428360Z 108 |                 plistFormat: plistFormat, readStatus: readStatus)
+2026-11-17T03:21:19.2428820Z [28/66] Compiling Core FilterParseCounts.swift
+2026-11-17T03:21:19.2430140Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Engine/PluginFilterParseEngine.swift:72:44: error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.2430910Z  70 |                     from: record,
+2026-11-17T03:21:19.2431260Z  71 |                     reason: "unknown_route",
+2026-11-17T03:21:19.2431850Z  72 |                     extraDetail: ["route": snapshotRouteValue(snapshot.route)]
+2026-11-17T03:21:19.2432470Z     |                                            `- error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.2432980Z  73 |                 ))
+2026-11-17T03:21:19.2433240Z  74 |                 continue
+2026-11-17T03:21:19.2433450Z 
+2026-11-17T03:21:19.2434000Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:85:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2434880Z  83 |         // 3. 字段级类型核对（先产出结构化证据，再进入 Codable 边界）。
+2026-11-17T03:21:19.2435210Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.2435690Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.2436370Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2437110Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.2437600Z  87 | 
+2026-11-17T03:21:19.2437770Z 
+2026-11-17T03:21:19.2438320Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:86:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2439050Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.2439620Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.2440210Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.2441250Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2441820Z  87 | 
+2026-11-17T03:21:19.2442250Z  88 |         // UnloadAfter：缺失 / 空指针容忍；出现且非布尔 → field_type 证据。
+2026-11-17T03:21:19.2442560Z 
+2026-11-17T03:21:19.2443110Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:106:44: error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.2443920Z 104 |             return Self.failed(
+2026-11-17T03:21:19.2496940Z 105 |                 pairingKey: pairingKey, dylibPath: dylibPath, plistPath: plistPath,
+2026-11-17T03:21:19.2502360Z 106 |                 route: route, reason: Self.topLevelReason(for: skipped.first),
+2026-11-17T03:21:19.2503060Z     |                                            |- error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.2503730Z     |                                            |- note: coalesce using '??' to provide a default when the optional value contains 'nil'
+2026-11-17T03:21:19.2504360Z     |                                            `- note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+2026-11-17T03:21:19.2504880Z 107 |                 skipped: skipped,
+2026-11-17T03:21:19.2505320Z 108 |                 plistFormat: plistFormat, readStatus: readStatus)
+2026-11-17T03:21:19.2548090Z [29/66] Compiling Core FilterParseResult.swift
+2026-11-17T03:21:19.2549060Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Engine/PluginFilterParseEngine.swift:72:44: error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.2549910Z  70 |                     from: record,
+2026-11-17T03:21:19.2550280Z  71 |                     reason: "unknown_route",
+2026-11-17T03:21:19.2551570Z  72 |                     extraDetail: ["route": snapshotRouteValue(snapshot.route)]
+2026-11-17T03:21:19.2552220Z     |                                            `- error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.2552750Z  73 |                 ))
+2026-11-17T03:21:19.2553020Z  74 |                 continue
+2026-11-17T03:21:19.2553230Z 
+2026-11-17T03:21:19.2553790Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:85:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2554770Z  83 |         // 3. 字段级类型核对（先产出结构化证据，再进入 Codable 边界）。
+2026-11-17T03:21:19.2555150Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.2555590Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.2556170Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2556770Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.2557200Z  87 | 
+2026-11-17T03:21:19.2557380Z 
+2026-11-17T03:21:19.2557930Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:86:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2558640Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.2559070Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.2559870Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.2560560Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2560980Z  87 | 
+2026-11-17T03:21:19.2561340Z  88 |         // UnloadAfter：缺失 / 空指针容忍；出现且非布尔 → field_type 证据。
+2026-11-17T03:21:19.2563080Z 
+2026-11-17T03:21:19.2564230Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:106:44: error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.2565120Z 104 |             return Self.failed(
+2026-11-17T03:21:19.2565520Z 105 |                 pairingKey: pairingKey, dylibPath: dylibPath, plistPath: plistPath,
+2026-11-17T03:21:19.2566020Z 106 |                 route: route, reason: Self.topLevelReason(for: skipped.first),
+2026-11-17T03:21:19.2566640Z     |                                            |- error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.2567330Z     |                                            |- note: coalesce using '??' to provide a default when the optional value contains 'nil'
+2026-11-17T03:21:19.2568010Z     |                                            `- note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+2026-11-17T03:21:19.2568800Z 107 |                 skipped: skipped,
+2026-11-17T03:21:19.2569210Z 108 |                 plistFormat: plistFormat, readStatus: readStatus)
+2026-11-17T03:21:19.2569670Z [30/66] Compiling Core FilterParseSnapshot.swift
+2026-11-17T03:21:19.2570650Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Engine/PluginFilterParseEngine.swift:72:44: error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.2571410Z  70 |                     from: record,
+2026-11-17T03:21:19.2571730Z  71 |                     reason: "unknown_route",
+2026-11-17T03:21:19.2572130Z  72 |                     extraDetail: ["route": snapshotRouteValue(snapshot.route)]
+2026-11-17T03:21:19.2572850Z     |                                            `- error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.2573370Z  73 |                 ))
+2026-11-17T03:21:19.2573710Z  74 |                 continue
+2026-11-17T03:21:19.2573940Z 
+2026-11-17T03:21:19.2574620Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:85:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2575620Z  83 |         // 3. 字段级类型核对（先产出结构化证据，再进入 Codable 边界）。
+2026-11-17T03:21:19.2575960Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.2576390Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.2577040Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2577640Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.2578170Z  87 | 
+2026-11-17T03:21:19.2578380Z 
+2026-11-17T03:21:19.2578970Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:86:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2579830Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.2580530Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.2581200Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.2581850Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2582340Z  87 | 
+2026-11-17T03:21:19.2582680Z  88 |         // UnloadAfter：缺失 / 空指针容忍；出现且非布尔 → field_type 证据。
+2026-11-17T03:21:19.2583010Z 
+2026-11-17T03:21:19.2583650Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:106:44: error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.2584460Z 104 |             return Self.failed(
+2026-11-17T03:21:19.2584930Z 105 |                 pairingKey: pairingKey, dylibPath: dylibPath, plistPath: plistPath,
+2026-11-17T03:21:19.2585540Z 106 |                 route: route, reason: Self.topLevelReason(for: skipped.first),
+2026-11-17T03:21:19.2586200Z     |                                            |- error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.2586900Z     |                                            |- note: coalesce using '??' to provide a default when the optional value contains 'nil'
+2026-11-17T03:21:19.2587560Z     |                                            `- note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+2026-11-17T03:21:19.2588130Z 107 |                 skipped: skipped,
+2026-11-17T03:21:19.2605280Z 108 |                 plistFormat: plistFormat, readStatus: readStatus)
+2026-11-17T03:21:19.2606370Z [31/66] Compiling Core FilterParseStatus.swift
+2026-11-17T03:21:19.2609180Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Engine/PluginFilterParseEngine.swift:72:44: error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.2612400Z  70 |                     from: record,
+2026-11-17T03:21:19.2613170Z  71 |                     reason: "unknown_route",
+2026-11-17T03:21:19.2614730Z  72 |                     extraDetail: ["route": snapshotRouteValue(snapshot.route)]
+2026-11-17T03:21:19.2616410Z     |                                            `- error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.2617800Z  73 |                 ))
+2026-11-17T03:21:19.2618710Z  74 |                 continue
+2026-11-17T03:21:19.2619490Z 
+2026-11-17T03:21:19.2621070Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:85:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2623460Z  83 |         // 3. 字段级类型核对（先产出结构化证据，再进入 Codable 边界）。
+2026-11-17T03:21:19.2624350Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.2625500Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.2626970Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2628480Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.2630500Z  87 | 
+2026-11-17T03:21:19.2630970Z 
+2026-11-17T03:21:19.2632570Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:86:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2634520Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.2636300Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.2637740Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.2640900Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2642640Z  87 | 
+2026-11-17T03:21:19.2643760Z  88 |         // UnloadAfter：缺失 / 空指针容忍；出现且非布尔 → field_type 证据。
+2026-11-17T03:21:19.2644450Z 
+2026-11-17T03:21:19.2646800Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:106:44: error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.2648990Z 104 |             return Self.failed(
+2026-11-17T03:21:19.2649980Z 105 |                 pairingKey: pairingKey, dylibPath: dylibPath, plistPath: plistPath,
+2026-11-17T03:21:19.2651240Z 106 |                 route: route, reason: Self.topLevelReason(for: skipped.first),
+2026-11-17T03:21:19.2652680Z     |                                            |- error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.2654500Z     |                                            |- note: coalesce using '??' to provide a default when the optional value contains 'nil'
+2026-11-17T03:21:19.2656330Z     |                                            `- note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+2026-11-17T03:21:19.2659520Z 107 |                 skipped: skipped,
+2026-11-17T03:21:19.2660450Z 108 |                 plistFormat: plistFormat, readStatus: readStatus)
+2026-11-17T03:21:19.2661410Z [32/66] Compiling Core SkippedField.swift
+2026-11-17T03:21:19.2664710Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Engine/PluginFilterParseEngine.swift:72:44: error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.2667130Z  70 |                     from: record,
+2026-11-17T03:21:19.2667910Z  71 |                     reason: "unknown_route",
+2026-11-17T03:21:19.2668890Z  72 |                     extraDetail: ["route": snapshotRouteValue(snapshot.route)]
+2026-11-17T03:21:19.2672380Z     |                                            `- error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.2673730Z  73 |                 ))
+2026-11-17T03:21:19.2674370Z  74 |                 continue
+2026-11-17T03:21:19.2674860Z 
+2026-11-17T03:21:19.2676310Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:85:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2679210Z  83 |         // 3. 字段级类型核对（先产出结构化证据，再进入 Codable 边界）。
+2026-11-17T03:21:19.2680080Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.2681260Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.2683080Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2684580Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.2685720Z  87 | 
+2026-11-17T03:21:19.2686130Z 
+2026-11-17T03:21:19.2687850Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:86:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2689760Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.2690850Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.2692290Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.2693940Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2694660Z  87 | 
+2026-11-17T03:21:19.2695190Z  88 |         // UnloadAfter：缺失 / 空指针容忍；出现且非布尔 → field_type 证据。
+2026-11-17T03:21:19.2695520Z 
+2026-11-17T03:21:19.2696680Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:106:44: error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.2697460Z 104 |             return Self.failed(
+2026-11-17T03:21:19.2697880Z 105 |                 pairingKey: pairingKey, dylibPath: dylibPath, plistPath: plistPath,
+2026-11-17T03:21:19.2698380Z 106 |                 route: route, reason: Self.topLevelReason(for: skipped.first),
+2026-11-17T03:21:19.2698960Z     |                                            |- error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.2699600Z     |                                            |- note: coalesce using '??' to provide a default when the optional value contains 'nil'
+2026-11-17T03:21:19.2700230Z     |                                            `- note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+2026-11-17T03:21:19.2700710Z 107 |                 skipped: skipped,
+2026-11-17T03:21:19.2701070Z 108 |                 plistFormat: plistFormat, readStatus: readStatus)
+2026-11-17T03:21:19.2701480Z [33/66] Compiling Core RootHideFilterMapper.swift
+2026-11-17T03:21:19.2702280Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Engine/PluginFilterParseEngine.swift:72:44: error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.2703050Z  70 |                     from: record,
+2026-11-17T03:21:19.2703350Z  71 |                     reason: "unknown_route",
+2026-11-17T03:21:19.2703760Z  72 |                     extraDetail: ["route": snapshotRouteValue(snapshot.route)]
+2026-11-17T03:21:19.2704370Z     |                                            `- error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.2704890Z  73 |                 ))
+2026-11-17T03:21:19.2705150Z  74 |                 continue
+2026-11-17T03:21:19.2705360Z 
+2026-11-17T03:21:19.2706350Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:85:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2707160Z  83 |         // 3. 字段级类型核对（先产出结构化证据，再进入 Codable 边界）。
+2026-11-17T03:21:19.2707500Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.2707930Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.2708490Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2709090Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.2709590Z  87 | 
+2026-11-17T03:21:19.2709760Z 
+2026-11-17T03:21:19.2710320Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:86:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2711040Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.2711480Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.2712040Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.2712610Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2713040Z  87 | 
+2026-11-17T03:21:19.2713360Z  88 |         // UnloadAfter：缺失 / 空指针容忍；出现且非布尔 → field_type 证据。
+2026-11-17T03:21:19.2713640Z 
+2026-11-17T03:21:19.2714200Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:106:44: error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.2714890Z 104 |             return Self.failed(
+2026-11-17T03:21:19.2715300Z 105 |                 pairingKey: pairingKey, dylibPath: dylibPath, plistPath: plistPath,
+2026-11-17T03:21:19.2715800Z 106 |                 route: route, reason: Self.topLevelReason(for: skipped.first),
+2026-11-17T03:21:19.2716500Z     |                                            |- error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.2717150Z     |                                            |- note: coalesce using '??' to provide a default when the optional value contains 'nil'
+2026-11-17T03:21:19.2717930Z     |                                            `- note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+2026-11-17T03:21:19.2718400Z 107 |                 skipped: skipped,
+2026-11-17T03:21:19.2718760Z 108 |                 plistFormat: plistFormat, readStatus: readStatus)
+2026-11-17T03:21:19.2719150Z [34/66] Compiling Core RootHideFilterParser.swift
+2026-11-17T03:21:19.2719940Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Engine/PluginFilterParseEngine.swift:72:44: error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.2720700Z  70 |                     from: record,
+2026-11-17T03:21:19.2721000Z  71 |                     reason: "unknown_route",
+2026-11-17T03:21:19.2721400Z  72 |                     extraDetail: ["route": snapshotRouteValue(snapshot.route)]
+2026-11-17T03:21:19.2722010Z     |                                            `- error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.2722530Z  73 |                 ))
+2026-11-17T03:21:19.2722790Z  74 |                 continue
+2026-11-17T03:21:19.2723130Z 
+2026-11-17T03:21:19.2723750Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:85:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2724520Z  83 |         // 3. 字段级类型核对（先产出结构化证据，再进入 Codable 边界）。
+2026-11-17T03:21:19.2724840Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.2725380Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.2726420Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2727100Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.2727530Z  87 | 
+2026-11-17T03:21:19.2727700Z 
+2026-11-17T03:21:19.2728260Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:86:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2728970Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.2729400Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.2729950Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.2730510Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2730930Z  87 | 
+2026-11-17T03:21:19.2731320Z  88 |         // UnloadAfter：缺失 / 空指针容忍；出现且非布尔 → field_type 证据。
+2026-11-17T03:21:19.2731590Z 
+2026-11-17T03:21:19.2732140Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:106:44: error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.2733210Z 104 |             return Self.failed(
+2026-11-17T03:21:19.2733600Z 105 |                 pairingKey: pairingKey, dylibPath: dylibPath, plistPath: plistPath,
+2026-11-17T03:21:19.2734220Z 106 |                 route: route, reason: Self.topLevelReason(for: skipped.first),
+2026-11-17T03:21:19.2734850Z     |                                            |- error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.2735470Z     |                                            |- note: coalesce using '??' to provide a default when the optional value contains 'nil'
+2026-11-17T03:21:19.2736330Z     |                                            `- note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+2026-11-17T03:21:19.2736820Z 107 |                 skipped: skipped,
+2026-11-17T03:21:19.2737160Z 108 |                 plistFormat: plistFormat, readStatus: readStatus)
+2026-11-17T03:21:19.2737550Z [35/66] Compiling Core RootHideFilterTypeChecker.swift
+2026-11-17T03:21:19.2738340Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Engine/PluginFilterParseEngine.swift:72:44: error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.2739090Z  70 |                     from: record,
+2026-11-17T03:21:19.2739390Z  71 |                     reason: "unknown_route",
+2026-11-17T03:21:19.2739770Z  72 |                     extraDetail: ["route": snapshotRouteValue(snapshot.route)]
+2026-11-17T03:21:19.2740560Z     |                                            `- error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.2741090Z  73 |                 ))
+2026-11-17T03:21:19.2741350Z  74 |                 continue
+2026-11-17T03:21:19.2741590Z 
+2026-11-17T03:21:19.2742170Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:85:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2743020Z  83 |         // 3. 字段级类型核对（先产出结构化证据，再进入 Codable 边界）。
+2026-11-17T03:21:19.2743440Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.2744030Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.2744590Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.2745200Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.2745880Z  87 | 
+2026-11-17T03:21:19.2846750Z 
+2026-11-17T03:21:19.2947980Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:86:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.3049700Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.3151250Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.3253370Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.3355720Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.3456880Z  87 | 
+2026-11-17T03:21:19.3558760Z  88 |         // UnloadAfter：缺失 / 空指针容忍；出现且非布尔 → field_type 证据。
+2026-11-17T03:21:19.3671860Z 
+2026-11-17T03:21:19.3775430Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:106:44: error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.3877550Z 104 |             return Self.failed(
+2026-11-17T03:21:19.3979040Z 105 |                 pairingKey: pairingKey, dylibPath: dylibPath, plistPath: plistPath,
+2026-11-17T03:21:19.4085710Z 106 |                 route: route, reason: Self.topLevelReason(for: skipped.first),
+2026-11-17T03:21:19.4188810Z     |                                            |- error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.4294480Z     |                                            |- note: coalesce using '??' to provide a default when the optional value contains 'nil'
+2026-11-17T03:21:19.4395730Z     |                                            `- note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+2026-11-17T03:21:19.4496460Z 107 |                 skipped: skipped,
+2026-11-17T03:21:19.4598090Z 108 |                 plistFormat: plistFormat, readStatus: readStatus)
+2026-11-17T03:21:19.4699760Z [36/66] Compiling Core RootHideFilterValidator.swift
+2026-11-17T03:21:19.4805610Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Engine/PluginFilterParseEngine.swift:72:44: error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.4909650Z  70 |                     from: record,
+2026-11-17T03:21:19.5016710Z  71 |                     reason: "unknown_route",
+2026-11-17T03:21:19.5125570Z  72 |                     extraDetail: ["route": snapshotRouteValue(snapshot.route)]
+2026-11-17T03:21:19.5236950Z     |                                            `- error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.5347090Z  73 |                 ))
+2026-11-17T03:21:19.5448310Z  74 |                 continue
+2026-11-17T03:21:19.5514070Z 
+2026-11-17T03:21:19.5515020Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:85:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.5516880Z  83 |         // 3. 字段级类型核对（先产出结构化证据，再进入 Codable 边界）。
+2026-11-17T03:21:19.5517370Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.5517890Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.5518580Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.5519210Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.5519930Z  87 | 
+2026-11-17T03:21:19.5520130Z 
+2026-11-17T03:21:19.5520740Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:86:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.5521490Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.5522260Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.5522910Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.5523490Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.5523990Z  87 | 
+2026-11-17T03:21:19.5524350Z  88 |         // UnloadAfter：缺失 / 空指针容忍；出现且非布尔 → field_type 证据。
+2026-11-17T03:21:19.5524650Z 
+2026-11-17T03:21:19.5525330Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:106:44: error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.5526170Z 104 |             return Self.failed(
+2026-11-17T03:21:19.5526660Z 105 |                 pairingKey: pairingKey, dylibPath: dylibPath, plistPath: plistPath,
+2026-11-17T03:21:19.5527350Z 106 |                 route: route, reason: Self.topLevelReason(for: skipped.first),
+2026-11-17T03:21:19.5528010Z     |                                            |- error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.5528640Z     |                                            |- note: coalesce using '??' to provide a default when the optional value contains 'nil'
+2026-11-17T03:21:19.5529350Z     |                                            `- note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+2026-11-17T03:21:19.5530050Z 107 |                 skipped: skipped,
+2026-11-17T03:21:19.5530720Z 108 |                 plistFormat: plistFormat, readStatus: readStatus)
+2026-11-17T03:21:19.5531190Z [37/66] Compiling Core RootlessFilterCodable.swift
+2026-11-17T03:21:19.5532160Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Engine/PluginFilterParseEngine.swift:72:44: error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.5533010Z  70 |                     from: record,
+2026-11-17T03:21:19.5533600Z  71 |                     reason: "unknown_route",
+2026-11-17T03:21:19.5534020Z  72 |                     extraDetail: ["route": snapshotRouteValue(snapshot.route)]
+2026-11-17T03:21:19.5534650Z     |                                            `- error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.5535160Z  73 |                 ))
+2026-11-17T03:21:19.5535420Z  74 |                 continue
+2026-11-17T03:21:19.5535620Z 
+2026-11-17T03:21:19.5536170Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:85:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.5536950Z  83 |         // 3. 字段级类型核对（先产出结构化证据，再进入 Codable 边界）。
+2026-11-17T03:21:19.5537270Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.5537690Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.5538250Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.5538810Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.5539230Z  87 | 
+2026-11-17T03:21:19.5539390Z 
+2026-11-17T03:21:19.5539930Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:86:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.5540640Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.5541130Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.5541680Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.5542240Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.5542890Z  87 | 
+2026-11-17T03:21:19.5543210Z  88 |         // UnloadAfter：缺失 / 空指针容忍；出现且非布尔 → field_type 证据。
+2026-11-17T03:21:19.5543480Z 
+2026-11-17T03:21:19.5544020Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:106:44: error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.5546080Z 104 |             return Self.failed(
+2026-11-17T03:21:19.5546570Z 105 |                 pairingKey: pairingKey, dylibPath: dylibPath, plistPath: plistPath,
+2026-11-17T03:21:19.5547100Z 106 |                 route: route, reason: Self.topLevelReason(for: skipped.first),
+2026-11-17T03:21:19.5547670Z     |                                            |- error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.5548310Z     |                                            |- note: coalesce using '??' to provide a default when the optional value contains 'nil'
+2026-11-17T03:21:19.5548950Z     |                                            `- note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+2026-11-17T03:21:19.5549410Z 107 |                 skipped: skipped,
+2026-11-17T03:21:19.5549760Z 108 |                 plistFormat: plistFormat, readStatus: readStatus)
+2026-11-17T03:21:19.5550140Z [38/66] Compiling Core RootlessFilterMapper.swift
+2026-11-17T03:21:19.5550930Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Engine/PluginFilterParseEngine.swift:72:44: error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.5551670Z  70 |                     from: record,
+2026-11-17T03:21:19.5551970Z  71 |                     reason: "unknown_route",
+2026-11-17T03:21:19.5552350Z  72 |                     extraDetail: ["route": snapshotRouteValue(snapshot.route)]
+2026-11-17T03:21:19.5552950Z     |                                            `- error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.5553470Z  73 |                 ))
+2026-11-17T03:21:19.5553940Z  74 |                 continue
+2026-11-17T03:21:19.5554160Z 
+2026-11-17T03:21:19.5554770Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:85:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.5555590Z  83 |         // 3. 字段级类型核对（先产出结构化证据，再进入 Codable 边界）。
+2026-11-17T03:21:19.5556800Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.5557330Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.5558390Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.5558970Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.5559390Z  87 | 
+2026-11-17T03:21:19.5559600Z 
+2026-11-17T03:21:19.5561280Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:86:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.5562090Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.5562520Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.5563050Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.5563670Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.5565500Z  87 | 
+2026-11-17T03:21:19.5566520Z  88 |         // UnloadAfter：缺失 / 空指针容忍；出现且非布尔 → field_type 证据。
+2026-11-17T03:21:19.5567860Z 
+2026-11-17T03:21:19.5569340Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:106:44: error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.5571780Z 104 |             return Self.failed(
+2026-11-17T03:21:19.5572810Z 105 |                 pairingKey: pairingKey, dylibPath: dylibPath, plistPath: plistPath,
+2026-11-17T03:21:19.5574030Z 106 |                 route: route, reason: Self.topLevelReason(for: skipped.first),
+2026-11-17T03:21:19.5575450Z     |                                            |- error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.5577140Z     |                                            |- note: coalesce using '??' to provide a default when the optional value contains 'nil'
+2026-11-17T03:21:19.5578760Z     |                                            `- note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+2026-11-17T03:21:19.5579950Z 107 |                 skipped: skipped,
+2026-11-17T03:21:19.5580880Z 108 |                 plistFormat: plistFormat, readStatus: readStatus)
+2026-11-17T03:21:19.5581350Z [39/66] Compiling Core RootlessFilterParser.swift
+2026-11-17T03:21:19.5582220Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Engine/PluginFilterParseEngine.swift:72:44: error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.5582980Z  70 |                     from: record,
+2026-11-17T03:21:19.5583280Z  71 |                     reason: "unknown_route",
+2026-11-17T03:21:19.5583690Z  72 |                     extraDetail: ["route": snapshotRouteValue(snapshot.route)]
+2026-11-17T03:21:19.5584410Z     |                                            `- error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.5585050Z  73 |                 ))
+2026-11-17T03:21:19.5585330Z  74 |                 continue
+2026-11-17T03:21:19.5585530Z 
+2026-11-17T03:21:19.5586180Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:85:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.5587170Z  83 |         // 3. 字段级类型核对（先产出结构化证据，再进入 Codable 边界）。
+2026-11-17T03:21:19.5587510Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.5587930Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.5588480Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.5589100Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.5589600Z  87 | 
+2026-11-17T03:21:19.5589810Z 
+2026-11-17T03:21:19.5590460Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:86:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.5591250Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.5591670Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.5592230Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.5592900Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.5593320Z  87 | 
+2026-11-17T03:21:19.5593650Z  88 |         // UnloadAfter：缺失 / 空指针容忍；出现且非布尔 → field_type 证据。
+2026-11-17T03:21:19.5593920Z 
+2026-11-17T03:21:19.5594580Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:106:44: error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.5595370Z 104 |             return Self.failed(
+2026-11-17T03:21:19.5596380Z 105 |                 pairingKey: pairingKey, dylibPath: dylibPath, plistPath: plistPath,
+2026-11-17T03:21:19.5598230Z 106 |                 route: route, reason: Self.topLevelReason(for: skipped.first),
+2026-11-17T03:21:19.5601620Z     |                                            |- error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.5603300Z     |                                            |- note: coalesce using '??' to provide a default when the optional value contains 'nil'
+2026-11-17T03:21:19.5604930Z     |                                            `- note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+2026-11-17T03:21:19.5606110Z 107 |                 skipped: skipped,
+2026-11-17T03:21:19.5607050Z 108 |                 plistFormat: plistFormat, readStatus: readStatus)
+2026-11-17T03:21:19.5608030Z [40/66] Compiling Core PluginPairingClassifier.swift
+2026-11-17T03:21:19.5610190Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Engine/PluginFilterParseEngine.swift:72:44: error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.5611160Z  70 |                     from: record,
+2026-11-17T03:21:19.5611490Z  71 |                     reason: "unknown_route",
+2026-11-17T03:21:19.5611900Z  72 |                     extraDetail: ["route": snapshotRouteValue(snapshot.route)]
+2026-11-17T03:21:19.5612520Z     |                                            `- error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.5613280Z  73 |                 ))
+2026-11-17T03:21:19.5613540Z  74 |                 continue
+2026-11-17T03:21:19.5613740Z 
+2026-11-17T03:21:19.5614340Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:85:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.5615260Z  83 |         // 3. 字段级类型核对（先产出结构化证据，再进入 Codable 边界）。
+2026-11-17T03:21:19.5615670Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.5616160Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.5616740Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.5617800Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.5618240Z  87 | 
+2026-11-17T03:21:19.5618400Z 
+2026-11-17T03:21:19.5618970Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:86:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.5619710Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.5620130Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.5620680Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.5621250Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.5621670Z  87 | 
+2026-11-17T03:21:19.5622060Z  88 |         // UnloadAfter：缺失 / 空指针容忍；出现且非布尔 → field_type 证据。
+2026-11-17T03:21:19.5622370Z 
+2026-11-17T03:21:19.5622930Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:106:44: error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.5623620Z 104 |             return Self.failed(
+2026-11-17T03:21:19.5624010Z 105 |                 pairingKey: pairingKey, dylibPath: dylibPath, plistPath: plistPath,
+2026-11-17T03:21:19.5625220Z 106 |                 route: route, reason: Self.topLevelReason(for: skipped.first),
+2026-11-17T03:21:19.5625780Z     |                                            |- error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.5670580Z     |                                            |- note: coalesce using '??' to provide a default when the optional value contains 'nil'
+2026-11-17T03:21:19.5672340Z     |                                            `- note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+2026-11-17T03:21:19.5674630Z 107 |                 skipped: skipped,
+2026-11-17T03:21:19.5675540Z 108 |                 plistFormat: plistFormat, readStatus: readStatus)
+2026-11-17T03:21:19.5676490Z [41/66] Compiling Core PluginPairingEngine.swift
+2026-11-17T03:21:19.5679030Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Engine/PluginFilterParseEngine.swift:72:44: error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.5682390Z  70 |                     from: record,
+2026-11-17T03:21:19.5683220Z  71 |                     reason: "unknown_route",
+2026-11-17T03:21:19.5684460Z  72 |                     extraDetail: ["route": snapshotRouteValue(snapshot.route)]
+2026-11-17T03:21:19.5686050Z     |                                            `- error: static member 'snapshotRouteValue' cannot be used on instance of type 'PluginFilterParseEngine'
+2026-11-17T03:21:19.5687480Z  73 |                 ))
+2026-11-17T03:21:19.5688070Z  74 |                 continue
+2026-11-17T03:21:19.5688560Z 
+2026-11-17T03:21:19.5690050Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:85:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.5692490Z  83 |         // 3. 字段级类型核对（先产出结构化证据，再进入 Codable 边界）。
+2026-11-17T03:21:19.5693380Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.5694410Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.5695790Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.5697240Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.5698290Z  87 | 
+2026-11-17T03:21:19.5698650Z 
+2026-11-17T03:21:19.5700720Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:86:14: warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.5702850Z  84 |         var skipped: [SkippedField] = []
+2026-11-17T03:21:19.5703890Z  85 |         Self.checkStringArray(filter["Bundles"], key: "Bundles", skipped: &skipped)
+2026-11-17T03:21:19.5705350Z  86 |         Self.checkStringArray(filter["Executables"], key: "Executables", skipped: &skipped)
+2026-11-17T03:21:19.5706830Z     |              `- warning: result of call to 'checkStringArray(_:key:skipped:)' is unused [#no-usage]
+2026-11-17T03:21:19.5707890Z  87 | 
+2026-11-17T03:21:19.5708760Z  88 |         // UnloadAfter：缺失 / 空指针容忍；出现且非布尔 → field_type 证据。
+2026-11-17T03:21:19.5709430Z 
+2026-11-17T03:21:19.5710880Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Rootless/RootlessFilterParser.swift:106:44: error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.5712800Z 104 |             return Self.failed(
+2026-11-17T03:21:19.5713230Z 105 |                 pairingKey: pairingKey, dylibPath: dylibPath, plistPath: plistPath,
+2026-11-17T03:21:19.5713730Z 106 |                 route: route, reason: Self.topLevelReason(for: skipped.first),
+2026-11-17T03:21:19.5714300Z     |                                            |- error: value of optional type 'String?' must be unwrapped to a value of type 'String'
+2026-11-17T03:21:19.5715040Z     |                                            |- note: coalesce using '??' to provide a default when the optional value contains 'nil'
+2026-11-17T03:21:19.5715710Z     |                                            `- note: force-unwrap using '!' to abort execution if the optional value contains 'nil'
+2026-11-17T03:21:19.5716240Z 107 |                 skipped: skipped,
+2026-11-17T03:21:19.5716660Z 108 |                 plistFormat: plistFormat, readStatus: readStatus)
+2026-11-17T03:21:19.5717030Z [42/89] Compiling Core CoreServices.swift
+2026-11-17T03:21:19.5717370Z [43/89] Compiling Core EnvironmentDetector.swift
+2026-11-17T03:21:19.5717710Z [44/89] Compiling Core EnvironmentSnapshot.swift
+2026-11-17T03:21:19.5718040Z [45/89] Compiling Core VersionParser.swift
+2026-11-17T03:21:19.5718380Z [46/89] Compiling Core ElleKitDirectoryResolution.swift
+2026-11-17T03:21:19.5718760Z [47/89] Compiling Core ElleKitDirectoryResolver.swift
+2026-11-17T03:21:19.5719130Z [48/89] Compiling Core ElleKitDirectorySnapshot.swift
+2026-11-17T03:21:19.5719490Z [49/89] Compiling Core ElleKitDirectoryValidator.swift
+2026-11-17T03:21:19.5719840Z [50/89] Compiling Core ElleKitPathDeriver.swift
+2026-11-17T03:21:19.5720190Z [51/89] Compiling Core ElleKitSymlinkInspector.swift
+2026-11-17T03:21:19.5720550Z [52/89] Compiling Core JBRootCandidateCollector.swift
+2026-11-17T03:21:19.5720910Z [53/89] Compiling Core JBRootCandidateSnapshot.swift
+2026-11-17T03:21:19.5721260Z [54/89] Compiling Core JBRootDecisionResolver.swift
+2026-11-17T03:21:19.5721610Z [55/89] Compiling Core JBRootNameValidator.swift
+2026-11-17T03:21:19.5721930Z [56/89] Compiling Core JBRootResolver.swift
+2026-11-17T03:21:19.5722400Z [57/89] Compiling Core JBRootStatusClassifier.swift
+2026-11-17T03:21:19.5722770Z [58/89] Compiling Core JBRootValidator.swift
+2026-11-17T03:21:19.5723110Z [59/89] Compiling Core ElleKitDirectoryPipeline.swift
+2026-11-17T03:21:19.5723460Z [60/89] Compiling Core EnvironmentRouteMapper.swift
+2026-11-17T03:21:19.5723820Z [61/89] Compiling Core JBRootToDirectoryBridge.swift
+2026-11-17T03:21:19.5724160Z [62/89] Compiling Core PlistDecodeResult.swift
+2026-11-17T03:21:19.5724490Z [63/89] Compiling Core PlistDecodeStatus.swift
+2026-11-17T03:21:19.5724820Z [64/89] Compiling Core PlistDecodedObject.swift
+2026-11-17T03:21:19.5725150Z [65/89] Compiling Core PlistDecoder.swift
+2026-11-17T03:21:19.5725440Z [66/89] Emitting module Core
+2026-11-17T03:21:19.5725780Z [67/89] Compiling Core PluginPairingSnapshotBuilder.swift
+2026-11-17T03:21:19.5726220Z [68/89] Compiling Core PluginPairingIndex.swift
+2026-11-17T03:21:19.5726580Z [69/89] Compiling Core PluginPairingIndexBuilder.swift
+2026-11-17T03:21:19.5726930Z [70/89] Compiling Core PluginPairingInput.swift
+2026-11-17T03:21:19.5727290Z [71/89] Compiling Core PluginPairingInputAdapter.swift
+2026-11-17T03:21:19.5727700Z [72/89] Compiling Core PluginPairingIntegrationResult.swift
+2026-11-17T03:21:19.5728190Z [73/89] Compiling Core PluginPairingIntegrationValidator.swift
+2026-11-17T03:21:19.5728750Z [74/89] Compiling Core PluginPairingPipeline.swift
+2026-11-17T03:21:19.5729110Z [75/89] Compiling Core PluginPairingKeyBuilder.swift
+2026-11-17T03:21:19.5729450Z [76/89] Compiling Core PairingCategory.swift
+2026-11-17T03:21:19.5729780Z [77/89] Compiling Core PairingEvidenceBasis.swift
+2026-11-17T03:21:19.5731390Z [78/89] Compiling Core PairingStatus.swift
+2026-11-17T03:21:19.5732260Z [79/89] Compiling Core PluginPairingCounts.swift
+2026-11-17T03:21:19.5733100Z [80/89] Compiling Core PluginPairingRecord.swift
+2026-11-17T03:21:19.5733960Z [81/89] Compiling Core PluginPairingSnapshot.swift
+2026-11-17T03:21:19.5735410Z [82/89] Compiling Core EnumerationStatus.swift
+2026-11-17T03:21:19.5736300Z [83/89] Compiling Core PluginDirectoryEnumerator.swift
+2026-11-17T03:21:19.5737200Z [84/89] Compiling Core PluginEntryClassifier.swift
+2026-11-17T03:21:19.5738100Z [85/89] Compiling Core PluginFileEvidenceBuilder.swift
+2026-11-17T03:21:19.5739080Z [86/89] Compiling Core PluginInventoryBuilder.swift
+2026-11-17T03:21:19.5740040Z [87/89] Compiling Core PluginInventoryFixtureSignal.swift
+2026-11-17T03:21:19.5740970Z [88/89] Compiling Core PluginInventorySnapshot.swift
+2026-11-17T03:21:19.5741830Z [89/89] Compiling Core PluginKindCounts.swift
+2026-11-17T03:21:19.5773310Z ##[error]Process completed with exit code 1.
+2026-11-17T03:21:19.6316070Z Post job cleanup.
+2026-11-17T03:21:20.4080120Z [command]/opt/homebrew/bin/git version
+2026-11-17T03:21:20.4779050Z git version 2.56.0
+2026-11-17T03:21:20.4818240Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/772b6d66-8f59-48d5-96eb-82d2c6cacbc6/.gitconfig'
+2026-11-17T03:21:20.4828870Z Temporarily overriding HOME='/Users/runner/work/_temp/772b6d66-8f59-48d5-96eb-82d2c6cacbc6' before making global git config changes
+2026-11-17T03:21:20.4830040Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-17T03:21:20.4832460Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/FilterKit/FilterKit
+2026-11-17T03:21:20.5023060Z Removing SSH command configuration
+2026-11-17T03:21:20.5032440Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-17T03:21:20.5178180Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-17T03:21:20.6969890Z Removing HTTP extra header
+2026-11-17T03:21:20.6996610Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-17T03:21:20.7679850Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-17T03:21:21.0519640Z Removing includeIf entries pointing to credentials config files
+2026-11-17T03:21:21.0621140Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-17T03:21:21.0732280Z includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git.path
+2026-11-17T03:21:21.0787750Z includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git/worktrees/*.path
+2026-11-17T03:21:21.0907580Z includeif.gitdir:/github/workspace/.git.path
+2026-11-17T03:21:21.1013270Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-17T03:21:21.1034970Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git.path
+2026-11-17T03:21:21.1035790Z /Users/runner/work/_temp/git-credentials-112f7604-776d-4908-9cff-4f2a55bf8b54.config
+2026-11-17T03:21:21.1039250Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git.path /Users/runner/work/_temp/git-credentials-112f7604-776d-4908-9cff-4f2a55bf8b54.config
+2026-11-17T03:21:21.1040930Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git/worktrees/*.path
+2026-11-17T03:21:21.1041630Z /Users/runner/work/_temp/git-credentials-112f7604-776d-4908-9cff-4f2a55bf8b54.config
+2026-11-17T03:21:21.1043030Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git/worktrees/*.path /Users/runner/work/_temp/git-credentials-112f7604-776d-4908-9cff-4f2a55bf8b54.config
+2026-11-17T03:21:21.1310040Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-17T03:21:21.1335990Z /github/runner_temp/git-credentials-112f7604-776d-4908-9cff-4f2a55bf8b54.config
+2026-11-17T03:21:21.1347180Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-112f7604-776d-4908-9cff-4f2a55bf8b54.config
+2026-11-17T03:21:21.1536970Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-17T03:21:21.1656030Z /github/runner_temp/git-credentials-112f7604-776d-4908-9cff-4f2a55bf8b54.config
+2026-11-17T03:21:21.1792630Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-112f7604-776d-4908-9cff-4f2a55bf8b54.config
+2026-11-17T03:21:21.1895740Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-17T03:21:21.3866250Z Removing credentials config '/Users/runner/work/_temp/git-credentials-112f7604-776d-4908-9cff-4f2a55bf8b54.config'
+2026-11-17T03:21:21.5127190Z Cleaning up orphan processes

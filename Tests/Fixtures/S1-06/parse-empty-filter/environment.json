@@ -1,0 +1,37 @@
+{
+  "fixtureId": "S1-06-PARSE-EMPTY-FILTER",
+  "fixtureKind": "parse-empty-filter",
+  "upstream": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "inventoryStatus": "enumerated"
+  },
+  "pairing": {
+    "pairs": [
+      {
+        "base": "Empty",
+        "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Empty.dylib",
+        "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Empty.plist",
+        "pairing": "paired",
+        "dylibIsSymlink": false,
+        "plistIsSymlink": false,
+        "status": "ok"
+      }
+    ],
+    "missingPlist": [],
+    "orphanPlist": [],
+    "ambiguous": [],
+    "uncertain": []
+  },
+  "plists": [
+    {
+      "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Empty.plist",
+      "format": "xml",
+      "readStatus": "ok",
+      "payloadInvalid": false,
+      "root": {
+        "Filter": {}
+      }
+    }
+  ]
+}

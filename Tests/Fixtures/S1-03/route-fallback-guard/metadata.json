@@ -1,0 +1,16 @@
+{
+  "fixtureId": "S1-03-FALLBACK-GUARD-001",
+  "expected": {
+    "route": "roothide",
+    "tiPath": null,
+    "tiExists": false,
+    "tiReadable": false,
+    "tiEnumerable": false,
+    "tiStatus": "unresolved",
+    "dlState": "not_symlink",
+    "dlTargetMatch": false,
+    "outcome": "unresolved"
+  },
+  "expectedWarnings": ["directory_unresolved"],
+  "expectedOutcome": "unresolved"
+}

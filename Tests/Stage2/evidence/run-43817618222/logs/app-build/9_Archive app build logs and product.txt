@@ -1,0 +1,29 @@
+﻿2026-11-16T06:39:46.0906430Z ##[group]Run actions/upload-artifact@v7
+2026-11-16T06:39:46.0907020Z with:
+2026-11-16T06:39:46.0915000Z   name: filterkit-app-build
+2026-11-16T06:39:46.0916260Z   path: build/app-xcodebuild.log
+build/sim-launch.log
+build/dashboard.png
+build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app
+
+2026-11-16T06:39:46.0917220Z   retention-days: 14
+2026-11-16T06:39:46.0917960Z   if-no-files-found: warn
+2026-11-16T06:39:46.0918300Z   compression-level: 6
+2026-11-16T06:39:46.0918890Z   overwrite: false
+2026-11-16T06:39:46.0919180Z   include-hidden-files: false
+2026-11-16T06:39:46.0919940Z   archive: true
+2026-11-16T06:39:46.0920350Z ##[endgroup]
+2026-11-16T06:39:47.0901530Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-16T06:39:47.0908750Z The least common ancestor is /Users/runner/work/FilterKit/FilterKit/build. This will be the root directory of the artifact
+2026-11-16T06:39:47.0914820Z With the provided path, there will be 9 files uploaded
+2026-11-16T06:39:47.0923530Z Artifact name is valid!
+2026-11-16T06:39:47.0923860Z Root directory input is valid!
+2026-11-16T06:39:47.5488400Z Uploading artifact: filterkit-app-build.zip
+2026-11-16T06:39:47.5490170Z Beginning upload of artifact content to blob storage
+2026-11-16T06:39:48.5806470Z Uploaded bytes 916101
+2026-11-16T06:39:48.6516180Z Finished uploading artifact content to blob storage!
+2026-11-16T06:39:48.6517290Z SHA256 digest of uploaded artifact is c7eceaedc737d67c03773bdf7ca75a067bc4a10bf2a7ff945737d38ff1fbb1ba
+2026-11-16T06:39:48.6518030Z Finalizing artifact upload
+2026-11-16T06:39:49.1993800Z Artifact filterkit-app-build successfully finalized. Artifact ID 14202938735
+2026-11-16T06:39:49.1996090Z Artifact filterkit-app-build has been successfully uploaded! Final size is 916101 bytes. Artifact ID is 14202938735
+2026-11-16T06:39:49.1997810Z Artifact download URL: https://github.com/yi-fen/FilterKit/actions/runs/43817618222/artifacts/14202938735

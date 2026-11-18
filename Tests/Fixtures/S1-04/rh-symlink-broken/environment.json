@@ -1,0 +1,15 @@
+{
+  "fixtureId": "S1-04-SYMLINK-BROKEN-001",
+  "fixtureKind": "rh-symlink-broken",
+  "upstream": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "enumerationStatus": "enumerated"
+  },
+  "fs": {
+    "enumerable": true,
+    "entries": [
+      { "name": "Broken.dylib", "type": "file", "exists": true, "readable": true, "isSymlink": true, "symlinkTarget": "Missing.dylib", "symlinkState": "broken", "realpath": null, "size": null, "hash": null, "hidden": false, "entryStatus": "ok" }
+    ]
+  }
+}

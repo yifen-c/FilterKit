@@ -1,0 +1,1107 @@
+{
+  "schemaVersion": "0.1.0",
+  "generatedAt": "2026-11-15T13:06:50.778Z",
+  "stage": "Stage 1 / S1-06",
+  "evidenceNote": "全部为离线 fixture 合成样本；不构成 RootHide 真机验证，Rootless 结果不代表真机兼容。",
+  "summary": {
+    "total": 22,
+    "passed": 22,
+    "failed": 0,
+    "routesCovered": [
+      "roothide",
+      "rootless"
+    ],
+    "missingRoutes": [],
+    "mutualLeakCount": 0,
+    "regression": {
+      "S1-01": "passed",
+      "S1-02": "passed",
+      "S1-03": "passed",
+      "S1-04": "passed",
+      "S1-05": "passed"
+    }
+  },
+  "cases": [
+    {
+      "parseId": "PARSE-003",
+      "source": "fixture:parse-binary",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "enumerated",
+        "parsed": [
+          {
+            "base": "Bin",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Bin.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Bin.plist",
+            "plistFormat": "binary",
+            "readStatus": "ok",
+            "parseStatus": "valid",
+            "reason": null,
+            "isTweakManager": false,
+            "filter": {
+              "bundles": [
+                "com.bin.app"
+              ],
+              "classes": [],
+              "executables": [],
+              "coreFoundationVersion": null,
+              "otherKeys": []
+            },
+            "skippedFields": [],
+            "validation": {
+              "status": "valid",
+              "warnings": []
+            }
+          }
+        ],
+        "notParsed": [],
+        "counts": {
+          "valid": 1,
+          "parse_failed": 0,
+          "type_mismatch": 0,
+          "read_failed": 0,
+          "not_parsed": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "parseId": "PARSE-006",
+      "source": "fixture:parse-bundles-wrong",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "partial",
+        "parsed": [
+          {
+            "base": "BadBundles",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/BadBundles.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/BadBundles.plist",
+            "plistFormat": "xml",
+            "readStatus": "ok",
+            "parseStatus": "type_mismatch",
+            "reason": "field_type",
+            "isTweakManager": null,
+            "filter": null,
+            "skippedFields": [
+              {
+                "key": "Bundles",
+                "reason": "not_array",
+                "expectedType": "string[]",
+                "observedType": "string"
+              },
+              {
+                "reason": "field_type"
+              }
+            ],
+            "validation": {
+              "status": "type_mismatch",
+              "warnings": [
+                "field_type"
+              ]
+            }
+          }
+        ],
+        "notParsed": [],
+        "counts": {
+          "valid": 0,
+          "parse_failed": 0,
+          "type_mismatch": 1,
+          "read_failed": 0,
+          "not_parsed": 0
+        },
+        "warnings": [
+          "partial_parsing",
+          "field_type"
+        ]
+      }
+    },
+    {
+      "parseId": "PARSE-007",
+      "source": "fixture:parse-classes-wrong",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "partial",
+        "parsed": [
+          {
+            "base": "BadClasses",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/BadClasses.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/BadClasses.plist",
+            "plistFormat": "xml",
+            "readStatus": "ok",
+            "parseStatus": "type_mismatch",
+            "reason": "field_type",
+            "isTweakManager": null,
+            "filter": null,
+            "skippedFields": [
+              {
+                "key": "Classes",
+                "reason": "element_type",
+                "expectedType": "string",
+                "observedType": "number",
+                "index": 0
+              },
+              {
+                "reason": "field_type"
+              }
+            ],
+            "validation": {
+              "status": "type_mismatch",
+              "warnings": [
+                "field_type"
+              ]
+            }
+          }
+        ],
+        "notParsed": [],
+        "counts": {
+          "valid": 0,
+          "parse_failed": 0,
+          "type_mismatch": 1,
+          "read_failed": 0,
+          "not_parsed": 0
+        },
+        "warnings": [
+          "partial_parsing",
+          "field_type"
+        ]
+      }
+    },
+    {
+      "parseId": "PARSE-016",
+      "source": "fixture:parse-determinism",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "enumerated",
+        "parsed": [
+          {
+            "base": "Delta",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Delta.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Delta.plist",
+            "plistFormat": "xml",
+            "readStatus": "ok",
+            "parseStatus": "valid",
+            "reason": null,
+            "isTweakManager": false,
+            "filter": {
+              "bundles": [
+                "com.delta.app"
+              ],
+              "classes": [],
+              "executables": [
+                "DeltaApp"
+              ],
+              "coreFoundationVersion": null,
+              "otherKeys": []
+            },
+            "skippedFields": [],
+            "validation": {
+              "status": "valid",
+              "warnings": []
+            }
+          }
+        ],
+        "notParsed": [],
+        "counts": {
+          "valid": 1,
+          "parse_failed": 0,
+          "type_mismatch": 0,
+          "read_failed": 0,
+          "not_parsed": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "parseId": "PARSE-011",
+      "source": "fixture:parse-empty-filter",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "enumerated",
+        "parsed": [
+          {
+            "base": "Empty",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Empty.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Empty.plist",
+            "plistFormat": "xml",
+            "readStatus": "ok",
+            "parseStatus": "valid",
+            "reason": null,
+            "isTweakManager": false,
+            "filter": {
+              "bundles": [],
+              "classes": [],
+              "executables": [],
+              "coreFoundationVersion": null,
+              "otherKeys": []
+            },
+            "skippedFields": [],
+            "validation": {
+              "status": "valid",
+              "warnings": []
+            }
+          }
+        ],
+        "notParsed": [],
+        "counts": {
+          "valid": 1,
+          "parse_failed": 0,
+          "type_mismatch": 0,
+          "read_failed": 0,
+          "not_parsed": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "parseId": "PARSE-008",
+      "source": "fixture:parse-executables-wrong",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "partial",
+        "parsed": [
+          {
+            "base": "BadExec",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/BadExec.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/BadExec.plist",
+            "plistFormat": "xml",
+            "readStatus": "ok",
+            "parseStatus": "type_mismatch",
+            "reason": "field_type",
+            "isTweakManager": null,
+            "filter": null,
+            "skippedFields": [
+              {
+                "key": "Executables",
+                "reason": "not_array",
+                "expectedType": "string[]",
+                "observedType": "string"
+              },
+              {
+                "reason": "field_type"
+              }
+            ],
+            "validation": {
+              "status": "type_mismatch",
+              "warnings": [
+                "field_type"
+              ]
+            }
+          }
+        ],
+        "notParsed": [],
+        "counts": {
+          "valid": 0,
+          "parse_failed": 0,
+          "type_mismatch": 1,
+          "read_failed": 0,
+          "not_parsed": 0
+        },
+        "warnings": [
+          "partial_parsing",
+          "field_type"
+        ]
+      }
+    },
+    {
+      "parseId": "PARSE-013",
+      "source": "fixture:parse-invalid-plist",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "partial",
+        "parsed": [
+          {
+            "base": "Broken",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Broken.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Broken.plist",
+            "plistFormat": "xml",
+            "readStatus": "ok",
+            "parseStatus": "parse_failed",
+            "reason": "invalid_plist",
+            "isTweakManager": null,
+            "filter": null,
+            "skippedFields": [],
+            "validation": {
+              "status": "parse_failed",
+              "warnings": [
+                "invalid_plist"
+              ]
+            }
+          }
+        ],
+        "notParsed": [],
+        "counts": {
+          "valid": 0,
+          "parse_failed": 1,
+          "type_mismatch": 0,
+          "read_failed": 0,
+          "not_parsed": 0
+        },
+        "warnings": [
+          "partial_parsing",
+          "invalid_plist"
+        ]
+      }
+    },
+    {
+      "parseId": "PARSE-011",
+      "source": "fixture:parse-missing-fields",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "enumerated",
+        "parsed": [
+          {
+            "base": "Sparse",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Sparse.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Sparse.plist",
+            "plistFormat": "xml",
+            "readStatus": "ok",
+            "parseStatus": "valid",
+            "reason": null,
+            "isTweakManager": false,
+            "filter": {
+              "bundles": [],
+              "classes": [],
+              "executables": [],
+              "coreFoundationVersion": null,
+              "otherKeys": []
+            },
+            "skippedFields": [],
+            "validation": {
+              "status": "valid",
+              "warnings": []
+            }
+          }
+        ],
+        "notParsed": [],
+        "counts": {
+          "valid": 1,
+          "parse_failed": 0,
+          "type_mismatch": 0,
+          "read_failed": 0,
+          "not_parsed": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "parseId": "PARSE-005",
+      "source": "fixture:parse-missing-filter",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "partial",
+        "parsed": [
+          {
+            "base": "NoFilter",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/NoFilter.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/NoFilter.plist",
+            "plistFormat": "xml",
+            "readStatus": "ok",
+            "parseStatus": "type_mismatch",
+            "reason": "filter_missing",
+            "isTweakManager": null,
+            "filter": null,
+            "skippedFields": [
+              {
+                "key": "Filter",
+                "reason": "filter_missing",
+                "expectedType": "object",
+                "observedType": "missing"
+              }
+            ],
+            "validation": {
+              "status": "type_mismatch",
+              "warnings": [
+                "filter_missing"
+              ]
+            }
+          }
+        ],
+        "notParsed": [],
+        "counts": {
+          "valid": 0,
+          "parse_failed": 0,
+          "type_mismatch": 1,
+          "read_failed": 0,
+          "not_parsed": 0
+        },
+        "warnings": [
+          "partial_parsing",
+          "filter_missing"
+        ]
+      }
+    },
+    {
+      "parseId": "PARSE-012",
+      "source": "fixture:parse-multi-rule",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "enumerated",
+        "parsed": [
+          {
+            "base": "Multi",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Multi.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Multi.plist",
+            "plistFormat": "xml",
+            "readStatus": "ok",
+            "parseStatus": "valid",
+            "reason": null,
+            "isTweakManager": false,
+            "filter": {
+              "bundles": [
+                "com.a.app",
+                "com.b.app",
+                "com.c.app"
+              ],
+              "classes": [
+                "ClassX",
+                "ClassY"
+              ],
+              "executables": [
+                "ProcP",
+                "ProcQ"
+              ],
+              "coreFoundationVersion": null,
+              "otherKeys": []
+            },
+            "skippedFields": [],
+            "validation": {
+              "status": "valid",
+              "warnings": []
+            }
+          }
+        ],
+        "notParsed": [],
+        "counts": {
+          "valid": 1,
+          "parse_failed": 0,
+          "type_mismatch": 0,
+          "read_failed": 0,
+          "not_parsed": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "parseId": "PARSE-014",
+      "source": "fixture:parse-partial-corrupt",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "partial",
+        "parsed": [
+          {
+            "base": "Good",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Good.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Good.plist",
+            "plistFormat": "xml",
+            "readStatus": "ok",
+            "parseStatus": "valid",
+            "reason": null,
+            "isTweakManager": false,
+            "filter": {
+              "bundles": [
+                "com.good.app"
+              ],
+              "classes": [],
+              "executables": [],
+              "coreFoundationVersion": null,
+              "otherKeys": []
+            },
+            "skippedFields": [],
+            "validation": {
+              "status": "valid",
+              "warnings": []
+            }
+          },
+          {
+            "base": "Bad",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Bad.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Bad.plist",
+            "plistFormat": "xml",
+            "readStatus": "ok",
+            "parseStatus": "parse_failed",
+            "reason": "invalid_plist",
+            "isTweakManager": null,
+            "filter": null,
+            "skippedFields": [],
+            "validation": {
+              "status": "parse_failed",
+              "warnings": [
+                "invalid_plist"
+              ]
+            }
+          }
+        ],
+        "notParsed": [],
+        "counts": {
+          "valid": 1,
+          "parse_failed": 1,
+          "type_mismatch": 0,
+          "read_failed": 0,
+          "not_parsed": 0
+        },
+        "warnings": [
+          "partial_parsing",
+          "invalid_plist"
+        ]
+      }
+    },
+    {
+      "parseId": "PARSE-015",
+      "source": "fixture:parse-rootless-model",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "rootless",
+        "sourceDirectory": "/var/jb/usr/lib/TweakInject/",
+        "status": "enumerated",
+        "parsed": [
+          {
+            "base": "RL",
+            "dylibPath": "/var/jb/usr/lib/TweakInject/RL.dylib",
+            "plistPath": "/var/jb/usr/lib/TweakInject/RL.plist",
+            "plistFormat": "xml",
+            "readStatus": "ok",
+            "parseStatus": "valid",
+            "reason": null,
+            "isTweakManager": null,
+            "filter": {
+              "bundles": [
+                "com.example.app"
+              ],
+              "classes": [],
+              "executables": [
+                "rlapp"
+              ],
+              "coreFoundationVersion": null,
+              "otherKeys": [
+                "Classes",
+                "CoreFoundationVersion",
+                "IsTweakManager"
+              ]
+            },
+            "skippedFields": [],
+            "validation": {
+              "status": "valid",
+              "warnings": []
+            }
+          }
+        ],
+        "notParsed": [],
+        "counts": {
+          "valid": 1,
+          "parse_failed": 0,
+          "type_mismatch": 0,
+          "read_failed": 0,
+          "not_parsed": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "parseId": "PARSE-009",
+      "source": "fixture:parse-versions",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "enumerated",
+        "parsed": [
+          {
+            "base": "Range",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Range.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Range.plist",
+            "plistFormat": "xml",
+            "readStatus": "ok",
+            "parseStatus": "valid",
+            "reason": null,
+            "isTweakManager": false,
+            "filter": {
+              "bundles": [],
+              "classes": [],
+              "executables": [],
+              "coreFoundationVersion": {
+                "mode": "range",
+                "min": 1500,
+                "max": 1700
+              },
+              "otherKeys": []
+            },
+            "skippedFields": [],
+            "validation": {
+              "status": "valid",
+              "warnings": []
+            }
+          }
+        ],
+        "notParsed": [],
+        "counts": {
+          "valid": 1,
+          "parse_failed": 0,
+          "type_mismatch": 0,
+          "read_failed": 0,
+          "not_parsed": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "parseId": "PARSE-009",
+      "source": "fixture:parse-versions-wrong",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "partial",
+        "parsed": [
+          {
+            "base": "BadVer",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/BadVer.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/BadVer.plist",
+            "plistFormat": "xml",
+            "readStatus": "ok",
+            "parseStatus": "type_mismatch",
+            "reason": "versions_type",
+            "isTweakManager": null,
+            "filter": null,
+            "skippedFields": [
+              {
+                "key": "CoreFoundationVersion",
+                "reason": "versions_type",
+                "expectedType": "number[]",
+                "observedType": "array"
+              }
+            ],
+            "validation": {
+              "status": "type_mismatch",
+              "warnings": [
+                "versions_type"
+              ]
+            }
+          }
+        ],
+        "notParsed": [],
+        "counts": {
+          "valid": 0,
+          "parse_failed": 0,
+          "type_mismatch": 1,
+          "read_failed": 0,
+          "not_parsed": 0
+        },
+        "warnings": [
+          "partial_parsing",
+          "versions_type"
+        ]
+      }
+    },
+    {
+      "parseId": "PARSE-001",
+      "source": "fixture:parse-xml-valid",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "enumerated",
+        "parsed": [
+          {
+            "base": "Example",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Example.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Example.plist",
+            "plistFormat": "xml",
+            "readStatus": "ok",
+            "parseStatus": "valid",
+            "reason": null,
+            "isTweakManager": false,
+            "filter": {
+              "bundles": [
+                "com.example.app"
+              ],
+              "classes": [
+                "ExampleClass"
+              ],
+              "executables": [
+                "ExampleApp"
+              ],
+              "coreFoundationVersion": {
+                "mode": "max",
+                "max": 1600
+              },
+              "otherKeys": []
+            },
+            "skippedFields": [],
+            "validation": {
+              "status": "valid",
+              "warnings": []
+            }
+          }
+        ],
+        "notParsed": [],
+        "counts": {
+          "valid": 1,
+          "parse_failed": 0,
+          "type_mismatch": 0,
+          "read_failed": 0,
+          "not_parsed": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "parseId": "PARSE-002",
+      "source": "fixture:parse-xml-valid",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "enumerated",
+        "parsed": [
+          {
+            "base": "Example",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Example.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Example.plist",
+            "plistFormat": "xml",
+            "readStatus": "ok",
+            "parseStatus": "valid",
+            "reason": null,
+            "isTweakManager": false,
+            "filter": {
+              "bundles": [
+                "com.example.app"
+              ],
+              "classes": [
+                "ExampleClass"
+              ],
+              "executables": [
+                "ExampleApp"
+              ],
+              "coreFoundationVersion": {
+                "mode": "max",
+                "max": 1600
+              },
+              "otherKeys": []
+            },
+            "skippedFields": [],
+            "validation": {
+              "status": "valid",
+              "warnings": []
+            }
+          }
+        ],
+        "notParsed": [],
+        "counts": {
+          "valid": 1,
+          "parse_failed": 0,
+          "type_mismatch": 0,
+          "read_failed": 0,
+          "not_parsed": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "parseId": "PARSE-012",
+      "source": "fixture:route-guard",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": null,
+        "status": "unresolved",
+        "parsed": [],
+        "notParsed": [],
+        "counts": {
+          "valid": 0,
+          "parse_failed": 0,
+          "type_mismatch": 0,
+          "read_failed": 0,
+          "not_parsed": 0
+        },
+        "warnings": [
+          "inventory_unresolved"
+        ]
+      }
+    },
+    {
+      "parseId": "PARSE-004",
+      "source": "synthetic:root-type",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "partial",
+        "parsed": [
+          {
+            "base": "RootType",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/RootType.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/RootType.plist",
+            "plistFormat": "xml",
+            "readStatus": "ok",
+            "parseStatus": "type_mismatch",
+            "reason": "root_type",
+            "isTweakManager": null,
+            "filter": null,
+            "skippedFields": [
+              {
+                "key": "(root)",
+                "reason": "root_type",
+                "expectedType": "object",
+                "observedType": "string"
+              }
+            ],
+            "validation": {
+              "status": "type_mismatch",
+              "warnings": [
+                "root_type"
+              ]
+            }
+          }
+        ],
+        "notParsed": [],
+        "counts": {
+          "valid": 0,
+          "parse_failed": 0,
+          "type_mismatch": 1,
+          "read_failed": 0,
+          "not_parsed": 0
+        },
+        "warnings": [
+          "partial_parsing",
+          "root_type"
+        ]
+      }
+    },
+    {
+      "parseId": "PARSE-005",
+      "source": "synthetic:filter-type",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "partial",
+        "parsed": [
+          {
+            "base": "FilterType",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/FilterType.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/FilterType.plist",
+            "plistFormat": "xml",
+            "readStatus": "ok",
+            "parseStatus": "type_mismatch",
+            "reason": "filter_type",
+            "isTweakManager": null,
+            "filter": null,
+            "skippedFields": [
+              {
+                "key": "Filter",
+                "reason": "filter_type",
+                "expectedType": "object",
+                "observedType": "array"
+              }
+            ],
+            "validation": {
+              "status": "type_mismatch",
+              "warnings": [
+                "filter_type"
+              ]
+            }
+          }
+        ],
+        "notParsed": [],
+        "counts": {
+          "valid": 0,
+          "parse_failed": 0,
+          "type_mismatch": 1,
+          "read_failed": 0,
+          "not_parsed": 0
+        },
+        "warnings": [
+          "partial_parsing",
+          "filter_type"
+        ]
+      }
+    },
+    {
+      "parseId": "PARSE-010",
+      "source": "synthetic:mixed-type",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "partial",
+        "parsed": [
+          {
+            "base": "Mixed",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Mixed.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Mixed.plist",
+            "plistFormat": "xml",
+            "readStatus": "ok",
+            "parseStatus": "type_mismatch",
+            "reason": "field_type",
+            "isTweakManager": null,
+            "filter": null,
+            "skippedFields": [
+              {
+                "key": "Bundles",
+                "reason": "not_array",
+                "expectedType": "string[]",
+                "observedType": "string"
+              },
+              {
+                "key": "Classes",
+                "reason": "element_type",
+                "expectedType": "string",
+                "observedType": "number",
+                "index": 0
+              },
+              {
+                "reason": "field_type"
+              }
+            ],
+            "validation": {
+              "status": "type_mismatch",
+              "warnings": [
+                "field_type"
+              ]
+            }
+          }
+        ],
+        "notParsed": [],
+        "counts": {
+          "valid": 0,
+          "parse_failed": 0,
+          "type_mismatch": 1,
+          "read_failed": 0,
+          "not_parsed": 0
+        },
+        "warnings": [
+          "partial_parsing",
+          "field_type"
+        ]
+      }
+    },
+    {
+      "parseId": "PARSE-016",
+      "source": "synthetic:determinism",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "enumerated",
+        "parsed": [
+          {
+            "base": "Delta",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Delta.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Delta.plist",
+            "plistFormat": "xml",
+            "readStatus": "ok",
+            "parseStatus": "valid",
+            "reason": null,
+            "isTweakManager": false,
+            "filter": {
+              "bundles": [
+                "com.delta.app"
+              ],
+              "classes": [],
+              "executables": [
+                "DeltaApp"
+              ],
+              "coreFoundationVersion": null,
+              "otherKeys": []
+            },
+            "skippedFields": [],
+            "validation": {
+              "status": "valid",
+              "warnings": []
+            }
+          }
+        ],
+        "notParsed": [],
+        "counts": {
+          "valid": 1,
+          "parse_failed": 0,
+          "type_mismatch": 0,
+          "read_failed": 0,
+          "not_parsed": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "parseId": "PARSE-012",
+      "source": "synthetic:route-isolation",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "sourceDirectory": null,
+        "counts": {
+          "valid": 0,
+          "parse_failed": 0,
+          "type_mismatch": 0,
+          "read_failed": 0,
+          "not_parsed": 0
+        }
+      }
+    }
+  ]
+}

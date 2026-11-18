@@ -1,0 +1,50 @@
+﻿2026-11-15T16:33:12.5392190Z Current runner version: '2.338.2'
+2026-11-15T16:33:12.5409490Z ##[group]Runner Image Provisioner
+2026-11-15T16:33:12.5410070Z Hosted Compute Agent
+2026-11-15T16:33:12.5410450Z Version: 20261028.624
+2026-11-15T16:33:12.5410850Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+2026-11-15T16:33:12.5411310Z Build Date: 2026-10-28T21:51:42Z
+2026-11-15T16:33:12.5411780Z Worker ID: {bf956dee-81f6-4fa2-8cf3-6d19dad5b8c1}
+2026-11-15T16:33:12.5412290Z Region: westus
+2026-11-15T16:33:12.5412690Z Cloud: MacCloud
+2026-11-15T16:33:12.5413090Z ##[endgroup]
+2026-11-15T16:33:12.5414300Z ##[group]Operating System
+2026-11-15T16:33:12.5414780Z macOS
+2026-11-15T16:33:12.5415150Z 26.7.2
+2026-11-15T16:33:12.5415480Z 25G332
+2026-11-15T16:33:12.5415810Z ##[endgroup]
+2026-11-15T16:33:12.5416210Z ##[group]Runner Image
+2026-11-15T16:33:12.5416650Z Image: macos-26-arm64
+2026-11-15T16:33:12.5417050Z Version: 20261102.0473.1
+2026-11-15T16:33:12.5417820Z Included Software: https://github.com/actions/runner-images/blob/macos-26-arm64/20261102.0473/images/macos/macos-26-arm64-Readme.md
+2026-11-15T16:33:12.5419170Z Image Release: https://github.com/actions/runner-images/releases/tag/macos-26-arm64%2F20261102.0473
+2026-11-15T16:33:12.5419950Z ##[endgroup]
+2026-11-15T16:33:12.5422250Z ##[group]GITHUB_TOKEN Permissions
+2026-11-15T16:33:12.5423910Z Actions: write
+2026-11-15T16:33:12.5424320Z ArtifactMetadata: write
+2026-11-15T16:33:12.5424740Z Attestations: write
+2026-11-15T16:33:12.5425130Z Checks: write
+2026-11-15T16:33:12.5425500Z CodeQuality: write
+2026-11-15T16:33:12.5425870Z Contents: write
+2026-11-15T16:33:12.5426250Z CopilotRequests: write
+2026-11-15T16:33:12.5426650Z Deployments: write
+2026-11-15T16:33:12.5427020Z Discussions: write
+2026-11-15T16:33:12.5427380Z Drives: write
+2026-11-15T16:33:12.5427750Z Issues: write
+2026-11-15T16:33:12.5428250Z Metadata: read
+2026-11-15T16:33:12.5428610Z Models: read
+2026-11-15T16:33:12.5428960Z Packages: write
+2026-11-15T16:33:12.5429320Z Pages: write
+2026-11-15T16:33:12.5429670Z PullRequests: write
+2026-11-15T16:33:12.5430160Z RepositoryProjects: write
+2026-11-15T16:33:12.5430570Z SecurityEvents: write
+2026-11-15T16:33:12.5430960Z Statuses: write
+2026-11-15T16:33:12.5431330Z VulnerabilityAlerts: read
+2026-11-15T16:33:12.5431720Z ##[endgroup]
+2026-11-15T16:33:12.5433300Z Secret source: Actions
+2026-11-15T16:33:12.5433950Z Cache mode: write
+2026-11-15T16:33:12.5434410Z Prepare workflow directory
+2026-11-15T16:33:12.5775200Z Prepare all required actions
+2026-11-15T16:33:12.5862870Z Getting action download info
+2026-11-15T16:33:12.8725640Z Download action repository 'actions/checkout@v6' (SHA:d23441a48e516b6c34aea4fa41551a30e30af803)
+2026-11-15T16:33:13.2674350Z Complete job name: isolation

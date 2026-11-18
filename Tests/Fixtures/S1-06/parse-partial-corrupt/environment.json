@@ -1,0 +1,57 @@
+{
+  "fixtureId": "S1-06-PARSE-PARTIAL-CORRUPT",
+  "fixtureKind": "parse-partial-corrupt",
+  "upstream": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "inventoryStatus": "enumerated"
+  },
+  "pairing": {
+    "pairs": [
+      {
+        "base": "Good",
+        "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Good.dylib",
+        "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Good.plist",
+        "pairing": "paired",
+        "dylibIsSymlink": false,
+        "plistIsSymlink": false,
+        "status": "ok"
+      },
+      {
+        "base": "Bad",
+        "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Bad.dylib",
+        "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Bad.plist",
+        "pairing": "paired",
+        "dylibIsSymlink": false,
+        "plistIsSymlink": false,
+        "status": "ok"
+      }
+    ],
+    "missingPlist": [],
+    "orphanPlist": [],
+    "ambiguous": [],
+    "uncertain": []
+  },
+  "plists": [
+    {
+      "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Good.plist",
+      "format": "xml",
+      "readStatus": "ok",
+      "payloadInvalid": false,
+      "root": {
+        "Filter": {
+          "Bundles": [
+            "com.good.app"
+          ]
+        }
+      }
+    },
+    {
+      "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Bad.plist",
+      "format": "xml",
+      "readStatus": "ok",
+      "payloadInvalid": true,
+      "root": null
+    }
+  ]
+}

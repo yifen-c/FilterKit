@@ -1,0 +1,26 @@
+{
+  "fixtureId": "S1-02-RH-MULTI-001",
+  "fixtureKind": "rh-multiple",
+  "signals": {
+    "candidates": [
+      {
+        "root": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+        "source": "api",
+        "exists": true,
+        "structureMatch": true,
+        "readable": true,
+        "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+        "symlinkState": "none"
+      },
+      {
+        "root": "/var/containers/Bundle/Application/.jbroot-D87B48653D7178BA",
+        "source": "scan",
+        "exists": true,
+        "structureMatch": true,
+        "readable": true,
+        "realpath": "/private/var/containers/Bundle/Application/.jbroot-D87B48653D7178BA",
+        "symlinkState": "none"
+      }
+    ]
+  }
+}

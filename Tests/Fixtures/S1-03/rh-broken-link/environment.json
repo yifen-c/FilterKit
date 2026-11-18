@@ -1,0 +1,21 @@
+{
+  "fixtureId": "S1-03-RH-BROKEN-001",
+  "fixtureKind": "rh-broken-link",
+  "upstream": { "route": "roothide", "jbroot": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4" },
+  "fs": {
+    "tweakInject": {
+      "exists": true,
+      "readable": true,
+      "enumerable": true,
+      "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+      "structureMatch": true
+    },
+    "dynamicLibraries": {
+      "exists": true,
+      "isSymlink": true,
+      "symlinkTarget": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+      "realpath": null,
+      "symlinkState": "broken"
+    }
+  }
+}

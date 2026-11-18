@@ -1,0 +1,63 @@
+{
+  "stage": "Stage-2.2-C3-Engine-C2",
+  "batch": "C2-E",
+  "evidence": "final-runner-acceptance",
+  "commit": "1298edcad86e5ddd84572f302ab01c9f454def73",
+  "runner_id": "44106064051",
+  "runner_branch": "D5",
+  "runner_sha": "f4629f268e680bc0e25e911997d03959457263ec",
+  "captured_at": "2026-11-17T15:04:16Z",
+  "baseline_note": "Runner 检出 SHA 与本地 HEAD 不同名；本地无远端，未做逐行源码 diff。metadata 五文件与本地一致，本地静态 func test 计数 379 与 Runner 执行 379 逐套件对齐；结论以 Runner 实际日志为准。",
+  "build": {
+    "core": {
+      "status": "passed",
+      "error_count": 0,
+      "warning_count": 0,
+      "log": "core-build/core-build.log"
+    },
+    "app": {
+      "status": "passed",
+      "bundle": "com.filterkit.manager",
+      "simulator": "iPhone 17 Pro (98A0BFA3-CEC3-4FD6-9916-5A2149774DBF)",
+      "alive_pid": 3508,
+      "log": "app-build/app-xcodebuild.log"
+    }
+  },
+  "tests": {
+    "stage1_baseline": { "suite": "Stage1 fixtures / Models / B5 / Reader-Decoder / RootHide 既有回归", "passed": 275, "failed": 0, "skipped": 0, "log": "tests/stage1-baseline.log" },
+    "engine_b": { "suite": "FilterParseEngineTests", "passed": 19, "failed": 0, "skipped": 0, "log": "tests/engine-b.log" },
+    "engine_c1": { "suite": "EngineC1ParserBaselineTests / EngineC1EngineBaselineTests", "passed": 15, "failed": 0, "skipped": 0, "log": "tests/engine-c1.log" },
+    "engine_c2": { "suite": "EngineC2* (A~C 16 + D 21)", "passed": 37, "failed": 0, "skipped": 0, "log": "tests/engine-c2.log" },
+    "full_regression": { "suite": "swift test 全量（另含 C-G2 Rootless 22 例、E 组织自校验 11 例）", "passed": 379, "failed": 0, "skipped": 0, "log": "tests/full-regression.log" }
+  },
+  "gates": {
+    "C-G1": { "status": "passed", "evidence": "run-44106064051-acceptance/test-log/test-log.txt; core-build; app-build; isolation" },
+    "C-G2": { "status": "passed", "evidence": "run-44106064051-acceptance/test-log/test-log.txt (RootlessFilterParserTests 22, 0 skip)" },
+    "C-G3": { "status": "passed", "evidence": "run-44106064051-acceptance/tests/engine-c1.log (注册表 22 项自校验通过)" },
+    "C-G4": { "status": "passed", "evidence": "run-44106064051-acceptance/tests/engine-c2.log; isolation/isolation-report.txt (1a/1b/2a/2b OK)" },
+    "C-G5": { "status": "passed", "evidence": "run-44106064051-acceptance/tests/engine-c2.log (SnapshotWarnings 6 + CombinedScenario 5 + 校验器不变量)" },
+    "C-G6": { "status": "passed", "evidence": "run-44106064051-acceptance/tests/full-regression.log (既有 275 例 0 失败)" },
+    "C-G7": { "status": "passed", "evidence": "run-44106064051-acceptance/app-build/; isolation/isolation-report.txt (第 4 项 OK; 七方法协议未演进)" }
+  },
+  "isolation": {
+    "roothide_to_rootless": "passed",
+    "rootless_to_roothide": "passed",
+    "ui_to_core": "passed",
+    "log": "isolation/isolation-report.txt"
+  },
+  "fixtures": {
+    "integrity_report": "fixtures/integrity-report.txt",
+    "stage1_fixtures_unchanged": true,
+    "engine_c1_registry_items": 22,
+    "note": "工作流无独立夹具完整性 job；完整性由 S1-05 15 例、B5 深比较 4 例、C1 基线夹具加载用例内嵌回归覆盖。"
+  },
+  "pending_items": [
+    {
+      "issue": "PARSE-009-B",
+      "status": "pending_independent_review",
+      "production_parser_modification": "Not authorized",
+      "expected_behavior_modification": "Not authorized"
+    }
+  ],
+  "final_acceptance": "passed"
+}

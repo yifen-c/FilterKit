@@ -1,0 +1,121 @@
+{
+  "upstream": {
+    "s101": {
+      "jailbreakType": "roothide",
+      "ellekitVersionStatus": "unknown",
+      "adapterProfile": null,
+      "evidence": {
+        "level": "unverified"
+      },
+      "warnings": [
+        "profile_unknown"
+      ]
+    },
+    "s102": {
+      "candidates": [],
+      "warnings": []
+    },
+    "s103": {
+      "route": "roothide",
+      "tweakInject": {
+        "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/"
+      },
+      "dynamicLibraries": null,
+      "warnings": []
+    },
+    "s104": {
+      "route": "roothide",
+      "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+      "items": [
+        {
+          "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/P.dylib",
+          "readable": true
+        }
+      ],
+      "unknownItems": [],
+      "warnings": []
+    },
+    "s105": {
+      "route": "roothide",
+      "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+      "pairs": [
+        {
+          "base": "P",
+          "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/P.dylib",
+          "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/P.plist"
+        }
+      ],
+      "missingPlist": [],
+      "orphanPlist": [],
+      "ambiguous": [],
+      "uncertain": [],
+      "warnings": []
+    },
+    "s106": {
+      "route": "roothide",
+      "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+      "parsed": [
+        {
+          "base": "P",
+          "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/P.dylib",
+          "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/P.plist",
+          "parseStatus": "valid",
+          "reason": null,
+          "isTweakManager": false,
+          "filter": {
+            "bundles": [
+              "com.example.p"
+            ],
+            "classes": [],
+            "executables": [],
+            "coreFoundationVersion": null,
+            "otherKeys": []
+          },
+          "skippedFields": [],
+          "validation": {
+            "status": "valid",
+            "warnings": []
+          }
+        }
+      ],
+      "notParsed": [],
+      "warnings": []
+    },
+    "s107": {
+      "route": "roothide",
+      "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+      "unresolved": [],
+      "warnings": [],
+      "sources": [
+        {
+          "base": "P",
+          "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/P.dylib",
+          "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/P.plist",
+          "sourceType": "unknown",
+          "packageID": null,
+          "packageVersion": null,
+          "architecture": null,
+          "listPath": null,
+          "fileOwnership": {
+            "dylib": {
+              "owners": [],
+              "match": "none"
+            },
+            "plist": {
+              "owners": [],
+              "match": "none"
+            }
+          },
+          "confidence": "unknown",
+          "writablePolicy": "read_only",
+          "markers": {
+            "filterkit": "absent",
+            "manual": "absent"
+          },
+          "conflicts": [],
+          "notes": []
+        }
+      ]
+    }
+  }
+}

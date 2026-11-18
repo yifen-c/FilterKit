@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "product": "FilterKit",
+  "release": {
+    "version": "0.1.18",
+    "build": 118,
+    "helperBuildID": "FKH-0118",
+    "channel": "development"
+  },
+  "helper": {
+    "componentID": "FilterKitHelper",
+    "helperID": "com.filterkit.helper",
+    "targetPresent": false,
+    "targetKind": "planned_separate_executable"
+  },
+  "service": {
+    "machServiceName": "com.filterkit.helper",
+    "observedOnDevice": false,
+    "registrationStatus": "not_verified"
+  },
+  "transport": {
+    "decision": "unix_domain_socket",
+    "candidates": [
+      "Mach XPC/Mach Service",
+      "Unix domain socket"
+    ],
+    "deviceVerified": false,
+    "securityModel": {
+      "messageAuthentication": "hmac_sha256_session_bound_design",
+      "keyProvisioning": "not_implemented",
+      "replayProtection": "session_scoped_nonce_and_request_id",
+      "framing": "uint32_big_endian_length_prefix",
+      "realTransportImplemented": false,
+      "realIPCReady": false,
+      "keyDerivation": "hkdf_sha256_rfc5869_model",
+      "keyLifecycle": "in_memory_expiry_rotation_revocation_model",
+      "protocolNegotiation": "strict_common_version_intersection",
+      "handshakeIntegrated": true,
+      "handshakeTranscript": "canonical_json_sha256_identity_nonce_protocol_readonly_capabilities",
+      "keyConfirmation": "hmac_sha256_client_helper_role_separated_model",
+      "handshakeStateMachine": "strict_peer_protocol_transcript_key_client_confirm_helper_confirm_sequence",
+      "peerBinding": "helper_id_build_id_external_peer_credential_digest_and_transcript_digest",
+      "sessionLifecycle": "maximum_lifetime_idle_timeout_clock_rollback_invalidation",
+      "securityAuditActions": [
+        "peer_binding",
+        "key_confirmation",
+        "handshake_state",
+        "session_expired"
+      ],
+      "authenticatedSessionCoordinator": "local_model_only",
+      "sessionKeyOwnership": "single_key_lifecycle_manager",
+      "concurrentHandshakePolicy": "single_active_session_fail_closed",
+      "trustedAnchorStore": "empty_by_default_no_production_key",
+      "peerCredentialModel": "mock_self_reported_unsupported_only",
+      "readinessEvaluator": "evidence_aggregation_fail_closed"
+    },
+    "candidateEvidenceRequirements": {
+      "mach_service": [
+        "machServiceObserved",
+        "peerAuditVerified",
+        "lifecycleVerified",
+        "platformSupportVerified"
+      ],
+      "unix_domain_socket": [
+        "socketEndpointObserved",
+        "socketPermissionVerified",
+        "peerCredentialVerified",
+        "lifecycleVerified"
+      ]
+    },
+    "candidate": "unix_domain_socket",
+    "clientAdapterImplemented": true,
+    "helperListenerImplemented": true,
+    "socketEndpointConfigured": false,
+    "peerUIDCheck": "darwin_getpeereid",
+    "socketModeOptions": [
+      "0600",
+      "0660_with_explicit_group"
+    ],
+    "maximumFrameBytes": 1048576,
+    "endpointConfigured": false
+  },
+  "identity": {
+    "trustedSigningAnchorPresent": false,
+    "signatureVerified": false,
+    "peerIdentityVerified": false
+  },
+  "entitlements": {
+    "appEntitlementsFile": "entitlements.plist",
+    "helperEntitlementsFile": null,
+    "inheritAppEntitlements": false,
+    "reviewStatus": "required",
+    "policy": "separate least-privilege profile; do not copy private/platform entitlements by default",
+    "appEntitlementsAudit": {
+      "file": "entitlements.plist",
+      "containsPlatformApplication": true,
+      "containsNoSandbox": true,
+      "containsPrivateAppContainerAccess": true,
+      "reviewRequired": true
+    }
+  },
+  "lifecycle": {
+    "launchMode": "not_selected",
+    "startStopObserved": false,
+    "crashRecoveryVerified": false,
+    "shutdownVerified": false
+  },
+  "platformMatrix": [
+    {
+      "environment": "RootHide",
+      "architecture": "arm64e",
+      "buildVerified": false,
+      "launchVerified": false,
+      "ipcVerified": false
+    },
+    {
+      "environment": "rootless",
+      "architecture": "arm64",
+      "buildVerified": false,
+      "launchVerified": false,
+      "ipcVerified": false
+    }
+  ],
+  "safety": {
+    "daemonDeploymentAllowed": false,
+    "privilegedLaunchAllowed": false,
+    "realIPCReady": false,
+    "writeOperationsAllowed": false
+  },
+  "nextGate": "Provision an independently reviewed release trust anchor and implement a supported system peer-credential collector and real transport adapter before any IPC readiness claim."
+}

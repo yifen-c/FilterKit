@@ -1,0 +1,18 @@
+{
+  "fixtureId": "S1-08-EXPORT-007",
+  "expected": {
+    "profile": {
+      "id": "unknown-profile",
+      "route": "unknown"
+    },
+    "pluginCount": 0,
+    "byBase": {},
+    "unknownReasons": [],
+    "warningCodes": [
+      "inventory_unresolved"
+    ]
+  },
+  "expectedWarnings": [
+    "inventory_unresolved"
+  ]
+}

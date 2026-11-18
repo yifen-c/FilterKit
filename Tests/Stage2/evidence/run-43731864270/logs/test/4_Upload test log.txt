@@ -1,0 +1,23 @@
+﻿2026-11-15T15:49:38.9931410Z ##[group]Run actions/upload-artifact@v7
+2026-11-15T15:49:38.9931930Z with:
+2026-11-15T15:49:38.9932350Z   name: filterkit-test-log
+2026-11-15T15:49:38.9932740Z   path: .build/test-log.txt
+2026-11-15T15:49:38.9933030Z   retention-days: 14
+2026-11-15T15:49:38.9933370Z   if-no-files-found: warn
+2026-11-15T15:49:38.9933600Z   compression-level: 6
+2026-11-15T15:49:38.9933920Z   overwrite: false
+2026-11-15T15:49:38.9934170Z   include-hidden-files: false
+2026-11-15T15:49:38.9934630Z   archive: true
+2026-11-15T15:49:38.9935030Z ##[endgroup]
+2026-11-15T15:49:39.8667360Z With the provided path, there will be 1 file uploaded
+2026-11-15T15:49:39.8675100Z Artifact name is valid!
+2026-11-15T15:49:39.8676480Z Root directory input is valid!
+2026-11-15T15:49:40.3502640Z Uploading artifact: filterkit-test-log.zip
+2026-11-15T15:49:40.3503650Z Beginning upload of artifact content to blob storage
+2026-11-15T15:49:40.6290310Z Uploaded bytes 910
+2026-11-15T15:49:40.6999210Z Finished uploading artifact content to blob storage!
+2026-11-15T15:49:40.7000440Z SHA256 digest of uploaded artifact is 8fdc1abbc6bf90452a35c83a462d667df5509b05c2f492826962d91db9324f96
+2026-11-15T15:49:40.7004200Z Finalizing artifact upload
+2026-11-15T15:49:41.2150230Z Artifact filterkit-test-log successfully finalized. Artifact ID 14168636892
+2026-11-15T15:49:41.2152380Z Artifact filterkit-test-log has been successfully uploaded! Final size is 910 bytes. Artifact ID is 14168636892
+2026-11-15T15:49:41.2154630Z Artifact download URL: https://github.com/yi-fen/004/actions/runs/43731864270/artifacts/14168636892

@@ -1,0 +1,25 @@
+﻿2026-11-18T02:37:50.6611790Z ##[group]Run set -euo pipefail
+2026-11-18T02:37:50.6612170Z [36;1mset -euo pipefail[0m
+2026-11-18T02:37:50.6612430Z [36;1mDEVICE_LINE=$(xcrun simctl list devices available \[0m
+2026-11-18T02:37:50.6612800Z [36;1m  | awk '/iPhone/ && /[0-9A-Fa-f-]{36}/ {print; exit}')[0m
+2026-11-18T02:37:50.6613150Z [36;1mif [ -z "$DEVICE_LINE" ]; then[0m
+2026-11-18T02:37:50.6613480Z [36;1m  echo "::error::No available iPhone simulator found"[0m
+2026-11-18T02:37:50.6613790Z [36;1m  exit 1[0m
+2026-11-18T02:37:50.6614110Z [36;1mfi[0m
+2026-11-18T02:37:50.6614430Z [36;1mDEVICE_ID=$(echo "$DEVICE_LINE" | grep -oE '[0-9A-Fa-f-]{36}' | head -1)[0m
+2026-11-18T02:37:50.6614980Z [36;1mDEVICE_NAME=$(echo "$DEVICE_LINE" | sed -E 's/ \([0-9A-Fa-f-]{36}\).*//; s/^ +//; s/ +$//')[0m
+2026-11-18T02:37:50.6615500Z [36;1mecho "Selected simulator: $DEVICE_NAME ($DEVICE_ID)"[0m
+2026-11-18T02:37:50.6616030Z [36;1mxcrun simctl boot "$DEVICE_ID" || true[0m
+2026-11-18T02:37:50.6616610Z [36;1mxcrun simctl install "$DEVICE_ID" "build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app"[0m
+2026-11-18T02:37:50.6617350Z [36;1mLAUNCH_OUT=$(xcrun simctl launch "$DEVICE_ID" com.filterkit.manager)[0m
+2026-11-18T02:37:50.6617710Z [36;1mecho "$LAUNCH_OUT" | tee build/sim-launch.log[0m
+2026-11-18T02:37:50.6618040Z [36;1mAPP_PID=$(echo "$LAUNCH_OUT" | grep -oE '[0-9]+' | head -1)[0m
+2026-11-18T02:37:50.6618440Z [36;1mecho "device_id=$DEVICE_ID" >> "$GITHUB_OUTPUT"[0m
+2026-11-18T02:37:50.6618830Z [36;1mecho "device_name=$DEVICE_NAME" >> "$GITHUB_OUTPUT"[0m
+2026-11-18T02:37:50.6619200Z [36;1mecho "app_pid=$APP_PID" >> "$GITHUB_OUTPUT"[0m
+2026-11-18T02:37:50.6619510Z [36;1mxcrun simctl list devices | grep "$DEVICE_ID" || true[0m
+2026-11-18T02:37:50.6656300Z shell: /bin/bash -e {0}
+2026-11-18T02:37:50.6656540Z ##[endgroup]
+2026-11-18T02:37:54.6256700Z Selected simulator: iPhone 17 Pro (98A0BFA3-CEC3-4FD6-9916-5A2149774DBF)
+2026-11-18T02:41:10.7120060Z com.filterkit.manager: 4096
+2026-11-18T02:41:12.4583130Z     iPhone 17 Pro (98A0BFA3-CEC3-4FD6-9916-5A2149774DBF) (Booted) 

@@ -1,0 +1,25 @@
+{
+  "fixtureId": "S1-06-PARSE-INVALID-PLIST",
+  "expected": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "status": "partial",
+    "counts": {
+      "valid": 0,
+      "parse_failed": 1,
+      "type_mismatch": 0,
+      "read_failed": 0,
+      "not_parsed": 0
+    },
+    "statusByBase": {
+      "Broken": "parse_failed"
+    },
+    "filterByBase": {},
+    "otherKeysByBase": {},
+    "skippedFieldsByBase": {}
+  },
+  "expectedWarnings": [
+    "invalid_plist"
+  ],
+  "expectedStatus": "partial"
+}

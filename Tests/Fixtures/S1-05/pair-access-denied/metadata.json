@@ -1,0 +1,15 @@
+{
+  "fixtureId": "S1-05-ACCESS-DENIED-001",
+  "expected": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "status": "partial",
+    "counts": { "paired": 0, "missing_plist": 0, "orphan_plist": 0, "ambiguous": 0, "uncertain": 1 },
+    "pairedBases": [],
+    "missingBases": [],
+    "orphanNames": [],
+    "uncertainPaths": ["Locked.dylib"]
+  },
+  "expectedWarnings": ["partial_pairing"],
+  "expectedStatus": "partial"
+}

@@ -1,0 +1,52 @@
+{
+  "upstream": {
+    "s101": {
+      "jailbreakType": "unknown",
+      "evidence": {
+        "level": "unverified"
+      },
+      "warnings": []
+    },
+    "s102": {
+      "candidates": [],
+      "warnings": []
+    },
+    "s103": {
+      "route": "unknown",
+      "tweakInject": null,
+      "dynamicLibraries": null,
+      "warnings": []
+    },
+    "s104": {
+      "route": "unknown",
+      "sourceDirectory": null,
+      "items": [],
+      "unknownItems": [],
+      "warnings": []
+    },
+    "s105": {
+      "route": "unknown",
+      "sourceDirectory": null,
+      "pairs": [],
+      "missingPlist": [],
+      "orphanPlist": [],
+      "ambiguous": [],
+      "uncertain": [],
+      "warnings": []
+    },
+    "s106": {
+      "route": "unknown",
+      "sourceDirectory": null,
+      "parsed": [],
+      "notParsed": [],
+      "warnings": []
+    },
+    "s107": {
+      "route": "unknown",
+      "sourceDirectory": null,
+      "sources": [],
+      "unresolved": [],
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "fixtureId": "S1-05-DUPLICATE-001",
+  "fixtureKind": "pair-duplicate",
+  "upstream": { "route": "roothide", "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/", "inventoryStatus": "enumerated" },
+  "inventory": {
+    "enumerable": true,
+    "items": [
+      { "name": "Case.dylib", "kind": "dylib", "isSymlink": false, "hidden": false, "entryStatus": "ok" },
+      { "name": "Case.plist", "kind": "plist", "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Case.plist", "isSymlink": false, "hidden": false, "entryStatus": "ok" },
+      { "name": "Case.plist", "kind": "plist", "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/Library/MobileSubstrate/DynamicLibraries/Case.plist", "isSymlink": true, "hidden": false, "entryStatus": "ok" }
+    ]
+  }
+}

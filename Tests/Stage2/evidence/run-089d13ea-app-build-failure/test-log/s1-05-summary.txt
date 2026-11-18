@@ -1,0 +1,7 @@
+S1-05 独立过滤摘要（swift test --filter PluginPairingS105FixtureTests）
+轮次 SHA: 386f18cbd528a9ad11f8e690e883a6d76c5f8409
+时间(UTC): 2026-11-18 15:12:11
+目标平台: arm64e-apple-macos14.0
+结果: Executed 15 tests, with 0 failures (0 unexpected) in 0.025 (0.034) seconds
+用例: PAIR001 PairValid / PAIR002 MissingPlist / PAIR003 OrphanPlist / PAIR004 Multi / PAIR005 CaseMismatch / PAIR006 CrossPath / PAIR006 SyntheticRouteIsolation / PAIR007 Hidden / PAIR008 Symlink / PAIR009 OtherExt / PAIR010 Duplicate / PAIR011 AccessDenied / PAIR012 RouteGuard / PAIR013 DeterminismFixture / PAIR013 SyntheticDeterminism
+跳过: 0（日志无 XCTSkip / skipped 记录）

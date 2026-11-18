@@ -1,0 +1,51 @@
+﻿2026-11-15T15:29:05.3362250Z ##[group]Run set -o pipefail
+2026-11-15T15:29:05.3362650Z [36;1mset -o pipefail[0m
+2026-11-15T15:29:05.3362990Z [36;1mswift test 2>&1 | tee .build/test-log.txt[0m
+2026-11-15T15:29:05.3403160Z shell: /bin/bash -e {0}
+2026-11-15T15:29:05.3403510Z ##[endgroup]
+2026-11-15T15:29:05.3817730Z tee: .build/test-log.txt: No such file or directory
+2026-11-15T15:29:25.2590020Z Building for debugging...
+2026-11-15T15:29:25.2658250Z [0/9] Write sources
+2026-11-15T15:29:25.2662160Z [0/9] /Users/runner/work/004/004/.build/arm64-apple-macosx/debug/FilterKitPackageTests.derived/runner.swift
+2026-11-15T15:29:25.2663170Z [2/9] Write sources
+2026-11-15T15:29:25.4064360Z [6/9] Write swift-version-7974D3F7F03D5E95.txt
+2026-11-15T15:29:30.5202070Z [8/13] Compiling Models PluginModels.swift
+2026-11-15T15:29:30.5211150Z [9/13] Emitting module Models
+2026-11-15T15:29:30.5242210Z [10/13] Compiling Models EnvironmentModels.swift
+2026-11-15T15:29:30.5243020Z [11/13] Compiling Models ModelEnums.swift
+2026-11-15T15:29:30.7379370Z [12/14] Compiling Models ReportEnvelope.swift
+2026-11-15T15:29:31.0590920Z [13/19] Compiling Adapters RootHideAdapter.swift
+2026-11-15T15:29:31.1182470Z [14/20] Compiling Adapters ElleKitAdapter.swift
+2026-11-15T15:29:31.1190730Z [15/20] Emitting module Adapters
+2026-11-15T15:29:31.1809440Z [16/20] Compiling Adapters RootlessAdapter.swift
+2026-11-15T15:29:31.3528430Z [17/22] Compiling Core CoreServices.swift
+2026-11-15T15:29:31.3529310Z [18/22] Emitting module Core
+2026-11-15T15:29:44.8652400Z [19/22] Compiling Stage2Tests ModelsCodableTests.swift
+2026-11-15T15:29:44.8754290Z [20/22] Emitting module Stage2Tests
+2026-11-15T15:29:46.3066200Z [21/24] Emitting module FilterKitPackageTests
+2026-11-15T15:29:46.3067880Z [22/24] Compiling FilterKitPackageTests runner.swift
+2026-11-15T15:29:46.3129430Z [22/24] Write Objects.LinkFileList
+2026-11-15T15:29:46.9343710Z [23/24] Linking FilterKitPackageTests
+2026-11-15T15:29:46.9381840Z Build complete! (23.81s)
+2026-11-15T15:29:47.5174030Z Test Suite 'All tests' started at 2026-11-15 15:29:47.444.
+2026-11-15T15:29:47.5178970Z Test Suite 'FilterKitPackageTests.xctest' started at 2026-11-15 15:29:47.446.
+2026-11-15T15:29:47.5179950Z Test Suite 'ModelsCodableTests' started at 2026-11-15 15:29:47.446.
+2026-11-15T15:29:47.5180940Z Test Case '-[Stage2Tests.ModelsCodableTests testDefaultPluginStateIsUnknownAndUndetermined]' started.
+2026-11-15T15:29:47.5183860Z Test Case '-[Stage2Tests.ModelsCodableTests testDefaultPluginStateIsUnknownAndUndetermined]' passed (0.002 seconds).
+2026-11-15T15:29:47.5184800Z Test Case '-[Stage2Tests.ModelsCodableTests testEnvelopeRoundTrip]' started.
+2026-11-15T15:29:47.5197450Z Test Case '-[Stage2Tests.ModelsCodableTests testEnvelopeRoundTrip]' passed (0.001 seconds).
+2026-11-15T15:29:47.5204960Z Test Case '-[Stage2Tests.ModelsCodableTests testSourceTypeRawValues]' started.
+2026-11-15T15:29:47.5213080Z Test Case '-[Stage2Tests.ModelsCodableTests testSourceTypeRawValues]' passed (0.000 seconds).
+2026-11-15T15:29:47.5214440Z Test Case '-[Stage2Tests.ModelsCodableTests testWritablePolicyRawValues]' started.
+2026-11-15T15:29:47.5215340Z Test Case '-[Stage2Tests.ModelsCodableTests testWritablePolicyRawValues]' passed (0.000 seconds).
+2026-11-15T15:29:47.5216120Z Test Suite 'ModelsCodableTests' passed at 2026-11-15 15:29:47.450.
+2026-11-15T15:29:47.5216800Z 	 Executed 4 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+2026-11-15T15:29:47.5217460Z Test Suite 'FilterKitPackageTests.xctest' passed at 2026-11-15 15:29:47.451.
+2026-11-15T15:29:47.5218180Z 	 Executed 4 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+2026-11-15T15:29:47.5218910Z Test Suite 'All tests' passed at 2026-11-15 15:29:47.451.
+2026-11-15T15:29:47.5219640Z 	 Executed 4 tests, with 0 failures (0 unexpected) in 0.004 (0.006) seconds
+2026-11-15T15:29:47.5223340Z ◇ Test run started.
+2026-11-15T15:29:47.5224130Z ↳ Testing Library Version: 1902
+2026-11-15T15:29:47.5224400Z ↳ Target Platform: arm64e-apple-macos14.0
+2026-11-15T15:29:47.5224840Z ✔ Test run with 0 tests in 0 suites passed after 0.001 seconds.
+2026-11-15T15:29:47.5240790Z ##[error]Process completed with exit code 1.

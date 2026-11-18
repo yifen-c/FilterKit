@@ -1,0 +1,93 @@
+# FilterKit CI — Stage 2.1-B macOS Build Validation
+#
+# 基线：GitHub Actions，runner macos-latest；Node 仅用于 CI 脚本/打包，不进入 App 运行时。
+# 触发方式：**仅手动触发**（workflow_dispatch）；push / pull_request 不自动构建。
+# 所有构建/测试结论必须以 macOS runner 实际日志为准，YAML 合法不代表构建通过。
+#
+# 待定值（Stage-2.1 子规格 §14）：Xcode/Swift 版本、Deployment Target、
+# Theos 固定版本、Swift 工具链配置、UI 框架（SwiftUI/UIKit）。
+
+name: filterkit-build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  environment:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Record toolchain versions
+        run: |
+          sw_vers
+          xcodebuild -version || true
+          swift --version
+          xcodebuild -showsdks || true
+
+  build:
+    runs-on: macos-latest
+    needs: environment
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Build non-UI targets (Models / Adapters / Core)
+        run: swift build
+
+  test:
+    runs-on: macos-latest
+    needs: build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Run Models Codable tests
+        run: swift test
+      - name: Upload test log
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: filterkit-test-log
+          path: |
+            .build/*.log
+            .build/release/*.log
+          retention-days: 14
+
+  isolation:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Adapter isolation check
+        run: bash scripts/check-adapter-isolation.sh
+
+  # 最小 App 编译：待 UI 框架选型（B4）与工程入口补齐后启用。
+  # 接入步骤草案见 Spec/Stage-2/Stage-2.1-App-Target-Plan.md §7：
+  # xcodegen generate → xcodebuild(iOS Simulator) → simctl boot/install/launch。
+  # 当前骨架无生成工程 / UI target，本步骤暂不纳入必过门禁；
+  # 不得为让 CI 变绿而降低 Deployment Target 或修改 Models 字段。
+  app-build:
+    runs-on: macos-latest
+    needs: [build, isolation]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: App target pending
+        run: echo "TODO 2.1 接入 XcodeGen 工程生成与模拟器编译启动；当前不编译 App"
+
+  artifact:
+    runs-on: macos-latest
+    needs: [build, test, isolation]
+    if: always()
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Upload build metadata
+        uses: actions/upload-artifact@v7
+        with:
+          name: filterkit-build-metadata
+          path: |
+            Package.swift
+            Makefile
+            control
+            .github/workflows/
+          retention-days: 14

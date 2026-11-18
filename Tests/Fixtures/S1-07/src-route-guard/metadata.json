@@ -1,0 +1,21 @@
+{
+  "fixtureId": "S1-07-OWN-011",
+  "expected": {
+    "route": "roothide",
+    "sourceDirectory": null,
+    "status": "unresolved",
+    "counts": {
+      "owned_package": 0,
+      "filterkit_managed": 0,
+      "manual_import": 0,
+      "unknown": 0,
+      "conflict": 0,
+      "dpkg_unavailable": 0
+    },
+    "byBase": {}
+  },
+  "expectedWarnings": [
+    "inventory_unresolved"
+  ],
+  "expectedStatus": "unresolved"
+}

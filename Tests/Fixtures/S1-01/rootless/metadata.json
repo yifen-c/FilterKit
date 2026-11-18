@@ -1,0 +1,15 @@
+{
+  "fixtureId": "S1-01-ROOTLESS-001",
+  "expected": {
+    "jailbreakType": "rootless",
+    "architecture": "arm64",
+    "iosVersion": "17.0.2",
+    "bootstrap": { "name": "procursus", "version": "fixture-version" },
+    "ellekitImplementation": "upstream",
+    "ellekitVersion": "1.0.0",
+    "ellekitVersionStatus": "parsed",
+    "adapterProfile": "RootlessProfile_upstream"
+  },
+  "expectedWarnings": [],
+  "expectedOutcome": "profile_candidate"
+}

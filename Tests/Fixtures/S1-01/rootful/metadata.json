@@ -1,0 +1,15 @@
+{
+  "fixtureId": "S1-01-ROOTFUL-001",
+  "expected": {
+    "jailbreakType": "rootful",
+    "architecture": "arm64",
+    "iosVersion": "15.0",
+    "bootstrap": { "name": null, "version": null },
+    "ellekitImplementation": "unknown",
+    "ellekitVersion": null,
+    "ellekitVersionStatus": "not_installed",
+    "adapterProfile": null
+  },
+  "expectedWarnings": ["unsupported_rootful"],
+  "expectedOutcome": "unsupported_profile"
+}

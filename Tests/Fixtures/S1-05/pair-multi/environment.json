@@ -1,0 +1,16 @@
+{
+  "fixtureId": "S1-05-PAIR-MULTI-001",
+  "fixtureKind": "pair-multi",
+  "upstream": { "route": "roothide", "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/", "inventoryStatus": "enumerated" },
+  "inventory": {
+    "enumerable": true,
+    "items": [
+      { "name": "Alpha.dylib", "kind": "dylib", "isSymlink": false, "hidden": false, "entryStatus": "ok" },
+      { "name": "Alpha.plist", "kind": "plist", "isSymlink": false, "hidden": false, "entryStatus": "ok" },
+      { "name": "Beta.dylib", "kind": "dylib", "isSymlink": false, "hidden": false, "entryStatus": "ok" },
+      { "name": "Beta.plist", "kind": "plist", "isSymlink": false, "hidden": false, "entryStatus": "ok" },
+      { "name": "Gamma.dylib", "kind": "dylib", "isSymlink": false, "hidden": false, "entryStatus": "ok" },
+      { "name": "Gamma.plist", "kind": "plist", "isSymlink": false, "hidden": false, "entryStatus": "ok" }
+    ]
+  }
+}

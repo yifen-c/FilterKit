@@ -1,0 +1,50 @@
+﻿2026-11-15T14:58:43.6081420Z Current runner version: '2.338.2'
+2026-11-15T14:58:43.6102810Z ##[group]Runner Image Provisioner
+2026-11-15T14:58:43.6103520Z Hosted Compute Agent
+2026-11-15T14:58:43.6103890Z Version: 20261028.624
+2026-11-15T14:58:43.6104280Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+2026-11-15T14:58:43.6104740Z Build Date: 2026-10-28T21:51:42Z
+2026-11-15T14:58:43.6105250Z Worker ID: {a63eb27b-71e3-4320-a91f-b9790c8ff95e}
+2026-11-15T14:58:43.6105730Z Region: westus
+2026-11-15T14:58:43.6106170Z Cloud: MacCloud
+2026-11-15T14:58:43.6106600Z ##[endgroup]
+2026-11-15T14:58:43.6108690Z ##[group]Operating System
+2026-11-15T14:58:43.6109280Z macOS
+2026-11-15T14:58:43.6109680Z 26.7.2
+2026-11-15T14:58:43.6110070Z 25G332
+2026-11-15T14:58:43.6110920Z ##[endgroup]
+2026-11-15T14:58:43.6111360Z ##[group]Runner Image
+2026-11-15T14:58:43.6111750Z Image: macos-26-arm64
+2026-11-15T14:58:43.6112560Z Version: 20261102.0473.1
+2026-11-15T14:58:43.6115260Z Included Software: https://github.com/actions/runner-images/blob/macos-26-arm64/20261102.0473/images/macos/macos-26-arm64-Readme.md
+2026-11-15T14:58:43.6117650Z Image Release: https://github.com/actions/runner-images/releases/tag/macos-26-arm64%2F20261102.0473
+2026-11-15T14:58:43.6118410Z ##[endgroup]
+2026-11-15T14:58:43.6120700Z ##[group]GITHUB_TOKEN Permissions
+2026-11-15T14:58:43.6123640Z Actions: write
+2026-11-15T14:58:43.6124620Z ArtifactMetadata: write
+2026-11-15T14:58:43.6125820Z Attestations: write
+2026-11-15T14:58:43.6126550Z Checks: write
+2026-11-15T14:58:43.6126910Z CodeQuality: write
+2026-11-15T14:58:43.6127250Z Contents: write
+2026-11-15T14:58:43.6127640Z CopilotRequests: write
+2026-11-15T14:58:43.6128000Z Deployments: write
+2026-11-15T14:58:43.6128340Z Discussions: write
+2026-11-15T14:58:43.6128690Z Drives: write
+2026-11-15T14:58:43.6129020Z Issues: write
+2026-11-15T14:58:43.6129500Z Metadata: read
+2026-11-15T14:58:43.6129830Z Models: read
+2026-11-15T14:58:43.6130160Z Packages: write
+2026-11-15T14:58:43.6130490Z Pages: write
+2026-11-15T14:58:43.6130830Z PullRequests: write
+2026-11-15T14:58:43.6131360Z RepositoryProjects: write
+2026-11-15T14:58:43.6131820Z SecurityEvents: write
+2026-11-15T14:58:43.6132200Z Statuses: write
+2026-11-15T14:58:43.6132570Z VulnerabilityAlerts: read
+2026-11-15T14:58:43.6132950Z ##[endgroup]
+2026-11-15T14:58:43.6135130Z Secret source: Actions
+2026-11-15T14:58:43.6135700Z Cache mode: write
+2026-11-15T14:58:43.6136160Z Prepare workflow directory
+2026-11-15T14:58:43.6412780Z Prepare all required actions
+2026-11-15T14:58:43.6457660Z Getting action download info
+2026-11-15T14:58:44.0266760Z Download action repository 'actions/checkout@v6' (SHA:d23441a48e516b6c34aea4fa41551a30e30af803)
+2026-11-15T14:58:44.6521600Z Complete job name: app-build

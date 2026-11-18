@@ -1,0 +1,590 @@
+{
+  "schemaVersion": "0.1.0",
+  "generatedAt": "2026-11-15T13:06:50.626Z",
+  "stage": "Stage 1 / S1-02",
+  "evidenceNote": "全部为离线 fixture 合成样本；不构成 RootHide 真机验证，Rootless/Rootful 结果不代表真机兼容。",
+  "summary": {
+    "total": 18,
+    "passed": 18,
+    "failed": 0,
+    "sourcesCovered": [
+      "api",
+      "bootstrap",
+      "rootful",
+      "rootless",
+      "scan"
+    ],
+    "missingSources": [],
+    "crossRouteLeakCount": 0
+  },
+  "cases": [
+    {
+      "pathId": "PATH-007",
+      "source": "fixture:no-candidate",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jbroot": null,
+        "jbrand": null,
+        "realpath": null,
+        "ambiguous": false,
+        "outcome": "no_candidate",
+        "selectedSource": null,
+        "candidateCount": 0,
+        "candidates": [],
+        "warnings": [
+          "no_jbroot_candidate"
+        ]
+      }
+    },
+    {
+      "pathId": "PATH-005",
+      "source": "fixture:realpath-privatevar",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jbroot": "/var/containers/Bundle/Application/.jbroot-D87B48653D7178BA",
+        "jbrand": "D87B48653D7178BA",
+        "realpath": "/private/var/containers/Bundle/Application/.jbroot-D87B48653D7178BA",
+        "ambiguous": false,
+        "outcome": "resolved",
+        "selectedSource": "bootstrap",
+        "candidateCount": 1,
+        "candidates": [
+          {
+            "root": "/var/containers/Bundle/Application/.jbroot-D87B48653D7178BA",
+            "source": "bootstrap",
+            "route": "roothide",
+            "nameValid": true,
+            "exists": true,
+            "structureMatch": true,
+            "readable": true,
+            "realpath": "/private/var/containers/Bundle/Application/.jbroot-D87B48653D7178BA",
+            "warnings": [],
+            "status": "confirmed"
+          }
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "pathId": "PATH-003",
+      "source": "fixture:rh-badname",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jbroot": null,
+        "jbrand": null,
+        "realpath": null,
+        "ambiguous": false,
+        "outcome": "no_candidate",
+        "selectedSource": null,
+        "candidateCount": 1,
+        "candidates": [
+          {
+            "root": "/var/containers/Bundle/Application/.jbroot-76484591DA3078C2",
+            "source": "scan",
+            "route": "roothide",
+            "nameValid": false,
+            "exists": true,
+            "structureMatch": true,
+            "readable": true,
+            "realpath": "/private/var/containers/Bundle/Application/.jbroot-76484591DA3078C2",
+            "warnings": [
+              "invalid_container_name"
+            ],
+            "status": "rejected_invalid"
+          }
+        ],
+        "warnings": [
+          "invalid_container_name"
+        ]
+      }
+    },
+    {
+      "pathId": "PATH-005",
+      "source": "fixture:rh-broken-link",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jbroot": null,
+        "jbrand": null,
+        "realpath": null,
+        "ambiguous": false,
+        "outcome": "resolve_failed",
+        "selectedSource": null,
+        "candidateCount": 1,
+        "candidates": [
+          {
+            "root": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+            "source": "scan",
+            "route": "roothide",
+            "nameValid": true,
+            "exists": true,
+            "structureMatch": true,
+            "readable": false,
+            "realpath": null,
+            "warnings": [
+              "symlink_resolve_failed"
+            ],
+            "status": "resolve_failed"
+          }
+        ],
+        "warnings": [
+          "symlink_resolve_failed"
+        ]
+      }
+    },
+    {
+      "pathId": "PATH-007",
+      "source": "fixture:rh-broken-link",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jbroot": null,
+        "jbrand": null,
+        "realpath": null,
+        "ambiguous": false,
+        "outcome": "resolve_failed",
+        "selectedSource": null,
+        "candidateCount": 1,
+        "candidates": [
+          {
+            "root": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+            "source": "scan",
+            "route": "roothide",
+            "nameValid": true,
+            "exists": true,
+            "structureMatch": true,
+            "readable": false,
+            "realpath": null,
+            "warnings": [
+              "symlink_resolve_failed"
+            ],
+            "status": "resolve_failed"
+          }
+        ],
+        "warnings": [
+          "symlink_resolve_failed"
+        ]
+      }
+    },
+    {
+      "pathId": "PATH-006",
+      "source": "fixture:rh-multiple",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jbroot": null,
+        "jbrand": null,
+        "realpath": null,
+        "ambiguous": true,
+        "outcome": "ambiguous",
+        "selectedSource": null,
+        "candidateCount": 2,
+        "candidates": [
+          {
+            "root": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+            "source": "api",
+            "route": "roothide",
+            "nameValid": true,
+            "exists": true,
+            "structureMatch": true,
+            "readable": true,
+            "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+            "warnings": [],
+            "status": "confirmed"
+          },
+          {
+            "root": "/var/containers/Bundle/Application/.jbroot-D87B48653D7178BA",
+            "source": "scan",
+            "route": "roothide",
+            "nameValid": true,
+            "exists": true,
+            "structureMatch": true,
+            "readable": true,
+            "realpath": "/private/var/containers/Bundle/Application/.jbroot-D87B48653D7178BA",
+            "warnings": [],
+            "status": "confirmed"
+          }
+        ],
+        "warnings": [
+          "multiple_candidates"
+        ]
+      }
+    },
+    {
+      "pathId": "PATH-002",
+      "source": "fixture:rh-name-only",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jbroot": null,
+        "jbrand": null,
+        "realpath": null,
+        "ambiguous": false,
+        "outcome": "no_candidate",
+        "selectedSource": null,
+        "candidateCount": 1,
+        "candidates": [
+          {
+            "root": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+            "source": "scan",
+            "route": "roothide",
+            "nameValid": true,
+            "exists": false,
+            "structureMatch": false,
+            "readable": false,
+            "realpath": null,
+            "warnings": [
+              "candidate_missing"
+            ],
+            "status": "rejected_missing"
+          }
+        ],
+        "warnings": [
+          "candidate_missing"
+        ]
+      }
+    },
+    {
+      "pathId": "PATH-007",
+      "source": "fixture:rh-unreadable",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jbroot": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+        "jbrand": "9C414BB7D5DCECC4",
+        "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+        "ambiguous": false,
+        "outcome": "partial",
+        "selectedSource": "scan",
+        "candidateCount": 1,
+        "candidates": [
+          {
+            "root": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+            "source": "scan",
+            "route": "roothide",
+            "nameValid": true,
+            "exists": true,
+            "structureMatch": true,
+            "readable": false,
+            "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+            "warnings": [
+              "access_limited"
+            ],
+            "status": "partial"
+          }
+        ],
+        "warnings": [
+          "access_limited"
+        ]
+      }
+    },
+    {
+      "pathId": "PATH-001",
+      "source": "fixture:rh-valid",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jbroot": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+        "jbrand": "9C414BB7D5DCECC4",
+        "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+        "ambiguous": false,
+        "outcome": "resolved",
+        "selectedSource": "scan",
+        "candidateCount": 1,
+        "candidates": [
+          {
+            "root": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+            "source": "scan",
+            "route": "roothide",
+            "nameValid": true,
+            "exists": true,
+            "structureMatch": true,
+            "readable": true,
+            "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+            "warnings": [],
+            "status": "confirmed"
+          }
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "pathId": "PATH-002",
+      "source": "fixture:rh-valid",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jbroot": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+        "jbrand": "9C414BB7D5DCECC4",
+        "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+        "ambiguous": false,
+        "outcome": "resolved",
+        "selectedSource": "scan",
+        "candidateCount": 1,
+        "candidates": [
+          {
+            "root": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+            "source": "scan",
+            "route": "roothide",
+            "nameValid": true,
+            "exists": true,
+            "structureMatch": true,
+            "readable": true,
+            "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+            "warnings": [],
+            "status": "confirmed"
+          }
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "pathId": "PATH-003",
+      "source": "fixture:rh-valid",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jbroot": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+        "jbrand": "9C414BB7D5DCECC4",
+        "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+        "ambiguous": false,
+        "outcome": "resolved",
+        "selectedSource": "scan",
+        "candidateCount": 1,
+        "candidates": [
+          {
+            "root": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+            "source": "scan",
+            "route": "roothide",
+            "nameValid": true,
+            "exists": true,
+            "structureMatch": true,
+            "readable": true,
+            "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+            "warnings": [],
+            "status": "confirmed"
+          }
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "pathId": "PATH-008",
+      "source": "fixture:rh-valid",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jbroot": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+        "jbrand": "9C414BB7D5DCECC4",
+        "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+        "ambiguous": false,
+        "outcome": "resolved",
+        "selectedSource": "scan",
+        "candidateCount": 1,
+        "candidates": [
+          {
+            "root": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+            "source": "scan",
+            "route": "roothide",
+            "nameValid": true,
+            "exists": true,
+            "structureMatch": true,
+            "readable": true,
+            "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+            "warnings": [],
+            "status": "confirmed"
+          }
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "pathId": "PATH-009",
+      "source": "fixture:rh-valid",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jbroot": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+        "jbrand": "9C414BB7D5DCECC4",
+        "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+        "ambiguous": false,
+        "outcome": "resolved",
+        "selectedSource": "scan",
+        "candidateCount": 1,
+        "candidates": [
+          {
+            "root": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+            "source": "scan",
+            "route": "roothide",
+            "nameValid": true,
+            "exists": true,
+            "structureMatch": true,
+            "readable": true,
+            "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+            "warnings": [],
+            "status": "confirmed"
+          }
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "pathId": "PATH-010",
+      "source": "fixture:rootful-root",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jbroot": null,
+        "jbrand": null,
+        "realpath": null,
+        "ambiguous": false,
+        "outcome": "cross_route_only",
+        "selectedSource": null,
+        "candidateCount": 1,
+        "candidates": [
+          {
+            "root": "/",
+            "source": "rootful",
+            "route": "rootful",
+            "nameValid": null,
+            "exists": true,
+            "structureMatch": true,
+            "readable": true,
+            "realpath": "/",
+            "warnings": [
+              "rootful_route_not_jbroot"
+            ],
+            "status": "cross_route"
+          }
+        ],
+        "warnings": [
+          "rootful_route_not_jbroot"
+        ]
+      }
+    },
+    {
+      "pathId": "PATH-010",
+      "source": "fixture:rootless-varjb",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jbroot": null,
+        "jbrand": null,
+        "realpath": null,
+        "ambiguous": false,
+        "outcome": "cross_route_only",
+        "selectedSource": null,
+        "candidateCount": 1,
+        "candidates": [
+          {
+            "root": "/var/jb",
+            "source": "rootless",
+            "route": "rootless",
+            "nameValid": null,
+            "exists": true,
+            "structureMatch": true,
+            "readable": true,
+            "realpath": "/var/jb",
+            "warnings": [
+              "rootless_route_not_jbroot"
+            ],
+            "status": "cross_route"
+          }
+        ],
+        "warnings": [
+          "rootless_route_not_jbroot"
+        ]
+      }
+    },
+    {
+      "pathId": "PATH-004",
+      "source": "synthetic:lexical-normalize",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "normalized": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4"
+      }
+    },
+    {
+      "pathId": "PATH-011",
+      "source": "synthetic:determinism",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jbroot": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+        "jbrand": "9C414BB7D5DCECC4",
+        "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+        "ambiguous": false,
+        "outcome": "resolved",
+        "selectedSource": "scan",
+        "candidateCount": 1,
+        "candidates": [
+          {
+            "root": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+            "source": "scan",
+            "route": "roothide",
+            "nameValid": true,
+            "exists": true,
+            "structureMatch": true,
+            "readable": true,
+            "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+            "warnings": [],
+            "status": "confirmed"
+          }
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "pathId": "PATH-012",
+      "source": "synthetic:id-mismatch",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "jbroot": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+        "jbrand": "9C414BB7D5DCECC4",
+        "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+        "ambiguous": false,
+        "outcome": "resolved",
+        "selectedSource": "scan",
+        "candidateCount": 1,
+        "candidates": [
+          {
+            "root": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+            "source": "scan",
+            "route": "roothide",
+            "nameValid": true,
+            "exists": true,
+            "structureMatch": true,
+            "readable": true,
+            "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+            "warnings": [],
+            "status": "confirmed"
+          }
+        ],
+        "warnings": []
+      }
+    }
+  ]
+}

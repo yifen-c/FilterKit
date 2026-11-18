@@ -1,0 +1,70 @@
+{
+  "fixtureId": "S1-07-OWN-002",
+  "expected": {
+    "route": "rootless",
+    "sourceDirectory": "/var/jb/usr/lib/TweakInject/",
+    "status": "enumerated",
+    "counts": {
+      "owned_package": 2,
+      "filterkit_managed": 0,
+      "manual_import": 0,
+      "unknown": 0,
+      "conflict": 0,
+      "dpkg_unavailable": 0
+    },
+    "byBase": {
+      "A": {
+        "sourceType": "dpkg_sileo",
+        "ownership": "owned_package",
+        "packageID": "com.a",
+        "confidence": "exact_record",
+        "writablePolicy": "read_only",
+        "fileOwnership": {
+          "dylib": {
+            "owners": [
+              "com.a"
+            ],
+            "match": "exact"
+          },
+          "plist": {
+            "owners": [
+              "com.a"
+            ],
+            "match": "exact"
+          }
+        },
+        "markers": {
+          "filterkit": "absent",
+          "manual": "absent"
+        }
+      },
+      "B": {
+        "sourceType": "dpkg_sileo",
+        "ownership": "owned_package",
+        "packageID": "com.b",
+        "confidence": "exact_record",
+        "writablePolicy": "read_only",
+        "fileOwnership": {
+          "dylib": {
+            "owners": [
+              "com.b"
+            ],
+            "match": "exact"
+          },
+          "plist": {
+            "owners": [
+              "com.b"
+            ],
+            "match": "exact"
+          }
+        },
+        "markers": {
+          "filterkit": "absent",
+          "manual": "absent"
+        }
+      }
+    }
+  },
+  "expectedWarnings": [],
+  "expectedStatus": "enumerated"
+}

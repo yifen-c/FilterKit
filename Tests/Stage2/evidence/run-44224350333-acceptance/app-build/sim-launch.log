@@ -1,0 +1,4 @@
+com.filterkit.manager: 4096
+--- alive check 2026-11-18T02:41:22Z ---
+device_id=98A0BFA3-CEC3-4FD6-9916-5A2149774DBF app_pid=4096 bundle=com.filterkit.manager
+4096	0	UIKitApplication:com.filterkit.manager[e7d7][rb-legacy]

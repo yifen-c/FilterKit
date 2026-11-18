@@ -1,0 +1,36 @@
+Test Suite 'EngineC1EngineBaselineTests' started at 2026-11-17 14:44:49.315.
+Test Case '-[Stage2Tests.EngineC1EngineBaselineTests testEngineDeterminismDeepEqual]' started.
+Test Case '-[Stage2Tests.EngineC1EngineBaselineTests testEngineDeterminismDeepEqual]' passed (0.002 seconds).
+Test Case '-[Stage2Tests.EngineC1EngineBaselineTests testFixtureEngineBaselines]' started.
+Test Case '-[Stage2Tests.EngineC1EngineBaselineTests testFixtureEngineBaselines]' passed (0.015 seconds).
+Test Case '-[Stage2Tests.EngineC1EngineBaselineTests testPartialCorruptKeepsGoodAndCounts]' started.
+Test Case '-[Stage2Tests.EngineC1EngineBaselineTests testPartialCorruptKeepsGoodAndCounts]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.EngineC1EngineBaselineTests testRouteGuardUnresolvedCallsNothing]' started.
+Test Case '-[Stage2Tests.EngineC1EngineBaselineTests testRouteGuardUnresolvedCallsNothing]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC1EngineBaselineTests testUnknownRouteIsolationZeroCalls]' started.
+Test Case '-[Stage2Tests.EngineC1EngineBaselineTests testUnknownRouteIsolationZeroCalls]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC1EngineBaselineTests testUpstreamSnapshotNotMutated]' started.
+Test Case '-[Stage2Tests.EngineC1EngineBaselineTests testUpstreamSnapshotNotMutated]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.EngineC1EngineBaselineTests testUpstreamUnknownItemsPreserved]' started.
+Test Case '-[Stage2Tests.EngineC1EngineBaselineTests testUpstreamUnknownItemsPreserved]' passed (0.000 seconds).
+Test Suite 'EngineC1EngineBaselineTests' passed at 2026-11-17 14:44:49.336.
+	 Executed 7 tests, with 0 failures (0 unexpected) in 0.020 (0.021) seconds
+Test Suite 'EngineC1ParserBaselineTests' started at 2026-11-17 14:44:49.336.
+Test Case '-[Stage2Tests.EngineC1ParserBaselineTests testParse010MixedTypeEvidence]' started.
+Test Case '-[Stage2Tests.EngineC1ParserBaselineTests testParse010MixedTypeEvidence]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC1ParserBaselineTests testRegistryHasTwentyTwoUniqueCases]' started.
+Test Case '-[Stage2Tests.EngineC1ParserBaselineTests testRegistryHasTwentyTwoUniqueCases]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC1ParserBaselineTests testRootHideDeterminismDeepEqual]' started.
+Test Case '-[Stage2Tests.EngineC1ParserBaselineTests testRootHideDeterminismDeepEqual]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.EngineC1ParserBaselineTests testRootHideFixtureBaselines]' started.
+Test Case '-[Stage2Tests.EngineC1ParserBaselineTests testRootHideFixtureBaselines]' passed (0.003 seconds).
+Test Case '-[Stage2Tests.EngineC1ParserBaselineTests testRootHideMultiRuleCombined]' started.
+Test Case '-[Stage2Tests.EngineC1ParserBaselineTests testRootHideMultiRuleCombined]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC1ParserBaselineTests testRootHideSyntheticBaselines]' started.
+Test Case '-[Stage2Tests.EngineC1ParserBaselineTests testRootHideSyntheticBaselines]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.EngineC1ParserBaselineTests testRootHideXmlValidFullRule]' started.
+Test Case '-[Stage2Tests.EngineC1ParserBaselineTests testRootHideXmlValidFullRule]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.EngineC1ParserBaselineTests testRootlessBaselineThroughParser]' started.
+Test Case '-[Stage2Tests.EngineC1ParserBaselineTests testRootlessBaselineThroughParser]' passed (0.001 seconds).
+Test Suite 'EngineC1ParserBaselineTests' passed at 2026-11-17 14:44:49.344.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds

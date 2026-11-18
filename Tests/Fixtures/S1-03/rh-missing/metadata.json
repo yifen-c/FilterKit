@@ -1,0 +1,16 @@
+{
+  "fixtureId": "S1-03-RH-MISSING-001",
+  "expected": {
+    "route": "roothide",
+    "tiPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "tiExists": false,
+    "tiReadable": false,
+    "tiEnumerable": false,
+    "tiStatus": "not_found",
+    "dlState": "not_symlink",
+    "dlTargetMatch": false,
+    "outcome": "not_found"
+  },
+  "expectedWarnings": ["directory_not_found"],
+  "expectedOutcome": "not_found"
+}

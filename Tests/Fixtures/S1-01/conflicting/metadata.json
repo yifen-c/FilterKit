@@ -1,0 +1,15 @@
+{
+  "fixtureId": "S1-01-CONFLICT-001",
+  "expected": {
+    "jailbreakType": "unknown",
+    "architecture": "arm64e",
+    "iosVersion": "17.0.2",
+    "bootstrap": { "name": "dopamine-roothide", "version": "3.0.13-30" },
+    "ellekitImplementation": "unknown",
+    "ellekitVersion": null,
+    "ellekitVersionStatus": "conflicted",
+    "adapterProfile": null
+  },
+  "expectedWarnings": ["route_signal_conflict", "impl_version_conflict"],
+  "expectedOutcome": "conflict_no_profile"
+}

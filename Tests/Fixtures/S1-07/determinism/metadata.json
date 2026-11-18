@@ -1,0 +1,45 @@
+{
+  "fixtureId": "S1-07-OWN-012",
+  "expected": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "status": "enumerated",
+    "counts": {
+      "owned_package": 1,
+      "filterkit_managed": 0,
+      "manual_import": 0,
+      "unknown": 0,
+      "conflict": 0,
+      "dpkg_unavailable": 0
+    },
+    "byBase": {
+      "Det": {
+        "sourceType": "dpkg_sileo",
+        "ownership": "owned_package",
+        "packageID": "det.pkg",
+        "confidence": "exact_record",
+        "writablePolicy": "read_only",
+        "fileOwnership": {
+          "dylib": {
+            "owners": [
+              "det.pkg"
+            ],
+            "match": "exact"
+          },
+          "plist": {
+            "owners": [
+              "det.pkg"
+            ],
+            "match": "exact"
+          }
+        },
+        "markers": {
+          "filterkit": "absent",
+          "manual": "absent"
+        }
+      }
+    }
+  },
+  "expectedWarnings": [],
+  "expectedStatus": "enumerated"
+}

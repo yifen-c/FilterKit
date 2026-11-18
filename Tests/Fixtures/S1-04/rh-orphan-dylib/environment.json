@@ -1,0 +1,15 @@
+{
+  "fixtureId": "S1-04-ORPHAN-DYLIB-001",
+  "fixtureKind": "rh-orphan-dylib",
+  "upstream": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "enumerationStatus": "enumerated"
+  },
+  "fs": {
+    "enumerable": true,
+    "entries": [
+      { "name": "Lone.dylib", "type": "file", "exists": true, "readable": true, "isSymlink": false, "symlinkTarget": null, "realpath": "/private/var/.../Lone.dylib", "size": 12288, "hash": "sha256:ccc333", "hidden": false, "entryStatus": "ok" }
+    ]
+  }
+}

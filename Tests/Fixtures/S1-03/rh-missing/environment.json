@@ -1,0 +1,21 @@
+{
+  "fixtureId": "S1-03-RH-MISSING-001",
+  "fixtureKind": "rh-missing",
+  "upstream": { "route": "roothide", "jbroot": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4" },
+  "fs": {
+    "tweakInject": {
+      "exists": false,
+      "readable": false,
+      "enumerable": false,
+      "realpath": null,
+      "structureMatch": false
+    },
+    "dynamicLibraries": {
+      "exists": false,
+      "isSymlink": false,
+      "symlinkTarget": null,
+      "realpath": null,
+      "symlinkState": "not_symlink"
+    }
+  }
+}

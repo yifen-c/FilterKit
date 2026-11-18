@@ -1,0 +1,11 @@
+{
+  "fixtureId": "S1-05-MISSING-PLIST-001",
+  "fixtureKind": "pair-missing-plist",
+  "upstream": { "route": "roothide", "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/", "inventoryStatus": "enumerated" },
+  "inventory": {
+    "enumerable": true,
+    "items": [
+      { "name": "Unmatched.dylib", "kind": "dylib", "isSymlink": false, "hidden": false, "entryStatus": "ok" }
+    ]
+  }
+}

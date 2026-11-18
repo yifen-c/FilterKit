@@ -1,0 +1,44 @@
+{
+  "fixtureId": "S1-06-PARSE-DETERMINISM",
+  "fixtureKind": "parse-determinism",
+  "upstream": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "inventoryStatus": "enumerated"
+  },
+  "pairing": {
+    "pairs": [
+      {
+        "base": "Delta",
+        "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Delta.dylib",
+        "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Delta.plist",
+        "pairing": "paired",
+        "dylibIsSymlink": false,
+        "plistIsSymlink": false,
+        "status": "ok"
+      }
+    ],
+    "missingPlist": [],
+    "orphanPlist": [],
+    "ambiguous": [],
+    "uncertain": []
+  },
+  "plists": [
+    {
+      "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Delta.plist",
+      "format": "xml",
+      "readStatus": "ok",
+      "payloadInvalid": false,
+      "root": {
+        "Filter": {
+          "Bundles": [
+            "com.delta.app"
+          ],
+          "Executables": [
+            "DeltaApp"
+          ]
+        }
+      }
+    }
+  ]
+}

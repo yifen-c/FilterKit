@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "release": {
+    "version": "0.1.18",
+    "build": 118,
+    "helperBuildID": "FKH-0118",
+    "channel": "development"
+  },
+  "sequence": [
+    "peer_verified",
+    "protocol_negotiated",
+    "transcript_verified",
+    "key_derived",
+    "client_confirmation_verified",
+    "helper_confirmation_verified",
+    "established"
+  ],
+  "confirmation": {
+    "algorithm": "HMAC-SHA256",
+    "domain": "FilterKit.Helper.KeyConfirmation.v1",
+    "roles": [
+      "client",
+      "helper"
+    ],
+    "boundFields": [
+      "sessionID",
+      "transcriptDigest"
+    ],
+    "minimumKeyBytes": 32
+  },
+  "peerBinding": {
+    "fields": [
+      "sessionID",
+      "clientID",
+      "helperID",
+      "helperBuildID",
+      "credentialDigest",
+      "transcriptDigest"
+    ],
+    "credentialDigestSource": "future_real_transport_peer_credentials",
+    "selfReportedPeerIdentityTrusted": false
+  },
+  "session": {
+    "maximumLifetimeSeconds": 3600,
+    "idleTimeoutSeconds": 300,
+    "clockRollback": "invalidate",
+    "disconnect": "invalidate_and_require_new_handshake",
+    "keyRevocation": "revoke_in_memory_session_key_on_timeout_or_invalidation"
+  },
+  "auditActions": [
+    "peer_binding",
+    "key_confirmation",
+    "handshake_state",
+    "session_expired"
+  ],
+  "safety": {
+    "realTransportImplemented": false,
+    "realPeerCredentialsCollected": false,
+    "trustedKeyProvisioningImplemented": false,
+    "helperTargetPresent": false,
+    "daemonDeploymentAllowed": false,
+    "realIPCReady": false,
+    "writeOperationsAllowed": false
+  },
+  "readiness": {
+    "trustAnchorStore": "empty_by_default",
+    "peerCredentialSources": [
+      "unsupported",
+      "mock",
+      "self_reported"
+    ],
+    "systemCredentialCollectorImplemented": false,
+    "transportEvidenceSources": [
+      "unsupported",
+      "mock"
+    ],
+    "realTransportEvidenceImplemented": false,
+    "readOnlyOperationsAllowed": false,
+    "transportAdapter": "unix_domain_socket",
+    "realTransportImplemented": false
+  }
+}

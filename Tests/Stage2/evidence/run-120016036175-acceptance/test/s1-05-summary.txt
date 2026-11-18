@@ -1,0 +1,6 @@
+S1-05 独立过滤摘要（run 120016036175 / SHA f50c284d）
+命令: swift test --filter PluginPairingS105FixtureTests
+目标平台: arm64e-apple-macos14.0；Testing Library 1902
+结果: Executed 15 tests, with 0 failures (0 unexpected)
+跳过: 0（日志无 XCTSkip / skipped 记录）
+口径: 本日志归属 f50c284d 远程树；本地 HEAD 9e26a6e 尚未推送，最终验收以 HEAD 基线 Runner 复核为准。

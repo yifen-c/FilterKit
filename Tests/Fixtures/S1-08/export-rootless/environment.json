@@ -1,0 +1,137 @@
+{
+  "upstream": {
+    "s101": {
+      "jailbreakType": "rootless",
+      "architecture": "iphoneos-arm64",
+      "iosVersion": "17.0.2",
+      "ellekitImplementation": "ellekit",
+      "ellekitVersion": "1.2-3",
+      "ellekitVersionStatus": "recognized",
+      "adapterProfile": "RootlessProfile",
+      "outcome": "ok",
+      "evidence": {
+        "level": "partial"
+      },
+      "warnings": []
+    },
+    "s102": {
+      "jbroot": null,
+      "jbrand": null,
+      "ambiguous": false,
+      "candidates": [],
+      "warnings": []
+    },
+    "s103": {
+      "route": "rootless",
+      "tweakInject": {
+        "path": "/var/jb/usr/lib/TweakInject/",
+        "exists": true,
+        "readable": true
+      },
+      "dynamicLibraries": null,
+      "outcome": "ok",
+      "warnings": []
+    },
+    "s104": {
+      "route": "rootless",
+      "sourceDirectory": "/var/jb/usr/lib/TweakInject/",
+      "items": [
+        {
+          "dylibPath": "/var/jb/usr/lib/TweakInject/RL.dylib",
+          "readable": true,
+          "entryStatus": "ok"
+        }
+      ],
+      "unknownItems": [],
+      "warnings": []
+    },
+    "s105": {
+      "route": "rootless",
+      "sourceDirectory": "/var/jb/usr/lib/TweakInject/",
+      "pairs": [
+        {
+          "base": "RL",
+          "dylibPath": "/var/jb/usr/lib/TweakInject/RL.dylib",
+          "plistPath": "/var/jb/usr/lib/TweakInject/RL.plist",
+          "pairing": "paired"
+        }
+      ],
+      "missingPlist": [],
+      "orphanPlist": [],
+      "ambiguous": [],
+      "uncertain": [],
+      "status": "paired",
+      "warnings": []
+    },
+    "s106": {
+      "route": "rootless",
+      "sourceDirectory": "/var/jb/usr/lib/TweakInject/",
+      "parsed": [
+        {
+          "base": "RL",
+          "dylibPath": "/var/jb/usr/lib/TweakInject/RL.dylib",
+          "plistPath": "/var/jb/usr/lib/TweakInject/RL.plist",
+          "parseStatus": "valid",
+          "reason": null,
+          "isTweakManager": false,
+          "filter": {
+            "bundles": [
+              "com.example.rl"
+            ],
+            "classes": [],
+            "executables": [],
+            "coreFoundationVersion": null,
+            "otherKeys": []
+          },
+          "skippedFields": [],
+          "validation": {
+            "status": "valid",
+            "warnings": []
+          }
+        }
+      ],
+      "notParsed": [],
+      "warnings": []
+    },
+    "s107": {
+      "route": "rootless",
+      "sourceDirectory": "/var/jb/usr/lib/TweakInject/",
+      "unresolved": [],
+      "warnings": [],
+      "sources": [
+        {
+          "base": "RL",
+          "dylibPath": "/var/jb/usr/lib/TweakInject/RL.dylib",
+          "plistPath": "/var/jb/usr/lib/TweakInject/RL.plist",
+          "sourceType": "dpkg_sileo",
+          "packageID": "com.rl",
+          "packageVersion": "2.0",
+          "architecture": "iphoneos-arm64",
+          "listPath": "/var/jb/var/lib/dpkg/info/com.rl.list",
+          "fileOwnership": {
+            "dylib": {
+              "owners": [
+                "com.rl"
+              ],
+              "match": "exact"
+            },
+            "plist": {
+              "owners": [
+                "com.rl"
+              ],
+              "match": "exact"
+            }
+          },
+          "confidence": "exact_record",
+          "writablePolicy": "read_only",
+          "markers": {
+            "filterkit": "absent",
+            "manual": "absent"
+          },
+          "conflicts": [],
+          "notes": []
+        }
+      ]
+    }
+  }
+}

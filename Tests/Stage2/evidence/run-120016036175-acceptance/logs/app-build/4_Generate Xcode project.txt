@@ -1,0 +1,18 @@
+﻿2026-11-18T16:01:51.7110310Z ##[debug]Evaluating condition for step: 'Generate Xcode project'
+2026-11-18T16:01:51.7122380Z ##[debug]Evaluating: success()
+2026-11-18T16:01:51.7122960Z ##[debug]Evaluating success:
+2026-11-18T16:01:51.7123950Z ##[debug]=> true
+2026-11-18T16:01:51.7124720Z ##[debug]Result: true
+2026-11-18T16:01:51.7127930Z ##[debug]Starting: Generate Xcode project
+2026-11-18T16:01:51.7344190Z ##[debug]Loading inputs
+2026-11-18T16:01:51.7347570Z ##[debug]Loading env
+2026-11-18T16:01:51.7353840Z ##[group]Run xcodegen generate
+2026-11-18T16:01:51.7354130Z [36;1mxcodegen generate[0m
+2026-11-18T16:01:51.7395800Z shell: /bin/bash -e {0}
+2026-11-18T16:01:51.7396230Z ##[endgroup]
+2026-11-18T16:01:51.7432120Z ##[debug]/bin/bash -e /Users/runner/work/_temp/453786b1-7ea4-48b8-8a41-a44c0fff40da.sh
+2026-11-18T16:01:51.8189650Z ⚙️  Generating plists...
+2026-11-18T16:01:51.8196370Z ⚙️  Generating project...
+2026-11-18T16:01:51.8308340Z ⚙️  Writing project...
+2026-11-18T16:01:51.8510650Z Created project at /Users/runner/work/FilterKit/FilterKit/FilterKit.xcodeproj
+2026-11-18T16:01:51.8524180Z ##[debug]Finishing: Generate Xcode project

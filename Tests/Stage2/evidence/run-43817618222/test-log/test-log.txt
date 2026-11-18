@@ -1,0 +1,265 @@
+Building for debugging...
+[0/9] /Users/runner/work/FilterKit/FilterKit/.build/arm64-apple-macosx/debug/FilterKitPackageTests.derived/runner.swift
+[1/9] Write sources
+[6/9] Write swift-version-7974D3F7F03D5E95.txt
+[8/14] Compiling Models EnvironmentAdvisor.swift
+[9/14] Compiling Models EnvironmentModels.swift
+[10/14] Compiling Models ModelEnums.swift
+[11/14] Compiling Models PluginModels.swift
+[12/14] Emitting module Models
+[13/15] Compiling Models ReportEnvelope.swift
+[14/18] Compiling Adapters RootHideAdapter.swift
+[15/18] Emitting module Adapters
+[16/18] Compiling Adapters ElleKitAdapter.swift
+[17/19] Compiling Adapters RootlessAdapter.swift
+[18/34] Emitting module Core
+[19/34] Compiling Core CoreServices.swift
+[20/34] Compiling Core EnvironmentDetector.swift
+[21/34] Compiling Core EnvironmentSnapshot.swift
+[22/34] Compiling Core VersionParser.swift
+[23/34] Compiling Core ElleKitDirectoryResolution.swift
+[24/34] Compiling Core ElleKitDirectoryResolver.swift
+[25/34] Compiling Core ElleKitDirectorySnapshot.swift
+[26/34] Compiling Core ElleKitDirectoryValidator.swift
+[27/34] Compiling Core ElleKitPathDeriver.swift
+[28/34] Compiling Core ElleKitSymlinkInspector.swift
+[29/34] Compiling Core JBRootCandidateCollector.swift
+[30/34] Compiling Core JBRootCandidateSnapshot.swift
+[31/34] Compiling Core JBRootDecisionResolver.swift
+[32/34] Compiling Core JBRootNameValidator.swift
+[33/40] Compiling Core JBRootResolver.swift
+[34/40] Compiling Core JBRootStatusClassifier.swift
+[35/40] Compiling Core JBRootValidator.swift
+[36/40] Compiling Core ElleKitDirectoryPipeline.swift
+[37/40] Compiling Core EnvironmentRouteMapper.swift
+[38/40] Compiling Core JBRootToDirectoryBridge.swift
+[39/47] Compiling Stage2Tests B5DeterminismTests.swift
+[40/47] Compiling Stage2Tests B5FixtureComparisonTests.swift
+[41/47] Compiling Stage2Tests B5IntegrationTests.swift
+[42/47] Emitting module Stage2Tests
+[43/47] Compiling Stage2Tests ElleKitDirectoryTests.swift
+[44/47] Compiling Stage2Tests EnvironmentDetectionTests.swift
+[45/47] Compiling Stage2Tests JBRootCandidateCollectionTests.swift
+[46/49] Compiling Stage2Tests JBRootValidationTests.swift
+[47/49] Compiling Stage2Tests ModelsCodableTests.swift
+[48/51] Emitting module FilterKitPackageTests
+[49/51] Compiling FilterKitPackageTests runner.swift
+[49/51] Write Objects.LinkFileList
+[50/51] Linking FilterKitPackageTests
+Build complete! (22.55s)
+Test Suite 'All tests' started at 2026-11-16 06:35:27.099.
+Test Suite 'FilterKitPackageTests.xctest' started at 2026-11-16 06:35:27.100.
+Test Suite 'B5DeterminismTests' started at 2026-11-16 06:35:27.100.
+Test Case '-[Stage2Tests.B5DeterminismTests testBridgeDeterminism]' started.
+Test Case '-[Stage2Tests.B5DeterminismTests testBridgeDeterminism]' passed (0.002 seconds).
+Test Case '-[Stage2Tests.B5DeterminismTests testDirectoryResolverDeterminism]' started.
+Test Case '-[Stage2Tests.B5DeterminismTests testDirectoryResolverDeterminism]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.B5DeterminismTests testEnvironmentRouteMapperCasesAndDeterminism]' started.
+Test Case '-[Stage2Tests.B5DeterminismTests testEnvironmentRouteMapperCasesAndDeterminism]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.B5DeterminismTests testJBResolverDeterminism]' started.
+Test Case '-[Stage2Tests.B5DeterminismTests testJBResolverDeterminism]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.B5DeterminismTests testPipelineDeterminism]' started.
+Test Case '-[Stage2Tests.B5DeterminismTests testPipelineDeterminism]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.B5DeterminismTests testPipelineInputCodableRoundTripAndStableEncoding]' started.
+Test Case '-[Stage2Tests.B5DeterminismTests testPipelineInputCodableRoundTripAndStableEncoding]' passed (0.000 seconds).
+Test Suite 'B5DeterminismTests' passed at 2026-11-16 06:35:27.106.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.005 (0.006) seconds
+Test Suite 'B5FixtureComparisonTests' started at 2026-11-16 06:35:27.106.
+Test Case '-[Stage2Tests.B5FixtureComparisonTests testS101FixturesDeepComparison]' started.
+Test Case '-[Stage2Tests.B5FixtureComparisonTests testS101FixturesDeepComparison]' passed (0.006 seconds).
+Test Case '-[Stage2Tests.B5FixtureComparisonTests testS102CollectorDeepComparison]' started.
+Test Case '-[Stage2Tests.B5FixtureComparisonTests testS102CollectorDeepComparison]' passed (0.002 seconds).
+Test Case '-[Stage2Tests.B5FixtureComparisonTests testS102FixturesDeepComparison]' started.
+Test Case '-[Stage2Tests.B5FixtureComparisonTests testS102FixturesDeepComparison]' passed (0.003 seconds).
+Test Case '-[Stage2Tests.B5FixtureComparisonTests testS103FixturesDeepComparison]' started.
+Test Case '-[Stage2Tests.B5FixtureComparisonTests testS103FixturesDeepComparison]' passed (0.004 seconds).
+Test Suite 'B5FixtureComparisonTests' passed at 2026-11-16 06:35:27.122.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.015 (0.015) seconds
+Test Suite 'B5IntegrationTests' started at 2026-11-16 06:35:27.122.
+Test Case '-[Stage2Tests.B5IntegrationTests testINT001ValidRootHideResolved]' started.
+Test Case '-[Stage2Tests.B5IntegrationTests testINT001ValidRootHideResolved]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.B5IntegrationTests testINT002AmbiguousDoesNotSelectCandidate]' started.
+Test Case '-[Stage2Tests.B5IntegrationTests testINT002AmbiguousDoesNotSelectCandidate]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.B5IntegrationTests testINT003NoValidJBRootNoFallback]' started.
+Test Case '-[Stage2Tests.B5IntegrationTests testINT003NoValidJBRootNoFallback]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.B5IntegrationTests testINT004RootlessIndependentPath]' started.
+Test Case '-[Stage2Tests.B5IntegrationTests testINT004RootlessIndependentPath]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.B5IntegrationTests testINT005RootfulDiagnosticOnly]' started.
+Test Case '-[Stage2Tests.B5IntegrationTests testINT005RootfulDiagnosticOnly]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.B5IntegrationTests testINT006ValidationFailureNoConfirmedPath]' started.
+Test Case '-[Stage2Tests.B5IntegrationTests testINT006ValidationFailureNoConfirmedPath]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.B5IntegrationTests testINT007TweakInjectNotFoundPreserved]' started.
+Test Case '-[Stage2Tests.B5IntegrationTests testINT007TweakInjectNotFoundPreserved]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.B5IntegrationTests testINT008BrokenSymlinkPreserved]' started.
+Test Case '-[Stage2Tests.B5IntegrationTests testINT008BrokenSymlinkPreserved]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.B5IntegrationTests testINT009DeniedSymlinkPreserved]' started.
+Test Case '-[Stage2Tests.B5IntegrationTests testINT009DeniedSymlinkPreserved]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.B5IntegrationTests testINT010UnverifiedFieldsRemainNil]' started.
+Test Case '-[Stage2Tests.B5IntegrationTests testINT010UnverifiedFieldsRemainNil]' passed (0.000 seconds).
+Test Suite 'B5IntegrationTests' passed at 2026-11-16 06:35:27.127.
+	 Executed 10 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+Test Suite 'ElleKitDirectoryTests' started at 2026-11-16 06:35:27.127.
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testDeterminismDIR012]' started.
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testDeterminismDIR012]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testEvidenceCodableRoundTrip]' started.
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testEvidenceCodableRoundTrip]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testIdMismatchDIR013]' started.
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testIdMismatchDIR013]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testRhBrokenLinkPartial]' started.
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testRhBrokenLinkPartial]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testRhLoopPartial]' started.
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testRhLoopPartial]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testRhMissingNotFound]' started.
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testRhMissingNotFound]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testRhNotSymlinkPartial]' started.
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testRhNotSymlinkPartial]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testRhTargetDeniedPartial]' started.
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testRhTargetDeniedPartial]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testRhUnreadablePartialLayered]' started.
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testRhUnreadablePartialLayered]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testRhValidResolved]' started.
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testRhValidResolved]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testRootfulDiagnostic]' started.
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testRootfulDiagnostic]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testRootlessValidResolved]' started.
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testRootlessValidResolved]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testRouteFallbackGuardNoLeak]' started.
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testRouteFallbackGuardNoLeak]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testStructureConflict]' started.
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testStructureConflict]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testThreeStatePreservedAndRouteCoverage]' started.
+Test Case '-[Stage2Tests.ElleKitDirectoryTests testThreeStatePreservedAndRouteCoverage]' passed (0.000 seconds).
+Test Suite 'ElleKitDirectoryTests' passed at 2026-11-16 06:35:27.133.
+	 Executed 15 tests, with 0 failures (0 unexpected) in 0.005 (0.006) seconds
+Test Suite 'EnvironmentDetectionTests' started at 2026-11-16 06:35:27.133.
+Test Case '-[Stage2Tests.EnvironmentDetectionTests testENV011MalformedInputCapturedWithoutCrash]' started.
+Test Case '-[Stage2Tests.EnvironmentDetectionTests testENV011MalformedInputCapturedWithoutCrash]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.EnvironmentDetectionTests testENV012UnreadableVersion]' started.
+Test Case '-[Stage2Tests.EnvironmentDetectionTests testENV012UnreadableVersion]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EnvironmentDetectionTests testENV013Determinism]' started.
+Test Case '-[Stage2Tests.EnvironmentDetectionTests testENV013Determinism]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EnvironmentDetectionTests testENV015IdMismatchDoesNotAffectDetection]' started.
+Test Case '-[Stage2Tests.EnvironmentDetectionTests testENV015IdMismatchDoesNotAffectDetection]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.EnvironmentDetectionTests testEnvironmentWithoutReadinessDecodesLegacyJSON]' started.
+Test Case '-[Stage2Tests.EnvironmentDetectionTests testEnvironmentWithoutReadinessDecodesLegacyJSON]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EnvironmentDetectionTests testFixtureCasesENV001To010And014]' started.
+Test Case '-[Stage2Tests.EnvironmentDetectionTests testFixtureCasesENV001To010And014]' passed (0.002 seconds).
+Test Case '-[Stage2Tests.EnvironmentDetectionTests testVersionReadinessRoundTrip]' started.
+Test Case '-[Stage2Tests.EnvironmentDetectionTests testVersionReadinessRoundTrip]' passed (0.000 seconds).
+Test Suite 'EnvironmentDetectionTests' passed at 2026-11-16 06:35:27.138.
+	 Executed 7 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+Test Suite 'JBRootCandidateCollectionTests' started at 2026-11-16 06:35:27.138.
+Test Case '-[Stage2Tests.JBRootCandidateCollectionTests testCandidateCodableRoundTrip]' started.
+Test Case '-[Stage2Tests.JBRootCandidateCollectionTests testCandidateCodableRoundTrip]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.JBRootCandidateCollectionTests testFiveKnownSourcesCovered]' started.
+Test Case '-[Stage2Tests.JBRootCandidateCollectionTests testFiveKnownSourcesCovered]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.JBRootCandidateCollectionTests testFixtureCandidateCollection]' started.
+Test Case '-[Stage2Tests.JBRootCandidateCollectionTests testFixtureCandidateCollection]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.JBRootCandidateCollectionTests testInvalidPathWarnedAndSkipped]' started.
+Test Case '-[Stage2Tests.JBRootCandidateCollectionTests testInvalidPathWarnedAndSkipped]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.JBRootCandidateCollectionTests testLegacyPathEvidenceDecodesProjectionOnly]' started.
+Test Case '-[Stage2Tests.JBRootCandidateCollectionTests testLegacyPathEvidenceDecodesProjectionOnly]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.JBRootCandidateCollectionTests testMultiSourceSamePathRetainedAndExactDuplicateDropped]' started.
+Test Case '-[Stage2Tests.JBRootCandidateCollectionTests testMultiSourceSamePathRetainedAndExactDuplicateDropped]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.JBRootCandidateCollectionTests testPATH004LexicalNormalization]' started.
+Test Case '-[Stage2Tests.JBRootCandidateCollectionTests testPATH004LexicalNormalization]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.JBRootCandidateCollectionTests testPATH011Determinism]' started.
+Test Case '-[Stage2Tests.JBRootCandidateCollectionTests testPATH011Determinism]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.JBRootCandidateCollectionTests testPATH012IdMismatchDoesNotAffectCollection]' started.
+Test Case '-[Stage2Tests.JBRootCandidateCollectionTests testPATH012IdMismatchDoesNotAffectCollection]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.JBRootCandidateCollectionTests testUnknownSourcePreservedAndWarned]' started.
+Test Case '-[Stage2Tests.JBRootCandidateCollectionTests testUnknownSourcePreservedAndWarned]' passed (0.000 seconds).
+Test Suite 'JBRootCandidateCollectionTests' passed at 2026-11-16 06:35:27.143.
+	 Executed 10 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+Test Suite 'JBRootValidationTests' started at 2026-11-16 06:35:27.143.
+Test Case '-[Stage2Tests.JBRootValidationTests testJbrandParseUppercase]' started.
+Test Case '-[Stage2Tests.JBRootValidationTests testJbrandParseUppercase]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.JBRootValidationTests testMultiCandidateDecisionScenarios]' started.
+Test Case '-[Stage2Tests.JBRootValidationTests testMultiCandidateDecisionScenarios]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.JBRootValidationTests testNameValidationRules]' started.
+Test Case '-[Stage2Tests.JBRootValidationTests testNameValidationRules]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.JBRootValidationTests testNoCandidate]' started.
+Test Case '-[Stage2Tests.JBRootValidationTests testNoCandidate]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.JBRootValidationTests testPATH004NormalizedNameValidation]' started.
+Test Case '-[Stage2Tests.JBRootValidationTests testPATH004NormalizedNameValidation]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.JBRootValidationTests testPATH011Determinism]' started.
+Test Case '-[Stage2Tests.JBRootValidationTests testPATH011Determinism]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.JBRootValidationTests testPATH012IdMismatchDoesNotAffectDecision]' started.
+Test Case '-[Stage2Tests.JBRootValidationTests testPATH012IdMismatchDoesNotAffectDecision]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.JBRootValidationTests testRealpathPrivateVarResolved]' started.
+Test Case '-[Stage2Tests.JBRootValidationTests testRealpathPrivateVarResolved]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.JBRootValidationTests testRhBadNameRejectedInvalid]' started.
+Test Case '-[Stage2Tests.JBRootValidationTests testRhBadNameRejectedInvalid]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.JBRootValidationTests testRhBrokenLinkResolveFailed]' started.
+Test Case '-[Stage2Tests.JBRootValidationTests testRhBrokenLinkResolveFailed]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.JBRootValidationTests testRhMultipleAmbiguous]' started.
+Test Case '-[Stage2Tests.JBRootValidationTests testRhMultipleAmbiguous]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.JBRootValidationTests testRhNameOnlyRejectedMissing]' started.
+Test Case '-[Stage2Tests.JBRootValidationTests testRhNameOnlyRejectedMissing]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.JBRootValidationTests testRhUnreadablePartial]' started.
+Test Case '-[Stage2Tests.JBRootValidationTests testRhUnreadablePartial]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.JBRootValidationTests testRhValidResolved]' started.
+Test Case '-[Stage2Tests.JBRootValidationTests testRhValidResolved]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.JBRootValidationTests testRootfulCrossRouteOnly]' started.
+Test Case '-[Stage2Tests.JBRootValidationTests testRootfulCrossRouteOnly]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.JBRootValidationTests testRootlessCrossRouteOnly]' started.
+Test Case '-[Stage2Tests.JBRootValidationTests testRootlessCrossRouteOnly]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.JBRootValidationTests testThreeStateBitsNotCoerced]' started.
+Test Case '-[Stage2Tests.JBRootValidationTests testThreeStateBitsNotCoerced]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.JBRootValidationTests testValidatedCandidateCodableRoundTrip]' started.
+Test Case '-[Stage2Tests.JBRootValidationTests testValidatedCandidateCodableRoundTrip]' passed (0.000 seconds).
+Test Suite 'JBRootValidationTests' passed at 2026-11-16 06:35:27.151.
+	 Executed 18 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
+Test Suite 'ModelsCodableTests' started at 2026-11-16 06:35:27.151.
+Test Case '-[Stage2Tests.ModelsCodableTests testConfidenceRawValues]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testConfidenceRawValues]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testCoreFoundationModeRawValues]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testCoreFoundationModeRawValues]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testDefaultPluginStateIsUnknownAndUndetermined]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testDefaultPluginStateIsUnknownAndUndetermined]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testEmptyArraysEncodeAsArrayNotNil]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testEmptyArraysEncodeAsArrayNotNil]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testEnvelopeRoundTrip]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testEnvelopeRoundTrip]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testEnvelopeRoundTripWithPlugin]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testEnvelopeRoundTripWithPlugin]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testEvidenceBlockEmptySourceStagesRoundTrip]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testEvidenceBlockEmptySourceStagesRoundTrip]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testEvidenceLevelRawValues]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testEvidenceLevelRawValues]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testFilterRuleRoundTrip]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testFilterRuleRoundTrip]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testJailbreakTypeRawValues]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testJailbreakTypeRawValues]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testLoadCategoryRawValues]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testLoadCategoryRawValues]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testLoadedStateRawValues]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testLoadedStateRawValues]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testMissingOptionalFieldsDecodeToNil]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testMissingOptionalFieldsDecodeToNil]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testNilOptionalsSurviveRoundTrip]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testNilOptionalsSurviveRoundTrip]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testOwnershipRoundTrip]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testOwnershipRoundTrip]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testOwnershipStatusRawValues]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testOwnershipStatusRawValues]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testPairingRawValues]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testPairingRawValues]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testPermissionDecisionRawValue]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testPermissionDecisionRawValue]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testPluginRoundTrip]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testPluginRoundTrip]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testSourceTypeRawValues]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testSourceTypeRawValues]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testWritablePolicyRawValues]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testWritablePolicyRawValues]' passed (0.000 seconds).
+Test Suite 'ModelsCodableTests' passed at 2026-11-16 06:35:27.159.
+	 Executed 21 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
+Test Suite 'FilterKitPackageTests.xctest' passed at 2026-11-16 06:35:27.159.
+	 Executed 91 tests, with 0 failures (0 unexpected) in 0.047 (0.058) seconds
+Test Suite 'All tests' passed at 2026-11-16 06:35:27.159.
+	 Executed 91 tests, with 0 failures (0 unexpected) in 0.047 (0.060) seconds
+◇ Test run started.
+↳ Testing Library Version: 1902
+↳ Target Platform: arm64e-apple-macos14.0
+✔ Test run with 0 tests in 0 suites passed after 0.001 seconds.

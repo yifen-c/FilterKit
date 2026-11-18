@@ -1,0 +1,9 @@
+--- 测试基线：Runner 44106064051 检出 SHA f4629f26…；本地基线 HEAD 1298edc（见 HEAD.txt 与 RUN-METADATA.json commit） ---
+--- 回填后工作树 clean（git status --porcelain 为空）；本地提交 hash 以 git log 为准 ---
+--- git status (porcelain, empty = clean) ---
+ M Tests/Stage2/evidence/engine-c2-final/source/git-status.txt
+--- 最近提交 ---
+60f9652 Engine-C2-E5：第五轮统一 Runner 验收证据归档与门禁回填
+1298edc Stage 2.2-D：统一扫描报告与 JSON 导出实施规格冻结（D1~D5）
+0d4315f Engine-C2-E5：冻结最终 Runner 验收计划（不执行 Runner）
+c05aadd Engine-C2-E4：最终 Runner 验收证据骨架与元数据模板

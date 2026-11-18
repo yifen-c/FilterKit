@@ -1,0 +1,14 @@
+﻿2026-11-16T04:19:56.9598120Z ##[group]Run if ! command -v xcodegen >/dev/null 2>&1; then
+2026-11-16T04:19:56.9599670Z [36;1mif ! command -v xcodegen >/dev/null 2>&1; then[0m
+2026-11-16T04:19:56.9600940Z [36;1m  brew install xcodegen[0m
+2026-11-16T04:19:56.9601920Z [36;1mfi[0m
+2026-11-16T04:19:56.9602810Z [36;1mxcodegen --version[0m
+2026-11-16T04:19:56.9648570Z shell: /bin/bash -e {0}
+2026-11-16T04:19:56.9649420Z ##[endgroup]
+2026-11-16T04:19:59.8840180Z [32m==>[0m [1mDownloading bottle manifests[0m
+2026-11-16T04:19:59.8889990Z ✔︎ Bottle Manifest xcodegen (2.46.0)
+2026-11-16T04:19:59.8908380Z [32m==>[0m [1mFetching downloads for: [32mxcodegen[39m[0m
+2026-11-16T04:20:01.5816380Z ✔︎ Bottle xcodegen (2.46.0)
+2026-11-16T04:20:01.6139160Z [34m==>[0m [1mPouring xcodegen--2.46.0.arm64_tahoe.bottle.1.tar.gz[0m
+2026-11-16T04:20:02.2229600Z 🍺  /opt/homebrew/Cellar/xcodegen/2.46.0: 38 files, 7.4MB
+2026-11-16T04:20:02.2474910Z Version: 2.46.0

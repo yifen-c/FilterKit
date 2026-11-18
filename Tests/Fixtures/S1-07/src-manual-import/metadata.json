@@ -1,0 +1,41 @@
+{
+  "fixtureId": "S1-07-OWN-004",
+  "expected": {
+    "route": "rootful",
+    "sourceDirectory": "/usr/lib/TweakInject/",
+    "status": "enumerated",
+    "counts": {
+      "owned_package": 0,
+      "filterkit_managed": 0,
+      "manual_import": 1,
+      "unknown": 0,
+      "conflict": 0,
+      "dpkg_unavailable": 0
+    },
+    "byBase": {
+      "MI": {
+        "sourceType": "manual",
+        "ownership": "manual_import",
+        "packageID": null,
+        "confidence": "exact_record",
+        "writablePolicy": "read_only",
+        "fileOwnership": {
+          "dylib": {
+            "owners": [],
+            "match": "none"
+          },
+          "plist": {
+            "owners": [],
+            "match": "none"
+          }
+        },
+        "markers": {
+          "filterkit": "absent",
+          "manual": "present"
+        }
+      }
+    }
+  },
+  "expectedWarnings": [],
+  "expectedStatus": "enumerated"
+}

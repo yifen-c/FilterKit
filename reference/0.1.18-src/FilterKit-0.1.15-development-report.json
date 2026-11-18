@@ -1,0 +1,65 @@
+{
+  "version": "0.1.15",
+  "build": 115,
+  "helper_build_id": "FKH-0115",
+  "protocol": "1.0",
+  "release_channel": "development",
+  "baseline": "uploaded FilterKit-0.1.14-source.zip (user-confirmed online compile)",
+  "reviewed_device_report": {
+    "environment": "RootHide",
+    "injector": "ElleKit 1.2-3",
+    "plugin_count": 2,
+    "helper_trust_state": "DISCOVERED",
+    "real_operation_allowed": false,
+    "tests": {
+      "total": 355,
+      "passed": 350,
+      "failed": 5
+    },
+    "failed_cases": [
+      "PRO805",
+      "PRO806",
+      "PRO812",
+      "RTE912",
+      "DEP1204"
+    ]
+  },
+  "changes": [
+    "HMAC-SHA256 双向密钥确认",
+    "严格握手状态机",
+    "Peer 身份与构建绑定",
+    "会话最大寿命/空闲超时/时钟倒退失效",
+    "新增四类认证 IPC 审计动作",
+    "修复报告中五项失败用例",
+    "Nonce 缓存满时 fail-closed",
+    "会话失效时撤销内存会话密钥"
+  ],
+  "static_validation": {
+    "project_validator": "passed",
+    "info_plist": "passed",
+    "deployment_profile_json": "passed",
+    "handshake_profile_json": "passed",
+    "release_manifest_json": "passed",
+    "makefile_source_references": 156,
+    "missing_sources": [],
+    "duplicate_sources": [],
+    "test_suites": 35,
+    "declared_assertions": 402,
+    "zip_integrity": "passed",
+    "validator": "passed"
+  },
+  "execution": {
+    "theos_compile": "not_run",
+    "objective_c_test_execution": "not_run",
+    "device_test": "not_run"
+  },
+  "safety": {
+    "helper_target_present": false,
+    "daemon_deployment_allowed": false,
+    "real_transport_implemented": false,
+    "real_peer_credentials_collected": false,
+    "trusted_key_provisioning_implemented": false,
+    "real_ipc_ready": false,
+    "write_operations_allowed": false
+  }
+}

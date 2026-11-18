@@ -1,0 +1,14 @@
+{
+  "fixtureId": "S1-02-RH-BROKEN-001",
+  "expected": {
+    "jbroot": null,
+    "jbrand": null,
+    "realpath": null,
+    "ambiguous": false,
+    "outcome": "resolve_failed",
+    "selectedSource": null,
+    "candidateCount": 1
+  },
+  "expectedWarnings": ["symlink_resolve_failed"],
+  "expectedOutcome": "resolve_failed"
+}

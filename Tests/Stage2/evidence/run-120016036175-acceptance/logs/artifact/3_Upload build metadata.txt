@@ -1,0 +1,109 @@
+﻿2026-11-18T16:14:29.2831370Z ##[debug]Evaluating condition for step: 'Upload build metadata'
+2026-11-18T16:14:29.2847790Z ##[debug]Evaluating: success()
+2026-11-18T16:14:29.2850510Z ##[debug]Evaluating success:
+2026-11-18T16:14:29.2873410Z ##[debug]=> true
+2026-11-18T16:14:29.2875200Z ##[debug]Result: true
+2026-11-18T16:14:29.2876990Z ##[debug]Starting: Upload build metadata
+2026-11-18T16:14:29.2985690Z ##[debug]Loading inputs
+2026-11-18T16:14:29.3049860Z ##[debug]Loading env
+2026-11-18T16:14:29.3072990Z ##[group]Run actions/upload-artifact@v7
+2026-11-18T16:14:29.3073810Z with:
+2026-11-18T16:14:29.3074410Z   name: filterkit-build-metadata
+2026-11-18T16:14:29.3075440Z   path: Package.swift
+Makefile
+control
+project.yml
+.github/workflows/
+
+2026-11-18T16:14:29.3076550Z   retention-days: 14
+2026-11-18T16:14:29.3077230Z   if-no-files-found: warn
+2026-11-18T16:14:29.3077920Z   compression-level: 6
+2026-11-18T16:14:29.3078690Z   overwrite: false
+2026-11-18T16:14:29.3079400Z   include-hidden-files: false
+2026-11-18T16:14:29.3080170Z   archive: true
+2026-11-18T16:14:29.3080870Z ##[endgroup]
+2026-11-18T16:14:29.5419530Z ##[debug]followSymbolicLinks 'true'
+2026-11-18T16:14:29.5438310Z ##[debug]implicitDescendants 'true'
+2026-11-18T16:14:29.5439980Z ##[debug]omitBrokenSymbolicLinks 'true'
+2026-11-18T16:14:29.5441600Z ##[debug]excludeHiddenFiles 'true'
+2026-11-18T16:14:29.5443070Z ##[debug]followSymbolicLinks 'true'
+2026-11-18T16:14:29.5444340Z ##[debug]implicitDescendants 'true'
+2026-11-18T16:14:29.5445610Z ##[debug]matchDirectories 'true'
+2026-11-18T16:14:29.5446890Z ##[debug]omitBrokenSymbolicLinks 'true'
+2026-11-18T16:14:29.5448270Z ##[debug]excludeHiddenFiles 'true'
+2026-11-18T16:14:29.5449950Z ##[debug]Search path '/Users/runner/work/FilterKit/FilterKit/Package.swift'
+2026-11-18T16:14:29.5452750Z ##[debug]Search path '/Users/runner/work/FilterKit/FilterKit/Makefile'
+2026-11-18T16:14:29.5457220Z ##[debug]Search path '/Users/runner/work/FilterKit/FilterKit/control'
+2026-11-18T16:14:29.5459190Z ##[debug]Search path '/Users/runner/work/FilterKit/FilterKit/project.yml'
+2026-11-18T16:14:29.5461310Z ##[debug]Search path '/Users/runner/work/FilterKit/FilterKit/.github/workflows'
+2026-11-18T16:14:29.5463780Z ##[debug]File:/Users/runner/work/FilterKit/FilterKit/Package.swift was found using the provided searchPath
+2026-11-18T16:14:29.5466530Z ##[debug]File:/Users/runner/work/FilterKit/FilterKit/Makefile was found using the provided searchPath
+2026-11-18T16:14:29.5469050Z ##[debug]File:/Users/runner/work/FilterKit/FilterKit/control was found using the provided searchPath
+2026-11-18T16:14:29.5471450Z ##[debug]File:/Users/runner/work/FilterKit/FilterKit/project.yml was found using the provided searchPath
+2026-11-18T16:14:29.5474120Z ##[debug]Removing /Users/runner/work/FilterKit/FilterKit/.github/workflows from rawSearchResults because it is a directory
+2026-11-18T16:14:29.5477040Z ##[debug]File:/Users/runner/work/FilterKit/FilterKit/.github/workflows/filterkit-build.yml was found using the provided searchPath
+2026-11-18T16:14:29.5479240Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-18T16:14:29.5481220Z ##[debug]Using search path /Users/runner/work/FilterKit/FilterKit/Package.swift
+2026-11-18T16:14:29.5483110Z ##[debug]Using search path /Users/runner/work/FilterKit/FilterKit/Makefile
+2026-11-18T16:14:29.5485010Z ##[debug]Using search path /Users/runner/work/FilterKit/FilterKit/control
+2026-11-18T16:14:29.5486810Z ##[debug]Using search path /Users/runner/work/FilterKit/FilterKit/project.yml
+2026-11-18T16:14:29.5488740Z ##[debug]Using search path /Users/runner/work/FilterKit/FilterKit/.github/workflows
+2026-11-18T16:14:29.5491080Z The least common ancestor is /Users/runner/work/FilterKit/FilterKit. This will be the root directory of the artifact
+2026-11-18T16:14:29.5493810Z With the provided path, there will be 5 files uploaded
+2026-11-18T16:14:29.5495450Z ##[debug]Root artifact directory is /Users/runner/work/FilterKit/FilterKit
+2026-11-18T16:14:29.5496570Z Artifact name is valid!
+2026-11-18T16:14:29.5497350Z Root directory input is valid!
+2026-11-18T16:14:29.5499530Z ##[debug]Workflow Run Backend ID: 891d921e-cdc0-821e-a24c-cb0c86c13f82
+2026-11-18T16:14:29.5502350Z ##[debug]Workflow Job Run Backend ID: 39842f43-af3a-5a72-be47-4d75e6fc0ee0
+2026-11-18T16:14:29.5594880Z ##[debug][Request] CreateArtifact https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/CreateArtifact
+2026-11-18T16:14:29.9411140Z ##[debug][Response] - 200
+2026-11-18T16:14:29.9491290Z ##[debug]Headers: {
+2026-11-18T16:14:29.9491590Z ##[debug]  "content-length": "578",
+2026-11-18T16:14:29.9491890Z ##[debug]  "content-type": "application/json",
+2026-11-18T16:14:29.9492240Z ##[debug]  "date": "Wed, 18 Nov 2026 16:14:30 GMT",
+2026-11-18T16:14:29.9492550Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-11-18T16:14:29.9492890Z ##[debug]  "x-github-request-id": "8C6C:35EC79:507E4F:53C63C:6AFDCEE6",
+2026-11-18T16:14:29.9493210Z ##[debug]  "x-github-edge-region": "iad",
+2026-11-18T16:14:29.9493460Z ##[debug]  "server": "github.com"
+2026-11-18T16:14:29.9493670Z ##[debug]}
+2026-11-18T16:14:29.9592690Z ::add-mask::***
+2026-11-18T16:14:29.9696270Z ::add-mask::***
+2026-11-18T16:14:29.9798100Z ##[debug]Body: {
+2026-11-18T16:14:29.9798730Z ##[debug]  "ok": true,
+2026-11-18T16:14:29.9805100Z ##[debug]  "signed_upload_url": "https://productionresultssa11.blob.core.windows.net/actions-results/891d921e-cdc0-821e-a24c-cb0c86c13f82/workflow-job-run-39842f43-af3a-5a72-be47-4d75e6fc0ee0/artifacts/bf8b47c232a0c591d8f93ede2b14b6b18ea8030e7973a7f76cf893650dcde8ec.zip?se=2026-11-18T17%3A14%3A30Z&sig=***&ske=2026-11-18T18%3A04%3A38Z&skoid=ca7593d4-ee42-46cd-af88-8b886a2f84eb&sks=b&skt=2026-11-18T14%3A04%3A38Z&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skv=2025-11-05&sp=cw&spr=https&sr=b&st=2026-11-18T16%3A14%3A25Z&sv=2025-11-05"
+2026-11-18T16:14:29.9809990Z ##[debug]}
+2026-11-18T16:14:29.9812520Z ##[debug]Creating Artifact archive with compressionLevel: 6
+2026-11-18T16:14:29.9826460Z ##[debug]Zip write high watermark value 8388608
+2026-11-18T16:14:29.9828450Z ##[debug]Zip read high watermark value 8388608
+2026-11-18T16:14:29.9829640Z Uploading artifact: filterkit-build-metadata.zip
+2026-11-18T16:14:29.9831930Z ##[debug]Uploading artifact to blob storage with maxConcurrency: 5, bufferSize: 8388608, contentType: application/zip
+2026-11-18T16:14:29.9833610Z Beginning upload of artifact content to blob storage
+2026-11-18T16:14:29.9850440Z ##[debug]Zip stream for upload has ended.
+2026-11-18T16:14:29.9863020Z ##[debug]Zip stream for upload has finished.
+2026-11-18T16:14:30.2859980Z Uploaded bytes 7778
+2026-11-18T16:14:30.3654400Z Finished uploading artifact content to blob storage!
+2026-11-18T16:14:30.3663280Z SHA256 digest of uploaded artifact is 0205b72e2f0ba0bd9d072703d50b7201ca9887a50bab98c9507c553da8345c23
+2026-11-18T16:14:30.3664070Z Finalizing artifact upload
+2026-11-18T16:14:30.3665380Z ##[debug][Request] FinalizeArtifact https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/FinalizeArtifact
+2026-11-18T16:14:30.9402440Z ##[debug][Response] - 200
+2026-11-18T16:14:30.9403270Z ##[debug]Headers: {
+2026-11-18T16:14:30.9403530Z ##[debug]  "content-length": "39",
+2026-11-18T16:14:30.9403800Z ##[debug]  "content-type": "application/json",
+2026-11-18T16:14:30.9404090Z ##[debug]  "date": "Wed, 18 Nov 2026 16:14:31 GMT",
+2026-11-18T16:14:30.9404350Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-11-18T16:14:30.9405090Z ##[debug]  "x-github-request-id": "B406:3DB963:4D3EC2:5086D6:6AFDCEE6",
+2026-11-18T16:14:30.9405580Z ##[debug]  "x-github-edge-region": "iad",
+2026-11-18T16:14:30.9405850Z ##[debug]  "server": "github.com"
+2026-11-18T16:14:30.9406140Z ##[debug]}
+2026-11-18T16:14:30.9406670Z ##[debug]Body: {
+2026-11-18T16:14:30.9407900Z ##[debug]  "ok": true,
+2026-11-18T16:14:30.9408330Z ##[debug]  "artifact_id": "14445901083"
+2026-11-18T16:14:30.9408610Z ##[debug]}
+2026-11-18T16:14:30.9409020Z Artifact filterkit-build-metadata successfully finalized. Artifact ID 14445901083
+2026-11-18T16:14:30.9410170Z Artifact filterkit-build-metadata has been successfully uploaded! Final size is 7778 bytes. Artifact ID is 14445901083
+2026-11-18T16:14:30.9416390Z Artifact download URL: https://github.com/yi-fen/FilterKit/actions/runs/44336059068/artifacts/14445901083
+2026-11-18T16:14:30.9508530Z ##[debug]Node Action run completed with exit code 0
+2026-11-18T16:14:30.9516750Z ##[debug]Set output artifact-id = 14445901083
+2026-11-18T16:14:30.9518410Z ##[debug]Set output artifact-digest = 0205b72e2f0ba0bd9d072703d50b7201ca9887a50bab98c9507c553da8345c23
+2026-11-18T16:14:30.9519310Z ##[debug]Set output artifact-url = https://github.com/yi-fen/FilterKit/actions/runs/44336059068/artifacts/14445901083
+2026-11-18T16:14:30.9524800Z ##[debug]Finishing: Upload build metadata

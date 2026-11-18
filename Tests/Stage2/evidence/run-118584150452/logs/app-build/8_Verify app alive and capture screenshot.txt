@@ -1,0 +1,36 @@
+﻿2026-11-16T04:23:11.7271570Z ##[group]Run set -euo pipefail
+2026-11-16T04:23:11.7272330Z [36;1mset -euo pipefail[0m
+2026-11-16T04:23:11.7272940Z [36;1mDEVICE_ID="5AB3DACF-C352-49D1-BF9A-3C0104FA4ED3"[0m
+2026-11-16T04:23:11.7273550Z [36;1mAPP_PID="9011"[0m
+2026-11-16T04:23:11.7274120Z [36;1mBUNDLE=com.filterkit.manager[0m
+2026-11-16T04:23:11.7274580Z [36;1m# 留短暂窗口让 App 完成冷启动，再做存活复查（取证，不等同于稳定性验证）。[0m
+2026-11-16T04:23:11.7278410Z [36;1msleep 3[0m
+2026-11-16T04:23:11.7278980Z [36;1mRUN_LIST=$(xcrun simctl spawn "$DEVICE_ID" launchctl list || true)[0m
+2026-11-16T04:23:11.7279550Z [36;1mALIVE_LINE=$(echo "$RUN_LIST" | grep -E "$BUNDLE|FilterKit" || true)[0m
+2026-11-16T04:23:11.7279920Z [36;1m{[0m
+2026-11-16T04:23:11.7280430Z [36;1m  echo "--- alive check $(date -u +%FT%TZ) ---"[0m
+2026-11-16T04:23:11.7281540Z [36;1m  echo "device_id=$DEVICE_ID app_pid=$APP_PID bundle=$BUNDLE"[0m
+2026-11-16T04:23:11.7300340Z [36;1m  echo "$ALIVE_LINE"[0m
+2026-11-16T04:23:11.7307320Z [36;1m} | tee -a build/sim-launch.log[0m
+2026-11-16T04:23:11.7307920Z [36;1mif [ -z "$ALIVE_LINE" ]; then[0m
+2026-11-16T04:23:11.7309440Z [36;1m  echo "::error::App $BUNDLE not found in launchctl list after launch (PID $APP_PID may have exited)"[0m
+2026-11-16T04:23:11.7310050Z [36;1m  exit 1[0m
+2026-11-16T04:23:11.7310550Z [36;1mfi[0m
+2026-11-16T04:23:11.7317970Z [36;1mALIVE_PID=$(echo "$ALIVE_LINE" | awk '{print $1}')[0m
+2026-11-16T04:23:11.7318580Z [36;1mif [ "$ALIVE_PID" = "-" ] || [ -z "$ALIVE_PID" ]; then[0m
+2026-11-16T04:23:11.7319060Z [36;1m  echo "::error::App $BUNDLE registered but PID is '-' (not running)"[0m
+2026-11-16T04:23:11.7319530Z [36;1m  exit 1[0m
+2026-11-16T04:23:11.7321870Z [36;1mfi[0m
+2026-11-16T04:23:11.7322200Z [36;1mecho "App alive: PID $ALIVE_PID (launch PID $APP_PID)"[0m
+2026-11-16T04:23:11.7329880Z [36;1mxcrun simctl io "$DEVICE_ID" screenshot build/dashboard.png[0m
+2026-11-16T04:23:11.7330310Z [36;1mecho "Screenshot: build/dashboard.png"[0m
+2026-11-16T04:23:19.2484570Z shell: /bin/bash -e {0}
+2026-11-16T04:23:19.2485180Z ##[endgroup]
+2026-11-16T04:23:47.0783470Z --- alive check 2026-11-16T04:23:47Z ---
+2026-11-16T04:23:47.0899080Z device_id=5AB3DACF-C352-49D1-BF9A-3C0104FA4ED3 app_pid=9011 bundle=com.filterkit.manager
+2026-11-16T04:23:47.1000880Z 9011	0	UIKitApplication:com.filterkit.manager[ff96][rb-legacy]
+2026-11-16T04:23:47.1106460Z App alive: PID 9011 (launch PID 9011)
+2026-11-16T04:23:48.4416760Z Detected file type from extension: PNG
+2026-11-16T04:23:48.7567500Z Note: No display specified. Defaulting to display: 4D8F9D76-51FA-4E01-B13B-23FAB1E17969 (screenID: 1, name: LCD)
+2026-11-16T04:24:00.1638810Z Wrote screenshot to: /Users/runner/work/007/007/build/dashboard.png
+2026-11-16T04:24:00.2464430Z Screenshot: build/dashboard.png

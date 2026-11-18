@@ -1,0 +1,54 @@
+# XcodeGen 工程定义 — FilterKit（Stage 2.1 App Target Integration，待 runner 复验）
+#
+# 生成方式：runner 执行 `xcodegen generate` 产出 FilterKit.xcodeproj；
+# 工程产物不提交入库（见 .gitignore）。口径依据：
+# Spec/Stage-2/Stage-2.1-App-Target-Plan.md。
+#
+# 待确认项（不得视为已冻结）：
+#   - B2 Deployment Target：草案 iOS 17.0，待链接 + 真机证据；
+#   - B3 Bundle ID：草案 com.filterkit.manager，待命名确认；
+#   - B4 UI 框架：首选 SwiftUI，若工具链不满足回退 UIKit。
+#
+# 模块接入：App target 只链接本地 SwiftPM 包产品 Models / Adapters / Core，
+# 不复制第二套 Core 或 Models；依赖方向 App → Core → Models → Adapters。
+
+name: FilterKit
+
+options:
+  bundleIdPrefix: com.filterkit
+  deploymentTarget:
+    iOS: "17.0"
+  developmentLanguage: en
+
+packages:
+  FilterKitCore:
+    path: .
+
+targets:
+  FilterKit:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+        excludes:
+          - README.md
+          - Info.plist
+          - "**/.gitkeep"
+    info:
+      path: App/Info.plist
+      properties:
+        UILaunchScreen: {}
+    dependencies:
+      - package: FilterKitCore
+        product: Models
+      - package: FilterKitCore
+        product: Adapters
+      - package: FilterKitCore
+        product: Core
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.filterkit.manager
+      MARKETING_VERSION: 0.0.1
+      CURRENT_PROJECT_VERSION: 1
+      TARGETED_DEVICE_FAMILY: "1,2"
+      SWIFT_VERSION: "5.0"
+      PRODUCT_NAME: FilterKit

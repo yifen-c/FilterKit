@@ -1,0 +1,14 @@
+{
+  "fixtureId": "S1-04-ENUM-FAILED-001",
+  "fixtureKind": "rh-enum-failed",
+  "upstream": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "enumerationStatus": "partial"
+  },
+  "fs": {
+    "enumerable": false,
+    "enumerationError": "EACCES",
+    "entries": []
+  }
+}

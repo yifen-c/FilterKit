@@ -1,0 +1,23 @@
+{
+  "fixtureId": "S1-08-EXPORT-009",
+  "expected": {
+    "profile": {
+      "id": "RootHideProfile_1_2_3",
+      "route": "roothide"
+    },
+    "pluginCount": 1,
+    "byBase": {
+      "Det": {
+        "pluginID": "det.pkg:Det",
+        "source": "dpkg_sileo",
+        "installed": true,
+        "configured": true,
+        "loaded": "unknown",
+        "permissionDecision": "undetermined"
+      }
+    },
+    "unknownReasons": [],
+    "warningCodes": []
+  },
+  "expectedWarnings": []
+}

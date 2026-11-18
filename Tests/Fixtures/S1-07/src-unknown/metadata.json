@@ -1,0 +1,41 @@
+{
+  "fixtureId": "S1-07-OWN-005",
+  "expected": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "status": "partial",
+    "counts": {
+      "owned_package": 0,
+      "filterkit_managed": 0,
+      "manual_import": 0,
+      "unknown": 1,
+      "conflict": 0,
+      "dpkg_unavailable": 0
+    },
+    "byBase": {
+      "Unk": {
+        "sourceType": "unknown",
+        "ownership": "unknown",
+        "packageID": null,
+        "confidence": "unknown",
+        "writablePolicy": "read_only",
+        "fileOwnership": {
+          "dylib": {
+            "owners": [],
+            "match": "none"
+          },
+          "plist": {
+            "owners": [],
+            "match": "none"
+          }
+        },
+        "markers": {
+          "filterkit": "absent",
+          "manual": "absent"
+        }
+      }
+    }
+  },
+  "expectedWarnings": [],
+  "expectedStatus": "partial"
+}

@@ -1,0 +1,12 @@
+{
+  "fixtureId": "S1-05-SYMLINK-001",
+  "fixtureKind": "pair-symlink",
+  "upstream": { "route": "roothide", "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/", "inventoryStatus": "enumerated" },
+  "inventory": {
+    "enumerable": true,
+    "items": [
+      { "name": "Link.dylib", "kind": "dylib", "isSymlink": true, "symlinkTarget": "Real.dylib", "hidden": false, "entryStatus": "ok" },
+      { "name": "Link.plist", "kind": "plist", "isSymlink": false, "hidden": false, "entryStatus": "ok" }
+    ]
+  }
+}

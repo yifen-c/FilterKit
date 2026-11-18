@@ -1,0 +1,11 @@
+Package: com.filterkit.manager
+Name: FilterKit
+Version: 0.0.1
+Architecture: arm64e
+Maintainer: FilterKit
+Description: RootHide & ElleKit 只读插件管理器（Stage 2.1 骨架；不含写入/启停功能）
+Section: Applications
+Depends:
+
+# 注：Bundle ID（Package 字段）与架构在 2.1 工程创建阶段按 B2/B3 定值；
+# 本文件为草稿占位，不代表已打包或已安装。

@@ -1,0 +1,14 @@
+{
+  "fixtureId": "S1-02-PRIVATEVAR-001",
+  "expected": {
+    "jbroot": "/var/containers/Bundle/Application/.jbroot-D87B48653D7178BA",
+    "jbrand": "D87B48653D7178BA",
+    "realpath": "/private/var/containers/Bundle/Application/.jbroot-D87B48653D7178BA",
+    "ambiguous": false,
+    "outcome": "resolved",
+    "selectedSource": "bootstrap",
+    "candidateCount": 1
+  },
+  "expectedWarnings": [],
+  "expectedOutcome": "resolved"
+}

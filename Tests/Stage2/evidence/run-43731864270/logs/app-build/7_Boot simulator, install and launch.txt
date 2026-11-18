@@ -1,0 +1,23 @@
+﻿2026-11-15T15:48:59.5209200Z ##[group]Run set -euo pipefail
+2026-11-15T15:48:59.5209440Z [36;1mset -euo pipefail[0m
+2026-11-15T15:48:59.5209660Z [36;1mDEVICE=$(xcrun simctl list devices available \[0m
+2026-11-15T15:48:59.5210030Z [36;1m  | awk '/iPhone/ {gsub(/ \([0-9A-Fa-f-]+\).*/, ""); gsub(/^ +/, ""); sub(/ +$/, ""); print; exit}')[0m
+2026-11-15T15:48:59.5210360Z [36;1mif [ -z "$DEVICE" ]; then[0m
+2026-11-15T15:48:59.5210570Z [36;1m  echo "::error::No available iPhone simulator found"[0m
+2026-11-15T15:48:59.5210790Z [36;1m  exit 1[0m
+2026-11-15T15:48:59.5210930Z [36;1mfi[0m
+2026-11-15T15:48:59.5211080Z [36;1mecho "Selected simulator: $DEVICE"[0m
+2026-11-15T15:48:59.5211300Z [36;1mxcrun simctl boot "$DEVICE" || true[0m
+2026-11-15T15:48:59.5211730Z [36;1mxcrun simctl install "$DEVICE" "build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app"[0m
+2026-11-15T15:48:59.5212330Z [36;1mxcrun simctl launch "$DEVICE" com.filterkit.manager | tee build/sim-launch.log[0m
+2026-11-15T15:48:59.5212670Z [36;1mxcrun simctl list devices | grep "$DEVICE" || true[0m
+2026-11-15T15:48:59.5244230Z shell: /bin/bash -e {0}
+2026-11-15T15:48:59.5244430Z ##[endgroup]
+2026-11-15T15:49:00.4216530Z Selected simulator: iPhone 17 Pro
+2026-11-15T15:50:01.8737140Z com.filterkit.manager: 8676
+2026-11-15T15:50:03.6552590Z     iPhone 17 Pro (98A0BFA3-CEC3-4FD6-9916-5A2149774DBF) (Shutdown) 
+2026-11-15T15:50:03.6655030Z     iPhone 17 Pro Max (78974B82-8A98-4B1E-B8FD-2C4852E3B705) (Shutdown) 
+2026-11-15T15:50:03.6756360Z     iPhone 17 Pro (2CC7A2C1-E1A7-4633-911A-DB60BDEB97F0) (Shutdown) 
+2026-11-15T15:50:03.6798150Z     iPhone 17 Pro Max (A3D77CD3-CFC6-4299-9E39-0DEA239429FA) (Shutdown) 
+2026-11-15T15:50:03.6798850Z     iPhone 17 Pro (FCC5F673-7BEC-4A7D-8F2A-4DC35E2668EC) (Booted) 
+2026-11-15T15:50:03.6799320Z     iPhone 17 Pro Max (5277349A-B219-4ED4-853A-8AE666B9F5B1) (Shutdown) 

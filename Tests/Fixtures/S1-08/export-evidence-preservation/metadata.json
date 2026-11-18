@@ -1,0 +1,28 @@
+{
+  "fixtureId": "S1-08-EXPORT-008",
+  "expected": {
+    "profile": {
+      "id": "RootHideProfile_1_2_3",
+      "route": "roothide"
+    },
+    "pluginCount": 1,
+    "byBase": {
+      "Ev": {
+        "source": "dpkg_sileo",
+        "otherKeys": [
+          "Classes",
+          "CustomKey"
+        ],
+        "skippedFieldCount": 1,
+        "ownershipDetailsNote": "mixed_package_ownership",
+        "installed": true,
+        "configured": true,
+        "loaded": "unknown",
+        "permissionDecision": "undetermined"
+      }
+    },
+    "unknownReasons": [],
+    "warningCodes": []
+  },
+  "expectedWarnings": []
+}

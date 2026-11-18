@@ -1,0 +1,5 @@
+﻿2026-11-15T14:03:02.5999260Z ##[group]Run echo "TODO 2.1 补齐 Xcode 工程/UI target 后接入 xcodebuild；当前不编译 App"
+2026-11-15T14:03:02.6000480Z [36;1mecho "TODO 2.1 补齐 Xcode 工程/UI target 后接入 xcodebuild；当前不编译 App"[0m
+2026-11-15T14:03:02.6097800Z shell: /bin/bash -e {0}
+2026-11-15T14:03:02.6099350Z ##[endgroup]
+2026-11-15T14:03:02.6607180Z TODO 2.1 补齐 Xcode 工程/UI target 后接入 xcodebuild；当前不编译 App

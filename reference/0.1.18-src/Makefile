@@ -1,0 +1,44 @@
+TARGET := iphone:clang:latest:15.0
+INSTALL_TARGET_PROCESSES :=
+
+include $(THEOS)/makefiles/common.mk
+
+APPLICATION_NAME = FilterKit
+FilterKit_BUNDLE_IDENTIFIER = com.filterkit.manager
+FilterKit_FILES = Sources/App/main.m Sources/App/FKAppDelegate.m Sources/Core/FKScanner.m Sources/Core/FKDPKGAnalyzer.m Sources/Models/FKModels.m Sources/Models/FKManageModels.m Sources/Models/FKOperationModels.m Sources/Models/FKAppPluginAssociation.m Sources/Models/FKInjectionPreview.m Sources/Models/FKPluginCompatibility.m Sources/Managers/FKAppManager.m Sources/Managers/FKPluginManager.m Sources/Managers/FKStateManager.m Sources/Managers/FKAuditManager.m Sources/Managers/FKAssociationManager.m Sources/Managers/FKInjectionPreviewManager.m Sources/Managers/FKCompatibilityManager.m Sources/Backup/FKBackupManager.m Sources/Backup/FKBackupManifest.m Sources/Backup/FKBackupValidator.m Sources/Backup/FKFileHasher.m Sources/Backup/FKBackupResult.m Sources/Backup/FKBackupOperation.m Sources/Backup/FKConfigurationBackup.m Sources/Operation/FKOperationGate.m Sources/Operation/FKOperationManager.m Sources/Helper/FKHelperProtocol.m Sources/Helper/FKHelperValidator.m Sources/Helper/FKHelperClient.m Sources/Helper/FKHelperTrust.m Sources/Helper/FKHelperIdentityVerifier.m Sources/Helper/FKHelperSignatureVerifier.m Sources/Helper/FKHelperPermissionVerifier.m Sources/Helper/FKHelperTrustVerifier.m Sources/Views/Main/FKMainViewController.m Sources/Views/Home/FKHomeViewController.m Sources/Views/Helper/FKHelperDetailsViewController.m Sources/Views/Apps/FKAddPluginViewController.m Sources/Views/Apps/FKInjectionPreviewViewController.m Sources/Views/List/FKDataListController.m Sources/Views/Detail/FKDetailController.m Sources/Views/Import/FKImportController.m Sources/Views/Settings/FKSettingsController.m Sources/Views/Operation/FKOperationConfirmController.m Sources/Views/Operation/FKHistoryController.m Sources/Views/Backup/FKBackupListController.m Sources/Views/Backup/FKBackupDetailController.m Sources/Environment/FKEnvironmentCompatibility.m Sources/Environment/FKEnvironmentEvidence.m Sources/Environment/FKEnvironmentModel.m Sources/Environment/FKEnvironmentValidator.m Sources/Environment/FKEnvironmentDetector.m Sources/Injector/FKInjectorProfile.m Sources/Injector/FKInjectorModel.m Sources/Injector/FKInjectorCompatibility.m Sources/Injector/FKInjectorRegistry.m Sources/Injector/FKInjectorDetector.m Sources/Helper/FKHelperEvidence.m Sources/Helper/FKHelperTrustStore.m Sources/Helper/FKHelperTrustEvaluator.m Sources/Helper/FKHelperConnection.m Sources/Helper/FKIPCRequest.m Sources/Helper/FKIPCResponse.m Sources/Helper/FKHelperMetadata.m Sources/Helper/FKHelperDiscovery.m Sources/Helper/FKHelperIntegrityVerifier.m Sources/Helper/FKHelperIPCError.m Sources/Helper/FKHelperIPCHandshake.m Sources/Helper/FKHelperIPCCapabilities.m Sources/Helper/FKHelperCapabilityManager.m Sources/Helper/FKOperationPermissionEvaluator.m Sources/Helper/FKHelperIdentity.m Sources/Helper/FKHelperReleaseMetadata.m Sources/Helper/FKHelperBuildInfo.m Sources/Helper/FKHelperTrustManifest.m Sources/Helper/FKHelperManifestVerifier.m Sources/Helper/FKHelperMessage.m Sources/Helper/FKHelperMessageError.m Sources/Helper/FKHelperCapabilities.m Sources/Helper/FKHelperHandshake.m Sources/Helper/FKHelperTransportState.m Sources/Helper/FKHelperTestTransport.m Sources/Helper/FKHelperReadOnlyClient.m Sources/Helper/FKMockHelperClient.m Sources/Helper/FKHelperServiceInfo.m Sources/Helper/FKHelperServiceEndpoint.m Sources/Helper/FKHelperServiceDiscovery.m Sources/Helper/FKHelperDeploymentAssessment.m Sources/Helper/FKHelperMessageAuthenticator.m Sources/Helper/FKHelperReplayProtector.m Sources/Helper/FKHelperFrameCodec.m Sources/Helper/FKHelperTransportAssessment.m Sources/Helper/FKHelperKeyDerivation.m Sources/Helper/FKHelperKeyLifecycle.m Sources/Helper/FKHelperProtocolNegotiator.m Sources/Helper/FKHelperHandshakeTranscript.m Sources/Helper/FKHelperConnectionStatus.m Sources/Helper/FKHelperPeerVerifier.m Sources/Helper/FKHelperSession.m Sources/Helper/FKHelperHandshakeValidator.m Sources/Helper/FKHelperRequestRouter.m Sources/Helper/FKHelperPluginInfo.m Sources/Helper/FKHelperConfigurationSnapshot.m Sources/Helper/FKHelperIPCAuditEvent.m Sources/Operation/FKOperationRequirement.m Sources/Operation/FKOperationPolicy.m Sources/Operation/FKOperationEligibility.m Sources/Operation/FKOperationStateMachine.m Sources/Operation/FKOperationTransaction.m Sources/Operation/FKOperationVerifier.m Sources/Operation/FKOperationRollback.m Sources/Security/FKSecurityEvent.m Sources/Security/FKSecurityEvidenceStore.m Sources/Security/FKSecurityReport.m Sources/Security/FKSecurityAuditManager.m Sources/Security/FKCapabilityEvaluator.m Sources/Tests/FKTestRunner.m Sources/Tests/FKModelTests.m Sources/Tests/FKBackupTests.m Sources/Tests/FKJSONTests.m Sources/Tests/FKOperationTests.m Sources/Tests/FKHelperTrustTests.m Sources/Tests/FKHelperIdentityTests.m Sources/Tests/FKHelperMetadataTests.m Sources/Tests/FKHelperManifestTests.m Sources/Tests/FKHelperIntegrityTests.m Sources/Tests/FKHelperProtocolTests.m Sources/Tests/FKHelperTransportTests.m Sources/Tests/FKHelperReportTests.m Sources/Tests/FKHelperCapabilityTests.m Sources/Tests/FKHelperGateTests.m Sources/Tests/FKHelperDiscoveryTests.m Sources/Tests/FKHelperPeerTests.m Sources/Tests/FKHelperHandshakeTests.m Sources/Tests/FKHelperRouterTests.m Sources/Tests/FKHelperPluginTests.m Sources/Tests/FKHelperConfigurationTests.m Sources/Tests/FKHelperAuditTests.m Sources/Tests/FKHelperBoundaryTests.m Sources/Tests/FKHelperDeploymentTests.m Sources/Tests/FKHelperAuthenticationTests.m Sources/Tests/FKHelperReplayTests.m Sources/Tests/FKHelperFrameTests.m Sources/Tests/FKHelperTransportAssessmentTests.m Sources/Tests/FKHelperKeyDerivationTests.m Sources/Tests/FKHelperKeyLifecycleTests.m Sources/Tests/FKHelperProtocolNegotiationTests.m Sources/Tests/FKHelperHandshakeTranscriptTests.m Sources/Helper/FKHelperKeyConfirmation.m Sources/Helper/FKHelperHandshakeStateMachine.m Sources/Helper/FKHelperPeerBinding.m Sources/Helper/FKHelperSessionLifecycle.m Sources/Helper/FKHelperAuthenticatedSessionManager.m Sources/Tests/FKHelperKeyConfirmationTests.m Sources/Tests/FKHelperHandshakeStateMachineTests.m Sources/Tests/FKHelperPeerBindingTests.m Sources/Tests/FKHelperSessionLifecycleTests.m Sources/Tests/FKHelperAuthenticatedSessionTests.m Sources/Helper/FKHelperTrustAnchor.m Sources/Helper/FKHelperReleaseVerifier.m Sources/Helper/FKHelperPeerCredentialEvidence.m Sources/Helper/FKHelperTransportReadiness.m Sources/Helper/FKHelperReadinessReport.m Sources/Tests/FKHelperTrustAnchorTests.m Sources/Tests/FKHelperReleaseVerifierTests.m Sources/Tests/FKHelperPeerCredentialTests.m Sources/Tests/FKHelperTransportReadinessTests.m Sources/Tests/FKHelperReadinessReportTests.m Sources/Helper/FKHelperUnixSocketTransport.m Sources/Tests/FKHelperUnixSocketTransportTests.m
+FilterKit_CFLAGS = -fobjc-arc -Wall -Wextra -Werror=return-type -ISources/App -ISources/Core -ISources/Models -ISources/Managers -ISources/Backup -ISources/Operation -ISources/Helper -ISources/Environment -ISources/Injector -ISources/Security -ISources/Tests -ISources/Views/Main -ISources/Views/Home -ISources/Views/Helper -ISources/Views/Apps -ISources/Views/List -ISources/Views/Detail -ISources/Views/Import -ISources/Views/Settings -ISources/Views/Operation -ISources/Views/Backup
+FilterKit_FRAMEWORKS = UIKit Foundation CoreServices UniformTypeIdentifiers
+ifeq ($(THEOS_PACKAGE_SCHEME),roothide)
+FilterKit_LDFLAGS += -weak-lroothide -Xlinker -rpath -Xlinker @loader_path/.jbroot/usr/lib
+endif
+FilterKit_PRIVATE_FRAMEWORKS =
+FilterKit_INSTALL_PATH = /Applications
+FilterKit_CODESIGN_FLAGS = -Sentitlements.plist
+
+include $(THEOS_MAKE_PATH)/application.mk
+
+# roothide fork 的 Theos 不会自动把 Info.plist 复制进 App bundle，
+# 这里在 stage 阶段手动覆盖复制并做 plutil 语法校验。
+after-stage::
+	@echo "[FilterKit] Validating App bundle..."
+	@test -d "$(THEOS_STAGING_DIR)$(FilterKit_INSTALL_PATH)/$(APPLICATION_NAME).app" || \
+		(echo "[FilterKit] ERROR: App bundle not found" && exit 1)
+	@test -f "FilterKit-Info.plist" || \
+		(echo "[FilterKit] ERROR: FilterKit-Info.plist source missing" && exit 1)
+	@cp "FilterKit-Info.plist" \
+		"$(THEOS_STAGING_DIR)$(FilterKit_INSTALL_PATH)/$(APPLICATION_NAME).app/Info.plist"
+	@plutil -lint \
+		"$(THEOS_STAGING_DIR)$(FilterKit_INSTALL_PATH)/$(APPLICATION_NAME).app/Info.plist" > /dev/null || \
+		(echo "[FilterKit] ERROR: Invalid Info.plist" && exit 1)
+	@echo "[FilterKit] Info.plist installed and validated successfully"
+
+.PHONY: package-roothide package-rootless clean-packages
+
+package-roothide:
+	$(MAKE) package THEOS_PACKAGE_SCHEME=roothide ARCHS=arm64e FINALPACKAGE=1
+
+package-rootless:
+	$(MAKE) package THEOS_PACKAGE_SCHEME=rootless ARCHS=arm64 FINALPACKAGE=1
+
+clean-packages::
+	rm -rf packages .theos

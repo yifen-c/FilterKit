@@ -1,0 +1,15 @@
+{
+  "fixtureId": "S1-01-INCOMPLETE-001",
+  "expected": {
+    "jailbreakType": "roothide",
+    "architecture": "arm64e",
+    "iosVersion": "17.0.2",
+    "bootstrap": { "name": null, "version": null },
+    "ellekitImplementation": "unknown",
+    "ellekitVersion": null,
+    "ellekitVersionStatus": "unparsable",
+    "adapterProfile": null
+  },
+  "expectedWarnings": ["bootstrap_missing", "implementation_missing", "version_unparsable"],
+  "expectedOutcome": "partial"
+}

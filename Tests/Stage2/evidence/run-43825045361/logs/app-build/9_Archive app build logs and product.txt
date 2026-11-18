@@ -1,0 +1,29 @@
+﻿2026-11-16T07:42:29.2652290Z ##[group]Run actions/upload-artifact@v7
+2026-11-16T07:42:29.2654470Z with:
+2026-11-16T07:42:29.2655860Z   name: filterkit-app-build
+2026-11-16T07:42:29.2659440Z   path: build/app-xcodebuild.log
+build/sim-launch.log
+build/dashboard.png
+build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app
+
+2026-11-16T07:42:29.2661570Z   retention-days: 14
+2026-11-16T07:42:29.2662640Z   if-no-files-found: warn
+2026-11-16T07:42:29.2664730Z   compression-level: 6
+2026-11-16T07:42:29.2667280Z   overwrite: false
+2026-11-16T07:42:29.2667740Z   include-hidden-files: false
+2026-11-16T07:42:29.2678540Z   archive: true
+2026-11-16T07:42:29.2678880Z ##[endgroup]
+2026-11-16T07:42:31.8243670Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-16T07:42:31.8888880Z The least common ancestor is /Users/runner/work/FilterKit/FilterKit/build. This will be the root directory of the artifact
+2026-11-16T07:42:31.8958500Z With the provided path, there will be 9 files uploaded
+2026-11-16T07:42:31.9135700Z Artifact name is valid!
+2026-11-16T07:42:31.9138220Z Root directory input is valid!
+2026-11-16T07:42:32.3455180Z Uploading artifact: filterkit-app-build.zip
+2026-11-16T07:42:32.3666870Z Beginning upload of artifact content to blob storage
+2026-11-16T07:42:34.3142520Z Uploaded bytes 1071424
+2026-11-16T07:42:34.4556700Z Finished uploading artifact content to blob storage!
+2026-11-16T07:42:34.4660620Z SHA256 digest of uploaded artifact is 25c17acd699c4ad01638b834cafc5eda7e38521bc6673cce038d75b510583214
+2026-11-16T07:42:34.4782510Z Finalizing artifact upload
+2026-11-16T07:42:35.0831010Z Artifact filterkit-app-build successfully finalized. Artifact ID 14206012635
+2026-11-16T07:42:35.0935300Z Artifact filterkit-app-build has been successfully uploaded! Final size is 1071424 bytes. Artifact ID is 14206012635
+2026-11-16T07:42:35.0962040Z Artifact download URL: https://github.com/yi-fen/FilterKit/actions/runs/43825045361/artifacts/14206012635

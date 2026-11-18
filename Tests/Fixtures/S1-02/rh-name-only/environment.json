@@ -1,0 +1,17 @@
+{
+  "fixtureId": "S1-02-RH-NAMEONLY-001",
+  "fixtureKind": "rh-name-only",
+  "signals": {
+    "candidates": [
+      {
+        "root": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+        "source": "scan",
+        "exists": false,
+        "structureMatch": false,
+        "readable": false,
+        "realpath": null,
+        "symlinkState": "none"
+      }
+    ]
+  }
+}

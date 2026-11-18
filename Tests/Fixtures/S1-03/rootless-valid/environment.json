@@ -1,0 +1,21 @@
+{
+  "fixtureId": "S1-03-ROOTLESS-001",
+  "fixtureKind": "rootless-valid",
+  "upstream": { "route": "rootless", "jbroot": null },
+  "fs": {
+    "tweakInject": {
+      "exists": true,
+      "readable": true,
+      "enumerable": true,
+      "realpath": "/var/jb/usr/lib/TweakInject/",
+      "structureMatch": true
+    },
+    "dynamicLibraries": {
+      "exists": true,
+      "isSymlink": true,
+      "symlinkTarget": "/var/jb/usr/lib/TweakInject/",
+      "realpath": "/var/jb/usr/lib/TweakInject/",
+      "symlinkState": "resolved"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+# app-build job summary — run 43993649974
+
+- Workflow：`.github/workflows/filterkit-build.yml@refs/heads/C3-C1`；job `app-build`。
+- 检出 SHA：`919185b10df94f057d31c6cf36a9b237d1973218`。
+- 构建命令：`xcodebuild -project FilterKit.xcodeproj -scheme FilterKit -destination "generic/platform=iOS Simulator" -configuration Debug -derivedDataPath build/DerivedData build`。
+- 工具链：Xcode 26.6 (17F113)，iPhoneSimulator26.5 SDK；App deployment-target 17.0；Models/Adapters/Core 12.0；target triple arm64/x86_64 iOS 17.0 simulator。
+- 模拟器：iPhone 17 Pro（`98A0BFA3-CEC3-4FD6-9916-5A2149774DBF`，Booted）。
+- 结果：`** BUILD SUCCEEDED **`；安装并启动 `com.filterkit.manager`，launch PID 3786；alive check 01:17:06Z PID 3786 存活；截图 `dashboard.png`（1206×2622 量级，只读骨架首页：环境「尚未检测」、权限「尚未验证（2.4 探针）」、副文案「本阶段为只读骨架；不含扫描、启停或写入功能」）。
+- 告警：仅 1 条 AppIntents metadata extraction 提示（无 AppIntents.framework 依赖），非错误、非编译告警。
+- 产物：artifact `filterkit-app-build`，ID `14289655313`，final size 1338290 bytes，SHA256 `d1fe2ec52b7874e1ef697212a8adc5920517bd32c1da0c27b543b196d92271c8`；下载 `https://github.com/yi-fen/FilterKit/actions/runs/43993649974/artifacts/14289655313`。
+- 本 job 未扫描真机目录、未修改插件文件、未做启停/注入/写入。

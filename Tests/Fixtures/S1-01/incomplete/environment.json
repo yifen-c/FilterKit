@@ -1,0 +1,12 @@
+{
+  "fixtureId": "S1-01-INCOMPLETE-001",
+  "fixtureKind": "incomplete",
+  "signals": {
+    "jailbreakType": { "value": "roothide", "source": "fixture", "present": true },
+    "architecture": { "value": "arm64e", "source": "fixture", "present": true },
+    "iosVersion": { "value": "17.0.2", "source": "fixture", "present": true },
+    "bootstrap": { "name": null, "version": null, "source": "fixture", "present": false },
+    "ellekitImplementation": { "value": "unknown", "source": "fixture", "present": false },
+    "ellekitVersion": { "value": null, "source": "fixture", "present": true, "readability": "readable", "raw": "???" }
+  }
+}

@@ -1,0 +1,14 @@
+# 夹具与冻结件完整性核对（run `44106064051`，Runner 实际执行）
+
+| 核对项 | 口径 | 结果 |
+| --- | --- | --- |
+| Stage1 fixtures / harness | 本轮边界：未修改；Runner 内嵌夹具回归通过 | ✅ 通过（S1-05 15 例独立过滤 0 失败；B5 夹具深比较 4 例 0 失败；C1 基线夹具加载用例 0 失败） |
+| Engine-C1 基线注册表 | 22 项，`testRegistryHasTwentyTwoUniqueCases` 通过；PARSE-015-A 解除挂起后本轮实际执行 | ✅ 通过（Parser 8 + Engine 7 例 0 失败 / 0 skip） |
+| 冻结 Parser | 未改动生产 Parser / Models / Adapters / 七方法协议；本轮仅归档证据与回填记录 | ✅ 边界确认（七方法：getEnvironment / resolvePaths / scanPlugins / readPlugin / validatePlugin / parseFilter / resolvePath） |
+| PARSE-009-B | 独立挂起；未改 Parser 与期望 | ⏸ 保持 `pending_independent_review` |
+| S1-05 夹具 | 15 项映射独立过滤可复跑 | ✅ 15 tests，0 failures |
+
+说明：
+- 工作流无独立「夹具完整性」job；完整性由上述内嵌回归覆盖，未另设独立校验脚本。
+- 本表只记录完整性核对结果；夹具原始基线数（22 / 15）不与 XCTest 执行总数相加。
+- 静态检查通过不等于真机权限或真实加载已通过；未扫真机、未改越狱文件。

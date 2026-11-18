@@ -1,0 +1,134 @@
+﻿2026-11-18T16:02:42.4733960Z ##[debug]Evaluating condition for step: 'Boot simulator, install and launch'
+2026-11-18T16:02:42.4736140Z ##[debug]Evaluating: success()
+2026-11-18T16:02:42.4736890Z ##[debug]Evaluating success:
+2026-11-18T16:02:42.4737610Z ##[debug]=> true
+2026-11-18T16:02:42.4738070Z ##[debug]Result: true
+2026-11-18T16:02:42.4738750Z ##[debug]Starting: Boot simulator, install and launch
+2026-11-18T16:02:42.4757930Z ##[debug]Loading inputs
+2026-11-18T16:02:42.4776560Z ##[debug]Evaluating: format('set -euo pipefail
+2026-11-18T16:02:42.4777470Z ##[debug]DEVICE_LINE=$(xcrun simctl list devices available \
+2026-11-18T16:02:42.4778410Z ##[debug]  | awk ''/iPhone/ && /[0-9A-Fa-f-]{{36}}/ {{print; exit}}'')
+2026-11-18T16:02:42.4779130Z ##[debug]if [ -z "$DEVICE_LINE" ]; then
+2026-11-18T16:02:42.4779870Z ##[debug]  echo "::error::No available iPhone simulator found"
+2026-11-18T16:02:42.4780560Z ##[debug]  exit 1
+2026-11-18T16:02:42.4780990Z ##[debug]fi
+2026-11-18T16:02:42.4781670Z ##[debug]DEVICE_ID=$(echo "$DEVICE_LINE" | grep -oE ''[0-9A-Fa-f-]{{36}}'' | head -1)
+2026-11-18T16:02:42.4783030Z ##[debug]DEVICE_NAME=$(echo "$DEVICE_LINE" | sed -E ''s/ \([0-9A-Fa-f-]{{36}}\).*//; s/^ +//; s/ +$//'')
+2026-11-18T16:02:42.4784150Z ##[debug]echo "Selected simulator: $DEVICE_NAME ($DEVICE_ID)"
+2026-11-18T16:02:42.4784900Z ##[debug]xcrun simctl boot "$DEVICE_ID" || true
+2026-11-18T16:02:42.4785620Z ##[debug]xcrun simctl install "$DEVICE_ID" "{0}"
+2026-11-18T16:02:42.4786470Z ##[debug]LAUNCH_OUT=$(xcrun simctl launch "$DEVICE_ID" com.filterkit.manager)
+2026-11-18T16:02:42.4787400Z ##[debug]echo "$LAUNCH_OUT" | tee build/sim-launch.log
+2026-11-18T16:02:42.4788930Z ##[debug]APP_PID=$(echo "$LAUNCH_OUT" | grep -oE ''[0-9]+'' | head -1)
+2026-11-18T16:02:42.4789820Z ##[debug]echo "device_id=$DEVICE_ID" >> "$GITHUB_OUTPUT"
+2026-11-18T16:02:42.4790640Z ##[debug]echo "device_name=$DEVICE_NAME" >> "$GITHUB_OUTPUT"
+2026-11-18T16:02:42.4791410Z ##[debug]echo "app_pid=$APP_PID" >> "$GITHUB_OUTPUT"
+2026-11-18T16:02:42.4792260Z ##[debug]xcrun simctl list devices | grep "$DEVICE_ID" || true
+2026-11-18T16:02:42.4793550Z ##[debug]', steps.app.outputs.app_path)
+2026-11-18T16:02:42.4794000Z ##[debug]Evaluating format:
+2026-11-18T16:02:42.4798410Z ##[debug]..Evaluating String:
+2026-11-18T16:02:42.4798780Z ##[debug]..=> 'set -euo pipefail
+2026-11-18T16:02:42.4799030Z ##[debug]DEVICE_LINE=$(xcrun simctl list devices available \
+2026-11-18T16:02:42.4799370Z ##[debug]  | awk ''/iPhone/ && /[0-9A-Fa-f-]{{36}}/ {{print; exit}}'')
+2026-11-18T16:02:42.4799660Z ##[debug]if [ -z "$DEVICE_LINE" ]; then
+2026-11-18T16:02:42.4800080Z ##[debug]  echo "::error::No available iPhone simulator found"
+2026-11-18T16:02:42.4800440Z ##[debug]  exit 1
+2026-11-18T16:02:42.4800590Z ##[debug]fi
+2026-11-18T16:02:42.4800850Z ##[debug]DEVICE_ID=$(echo "$DEVICE_LINE" | grep -oE ''[0-9A-Fa-f-]{{36}}'' | head -1)
+2026-11-18T16:02:42.4801330Z ##[debug]DEVICE_NAME=$(echo "$DEVICE_LINE" | sed -E ''s/ \([0-9A-Fa-f-]{{36}}\).*//; s/^ +//; s/ +$//'')
+2026-11-18T16:02:42.4801750Z ##[debug]echo "Selected simulator: $DEVICE_NAME ($DEVICE_ID)"
+2026-11-18T16:02:42.4802050Z ##[debug]xcrun simctl boot "$DEVICE_ID" || true
+2026-11-18T16:02:42.4802320Z ##[debug]xcrun simctl install "$DEVICE_ID" "{0}"
+2026-11-18T16:02:42.4802650Z ##[debug]LAUNCH_OUT=$(xcrun simctl launch "$DEVICE_ID" com.filterkit.manager)
+2026-11-18T16:02:42.4803010Z ##[debug]echo "$LAUNCH_OUT" | tee build/sim-launch.log
+2026-11-18T16:02:42.4803330Z ##[debug]APP_PID=$(echo "$LAUNCH_OUT" | grep -oE ''[0-9]+'' | head -1)
+2026-11-18T16:02:42.4803650Z ##[debug]echo "device_id=$DEVICE_ID" >> "$GITHUB_OUTPUT"
+2026-11-18T16:02:42.4803980Z ##[debug]echo "device_name=$DEVICE_NAME" >> "$GITHUB_OUTPUT"
+2026-11-18T16:02:42.4804280Z ##[debug]echo "app_pid=$APP_PID" >> "$GITHUB_OUTPUT"
+2026-11-18T16:02:42.4804590Z ##[debug]xcrun simctl list devices | grep "$DEVICE_ID" || true
+2026-11-18T16:02:42.4804850Z ##[debug]'
+2026-11-18T16:02:42.4814780Z ##[debug]..Evaluating Index:
+2026-11-18T16:02:42.4815010Z ##[debug]....Evaluating Index:
+2026-11-18T16:02:42.4815220Z ##[debug]......Evaluating Index:
+2026-11-18T16:02:42.4816180Z ##[debug]........Evaluating steps:
+2026-11-18T16:02:42.4816460Z ##[debug]........=> Object
+2026-11-18T16:02:42.4816700Z ##[debug]........Evaluating String:
+2026-11-18T16:02:42.4816970Z ##[debug]........=> 'app'
+2026-11-18T16:02:42.4817240Z ##[debug]......=> Object
+2026-11-18T16:02:42.4817450Z ##[debug]......Evaluating String:
+2026-11-18T16:02:42.4817650Z ##[debug]......=> 'outputs'
+2026-11-18T16:02:42.4817840Z ##[debug]....=> Object
+2026-11-18T16:02:42.4818020Z ##[debug]....Evaluating String:
+2026-11-18T16:02:42.4818250Z ##[debug]....=> 'app_path'
+2026-11-18T16:02:42.4818590Z ##[debug]..=> 'build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app'
+2026-11-18T16:02:42.4819450Z ##[debug]=> 'set -euo pipefail
+2026-11-18T16:02:42.4819700Z ##[debug]DEVICE_LINE=$(xcrun simctl list devices available \
+2026-11-18T16:02:42.4820030Z ##[debug]  | awk ''/iPhone/ && /[0-9A-Fa-f-]{36}/ {print; exit}'')
+2026-11-18T16:02:42.4820300Z ##[debug]if [ -z "$DEVICE_LINE" ]; then
+2026-11-18T16:02:42.4820580Z ##[debug]  echo "::error::No available iPhone simulator found"
+2026-11-18T16:02:42.4820840Z ##[debug]  exit 1
+2026-11-18T16:02:42.4821010Z ##[debug]fi
+2026-11-18T16:02:42.4821260Z ##[debug]DEVICE_ID=$(echo "$DEVICE_LINE" | grep -oE ''[0-9A-Fa-f-]{36}'' | head -1)
+2026-11-18T16:02:42.4821740Z ##[debug]DEVICE_NAME=$(echo "$DEVICE_LINE" | sed -E ''s/ \([0-9A-Fa-f-]{36}\).*//; s/^ +//; s/ +$//'')
+2026-11-18T16:02:42.4822160Z ##[debug]echo "Selected simulator: $DEVICE_NAME ($DEVICE_ID)"
+2026-11-18T16:02:42.4822450Z ##[debug]xcrun simctl boot "$DEVICE_ID" || true
+2026-11-18T16:02:42.4823180Z ##[debug]xcrun simctl install "$DEVICE_ID" "build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app"
+2026-11-18T16:02:42.4823700Z ##[debug]LAUNCH_OUT=$(xcrun simctl launch "$DEVICE_ID" com.filterkit.manager)
+2026-11-18T16:02:42.4824080Z ##[debug]echo "$LAUNCH_OUT" | tee build/sim-launch.log
+2026-11-18T16:02:42.4824410Z ##[debug]APP_PID=$(echo "$LAUNCH_OUT" | grep -oE ''[0-9]+'' | head -1)
+2026-11-18T16:02:42.4824750Z ##[debug]echo "device_id=$DEVICE_ID" >> "$GITHUB_OUTPUT"
+2026-11-18T16:02:42.4825060Z ##[debug]echo "device_name=$DEVICE_NAME" >> "$GITHUB_OUTPUT"
+2026-11-18T16:02:42.4825380Z ##[debug]echo "app_pid=$APP_PID" >> "$GITHUB_OUTPUT"
+2026-11-18T16:02:42.4825710Z ##[debug]xcrun simctl list devices | grep "$DEVICE_ID" || true
+2026-11-18T16:02:42.4826000Z ##[debug]'
+2026-11-18T16:02:42.4826310Z ##[debug]Result: 'set -euo pipefail
+2026-11-18T16:02:42.4826600Z ##[debug]DEVICE_LINE=$(xcrun simctl list devices available \
+2026-11-18T16:02:42.4826990Z ##[debug]  | awk ''/iPhone/ && /[0-9A-Fa-f-]{36}/ {print; exit}'')
+2026-11-18T16:02:42.4827320Z ##[debug]if [ -z "$DEVICE_LINE" ]; then
+2026-11-18T16:02:42.4827690Z ##[debug]  echo "::error::No available iPhone simulator found"
+2026-11-18T16:02:42.4828000Z ##[debug]  exit 1
+2026-11-18T16:02:42.4828270Z ##[debug]fi
+2026-11-18T16:02:42.4828620Z ##[debug]DEVICE_ID=$(echo "$DEVICE_LINE" | grep -oE ''[0-9A-Fa-f-]{36}'' | head -1)
+2026-11-18T16:02:42.4829130Z ##[debug]DEVICE_NAME=$(echo "$DEVICE_LINE" | sed -E ''s/ \([0-9A-Fa-f-]{36}\).*//; s/^ +//; s/ +$//'')
+2026-11-18T16:02:42.4829680Z ##[debug]echo "Selected simulator: $DEVICE_NAME ($DEVICE_ID)"
+2026-11-18T16:02:42.4830110Z ##[debug]xcrun simctl boot "$DEVICE_ID" || true
+2026-11-18T16:02:42.4830660Z ##[debug]xcrun simctl install "$DEVICE_ID" "build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app"
+2026-11-18T16:02:42.4831220Z ##[debug]LAUNCH_OUT=$(xcrun simctl launch "$DEVICE_ID" com.filterkit.manager)
+2026-11-18T16:02:42.4831760Z ##[debug]echo "$LAUNCH_OUT" | tee build/sim-launch.log
+2026-11-18T16:02:42.4832270Z ##[debug]APP_PID=$(echo "$LAUNCH_OUT" | grep -oE ''[0-9]+'' | head -1)
+2026-11-18T16:02:42.4832750Z ##[debug]echo "device_id=$DEVICE_ID" >> "$GITHUB_OUTPUT"
+2026-11-18T16:02:42.4833210Z ##[debug]echo "device_name=$DEVICE_NAME" >> "$GITHUB_OUTPUT"
+2026-11-18T16:02:42.4834710Z ##[debug]echo "app_pid=$APP_PID" >> "$GITHUB_OUTPUT"
+2026-11-18T16:02:42.4835200Z ##[debug]xcrun simctl list devices | grep "$DEVICE_ID" || true
+2026-11-18T16:02:42.4836060Z ##[debug]'
+2026-11-18T16:02:42.4837120Z ##[debug]Loading env
+2026-11-18T16:02:42.4845070Z ##[group]Run set -euo pipefail
+2026-11-18T16:02:42.4845560Z [36;1mset -euo pipefail[0m
+2026-11-18T16:02:42.4846020Z [36;1mDEVICE_LINE=$(xcrun simctl list devices available \[0m
+2026-11-18T16:02:42.4846520Z [36;1m  | awk '/iPhone/ && /[0-9A-Fa-f-]{36}/ {print; exit}')[0m
+2026-11-18T16:02:42.4846960Z [36;1mif [ -z "$DEVICE_LINE" ]; then[0m
+2026-11-18T16:02:42.4847300Z [36;1m  echo "::error::No available iPhone simulator found"[0m
+2026-11-18T16:02:42.4849370Z [36;1m  exit 1[0m
+2026-11-18T16:02:42.4850110Z [36;1mfi[0m
+2026-11-18T16:02:42.4850960Z [36;1mDEVICE_ID=$(echo "$DEVICE_LINE" | grep -oE '[0-9A-Fa-f-]{36}' | head -1)[0m
+2026-11-18T16:02:42.4852400Z [36;1mDEVICE_NAME=$(echo "$DEVICE_LINE" | sed -E 's/ \([0-9A-Fa-f-]{36}\).*//; s/^ +//; s/ +$//')[0m
+2026-11-18T16:02:42.4853800Z [36;1mecho "Selected simulator: $DEVICE_NAME ($DEVICE_ID)"[0m
+2026-11-18T16:02:42.4854840Z [36;1mxcrun simctl boot "$DEVICE_ID" || true[0m
+2026-11-18T16:02:42.4856130Z [36;1mxcrun simctl install "$DEVICE_ID" "build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app"[0m
+2026-11-18T16:02:42.4859220Z [36;1mLAUNCH_OUT=$(xcrun simctl launch "$DEVICE_ID" com.filterkit.manager)[0m
+2026-11-18T16:02:42.4861590Z [36;1mecho "$LAUNCH_OUT" | tee build/sim-launch.log[0m
+2026-11-18T16:02:42.4862520Z [36;1mAPP_PID=$(echo "$LAUNCH_OUT" | grep -oE '[0-9]+' | head -1)[0m
+2026-11-18T16:02:42.4864320Z [36;1mecho "device_id=$DEVICE_ID" >> "$GITHUB_OUTPUT"[0m
+2026-11-18T16:02:42.4865320Z [36;1mecho "device_name=$DEVICE_NAME" >> "$GITHUB_OUTPUT"[0m
+2026-11-18T16:02:42.4866330Z [36;1mecho "app_pid=$APP_PID" >> "$GITHUB_OUTPUT"[0m
+2026-11-18T16:02:42.4867210Z [36;1mxcrun simctl list devices | grep "$DEVICE_ID" || true[0m
+2026-11-18T16:02:42.4986350Z shell: /bin/bash -e {0}
+2026-11-18T16:02:42.4987420Z ##[endgroup]
+2026-11-18T16:02:42.5103390Z ##[debug]/bin/bash -e /Users/runner/work/_temp/0182bf2f-d020-46e8-9031-29ab05229816.sh
+2026-11-18T16:02:45.2219270Z Selected simulator: iPhone 17 Pro (5AB3DACF-C352-49D1-BF9A-3C0104FA4ED3)
+2026-11-18T16:08:12.5901820Z com.filterkit.manager: 13225
+2026-11-18T16:08:20.6086070Z     iPhone 17 Pro (5AB3DACF-C352-49D1-BF9A-3C0104FA4ED3) (Booted) 
+2026-11-18T16:08:20.6328000Z ##[debug]Set output device_id = 5AB3DACF-C352-49D1-BF9A-3C0104FA4ED3
+2026-11-18T16:08:20.6328790Z ##[debug]Set output device_name = iPhone 17 Pro
+2026-11-18T16:08:20.6329460Z ##[debug]Set output app_pid = 13225
+2026-11-18T16:08:20.6336350Z ##[debug]Finishing: Boot simulator, install and launch

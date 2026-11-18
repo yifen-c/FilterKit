@@ -1,0 +1,41 @@
+Test Suite 'FilterParseEngineTests' started at 2026-11-17 14:44:49.404.
+Test Case '-[Stage2Tests.FilterParseEngineTests testAllValidSnapshotIsEnumerated]' started.
+Test Case '-[Stage2Tests.FilterParseEngineTests testAllValidSnapshotIsEnumerated]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.FilterParseEngineTests testCountsAcrossFiveBuckets]' started.
+Test Case '-[Stage2Tests.FilterParseEngineTests testCountsAcrossFiveBuckets]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.FilterParseEngineTests testDecoderFailureShortCircuitsParser]' started.
+Test Case '-[Stage2Tests.FilterParseEngineTests testDecoderFailureShortCircuitsParser]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.FilterParseEngineTests testDecoderFormatProjection]' started.
+Test Case '-[Stage2Tests.FilterParseEngineTests testDecoderFormatProjection]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.FilterParseEngineTests testHideMismatchDoesNotFallBackToRootless]' started.
+Test Case '-[Stage2Tests.FilterParseEngineTests testHideMismatchDoesNotFallBackToRootless]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.FilterParseEngineTests testNonPairedNeverEntersReader]' started.
+Test Case '-[Stage2Tests.FilterParseEngineTests testNonPairedNeverEntersReader]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.FilterParseEngineTests testParserReceivesSnapshotRoute]' started.
+Test Case '-[Stage2Tests.FilterParseEngineTests testParserReceivesSnapshotRoute]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.FilterParseEngineTests testReaderFailureShortCircuitsDecoder]' started.
+Test Case '-[Stage2Tests.FilterParseEngineTests testReaderFailureShortCircuitsDecoder]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.FilterParseEngineTests testReaderStatusMapping]' started.
+Test Case '-[Stage2Tests.FilterParseEngineTests testReaderStatusMapping]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.FilterParseEngineTests testResolverMapsKnownRoutesOnly]' started.
+Test Case '-[Stage2Tests.FilterParseEngineTests testResolverMapsKnownRoutesOnly]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.FilterParseEngineTests testResultPreservesRecordEvidence]' started.
+Test Case '-[Stage2Tests.FilterParseEngineTests testResultPreservesRecordEvidence]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.FilterParseEngineTests testRootHideRouteCallsOnlyHideParser]' started.
+Test Case '-[Stage2Tests.FilterParseEngineTests testRootHideRouteCallsOnlyHideParser]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.FilterParseEngineTests testRootlessMismatchDoesNotFallBackToHide]' started.
+Test Case '-[Stage2Tests.FilterParseEngineTests testRootlessMismatchDoesNotFallBackToHide]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.FilterParseEngineTests testRootlessRouteCallsOnlyRootlessParser]' started.
+Test Case '-[Stage2Tests.FilterParseEngineTests testRootlessRouteCallsOnlyRootlessParser]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.FilterParseEngineTests testUnknownRouteNeverEntersReader]' started.
+Test Case '-[Stage2Tests.FilterParseEngineTests testUnknownRouteNeverEntersReader]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.FilterParseEngineTests testUnresolvedSnapshotCallsNothing]' started.
+Test Case '-[Stage2Tests.FilterParseEngineTests testUnresolvedSnapshotCallsNothing]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.FilterParseEngineTests testUpstreamSnapshotNotMutated]' started.
+Test Case '-[Stage2Tests.FilterParseEngineTests testUpstreamSnapshotNotMutated]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.FilterParseEngineTests testUpstreamUnknownItemsPreserved]' started.
+Test Case '-[Stage2Tests.FilterParseEngineTests testUpstreamUnknownItemsPreserved]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.FilterParseEngineTests testValidatorDetectsCountMismatch]' started.
+Test Case '-[Stage2Tests.FilterParseEngineTests testValidatorDetectsCountMismatch]' passed (0.001 seconds).
+Test Suite 'FilterParseEngineTests' passed at 2026-11-17 14:44:49.425.
+	 Executed 19 tests, with 0 failures (0 unexpected) in 0.014 (0.021) seconds

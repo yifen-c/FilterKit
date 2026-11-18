@@ -1,0 +1,65 @@
+{
+  "version": "0.1.16",
+  "build": 116,
+  "helper_build_id": "FKH-0116",
+  "baseline": {
+    "source_archive": "FilterKit-0.1.15-source.zip",
+    "device_report_archive": "FilterKit-0.1.15-report.zip",
+    "version": "0.1.15",
+    "executed_tests": {
+      "total": 402,
+      "passed": 402,
+      "failed": 0,
+      "status": "Passed"
+    },
+    "helper_trust": {
+      "state": "DISCOVERED",
+      "signature": "unsupported",
+      "manifest": "unavailable",
+      "ipc": "unavailable",
+      "real_operation_allowed": false
+    }
+  },
+  "changes": {
+    "authenticated_session_coordinator": true,
+    "peer_binding_integration": true,
+    "bidirectional_key_confirmation": true,
+    "session_key_lifecycle_linked": true,
+    "concurrent_handshake_guard": true,
+    "audit_persistence_integration": true,
+    "real_ipc_implemented": false,
+    "helper_daemon_implemented": false,
+    "write_operations_allowed": false
+  },
+  "validation": {
+    "static_validator": "passed",
+    "plist_lint": "passed_plutil",
+    "json_validation": "passed_all_5_files",
+    "makefile_source_reference_check": {
+      "status": "passed",
+      "objective_c_m_sources": 158,
+      "missing": 0,
+      "duplicates": 0
+    },
+    "test_registration": {
+      "suites": 36,
+      "assertions": 417,
+      "executed": false
+    },
+    "objective_c_compilation": "not_run_environment_unavailable",
+    "device_test": "not_run",
+    "real_ipc_test": "not_run",
+    "zip_integrity": {
+      "status": "passed",
+      "source_archive_entries": 368
+    },
+    "node_syntax_check": "passed"
+  },
+  "safety": {
+    "real_ipc_ready": false,
+    "real_operation_allowed": false,
+    "plugin_enable_disable_allowed": false,
+    "injector_configuration_write_allowed": false,
+    "arbitrary_injection_allowed": false
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fixtureId": "S1-01-ROOTHIDE-001",
+  "expected": {
+    "jailbreakType": "roothide",
+    "architecture": "arm64e",
+    "iosVersion": "17.0.2",
+    "bootstrap": { "name": "dopamine-roothide", "version": "3.0.13-30" },
+    "ellekitImplementation": "roothide",
+    "ellekitVersion": "1.2-3",
+    "ellekitVersionStatus": "parsed",
+    "adapterProfile": "RootHideProfile_1_2_3"
+  },
+  "expectedWarnings": [],
+  "expectedOutcome": "profile_candidate"
+}

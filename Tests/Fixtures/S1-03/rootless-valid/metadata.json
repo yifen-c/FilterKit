@@ -1,0 +1,16 @@
+{
+  "fixtureId": "S1-03-ROOTLESS-001",
+  "expected": {
+    "route": "rootless",
+    "tiPath": "/var/jb/usr/lib/TweakInject/",
+    "tiExists": true,
+    "tiReadable": true,
+    "tiEnumerable": true,
+    "tiStatus": "confirmed",
+    "dlState": "resolved",
+    "dlTargetMatch": true,
+    "outcome": "resolved"
+  },
+  "expectedWarnings": [],
+  "expectedOutcome": "resolved"
+}

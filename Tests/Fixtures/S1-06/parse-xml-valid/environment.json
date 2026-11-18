@@ -1,0 +1,51 @@
+{
+  "fixtureId": "S1-06-PARSE-XML-VALID",
+  "fixtureKind": "parse-xml-valid",
+  "upstream": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "inventoryStatus": "enumerated"
+  },
+  "pairing": {
+    "pairs": [
+      {
+        "base": "Example",
+        "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Example.dylib",
+        "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Example.plist",
+        "pairing": "paired",
+        "dylibIsSymlink": false,
+        "plistIsSymlink": false,
+        "status": "ok"
+      }
+    ],
+    "missingPlist": [],
+    "orphanPlist": [],
+    "ambiguous": [],
+    "uncertain": []
+  },
+  "plists": [
+    {
+      "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Example.plist",
+      "format": "xml",
+      "readStatus": "ok",
+      "payloadInvalid": false,
+      "root": {
+        "IsTweakManager": false,
+        "Filter": {
+          "Bundles": [
+            "com.example.app"
+          ],
+          "Classes": [
+            "ExampleClass"
+          ],
+          "Executables": [
+            "ExampleApp"
+          ],
+          "CoreFoundationVersion": [
+            1600
+          ]
+        }
+      }
+    }
+  ]
+}

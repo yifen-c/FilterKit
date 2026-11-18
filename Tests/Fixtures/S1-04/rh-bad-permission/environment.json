@@ -1,0 +1,16 @@
+{
+  "fixtureId": "S1-04-BAD-PERM-001",
+  "fixtureKind": "rh-bad-permission",
+  "upstream": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "enumerationStatus": "enumerated"
+  },
+  "fs": {
+    "enumerable": true,
+    "entries": [
+      { "name": "Good.dylib", "type": "file", "exists": true, "readable": true, "isSymlink": false, "symlinkTarget": null, "realpath": "/private/var/.../Good.dylib", "size": 11264, "hash": "sha256:fff666", "hidden": false, "entryStatus": "ok" },
+      { "name": "Locked.dylib", "type": "file", "exists": true, "readable": false, "isSymlink": false, "symlinkTarget": null, "realpath": null, "size": null, "hash": null, "hidden": false, "entryStatus": "access_denied" }
+    ]
+  }
+}

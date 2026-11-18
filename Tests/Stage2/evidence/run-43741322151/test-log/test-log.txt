@@ -1,0 +1,77 @@
+Building for debugging...
+[0/9] /Users/runner/work/005/005/.build/arm64-apple-macosx/debug/FilterKitPackageTests.derived/runner.swift
+[1/9] Write sources
+[6/9] Write swift-version-7974D3F7F03D5E95.txt
+[8/13] Compiling Models EnvironmentModels.swift
+[9/13] Compiling Models ModelEnums.swift
+[10/13] Compiling Models PluginModels.swift
+[11/13] Emitting module Models
+[12/14] Compiling Models ReportEnvelope.swift
+[13/19] Compiling Adapters RootHideAdapter.swift
+[14/20] Emitting module Adapters
+[15/20] Compiling Adapters ElleKitAdapter.swift
+[16/20] Compiling Adapters RootlessAdapter.swift
+[17/22] Compiling Core CoreServices.swift
+[18/22] Emitting module Core
+[19/22] Emitting module Stage2Tests
+[20/22] Compiling Stage2Tests ModelsCodableTests.swift
+[21/24] Compiling FilterKitPackageTests runner.swift
+[22/24] Emitting module FilterKitPackageTests
+[22/24] Write Objects.LinkFileList
+[23/24] Linking FilterKitPackageTests
+Build complete! (30.62s)
+Test Suite 'All tests' started at 2026-11-15 17:30:30.251.
+Test Suite 'FilterKitPackageTests.xctest' started at 2026-11-15 17:30:30.253.
+Test Suite 'ModelsCodableTests' started at 2026-11-15 17:30:30.253.
+Test Case '-[Stage2Tests.ModelsCodableTests testConfidenceRawValues]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testConfidenceRawValues]' passed (0.004 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testCoreFoundationModeRawValues]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testCoreFoundationModeRawValues]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testDefaultPluginStateIsUnknownAndUndetermined]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testDefaultPluginStateIsUnknownAndUndetermined]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testEmptyArraysEncodeAsArrayNotNil]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testEmptyArraysEncodeAsArrayNotNil]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testEnvelopeRoundTrip]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testEnvelopeRoundTrip]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testEnvelopeRoundTripWithPlugin]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testEnvelopeRoundTripWithPlugin]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testEvidenceBlockEmptySourceStagesRoundTrip]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testEvidenceBlockEmptySourceStagesRoundTrip]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testEvidenceLevelRawValues]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testEvidenceLevelRawValues]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testFilterRuleRoundTrip]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testFilterRuleRoundTrip]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testJailbreakTypeRawValues]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testJailbreakTypeRawValues]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testLoadCategoryRawValues]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testLoadCategoryRawValues]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testLoadedStateRawValues]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testLoadedStateRawValues]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testMissingOptionalFieldsDecodeToNil]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testMissingOptionalFieldsDecodeToNil]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testNilOptionalsSurviveRoundTrip]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testNilOptionalsSurviveRoundTrip]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testOwnershipRoundTrip]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testOwnershipRoundTrip]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testOwnershipStatusRawValues]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testOwnershipStatusRawValues]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testPairingRawValues]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testPairingRawValues]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testPermissionDecisionRawValue]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testPermissionDecisionRawValue]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testPluginRoundTrip]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testPluginRoundTrip]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testSourceTypeRawValues]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testSourceTypeRawValues]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.ModelsCodableTests testWritablePolicyRawValues]' started.
+Test Case '-[Stage2Tests.ModelsCodableTests testWritablePolicyRawValues]' passed (0.000 seconds).
+Test Suite 'ModelsCodableTests' passed at 2026-11-15 17:30:30.266.
+	 Executed 21 tests, with 0 failures (0 unexpected) in 0.011 (0.013) seconds
+Test Suite 'FilterKitPackageTests.xctest' passed at 2026-11-15 17:30:30.266.
+	 Executed 21 tests, with 0 failures (0 unexpected) in 0.011 (0.013) seconds
+Test Suite 'All tests' passed at 2026-11-15 17:30:30.266.
+	 Executed 21 tests, with 0 failures (0 unexpected) in 0.011 (0.015) seconds
+◇ Test run started.
+↳ Testing Library Version: 1902
+↳ Target Platform: arm64e-apple-macos14.0
+✔ Test run with 0 tests in 0 suites passed after 0.001 seconds.

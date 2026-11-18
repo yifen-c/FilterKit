@@ -1,0 +1,28 @@
+# 第三方上游克隆（只读研究，不进版本库与交付包）
+research/
+
+# 编译 / 打包产物
+*.deb
+*.tipa
+*.ipa
+build/
+.theos/
+DerivedData/
+# XcodeGen 在 runner 生成的工程产物（仓库保留 project.yml 定义）
+FilterKit.xcodeproj/
+*.xcworkspace/
+.swiftpm/
+.build/
+# XcodeGen 生成的 Info.plist（由 project.yml info.path 指向，runner 生成不入库）
+App/Info.plist
+
+# 交付资料包（按规则另行打包，不入库）
+FilterKit-DevDocs-*.zip
+
+# 设备私有数据 / 临时文件
+*.device-private.json
+.tmp/
+.DS_Store
+
+# Node（仅 CI 脚本/打包，App 运行时不依赖）
+node_modules/

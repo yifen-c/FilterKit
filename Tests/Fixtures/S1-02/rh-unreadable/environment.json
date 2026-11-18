@@ -1,0 +1,17 @@
+{
+  "fixtureId": "S1-02-RH-UNREADABLE-001",
+  "fixtureKind": "rh-unreadable",
+  "signals": {
+    "candidates": [
+      {
+        "root": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+        "source": "scan",
+        "exists": true,
+        "structureMatch": true,
+        "readable": false,
+        "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+        "symlinkState": "none"
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "fixtureId": "S1-04-DIR-ENTRY-001",
+  "expected": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "status": "enumerated",
+    "counts": { "dylib": 0, "plist": 0, "directory": 1, "symlink": 0, "other": 0 },
+    "itemCount": 1,
+    "unknownCount": 1,
+    "names": ["Plugins"],
+    "excludedNested": ["Plugins/Inside.dylib"]
+  },
+  "expectedWarnings": [],
+  "expectedStatus": "enumerated"
+}

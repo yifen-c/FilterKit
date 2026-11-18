@@ -1,0 +1,37 @@
+{
+  "upstream": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "inventoryStatus": "enumerated"
+  },
+  "dpkg": {
+    "dbStatus": "ok",
+    "statusPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4var/lib/dpkg/status",
+    "packages": []
+  },
+  "markers": {
+    "filterkit": {
+      "byBase": {
+        "Unk": {
+          "state": "absent"
+        }
+      }
+    },
+    "manual": {
+      "byBase": {
+        "Unk": {
+          "state": "absent"
+        }
+      }
+    }
+  },
+  "entries": [
+    {
+      "base": "Unk",
+      "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Unk.dylib",
+      "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Unk.plist",
+      "parseStatus": "valid",
+      "pairing": "paired"
+    }
+  ]
+}

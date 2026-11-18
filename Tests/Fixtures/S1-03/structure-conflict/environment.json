@@ -1,0 +1,21 @@
+{
+  "fixtureId": "S1-03-CONFLICT-001",
+  "fixtureKind": "structure-conflict",
+  "upstream": { "route": "roothide", "jbroot": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4" },
+  "fs": {
+    "tweakInject": {
+      "exists": true,
+      "readable": true,
+      "enumerable": true,
+      "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+      "structureMatch": true
+    },
+    "dynamicLibraries": {
+      "exists": true,
+      "isSymlink": true,
+      "symlinkTarget": "/var/mobile/Library/pkgmirror/usr/lib/TweakInject/",
+      "realpath": "/var/mobile/Library/pkgmirror/usr/lib/TweakInject/",
+      "symlinkState": "resolved"
+    }
+  }
+}

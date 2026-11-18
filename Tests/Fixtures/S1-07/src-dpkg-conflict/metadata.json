@@ -1,0 +1,52 @@
+{
+  "fixtureId": "S1-07-OWN-006",
+  "expected": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "status": "partial",
+    "counts": {
+      "owned_package": 0,
+      "filterkit_managed": 0,
+      "manual_import": 0,
+      "unknown": 0,
+      "conflict": 1,
+      "dpkg_unavailable": 0
+    },
+    "byBase": {
+      "C": {
+        "sourceType": "dpkg_sileo",
+        "ownership": "owned_package",
+        "packageID": null,
+        "confidence": "heuristic",
+        "writablePolicy": "read_only",
+        "fileOwnership": {
+          "dylib": {
+            "owners": [
+              "pkg.one",
+              "pkg.two"
+            ],
+            "match": "conflict"
+          },
+          "plist": {
+            "owners": [
+              "pkg.one",
+              "pkg.two"
+            ],
+            "match": "conflict"
+          }
+        },
+        "markers": {
+          "filterkit": "absent",
+          "manual": "absent"
+        },
+        "notesIncludes": [
+          "ownership_conflict"
+        ]
+      }
+    }
+  },
+  "expectedWarnings": [
+    "ownership_conflict"
+  ],
+  "expectedStatus": "partial"
+}

@@ -1,0 +1,111 @@
+﻿2026-11-18T16:08:33.4434350Z ##[debug]Evaluating condition for step: 'Archive app build logs and product'
+2026-11-18T16:08:33.4460810Z ##[debug]Evaluating: always()
+2026-11-18T16:08:33.4461570Z ##[debug]Evaluating always:
+2026-11-18T16:08:33.4462810Z ##[debug]=> true
+2026-11-18T16:08:33.4463570Z ##[debug]Result: true
+2026-11-18T16:08:33.4465320Z ##[debug]Starting: Archive app build logs and product
+2026-11-18T16:08:33.4755390Z ##[debug]Loading inputs
+2026-11-18T16:08:33.4768040Z ##[debug]Loading env
+2026-11-18T16:08:33.4776910Z ##[group]Run actions/upload-artifact@v7
+2026-11-18T16:08:33.4777240Z with:
+2026-11-18T16:08:33.4777530Z   name: filterkit-app-build
+2026-11-18T16:08:33.4778090Z   path: build/app-xcodebuild.log
+build/sim-launch.log
+build/dashboard.png
+build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app
+
+2026-11-18T16:08:33.4778730Z   retention-days: 14
+2026-11-18T16:08:33.4779000Z   if-no-files-found: warn
+2026-11-18T16:08:33.4779320Z   compression-level: 6
+2026-11-18T16:08:33.4779530Z   overwrite: false
+2026-11-18T16:08:33.4779940Z   include-hidden-files: false
+2026-11-18T16:08:33.4781900Z   archive: true
+2026-11-18T16:08:33.4782310Z ##[endgroup]
+2026-11-18T16:08:46.0046380Z ##[debug]followSymbolicLinks 'true'
+2026-11-18T16:08:46.0090840Z ##[debug]implicitDescendants 'true'
+2026-11-18T16:08:46.0233620Z ##[debug]omitBrokenSymbolicLinks 'true'
+2026-11-18T16:08:46.0347270Z ##[debug]excludeHiddenFiles 'true'
+2026-11-18T16:08:46.0454900Z ##[debug]followSymbolicLinks 'true'
+2026-11-18T16:08:46.0587850Z ##[debug]implicitDescendants 'true'
+2026-11-18T16:08:46.0891580Z ##[debug]matchDirectories 'true'
+2026-11-18T16:08:46.1038770Z ##[debug]omitBrokenSymbolicLinks 'true'
+2026-11-18T16:08:46.2203120Z ##[debug]excludeHiddenFiles 'true'
+2026-11-18T16:08:46.3863100Z ##[debug]Search path '/Users/runner/work/FilterKit/FilterKit/build/app-xcodebuild.log'
+2026-11-18T16:08:46.4567450Z ##[debug]Search path '/Users/runner/work/FilterKit/FilterKit/build/sim-launch.log'
+2026-11-18T16:08:46.4823890Z ##[debug]Search path '/Users/runner/work/FilterKit/FilterKit/build/dashboard.png'
+2026-11-18T16:08:46.4989950Z ##[debug]Search path '/Users/runner/work/FilterKit/FilterKit/build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app'
+2026-11-18T16:08:46.5272780Z ##[debug]File:/Users/runner/work/FilterKit/FilterKit/build/app-xcodebuild.log was found using the provided searchPath
+2026-11-18T16:08:46.5723180Z ##[debug]File:/Users/runner/work/FilterKit/FilterKit/build/sim-launch.log was found using the provided searchPath
+2026-11-18T16:08:46.8189730Z ##[debug]File:/Users/runner/work/FilterKit/FilterKit/build/dashboard.png was found using the provided searchPath
+2026-11-18T16:08:47.4668400Z ##[debug]Removing /Users/runner/work/FilterKit/FilterKit/build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app from rawSearchResults because it is a directory
+2026-11-18T16:08:47.6353040Z ##[debug]File:/Users/runner/work/FilterKit/FilterKit/build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app/FilterKit was found using the provided searchPath
+2026-11-18T16:08:47.8751880Z ##[debug]File:/Users/runner/work/FilterKit/FilterKit/build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app/FilterKit.debug.dylib was found using the provided searchPath
+2026-11-18T16:08:47.9659680Z ##[debug]File:/Users/runner/work/FilterKit/FilterKit/build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app/Info.plist was found using the provided searchPath
+2026-11-18T16:08:47.9992860Z ##[debug]File:/Users/runner/work/FilterKit/FilterKit/build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app/PkgInfo was found using the provided searchPath
+2026-11-18T16:08:48.0403800Z ##[debug]Removing /Users/runner/work/FilterKit/FilterKit/build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app/_CodeSignature from rawSearchResults because it is a directory
+2026-11-18T16:08:48.0760100Z ##[debug]File:/Users/runner/work/FilterKit/FilterKit/build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app/_CodeSignature/CodeResources was found using the provided searchPath
+2026-11-18T16:08:48.1000120Z ##[debug]File:/Users/runner/work/FilterKit/FilterKit/build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app/__preview.dylib was found using the provided searchPath
+2026-11-18T16:08:48.1146180Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-18T16:08:48.1277470Z ##[debug]Using search path /Users/runner/work/FilterKit/FilterKit/build/app-xcodebuild.log
+2026-11-18T16:08:48.1532490Z ##[debug]Using search path /Users/runner/work/FilterKit/FilterKit/build/sim-launch.log
+2026-11-18T16:08:48.1697860Z ##[debug]Using search path /Users/runner/work/FilterKit/FilterKit/build/dashboard.png
+2026-11-18T16:08:48.1951190Z ##[debug]Using search path /Users/runner/work/FilterKit/FilterKit/build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app
+2026-11-18T16:08:48.2085180Z The least common ancestor is /Users/runner/work/FilterKit/FilterKit/build. This will be the root directory of the artifact
+2026-11-18T16:08:48.3335950Z With the provided path, there will be 9 files uploaded
+2026-11-18T16:08:48.3505320Z ##[debug]Root artifact directory is /Users/runner/work/FilterKit/FilterKit/build
+2026-11-18T16:08:48.3796640Z Artifact name is valid!
+2026-11-18T16:08:48.3945440Z Root directory input is valid!
+2026-11-18T16:08:48.4105570Z ##[debug]Workflow Run Backend ID: 891d921e-cdc0-821e-a24c-cb0c86c13f82
+2026-11-18T16:08:48.4982880Z ##[debug]Workflow Job Run Backend ID: 5fe96eaa-6868-5bbc-a97a-051d1ae8fe32
+2026-11-18T16:08:48.5159750Z ##[debug][Request] CreateArtifact https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/CreateArtifact
+2026-11-18T16:08:49.5308170Z ##[debug][Response] - 200
+2026-11-18T16:08:49.5424830Z ##[debug]Headers: {
+2026-11-18T16:08:49.5425450Z ##[debug]  "content-length": "584",
+2026-11-18T16:08:49.5425920Z ##[debug]  "content-type": "application/json",
+2026-11-18T16:08:49.5426530Z ##[debug]  "date": "Wed, 18 Nov 2026 16:08:49 GMT",
+2026-11-18T16:08:49.5426920Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-11-18T16:08:49.5428410Z ##[debug]  "x-github-request-id": "844F:78B10:1D5058F:1EA49B9:6AFDCD90",
+2026-11-18T16:08:49.5429030Z ##[debug]  "x-github-edge-region": "iad",
+2026-11-18T16:08:49.5429410Z ##[debug]  "server": "github.com"
+2026-11-18T16:08:49.5429880Z ##[debug]}
+2026-11-18T16:08:49.5552740Z ::add-mask::***
+2026-11-18T16:08:49.5769450Z ::add-mask::***
+2026-11-18T16:08:49.5949820Z ##[debug]Body: {
+2026-11-18T16:08:49.5950490Z ##[debug]  "ok": true,
+2026-11-18T16:08:49.5962630Z ##[debug]  "signed_upload_url": "https://productionresultssa11.blob.core.windows.net/actions-results/891d921e-cdc0-821e-a24c-cb0c86c13f82/workflow-job-run-5fe96eaa-6868-5bbc-a97a-051d1ae8fe32/artifacts/b04faa706c64afae48da9b5280b5114135bed6ba55a49d29e92d740d3e91195f.zip?se=2026-11-18T17%3A08%3A49Z&sig=***&ske=2026-11-18T17%3A53%3A05Z&skoid=ca7593d4-ee42-46cd-af88-8b886a2f84eb&sks=b&skt=2026-11-18T13%3A53%3A05Z&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skv=2025-11-05&sp=cw&spr=https&sr=b&st=2026-11-18T16%3A08%3A44Z&sv=2025-11-05"
+2026-11-18T16:08:49.5964630Z ##[debug]}
+2026-11-18T16:08:49.6073590Z ##[debug]Creating Artifact archive with compressionLevel: 6
+2026-11-18T16:08:49.6210860Z ##[debug]Zip write high watermark value 8388608
+2026-11-18T16:08:49.6317230Z ##[debug]Zip read high watermark value 8388608
+2026-11-18T16:08:49.6439600Z Uploading artifact: filterkit-app-build.zip
+2026-11-18T16:08:49.6946340Z ##[debug]Uploading artifact to blob storage with maxConcurrency: 5, bufferSize: 8388608, contentType: application/zip
+2026-11-18T16:08:49.8810230Z Beginning upload of artifact content to blob storage
+2026-11-18T16:08:52.3481640Z ##[debug]Zip stream for upload has ended.
+2026-11-18T16:08:52.3598520Z ##[debug]Zip stream for upload has finished.
+2026-11-18T16:08:52.6161060Z Uploaded bytes 2738899
+2026-11-18T16:08:52.6446490Z Finished uploading artifact content to blob storage!
+2026-11-18T16:08:52.6549760Z SHA256 digest of uploaded artifact is 599b55c100d3160d7f7087fef30e9484b1a009877912a583d80a45e129ba71e9
+2026-11-18T16:08:52.6650750Z Finalizing artifact upload
+2026-11-18T16:08:52.6757010Z ##[debug][Request] FinalizeArtifact https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.ArtifactService/FinalizeArtifact
+2026-11-18T16:08:53.0587220Z ##[debug][Response] - 200
+2026-11-18T16:08:53.0690780Z ##[debug]Headers: {
+2026-11-18T16:08:53.0691730Z ##[debug]  "content-length": "39",
+2026-11-18T16:08:53.0693340Z ##[debug]  "content-type": "application/json",
+2026-11-18T16:08:53.0694620Z ##[debug]  "date": "Wed, 18 Nov 2026 16:08:53 GMT",
+2026-11-18T16:08:53.0695960Z ##[debug]  "x-github-backend": "Kubernetes",
+2026-11-18T16:08:53.0697900Z ##[debug]  "x-github-request-id": "B86D:2D9B03:203A68E:2189C27:6AFDCD94",
+2026-11-18T16:08:53.0698580Z ##[debug]  "x-github-edge-region": "iad",
+2026-11-18T16:08:53.0699080Z ##[debug]  "server": "github.com"
+2026-11-18T16:08:53.0699480Z ##[debug]}
+2026-11-18T16:08:53.0769750Z ##[debug]Body: {
+2026-11-18T16:08:53.0770310Z ##[debug]  "ok": true,
+2026-11-18T16:08:53.0770870Z ##[debug]  "artifact_id": "14444732302"
+2026-11-18T16:08:53.0771280Z ##[debug]}
+2026-11-18T16:08:53.0873540Z Artifact filterkit-app-build successfully finalized. Artifact ID 14444732302
+2026-11-18T16:08:53.0975800Z Artifact filterkit-app-build has been successfully uploaded! Final size is 2738899 bytes. Artifact ID is 14444732302
+2026-11-18T16:08:53.1077690Z Artifact download URL: https://github.com/yi-fen/FilterKit/actions/runs/44336059068/artifacts/14444732302
+2026-11-18T16:08:53.1185540Z ##[debug]Node Action run completed with exit code 0
+2026-11-18T16:08:53.1203310Z ##[debug]Set output artifact-id = 14444732302
+2026-11-18T16:08:53.1204090Z ##[debug]Set output artifact-digest = 599b55c100d3160d7f7087fef30e9484b1a009877912a583d80a45e129ba71e9
+2026-11-18T16:08:53.1205200Z ##[debug]Set output artifact-url = https://github.com/yi-fen/FilterKit/actions/runs/44336059068/artifacts/14444732302
+2026-11-18T16:08:53.1211590Z ##[debug]Finishing: Archive app build logs and product

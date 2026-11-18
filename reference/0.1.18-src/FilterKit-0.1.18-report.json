@@ -1,0 +1,75 @@
+{
+  "version": "0.1.18",
+  "build": 118,
+  "helper_build_id": "FKH-0118",
+  "baseline": {
+    "source_archive": "FilterKit-0.1.17-source.zip",
+    "report_archive": "FilterKit-0.1.17-report.zip",
+    "helper_trust_state": "DISCOVERED",
+    "helper_reason_codes": [
+      "system_tool_candidate"
+    ],
+    "ipc_status": "UNAVAILABLE",
+    "identity_verified": false,
+    "signature_status": "unsupported",
+    "real_operation_allowed": false,
+    "test_summary": {
+      "total": 459,
+      "passed": 458,
+      "failed": 1,
+      "failure": "REL1708 未验证结果不得放行"
+    }
+  },
+  "changes": {
+    "unix_domain_socket_client": true,
+    "unix_domain_socket_helper_listener": true,
+    "darwin_getpeereid_peer_uid_check": true,
+    "socket_endpoint_type_check": true,
+    "secure_parent_directory_check": true,
+    "socket_permissions_default_0600": true,
+    "optional_socket_group_0660": true,
+    "uint32_big_endian_framing": true,
+    "maximum_frame_bytes": 1048576,
+    "send_receive_timeout": true,
+    "short_read_write_and_eintr_handling": true,
+    "persistent_connection_request_response": true,
+    "read_only_protocol_router_integration": "transport interface compatible; runtime wiring pending",
+    "release_verifier_test_REL1708_fixed": true,
+    "helper_target_created": false,
+    "listener_started_by_app": false,
+    "endpoint_configured": false,
+    "production_release_signature_verifier": false,
+    "system_peer_pid_collector": false,
+    "hmac_handshake_runtime_integrated": false
+  },
+  "validation": {
+    "project_static_validator": "passed",
+    "javascript_syntax": "passed",
+    "plist_lint": "passed",
+    "all_project_json": "passed",
+    "makefile_objective_c_sources": 170,
+    "missing_makefile_sources": 0,
+    "duplicate_makefile_sources": 0,
+    "test_suites": 42,
+    "registered_assertions": 468,
+    "runtime_tests_executed_in_development_environment": false,
+    "theos_compilation": "not_run_environment_unavailable",
+    "device_test": "not_run",
+    "zip_integrity": {
+      "status": "passed",
+      "source_archive_entries": 427,
+      "report_archive_entries": 5
+    }
+  },
+  "safety": {
+    "real_ipc_ready": false,
+    "read_only_operations_allowed": false,
+    "write_operations_allowed": false,
+    "plugin_enable_disable_allowed": false,
+    "injector_configuration_write_allowed": false,
+    "arbitrary_injection_allowed": false,
+    "daemon_deployment_allowed": false,
+    "privileged_launch_allowed": false
+  },
+  "next_gate": "Create a separately signed Helper target, start the listener only inside that process, provision a trusted endpoint/group policy, bind socket UID evidence to the authenticated handshake and release verification, then run RootHide/rootless device IPC tests."
+}

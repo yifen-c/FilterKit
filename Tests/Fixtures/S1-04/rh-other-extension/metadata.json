@@ -1,0 +1,14 @@
+{
+  "fixtureId": "S1-04-OTHER-EXT-001",
+  "expected": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "status": "enumerated",
+    "counts": { "dylib": 0, "plist": 0, "directory": 0, "symlink": 0, "other": 3 },
+    "itemCount": 3,
+    "unknownCount": 3,
+    "names": ["Bad.DYLIB", "README.txt", "Tweak.deb"]
+  },
+  "expectedWarnings": [],
+  "expectedStatus": "enumerated"
+}

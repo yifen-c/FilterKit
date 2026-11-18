@@ -1,0 +1,830 @@
+{
+  "schemaVersion": "0.1.0",
+  "generatedAt": "2026-11-15T13:06:50.796Z",
+  "stage": "Stage 1 / S1-07",
+  "evidenceNote": "全部为离线 fixture 合成信号；不构成 RootHide 真机验证，Rootless/Rootful 结果不代表真机兼容。来源识别不产生管理授权结论。",
+  "summary": {
+    "total": 14,
+    "passed": 14,
+    "failed": 0,
+    "routesCovered": [
+      "rootful",
+      "roothide",
+      "rootless"
+    ],
+    "missingRoutes": [],
+    "mutualLeakCount": 0,
+    "regression": {
+      "S1-01": "passed",
+      "S1-02": "passed",
+      "S1-03": "passed",
+      "S1-04": "passed",
+      "S1-05": "passed",
+      "S1-06": "passed"
+    }
+  },
+  "cases": [
+    {
+      "caseId": "OWN-012",
+      "source": "fixture:determinism",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "enumerated",
+        "sources": [
+          {
+            "base": "Det",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Det.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Det.plist",
+            "sourceType": "dpkg_sileo",
+            "ownership": "owned_package",
+            "packageID": "det.pkg",
+            "packageVersion": "1.0",
+            "architecture": "iphoneos-arm64e",
+            "listPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/var/lib/dpkg/info/det.pkg.list",
+            "fileOwnership": {
+              "dylib": {
+                "owners": [
+                  "det.pkg"
+                ],
+                "match": "exact"
+              },
+              "plist": {
+                "owners": [
+                  "det.pkg"
+                ],
+                "match": "exact"
+              }
+            },
+            "confidence": "exact_record",
+            "writablePolicy": "read_only",
+            "markers": {
+              "filterkit": "absent",
+              "manual": "absent"
+            },
+            "conflicts": [],
+            "notes": []
+          }
+        ],
+        "unresolved": [],
+        "counts": {
+          "owned_package": 1,
+          "filterkit_managed": 0,
+          "manual_import": 0,
+          "unknown": 0,
+          "conflict": 0,
+          "dpkg_unavailable": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "caseId": "OWN-006",
+      "source": "fixture:src-dpkg-conflict",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "partial",
+        "sources": [
+          {
+            "base": "C",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/C.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/C.plist",
+            "sourceType": "dpkg_sileo",
+            "ownership": "owned_package",
+            "packageID": null,
+            "packageVersion": null,
+            "architecture": null,
+            "listPath": null,
+            "fileOwnership": {
+              "dylib": {
+                "owners": [
+                  "pkg.one",
+                  "pkg.two"
+                ],
+                "match": "conflict"
+              },
+              "plist": {
+                "owners": [
+                  "pkg.one",
+                  "pkg.two"
+                ],
+                "match": "conflict"
+              }
+            },
+            "confidence": "heuristic",
+            "writablePolicy": "read_only",
+            "markers": {
+              "filterkit": "absent",
+              "manual": "absent"
+            },
+            "conflicts": [
+              {
+                "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/C.dylib",
+                "packages": [
+                  "pkg.one",
+                  "pkg.two"
+                ]
+              },
+              {
+                "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/C.plist",
+                "packages": [
+                  "pkg.one",
+                  "pkg.two"
+                ]
+              }
+            ],
+            "notes": [
+              "ownership_conflict"
+            ]
+          }
+        ],
+        "unresolved": [
+          {
+            "base": "C",
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/C.dylib",
+            "ownership": "owned_package",
+            "reason": "ownership_conflict"
+          }
+        ],
+        "counts": {
+          "owned_package": 0,
+          "filterkit_managed": 0,
+          "manual_import": 0,
+          "unknown": 0,
+          "conflict": 1,
+          "dpkg_unavailable": 0
+        },
+        "warnings": [
+          "ownership_conflict"
+        ]
+      }
+    },
+    {
+      "caseId": "OWN-002",
+      "source": "fixture:src-dpkg-multi-file",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "rootless",
+        "sourceDirectory": "/var/jb/usr/lib/TweakInject/",
+        "status": "enumerated",
+        "sources": [
+          {
+            "base": "A",
+            "dylibPath": "/var/jb/usr/lib/TweakInject/A.dylib",
+            "plistPath": "/var/jb/usr/lib/TweakInject/A.plist",
+            "sourceType": "dpkg_sileo",
+            "ownership": "owned_package",
+            "packageID": "com.a",
+            "packageVersion": "2.0",
+            "architecture": "iphoneos-arm64",
+            "listPath": "/var/jb/var/lib/dpkg/info/com.a.list",
+            "fileOwnership": {
+              "dylib": {
+                "owners": [
+                  "com.a"
+                ],
+                "match": "exact"
+              },
+              "plist": {
+                "owners": [
+                  "com.a"
+                ],
+                "match": "exact"
+              }
+            },
+            "confidence": "exact_record",
+            "writablePolicy": "read_only",
+            "markers": {
+              "filterkit": "absent",
+              "manual": "absent"
+            },
+            "conflicts": [],
+            "notes": []
+          },
+          {
+            "base": "B",
+            "dylibPath": "/var/jb/usr/lib/TweakInject/B.dylib",
+            "plistPath": "/var/jb/usr/lib/TweakInject/B.plist",
+            "sourceType": "dpkg_sileo",
+            "ownership": "owned_package",
+            "packageID": "com.b",
+            "packageVersion": "3.1",
+            "architecture": "iphoneos-arm64",
+            "listPath": "/var/jb/var/lib/dpkg/info/com.b.list",
+            "fileOwnership": {
+              "dylib": {
+                "owners": [
+                  "com.b"
+                ],
+                "match": "exact"
+              },
+              "plist": {
+                "owners": [
+                  "com.b"
+                ],
+                "match": "exact"
+              }
+            },
+            "confidence": "exact_record",
+            "writablePolicy": "read_only",
+            "markers": {
+              "filterkit": "absent",
+              "manual": "absent"
+            },
+            "conflicts": [],
+            "notes": []
+          }
+        ],
+        "unresolved": [],
+        "counts": {
+          "owned_package": 2,
+          "filterkit_managed": 0,
+          "manual_import": 0,
+          "unknown": 0,
+          "conflict": 0,
+          "dpkg_unavailable": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "caseId": "OWN-001",
+      "source": "fixture:src-dpkg-owned",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "enumerated",
+        "sources": [
+          {
+            "base": "Owned",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Owned.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Owned.plist",
+            "sourceType": "dpkg_sileo",
+            "ownership": "owned_package",
+            "packageID": "z.weifeng",
+            "packageVersion": "1.5",
+            "architecture": "iphoneos-arm64e",
+            "listPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/var/lib/dpkg/info/z.weifeng.list",
+            "fileOwnership": {
+              "dylib": {
+                "owners": [
+                  "z.weifeng"
+                ],
+                "match": "exact"
+              },
+              "plist": {
+                "owners": [
+                  "z.weifeng"
+                ],
+                "match": "exact"
+              }
+            },
+            "confidence": "exact_record",
+            "writablePolicy": "read_only",
+            "markers": {
+              "filterkit": "present",
+              "manual": "absent"
+            },
+            "conflicts": [],
+            "notes": [
+              "marker_not_overridden"
+            ]
+          }
+        ],
+        "unresolved": [],
+        "counts": {
+          "owned_package": 1,
+          "filterkit_managed": 0,
+          "manual_import": 0,
+          "unknown": 0,
+          "conflict": 0,
+          "dpkg_unavailable": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "caseId": "OWN-008",
+      "source": "fixture:src-dpkg-unavailable",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "partial",
+        "sources": [
+          {
+            "base": "U",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/U.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/U.plist",
+            "sourceType": "unknown",
+            "ownership": "unknown",
+            "packageID": null,
+            "packageVersion": null,
+            "architecture": null,
+            "listPath": null,
+            "fileOwnership": {
+              "dylib": {
+                "owners": [],
+                "match": "none"
+              },
+              "plist": {
+                "owners": [],
+                "match": "none"
+              }
+            },
+            "confidence": "unknown",
+            "writablePolicy": "read_only",
+            "markers": {
+              "filterkit": "absent",
+              "manual": "absent"
+            },
+            "conflicts": [],
+            "notes": [
+              "dpkg_unavailable"
+            ]
+          }
+        ],
+        "unresolved": [
+          {
+            "base": "U",
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/U.dylib",
+            "ownership": "unknown",
+            "reason": "dpkg_unavailable"
+          }
+        ],
+        "counts": {
+          "owned_package": 0,
+          "filterkit_managed": 0,
+          "manual_import": 0,
+          "unknown": 0,
+          "conflict": 0,
+          "dpkg_unavailable": 1
+        },
+        "warnings": [
+          "dpkg_unavailable"
+        ]
+      }
+    },
+    {
+      "caseId": "OWN-003",
+      "source": "fixture:src-filterkit-managed",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "enumerated",
+        "sources": [
+          {
+            "base": "FK",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/FK.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/FK.plist",
+            "sourceType": "filterkit",
+            "ownership": "filterkit_managed",
+            "packageID": null,
+            "packageVersion": null,
+            "architecture": null,
+            "listPath": null,
+            "fileOwnership": {
+              "dylib": {
+                "owners": [],
+                "match": "none"
+              },
+              "plist": {
+                "owners": [],
+                "match": "none"
+              }
+            },
+            "confidence": "exact_record",
+            "writablePolicy": "managed",
+            "markers": {
+              "filterkit": "present",
+              "manual": "absent"
+            },
+            "conflicts": [],
+            "notes": []
+          }
+        ],
+        "unresolved": [],
+        "counts": {
+          "owned_package": 0,
+          "filterkit_managed": 1,
+          "manual_import": 0,
+          "unknown": 0,
+          "conflict": 0,
+          "dpkg_unavailable": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "caseId": "OWN-004",
+      "source": "fixture:src-manual-import",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "rootful",
+        "sourceDirectory": "/usr/lib/TweakInject/",
+        "status": "enumerated",
+        "sources": [
+          {
+            "base": "MI",
+            "dylibPath": "/usr/lib/TweakInject/MI.dylib",
+            "plistPath": "/usr/lib/TweakInject/MI.plist",
+            "sourceType": "manual",
+            "ownership": "manual_import",
+            "packageID": null,
+            "packageVersion": null,
+            "architecture": null,
+            "listPath": null,
+            "fileOwnership": {
+              "dylib": {
+                "owners": [],
+                "match": "none"
+              },
+              "plist": {
+                "owners": [],
+                "match": "none"
+              }
+            },
+            "confidence": "exact_record",
+            "writablePolicy": "read_only",
+            "markers": {
+              "filterkit": "absent",
+              "manual": "present"
+            },
+            "conflicts": [],
+            "notes": []
+          }
+        ],
+        "unresolved": [],
+        "counts": {
+          "owned_package": 0,
+          "filterkit_managed": 0,
+          "manual_import": 1,
+          "unknown": 0,
+          "conflict": 0,
+          "dpkg_unavailable": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "caseId": "OWN-010",
+      "source": "fixture:src-marker-absent",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "partial",
+        "sources": [
+          {
+            "base": "Abs",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Abs.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Abs.plist",
+            "sourceType": "unknown",
+            "ownership": "unknown",
+            "packageID": null,
+            "packageVersion": null,
+            "architecture": null,
+            "listPath": null,
+            "fileOwnership": {
+              "dylib": {
+                "owners": [],
+                "match": "none"
+              },
+              "plist": {
+                "owners": [],
+                "match": "none"
+              }
+            },
+            "confidence": "unknown",
+            "writablePolicy": "read_only",
+            "markers": {
+              "filterkit": "absent",
+              "manual": "absent"
+            },
+            "conflicts": [],
+            "notes": []
+          }
+        ],
+        "unresolved": [
+          {
+            "base": "Abs",
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Abs.dylib",
+            "ownership": "unknown",
+            "reason": "unresolved"
+          }
+        ],
+        "counts": {
+          "owned_package": 0,
+          "filterkit_managed": 0,
+          "manual_import": 0,
+          "unknown": 1,
+          "conflict": 0,
+          "dpkg_unavailable": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "caseId": "OWN-009",
+      "source": "fixture:src-marker-corrupt",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "partial",
+        "sources": [
+          {
+            "base": "Cor",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Cor.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Cor.plist",
+            "sourceType": "unknown",
+            "ownership": "unknown",
+            "packageID": null,
+            "packageVersion": null,
+            "architecture": null,
+            "listPath": null,
+            "fileOwnership": {
+              "dylib": {
+                "owners": [],
+                "match": "none"
+              },
+              "plist": {
+                "owners": [],
+                "match": "none"
+              }
+            },
+            "confidence": "unknown",
+            "writablePolicy": "read_only",
+            "markers": {
+              "filterkit": "corrupt",
+              "manual": "absent"
+            },
+            "conflicts": [],
+            "notes": [
+              "marker_corrupt"
+            ]
+          }
+        ],
+        "unresolved": [
+          {
+            "base": "Cor",
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Cor.dylib",
+            "ownership": "unknown",
+            "reason": "marker_corrupt"
+          }
+        ],
+        "counts": {
+          "owned_package": 0,
+          "filterkit_managed": 0,
+          "manual_import": 0,
+          "unknown": 1,
+          "conflict": 0,
+          "dpkg_unavailable": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "caseId": "OWN-007",
+      "source": "fixture:src-mixed-ownership",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "rootless",
+        "sourceDirectory": "/var/jb/usr/lib/TweakInject/",
+        "status": "enumerated",
+        "sources": [
+          {
+            "base": "M",
+            "dylibPath": "/var/jb/usr/lib/TweakInject/M.dylib",
+            "plistPath": "/var/jb/usr/lib/TweakInject/M.plist",
+            "sourceType": "dpkg_sileo",
+            "ownership": "owned_package",
+            "packageID": null,
+            "packageVersion": null,
+            "architecture": null,
+            "listPath": null,
+            "fileOwnership": {
+              "dylib": {
+                "owners": [
+                  "pkg.dylib"
+                ],
+                "match": "exact"
+              },
+              "plist": {
+                "owners": [
+                  "pkg.plist"
+                ],
+                "match": "exact"
+              }
+            },
+            "confidence": "exact_record",
+            "writablePolicy": "read_only",
+            "markers": {
+              "filterkit": "absent",
+              "manual": "absent"
+            },
+            "conflicts": [],
+            "notes": [
+              "mixed_package_ownership"
+            ]
+          }
+        ],
+        "unresolved": [],
+        "counts": {
+          "owned_package": 1,
+          "filterkit_managed": 0,
+          "manual_import": 0,
+          "unknown": 0,
+          "conflict": 0,
+          "dpkg_unavailable": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "caseId": "OWN-011",
+      "source": "fixture:src-route-guard",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": null,
+        "status": "unresolved",
+        "sources": [],
+        "unresolved": [],
+        "counts": {
+          "owned_package": 0,
+          "filterkit_managed": 0,
+          "manual_import": 0,
+          "unknown": 0,
+          "conflict": 0,
+          "dpkg_unavailable": 0
+        },
+        "warnings": [
+          "inventory_unresolved"
+        ]
+      }
+    },
+    {
+      "caseId": "OWN-005",
+      "source": "fixture:src-unknown",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "partial",
+        "sources": [
+          {
+            "base": "Unk",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Unk.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Unk.plist",
+            "sourceType": "unknown",
+            "ownership": "unknown",
+            "packageID": null,
+            "packageVersion": null,
+            "architecture": null,
+            "listPath": null,
+            "fileOwnership": {
+              "dylib": {
+                "owners": [],
+                "match": "none"
+              },
+              "plist": {
+                "owners": [],
+                "match": "none"
+              }
+            },
+            "confidence": "unknown",
+            "writablePolicy": "read_only",
+            "markers": {
+              "filterkit": "absent",
+              "manual": "absent"
+            },
+            "conflicts": [],
+            "notes": []
+          }
+        ],
+        "unresolved": [
+          {
+            "base": "Unk",
+            "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Unk.dylib",
+            "ownership": "unknown",
+            "reason": "unresolved"
+          }
+        ],
+        "counts": {
+          "owned_package": 0,
+          "filterkit_managed": 0,
+          "manual_import": 0,
+          "unknown": 1,
+          "conflict": 0,
+          "dpkg_unavailable": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "caseId": "OWN-012",
+      "source": "synthetic:determinism",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "route": "roothide",
+        "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "status": "enumerated",
+        "sources": [
+          {
+            "base": "Det",
+            "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Det.dylib",
+            "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Det.plist",
+            "sourceType": "dpkg_sileo",
+            "ownership": "owned_package",
+            "packageID": "det.pkg",
+            "packageVersion": "1.0",
+            "architecture": "iphoneos-arm64e",
+            "listPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/var/lib/dpkg/info/det.pkg.list",
+            "fileOwnership": {
+              "dylib": {
+                "owners": [
+                  "det.pkg"
+                ],
+                "match": "exact"
+              },
+              "plist": {
+                "owners": [
+                  "det.pkg"
+                ],
+                "match": "exact"
+              }
+            },
+            "confidence": "exact_record",
+            "writablePolicy": "read_only",
+            "markers": {
+              "filterkit": "absent",
+              "manual": "absent"
+            },
+            "conflicts": [],
+            "notes": []
+          }
+        ],
+        "unresolved": [],
+        "counts": {
+          "owned_package": 1,
+          "filterkit_managed": 0,
+          "manual_import": 0,
+          "unknown": 0,
+          "conflict": 0,
+          "dpkg_unavailable": 0
+        },
+        "warnings": []
+      }
+    },
+    {
+      "caseId": "OWN-011",
+      "source": "synthetic:route-isolation",
+      "evidenceType": "fixture",
+      "passed": true,
+      "failures": [],
+      "result": {
+        "sourceDirectory": null,
+        "counts": {
+          "owned_package": 0,
+          "filterkit_managed": 0,
+          "manual_import": 0,
+          "unknown": 0,
+          "conflict": 0,
+          "dpkg_unavailable": 0
+        }
+      }
+    }
+  ]
+}

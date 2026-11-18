@@ -1,0 +1,201 @@
+# FilterKit CI — Stage 2.1-B macOS Build Validation
+#
+# 基线：GitHub Actions，runner macos-latest；Node 仅用于 CI 脚本/打包，不进入 App 运行时。
+# 触发方式：**仅手动触发**（workflow_dispatch）；push / pull_request 不自动构建。
+# 所有构建/测试结论必须以 macOS runner 实际日志为准，YAML 合法不代表构建通过。
+#
+# 待定值（Stage-2.1 子规格 §14）：Deployment Target（B2）、Bundle ID（B3）、
+# UI 框架（B4）；工程草案取值见 project.yml，未取得链接/真机证据前不冻结。
+
+name: filterkit-build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  environment:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Record toolchain versions
+        run: |
+          sw_vers
+          xcodebuild -version || true
+          swift --version
+          xcodebuild -showsdks || true
+
+  build:
+    runs-on: macos-latest
+    needs: environment
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Build non-UI targets (Models / Adapters / Core)
+        run: swift build
+
+  test:
+    runs-on: macos-latest
+    needs: build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Run full Swift test suite
+        run: |
+          set -o pipefail
+          mkdir -p .build
+          swift test 2>&1 | tee .build/test-log.txt
+      - name: Run S1-05 pairing mapping tests (independent filter)
+        run: |
+          set -o pipefail
+          mkdir -p .build
+          swift test --filter PluginPairingS105FixtureTests 2>&1 | tee .build/test-log-s105.txt
+      - name: Upload test log
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: filterkit-test-log
+          path: |
+            .build/test-log.txt
+            .build/test-log-s105.txt
+          retention-days: 14
+
+  isolation:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Adapter isolation check
+        run: |
+          set -o pipefail
+          mkdir -p build
+          ISOLATION_SUMMARY_PATH=build/isolation-summary.json \
+            bash scripts/check-adapter-isolation.sh 2>&1 | tee build/isolation-output.log
+      - name: Upload isolation evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: filterkit-isolation
+          path: |
+            build/isolation-output.log
+            build/isolation-summary.json
+          retention-days: 14
+
+  # 最小 App 编译与模拟器启动（Stage 2.1 App Target Integration）。
+  # 步骤口径见 Spec/Stage-2/Stage-2.1-App-Target-Plan.md §7：
+  # xcodegen generate → xcodebuild(iOS Simulator) → simctl boot/install/launch。
+  # 边界：本步骤只验证 App 工程集成与基础启动；JBROOT / TweakInject / entitlement /
+  # sandbox / jbroot() 等权限结论属 2.4，不在本 job 取证。
+  app-build:
+    runs-on: macos-latest
+    needs: [build, isolation]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Install XcodeGen
+        run: |
+          if ! command -v xcodegen >/dev/null 2>&1; then
+            brew install xcodegen
+          fi
+          xcodegen --version
+      - name: Generate Xcode project
+        run: xcodegen generate
+      - name: Build app for iOS Simulator
+        run: |
+          set -o pipefail
+          mkdir -p build
+          xcodebuild -project FilterKit.xcodeproj -scheme FilterKit \
+            -destination 'generic/platform=iOS Simulator' \
+            -configuration Debug \
+            -derivedDataPath build/DerivedData \
+            build 2>&1 | tee build/app-xcodebuild.log
+      - name: Locate built app
+        id: app
+        run: |
+          APP_PATH=$(find build/DerivedData/Build/Products -name 'FilterKit.app' -maxdepth 3 | head -1)
+          if [ -z "$APP_PATH" ]; then
+            echo "::error::FilterKit.app not found under build/DerivedData"
+            exit 1
+          fi
+          echo "app_path=$APP_PATH" >> "$GITHUB_OUTPUT"
+          echo "Built app: $APP_PATH"
+          ls -la "$APP_PATH"
+      - name: Boot simulator, install and launch
+        id: sim
+        run: |
+          set -euo pipefail
+          DEVICE_LINE=$(xcrun simctl list devices available \
+            | awk '/iPhone/ && /[0-9A-Fa-f-]{36}/ {print; exit}')
+          if [ -z "$DEVICE_LINE" ]; then
+            echo "::error::No available iPhone simulator found"
+            exit 1
+          fi
+          DEVICE_ID=$(echo "$DEVICE_LINE" | grep -oE '[0-9A-Fa-f-]{36}' | head -1)
+          DEVICE_NAME=$(echo "$DEVICE_LINE" | sed -E 's/ \([0-9A-Fa-f-]{36}\).*//; s/^ +//; s/ +$//')
+          echo "Selected simulator: $DEVICE_NAME ($DEVICE_ID)"
+          xcrun simctl boot "$DEVICE_ID" || true
+          xcrun simctl install "$DEVICE_ID" "${{ steps.app.outputs.app_path }}"
+          LAUNCH_OUT=$(xcrun simctl launch "$DEVICE_ID" com.filterkit.manager)
+          echo "$LAUNCH_OUT" | tee build/sim-launch.log
+          APP_PID=$(echo "$LAUNCH_OUT" | grep -oE '[0-9]+' | head -1)
+          echo "device_id=$DEVICE_ID" >> "$GITHUB_OUTPUT"
+          echo "device_name=$DEVICE_NAME" >> "$GITHUB_OUTPUT"
+          echo "app_pid=$APP_PID" >> "$GITHUB_OUTPUT"
+          xcrun simctl list devices | grep "$DEVICE_ID" || true
+      - name: Verify app alive and capture screenshot
+        run: |
+          set -euo pipefail
+          DEVICE_ID="${{ steps.sim.outputs.device_id }}"
+          APP_PID="${{ steps.sim.outputs.app_pid }}"
+          BUNDLE=com.filterkit.manager
+          # 留短暂窗口让 App 完成冷启动，再做存活复查（取证，不等同于稳定性验证）。
+          sleep 3
+          RUN_LIST=$(xcrun simctl spawn "$DEVICE_ID" launchctl list || true)
+          ALIVE_LINE=$(echo "$RUN_LIST" | grep -E "$BUNDLE|FilterKit" || true)
+          {
+            echo "--- alive check $(date -u +%FT%TZ) ---"
+            echo "device_id=$DEVICE_ID app_pid=$APP_PID bundle=$BUNDLE"
+            echo "$ALIVE_LINE"
+          } | tee -a build/sim-launch.log
+          if [ -z "$ALIVE_LINE" ]; then
+            echo "::error::App $BUNDLE not found in launchctl list after launch (PID $APP_PID may have exited)"
+            exit 1
+          fi
+          ALIVE_PID=$(echo "$ALIVE_LINE" | awk '{print $1}')
+          if [ "$ALIVE_PID" = "-" ] || [ -z "$ALIVE_PID" ]; then
+            echo "::error::App $BUNDLE registered but PID is '-' (not running)"
+            exit 1
+          fi
+          echo "App alive: PID $ALIVE_PID (launch PID $APP_PID)"
+          xcrun simctl io "$DEVICE_ID" screenshot build/dashboard.png
+          echo "Screenshot: build/dashboard.png"
+      - name: Archive app build logs and product
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: filterkit-app-build
+          path: |
+            build/app-xcodebuild.log
+            build/sim-launch.log
+            build/dashboard.png
+            build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app
+          retention-days: 14
+
+  artifact:
+    runs-on: macos-latest
+    needs: [build, test, isolation, app-build]
+    if: always()
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Upload build metadata
+        uses: actions/upload-artifact@v7
+        with:
+          name: filterkit-build-metadata
+          path: |
+            Package.swift
+            Makefile
+            control
+            project.yml
+            .github/workflows/
+          retention-days: 14

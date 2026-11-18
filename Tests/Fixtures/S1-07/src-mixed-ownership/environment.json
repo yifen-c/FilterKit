@@ -1,0 +1,50 @@
+{
+  "upstream": {
+    "route": "rootless",
+    "sourceDirectory": "/var/jb/usr/lib/TweakInject/",
+    "inventoryStatus": "enumerated"
+  },
+  "dpkg": {
+    "dbStatus": "ok",
+    "statusPath": "/var/jb/var/lib/dpkg/status",
+    "packages": [
+      {
+        "id": "pkg.dylib",
+        "version": "1.0",
+        "architecture": "iphoneos-arm64",
+        "state": "install ok installed",
+        "listPath": "/var/jb/var/lib/dpkg/info/pkg.dylib.list",
+        "files": [
+          "/var/jb/usr/lib/TweakInject/M.dylib"
+        ]
+      },
+      {
+        "id": "pkg.plist",
+        "version": "1.0",
+        "architecture": "iphoneos-arm64",
+        "state": "install ok installed",
+        "listPath": "/var/jb/var/lib/dpkg/info/pkg.plist.list",
+        "files": [
+          "/var/jb/usr/lib/TweakInject/M.plist"
+        ]
+      }
+    ]
+  },
+  "markers": {
+    "filterkit": {
+      "byBase": {}
+    },
+    "manual": {
+      "byBase": {}
+    }
+  },
+  "entries": [
+    {
+      "base": "M",
+      "dylibPath": "/var/jb/usr/lib/TweakInject/M.dylib",
+      "plistPath": "/var/jb/usr/lib/TweakInject/M.plist",
+      "parseStatus": "valid",
+      "pairing": "paired"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "fixtureId": "S1-01-ROOTLESS-001",
+  "fixtureKind": "rootless",
+  "signals": {
+    "jailbreakType": { "value": "rootless", "source": "fixture", "present": true },
+    "architecture": { "value": "arm64", "source": "fixture", "present": true },
+    "iosVersion": { "value": "17.0.2", "source": "fixture", "present": true },
+    "bootstrap": { "name": "procursus", "version": "fixture-version", "source": "fixture", "present": true },
+    "ellekitImplementation": { "value": "upstream", "source": "fixture", "present": true },
+    "ellekitVersion": { "value": "1.0.0", "source": "fixture", "present": true, "readability": "readable", "raw": "1.0.0" }
+  }
+}

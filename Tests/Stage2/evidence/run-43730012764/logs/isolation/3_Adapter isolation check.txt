@@ -1,0 +1,11 @@
+﻿2026-11-15T15:28:02.1324650Z ##[group]Run bash scripts/check-adapter-isolation.sh
+2026-11-15T15:28:02.1325260Z [36;1mbash scripts/check-adapter-isolation.sh[0m
+2026-11-15T15:28:02.1426070Z shell: /bin/bash -e {0}
+2026-11-15T15:28:02.1426590Z ##[endgroup]
+2026-11-15T15:28:02.3139840Z == 检查 RootHide 未引用 Rootless ==
+2026-11-15T15:28:02.3365250Z OK
+2026-11-15T15:28:02.3420460Z == 检查 Rootless 未引用 RootHide ==
+2026-11-15T15:28:02.3434870Z OK
+2026-11-15T15:28:02.3436590Z == 检查 Core 未直接实例化具体 Adapter ==
+2026-11-15T15:28:02.3488380Z OK
+2026-11-15T15:28:02.3489780Z == 隔离检查通过（静态文本层面） ==

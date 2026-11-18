@@ -1,0 +1,17 @@
+{
+  "fixtureId": "S1-02-PRIVATEVAR-001",
+  "fixtureKind": "realpath-privatevar",
+  "signals": {
+    "candidates": [
+      {
+        "root": "/var/containers/Bundle/Application/.jbroot-D87B48653D7178BA",
+        "source": "bootstrap",
+        "exists": true,
+        "structureMatch": true,
+        "readable": true,
+        "realpath": "/private/var/containers/Bundle/Application/.jbroot-D87B48653D7178BA",
+        "symlinkState": "resolved"
+      }
+    ]
+  }
+}

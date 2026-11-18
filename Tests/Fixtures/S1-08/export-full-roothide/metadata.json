@@ -1,0 +1,83 @@
+{
+  "fixtureId": "S1-08-EXPORT-001",
+  "expected": {
+    "profile": {
+      "id": "RootHideProfile_1_2_3",
+      "route": "roothide"
+    },
+    "environment": {
+      "jailbreakType": "roothide",
+      "profileId": "RootHideProfile_1_2_3",
+      "jbrand": "9C414BB7D5DCECC4"
+    },
+    "pluginCount": 4,
+    "byBase": {
+      "Owned": {
+        "pluginID": "z.weifeng:Owned",
+        "source": "dpkg_sileo",
+        "ownership": {
+          "sourceType": "dpkg_sileo",
+          "packageID": "z.weifeng",
+          "confidence": "exact_record",
+          "writablePolicy": "read_only"
+        },
+        "installed": true,
+        "configured": true,
+        "loaded": "unknown",
+        "permissionDecision": "undetermined",
+        "validationStatus": "valid",
+        "filterBundles": [
+          "com.example.owned"
+        ]
+      },
+      "FK": {
+        "pluginID": "FK",
+        "source": "filterkit",
+        "ownership": {
+          "sourceType": "filterkit",
+          "packageID": null,
+          "confidence": "exact_record",
+          "writablePolicy": "managed"
+        },
+        "installed": true,
+        "configured": true,
+        "loaded": "unknown",
+        "permissionDecision": "undetermined",
+        "validationStatus": "valid"
+      },
+      "MI": {
+        "pluginID": "MI",
+        "source": "manual",
+        "ownership": {
+          "sourceType": "manual",
+          "packageID": null,
+          "confidence": "exact_record",
+          "writablePolicy": "read_only"
+        },
+        "installed": true,
+        "configured": true,
+        "loaded": "unknown",
+        "permissionDecision": "undetermined",
+        "validationStatus": "valid"
+      },
+      "Unk": {
+        "pluginID": "Unk",
+        "source": "unknown",
+        "ownership": {
+          "sourceType": "unknown",
+          "packageID": null,
+          "confidence": "unknown",
+          "writablePolicy": "read_only"
+        },
+        "installed": true,
+        "configured": true,
+        "loaded": "unknown",
+        "permissionDecision": "undetermined",
+        "validationStatus": "valid"
+      }
+    },
+    "unknownReasons": [],
+    "warningCodes": []
+  },
+  "expectedWarnings": []
+}

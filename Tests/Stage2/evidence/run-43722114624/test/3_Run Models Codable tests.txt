@@ -1,0 +1,79 @@
+﻿2026-11-15T14:03:00.8664110Z ##[group]Run swift test
+2026-11-15T14:03:00.8665150Z [36;1mswift test[0m
+2026-11-15T14:03:00.8710060Z shell: /bin/bash -e {0}
+2026-11-15T14:03:00.8710970Z ##[endgroup]
+2026-11-15T14:03:17.0417950Z warning: '002': found 29 file(s) which are unhandled; explicitly declare them as resources or exclude from the target
+2026-11-15T14:03:17.0419840Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/isolation/1_Set up job.txt
+2026-11-15T14:03:17.0420650Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/environment/system.txt
+2026-11-15T14:03:17.0421480Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/artifact/7_Complete job.txt
+2026-11-15T14:03:17.0422280Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/artifact/2_Checkout.txt
+2026-11-15T14:03:17.0423370Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/isolation/3_Adapter isolation check.txt
+2026-11-15T14:03:17.0424150Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/isolation/6_Post Checkout.txt
+2026-11-15T14:03:17.0425720Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/Package.swift
+2026-11-15T14:03:17.0426440Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/4_environment.txt
+2026-11-15T14:03:17.0427380Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/5_isolation.txt
+2026-11-15T14:03:17.0428080Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/environment/1_Set up job.txt
+2026-11-15T14:03:17.0428860Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/environment/3_Record toolchain versions.txt
+2026-11-15T14:03:17.0429710Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/isolation/system.txt
+2026-11-15T14:03:17.0430340Z     /Users/runner/work/002/002/Tests/Stage2/Stage-2.1-CI-Acceptance.md
+2026-11-15T14:03:17.0430770Z     /Users/runner/work/002/002/Tests/Stage2/2.1-bootstrap-acceptance.md
+2026-11-15T14:03:17.0431290Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/3_build.txt
+2026-11-15T14:03:17.0431910Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/environment/7_Complete job.txt
+2026-11-15T14:03:17.0432560Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/isolation/7_Complete job.txt
+2026-11-15T14:03:17.0433150Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/artifact/system.txt
+2026-11-15T14:03:17.0433980Z     /Users/runner/work/002/002/Tests/Stage2/README.md
+2026-11-15T14:03:17.0434510Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/environment/2_Checkout.txt
+2026-11-15T14:03:17.0435160Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/0_artifact.txt
+2026-11-15T14:03:17.0435870Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/control
+2026-11-15T14:03:17.0436540Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/isolation/2_Checkout.txt
+2026-11-15T14:03:17.0437500Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/artifact/1_Set up job.txt
+2026-11-15T14:03:17.0438420Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/artifact/3_Upload build metadata.txt
+2026-11-15T14:03:17.0439200Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/Makefile
+2026-11-15T14:03:17.0445480Z     /Users/runner/work/002/002/Tests/Stage2/repo-boundary.md
+2026-11-15T14:03:17.0446090Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/artifact/6_Post Checkout.txt
+2026-11-15T14:03:17.0446930Z     /Users/runner/work/002/002/Tests/Stage2/evidence/run-43720018216/environment/6_Post Checkout.txt
+2026-11-15T14:03:17.0447590Z warning: '002': found 1 file(s) which are unhandled; explicitly declare them as resources or exclude from the target
+2026-11-15T14:03:17.0448410Z     /Users/runner/work/002/002/Core/README.md
+2026-11-15T14:03:17.0481590Z Building for debugging...
+2026-11-15T14:03:17.0538790Z [0/9] /Users/runner/work/002/002/.build/arm64-apple-macosx/debug/FilterKitPackageTests.derived/runner.swift
+2026-11-15T14:03:17.0543590Z [0/9] Write sources
+2026-11-15T14:03:17.1826890Z [6/9] Write swift-version-7974D3F7F03D5E95.txt
+2026-11-15T14:03:20.9778550Z [8/13] Compiling Models PluginModels.swift
+2026-11-15T14:03:20.9782960Z [9/13] Compiling Models EnvironmentModels.swift
+2026-11-15T14:03:20.9807600Z [10/13] Compiling Models ModelEnums.swift
+2026-11-15T14:03:20.9808840Z [11/13] Emitting module Models
+2026-11-15T14:03:21.2034130Z [12/14] Compiling Models ReportEnvelope.swift
+2026-11-15T14:03:21.5736380Z [13/19] Compiling Adapters RootHideAdapter.swift
+2026-11-15T14:03:21.7114360Z [14/20] Compiling Adapters ElleKitAdapter.swift
+2026-11-15T14:03:21.7214560Z [15/20] Emitting module Adapters
+2026-11-15T14:03:21.7416360Z [16/20] Compiling Adapters RootlessAdapter.swift
+2026-11-15T14:03:21.9063040Z [17/22] Emitting module Core
+2026-11-15T14:03:21.9075690Z [18/22] Compiling Core CoreServices.swift
+2026-11-15T14:03:32.8527250Z [19/22] Compiling Stage2Tests ModelsCodableTests.swift
+2026-11-15T14:03:32.8640350Z [20/22] Emitting module Stage2Tests
+2026-11-15T14:03:34.1903560Z [21/24] Compiling FilterKitPackageTests runner.swift
+2026-11-15T14:03:34.2005200Z [22/24] Emitting module FilterKitPackageTests
+2026-11-15T14:03:34.2106380Z [22/24] Write Objects.LinkFileList
+2026-11-15T14:03:34.8513100Z [23/24] Linking FilterKitPackageTests
+2026-11-15T14:03:34.8531210Z Build complete! (19.34s)
+2026-11-15T14:03:35.4259380Z Test Suite 'All tests' started at 2026-11-15 14:03:35.359.
+2026-11-15T14:03:35.4260120Z Test Suite 'FilterKitPackageTests.xctest' started at 2026-11-15 14:03:35.360.
+2026-11-15T14:03:35.4264020Z Test Suite 'ModelsCodableTests' started at 2026-11-15 14:03:35.360.
+2026-11-15T14:03:35.4265380Z Test Case '-[Stage2Tests.ModelsCodableTests testDefaultPluginStateIsUnknownAndUndetermined]' started.
+2026-11-15T14:03:35.4266330Z Test Case '-[Stage2Tests.ModelsCodableTests testDefaultPluginStateIsUnknownAndUndetermined]' passed (0.002 seconds).
+2026-11-15T14:03:35.4388880Z Test Case '-[Stage2Tests.ModelsCodableTests testEnvelopeRoundTrip]' started.
+2026-11-15T14:03:35.4390040Z Test Case '-[Stage2Tests.ModelsCodableTests testEnvelopeRoundTrip]' passed (0.001 seconds).
+2026-11-15T14:03:35.4397110Z Test Case '-[Stage2Tests.ModelsCodableTests testSourceTypeRawValues]' started.
+2026-11-15T14:03:35.4398260Z Test Case '-[Stage2Tests.ModelsCodableTests testSourceTypeRawValues]' passed (0.000 seconds).
+2026-11-15T14:03:35.4399240Z Test Case '-[Stage2Tests.ModelsCodableTests testWritablePolicyRawValues]' started.
+2026-11-15T14:03:35.4400040Z Test Case '-[Stage2Tests.ModelsCodableTests testWritablePolicyRawValues]' passed (0.000 seconds).
+2026-11-15T14:03:35.4400710Z Test Suite 'ModelsCodableTests' passed at 2026-11-15 14:03:35.365.
+2026-11-15T14:03:35.4401330Z 	 Executed 4 tests, with 0 failures (0 unexpected) in 0.003 (0.004) seconds
+2026-11-15T14:03:35.4402020Z Test Suite 'FilterKitPackageTests.xctest' passed at 2026-11-15 14:03:35.365.
+2026-11-15T14:03:35.4402680Z 	 Executed 4 tests, with 0 failures (0 unexpected) in 0.003 (0.004) seconds
+2026-11-15T14:03:35.4404320Z Test Suite 'All tests' passed at 2026-11-15 14:03:35.365.
+2026-11-15T14:03:35.4405420Z 	 Executed 4 tests, with 0 failures (0 unexpected) in 0.003 (0.006) seconds
+2026-11-15T14:03:35.4415850Z ◇ Test run started.
+2026-11-15T14:03:35.4417180Z ↳ Testing Library Version: 1902
+2026-11-15T14:03:35.4428180Z ↳ Target Platform: arm64e-apple-macos14.0
+2026-11-15T14:03:35.4429810Z ✔ Test run with 0 tests in 0 suites passed after 0.001 seconds.

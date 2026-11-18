@@ -1,0 +1,14 @@
+{
+  "fixtureId": "S1-02-RH-MULTI-001",
+  "expected": {
+    "jbroot": null,
+    "jbrand": null,
+    "realpath": null,
+    "ambiguous": true,
+    "outcome": "ambiguous",
+    "selectedSource": null,
+    "candidateCount": 2
+  },
+  "expectedWarnings": ["multiple_candidates"],
+  "expectedOutcome": "ambiguous"
+}

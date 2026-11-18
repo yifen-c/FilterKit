@@ -1,0 +1,30 @@
+﻿2026-11-15T14:03:44.0127010Z ##[group]Run actions/upload-artifact@v4
+2026-11-15T14:03:44.0127970Z with:
+2026-11-15T14:03:44.0129040Z   name: filterkit-build-metadata
+2026-11-15T14:03:44.0130130Z   path: Package.swift
+Makefile
+control
+.github/workflows/
+
+2026-11-15T14:03:44.0131230Z   retention-days: 14
+2026-11-15T14:03:44.0132080Z   if-no-files-found: warn
+2026-11-15T14:03:44.0132860Z   compression-level: 6
+2026-11-15T14:03:44.0133650Z   overwrite: false
+2026-11-15T14:03:44.0134450Z   include-hidden-files: false
+2026-11-15T14:03:44.0135600Z ##[endgroup]
+2026-11-15T14:03:44.1889680Z (node:1212) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-15T14:03:44.1892180Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-11-15T14:03:44.1945990Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-15T14:03:44.1954740Z The least common ancestor is /Users/runner/work/002/002. This will be the root directory of the artifact
+2026-11-15T14:03:44.1956840Z With the provided path, there will be 4 files uploaded
+2026-11-15T14:03:44.1959320Z Artifact name is valid!
+2026-11-15T14:03:44.1960320Z Root directory input is valid!
+2026-11-15T14:03:44.5911610Z Beginning upload of artifact content to blob storage
+2026-11-15T14:03:44.6072870Z (node:1212) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-11-15T14:03:44.8839170Z Uploaded bytes 4000
+2026-11-15T14:03:44.9595620Z Finished uploading artifact content to blob storage!
+2026-11-15T14:03:44.9601900Z SHA256 digest of uploaded artifact zip is e5aadd4ceb59aa44a3e37380ef33ac014bb9913a5aedaad45a50cc29aaabe7cb
+2026-11-15T14:03:44.9602480Z Finalizing artifact upload
+2026-11-15T14:03:45.3567810Z Artifact filterkit-build-metadata.zip successfully finalized. Artifact ID 14164612683
+2026-11-15T14:03:45.3572420Z Artifact filterkit-build-metadata has been successfully uploaded! Final size is 4000 bytes. Artifact ID is 14164612683
+2026-11-15T14:03:45.3590640Z Artifact download URL: https://github.com/yi-fen/002/actions/runs/43722114624/artifacts/14164612683

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "release": {
+    "version": "0.1.18",
+    "build": 118,
+    "helperBuildID": "FKH-0118",
+    "channel": "development"
+  },
+  "trust": {
+    "policyVersion": "1.1",
+    "productionAnchorsConfigured": false,
+    "testAnchorsCanAuthorizeProduction": false,
+    "signatureVerifierImplemented": false
+  },
+  "peerCredential": {
+    "supportedSources": [
+      "unsupported",
+      "mock",
+      "self_reported"
+    ],
+    "systemCollectorImplemented": false,
+    "mockCanVerify": false,
+    "selfReportedCanVerify": false
+  },
+  "transport": {
+    "supportedEvidenceSources": [
+      "unsupported",
+      "mock"
+    ],
+    "realTransportImplemented": false,
+    "endpointVerificationImplemented": false,
+    "lifecycleVerificationImplemented": false,
+    "preferredTransport": "unix_domain_socket",
+    "clientAdapterImplemented": true,
+    "helperListenerImplemented": true,
+    "peerUIDCheckImplemented": true,
+    "framing": "uint32_be_length_prefix",
+    "maximumFrameBytes": 1048576,
+    "socketEndpointConfigured": false,
+    "listenerAutomaticallyStarted": false,
+    "transportCodeImplemented": true
+  },
+  "readiness": {
+    "realIPCReady": false,
+    "readOnlyOperationsAllowed": false,
+    "writeOperationsAllowed": false
+  },
+  "safety": {
+    "helperTargetPresent": false,
+    "daemonDeploymentAllowed": false,
+    "privilegedLaunchAllowed": false,
+    "pluginEnableDisableAllowed": false,
+    "injectorConfigurationWriteAllowed": false,
+    "arbitraryInjectionAllowed": false
+  }
+}

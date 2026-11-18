@@ -1,0 +1,12 @@
+{
+  "fixtureId": "S1-05-HIDDEN-001",
+  "fixtureKind": "pair-hidden",
+  "upstream": { "route": "roothide", "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/", "inventoryStatus": "enumerated" },
+  "inventory": {
+    "enumerable": true,
+    "items": [
+      { "name": ".hidden.dylib", "kind": "dylib", "isSymlink": false, "hidden": true, "entryStatus": "ok" },
+      { "name": ".hidden.plist", "kind": "plist", "isSymlink": false, "hidden": true, "entryStatus": "ok" }
+    ]
+  }
+}

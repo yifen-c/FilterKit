@@ -1,0 +1,34 @@
+{
+  "fixtureId": "S1-08-EXPORT-002",
+  "expected": {
+    "profile": {
+      "id": "RootlessProfile",
+      "route": "rootless"
+    },
+    "environment": {
+      "jailbreakType": "rootless",
+      "profileId": "RootlessProfile"
+    },
+    "pluginCount": 1,
+    "byBase": {
+      "RL": {
+        "pluginID": "com.rl:RL",
+        "source": "dpkg_sileo",
+        "ownership": {
+          "sourceType": "dpkg_sileo",
+          "packageID": "com.rl",
+          "confidence": "exact_record",
+          "writablePolicy": "read_only"
+        },
+        "installed": true,
+        "configured": true,
+        "loaded": "unknown",
+        "permissionDecision": "undetermined",
+        "validationStatus": "valid"
+      }
+    },
+    "unknownReasons": [],
+    "warningCodes": []
+  },
+  "expectedWarnings": []
+}

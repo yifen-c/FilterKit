@@ -1,0 +1,29 @@
+{
+  "fixtureId": "S1-08-EXPORT-006",
+  "expected": {
+    "profile": {
+      "id": "unknown-profile",
+      "route": "roothide"
+    },
+    "environment": {
+      "profileId": "unknown-profile"
+    },
+    "pluginCount": 1,
+    "byBase": {
+      "P": {
+        "source": "unknown",
+        "installed": true,
+        "configured": true,
+        "loaded": "unknown",
+        "permissionDecision": "undetermined"
+      }
+    },
+    "unknownReasons": [],
+    "warningCodes": [
+      "profile_unknown"
+    ]
+  },
+  "expectedWarnings": [
+    "profile_unknown"
+  ]
+}

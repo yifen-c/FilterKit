@@ -1,0 +1,20 @@
+{
+  "upstream": {
+    "route": "roothide",
+    "sourceDirectory": null,
+    "inventoryStatus": "unresolved"
+  },
+  "dpkg": {
+    "dbStatus": "ok",
+    "packages": []
+  },
+  "markers": {
+    "filterkit": {
+      "byBase": {}
+    },
+    "manual": {
+      "byBase": {}
+    }
+  },
+  "entries": []
+}

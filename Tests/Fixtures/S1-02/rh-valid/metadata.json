@@ -1,0 +1,14 @@
+{
+  "fixtureId": "S1-02-RH-VALID-001",
+  "expected": {
+    "jbroot": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+    "jbrand": "9C414BB7D5DCECC4",
+    "realpath": "/private/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4",
+    "ambiguous": false,
+    "outcome": "resolved",
+    "selectedSource": "scan",
+    "candidateCount": 1
+  },
+  "expectedWarnings": [],
+  "expectedOutcome": "resolved"
+}

@@ -1,0 +1,48 @@
+﻿2026-11-15T14:58:46.1780970Z ##[group]Run swift test
+2026-11-15T14:58:46.1781470Z [36;1mswift test[0m
+2026-11-15T14:58:46.1847580Z shell: /bin/bash -e {0}
+2026-11-15T14:58:46.1848220Z ##[endgroup]
+2026-11-15T14:59:10.5824130Z Building for debugging...
+2026-11-15T14:59:10.5956480Z [0/9] Write sources
+2026-11-15T14:59:10.6005460Z [3/9] /Users/runner/work/003/003/.build/arm64-apple-macosx/debug/FilterKitPackageTests.derived/runner.swift
+2026-11-15T14:59:10.6034430Z [5/9] Write sources
+2026-11-15T14:59:10.7759230Z [6/9] Write swift-version-7974D3F7F03D5E95.txt
+2026-11-15T14:59:19.1373210Z [8/13] Emitting module Models
+2026-11-15T14:59:19.1374700Z [9/13] Compiling Models EnvironmentModels.swift
+2026-11-15T14:59:19.1375050Z [10/13] Compiling Models ModelEnums.swift
+2026-11-15T14:59:19.1375500Z [11/13] Compiling Models PluginModels.swift
+2026-11-15T14:59:19.4399060Z [12/14] Compiling Models ReportEnvelope.swift
+2026-11-15T14:59:20.0941220Z [13/19] Emitting module Adapters
+2026-11-15T14:59:20.1043340Z [14/19] Compiling Adapters RootHideAdapter.swift
+2026-11-15T14:59:20.1155850Z [15/19] Compiling Adapters ElleKitAdapter.swift
+2026-11-15T14:59:20.2822200Z [16/20] Compiling Adapters RootlessAdapter.swift
+2026-11-15T14:59:20.5787230Z [17/22] Emitting module Core
+2026-11-15T14:59:20.5889040Z [18/22] Compiling Core CoreServices.swift
+2026-11-15T14:59:37.6906820Z [19/22] Emitting module Stage2Tests
+2026-11-15T14:59:37.6908380Z [20/22] Compiling Stage2Tests ModelsCodableTests.swift
+2026-11-15T14:59:39.4240610Z [21/24] Compiling FilterKitPackageTests runner.swift
+2026-11-15T14:59:39.4301250Z [22/24] Emitting module FilterKitPackageTests
+2026-11-15T14:59:39.4326920Z [22/24] Write Objects.LinkFileList
+2026-11-15T14:59:40.6033290Z [23/24] Linking FilterKitPackageTests
+2026-11-15T14:59:40.6063650Z Build complete! (32.16s)
+2026-11-15T14:59:41.7057110Z Test Suite 'All tests' started at 2026-11-15 14:59:41.569.
+2026-11-15T14:59:41.7069240Z Test Suite 'FilterKitPackageTests.xctest' started at 2026-11-15 14:59:41.573.
+2026-11-15T14:59:41.7070940Z Test Suite 'ModelsCodableTests' started at 2026-11-15 14:59:41.573.
+2026-11-15T14:59:41.7072710Z Test Case '-[Stage2Tests.ModelsCodableTests testDefaultPluginStateIsUnknownAndUndetermined]' started.
+2026-11-15T14:59:41.7075310Z Test Case '-[Stage2Tests.ModelsCodableTests testDefaultPluginStateIsUnknownAndUndetermined]' passed (0.004 seconds).
+2026-11-15T14:59:41.7077580Z Test Case '-[Stage2Tests.ModelsCodableTests testEnvelopeRoundTrip]' started.
+2026-11-15T14:59:41.7079520Z Test Case '-[Stage2Tests.ModelsCodableTests testEnvelopeRoundTrip]' passed (0.002 seconds).
+2026-11-15T14:59:41.7081930Z Test Case '-[Stage2Tests.ModelsCodableTests testSourceTypeRawValues]' started.
+2026-11-15T14:59:41.7083450Z Test Case '-[Stage2Tests.ModelsCodableTests testSourceTypeRawValues]' passed (0.001 seconds).
+2026-11-15T14:59:41.7087370Z Test Case '-[Stage2Tests.ModelsCodableTests testWritablePolicyRawValues]' started.
+2026-11-15T14:59:41.7091010Z Test Case '-[Stage2Tests.ModelsCodableTests testWritablePolicyRawValues]' passed (0.001 seconds).
+2026-11-15T14:59:41.7091810Z Test Suite 'ModelsCodableTests' passed at 2026-11-15 14:59:41.582.
+2026-11-15T14:59:41.7092460Z 	 Executed 4 tests, with 0 failures (0 unexpected) in 0.007 (0.009) seconds
+2026-11-15T14:59:41.7092960Z Test Suite 'FilterKitPackageTests.xctest' passed at 2026-11-15 14:59:41.582.
+2026-11-15T14:59:41.7093410Z 	 Executed 4 tests, with 0 failures (0 unexpected) in 0.007 (0.009) seconds
+2026-11-15T14:59:41.7093850Z Test Suite 'All tests' passed at 2026-11-15 14:59:41.582.
+2026-11-15T14:59:41.7094310Z 	 Executed 4 tests, with 0 failures (0 unexpected) in 0.007 (0.014) seconds
+2026-11-15T14:59:41.7099160Z ◇ Test run started.
+2026-11-15T14:59:41.7099790Z ↳ Testing Library Version: 1902
+2026-11-15T14:59:41.7100350Z ↳ Target Platform: arm64e-apple-macos14.0
+2026-11-15T14:59:41.7100910Z ✔ Test run with 0 tests in 0 suites passed after 0.001 seconds.

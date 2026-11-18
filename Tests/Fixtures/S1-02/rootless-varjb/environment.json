@@ -1,0 +1,17 @@
+{
+  "fixtureId": "S1-02-ROOTLESS-001",
+  "fixtureKind": "rootless-varjb",
+  "signals": {
+    "candidates": [
+      {
+        "root": "/var/jb",
+        "source": "rootless",
+        "exists": true,
+        "structureMatch": true,
+        "readable": true,
+        "realpath": "/var/jb",
+        "symlinkState": "none"
+      }
+    ]
+  }
+}

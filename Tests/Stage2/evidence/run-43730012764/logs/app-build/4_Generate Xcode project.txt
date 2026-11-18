@@ -1,0 +1,6 @@
+﻿2026-11-15T15:29:06.8132650Z ##[group]Run xcodegen generate
+2026-11-15T15:29:06.8132920Z [36;1mxcodegen generate[0m
+2026-11-15T15:29:06.8159950Z shell: /bin/bash -e {0}
+2026-11-15T15:29:06.8160130Z ##[endgroup]
+2026-11-15T15:29:06.8469920Z Parsing project spec failed: Decoding failed at "path": Nothing found
+2026-11-15T15:29:06.8482400Z ##[error]Process completed with exit code 1.

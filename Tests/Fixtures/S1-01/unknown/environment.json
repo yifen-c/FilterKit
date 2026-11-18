@@ -1,0 +1,12 @@
+{
+  "fixtureId": "S1-01-UNKNOWN-001",
+  "fixtureKind": "unknown",
+  "signals": {
+    "jailbreakType": { "value": null, "source": "fixture", "present": false },
+    "architecture": { "value": "unknown", "source": "fixture", "present": false },
+    "iosVersion": { "value": "unknown", "source": "fixture", "present": false },
+    "bootstrap": { "name": null, "version": null, "source": "fixture", "present": false },
+    "ellekitImplementation": { "value": "unknown", "source": "fixture", "present": false },
+    "ellekitVersion": { "value": null, "source": "fixture", "present": false, "readability": "absent" }
+  }
+}

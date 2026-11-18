@@ -1,0 +1,14 @@
+{
+  "fixtureId": "S1-05-CROSS-PATH-001",
+  "fixtureKind": "pair-cross-path",
+  "upstream": { "route": "roothide", "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/", "inventoryStatus": "enumerated" },
+  "inventory": {
+    "enumerable": true,
+    "items": [
+      { "name": "Shared.dylib", "kind": "dylib", "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Shared.dylib", "isSymlink": false, "hidden": false, "entryStatus": "ok", "foreign": false },
+      { "name": "Shared.plist", "kind": "plist", "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Shared.plist", "isSymlink": false, "hidden": false, "entryStatus": "ok", "foreign": false },
+      { "name": "Shared.dylib", "kind": "dylib", "path": "/var/jb/usr/lib/TweakInject/Shared.dylib", "isSymlink": false, "hidden": false, "entryStatus": "ok", "foreign": true },
+      { "name": "Shared.plist", "kind": "plist", "path": "/var/jb/usr/lib/TweakInject/Shared.plist", "isSymlink": false, "hidden": false, "entryStatus": "ok", "foreign": true }
+    ]
+  }
+}

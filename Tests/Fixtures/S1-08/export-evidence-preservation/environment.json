@@ -1,0 +1,133 @@
+{
+  "upstream": {
+    "s101": {
+      "jailbreakType": "roothide",
+      "ellekitVersionStatus": "recognized",
+      "adapterProfile": "RootHideProfile_1_2_3",
+      "evidence": {
+        "level": "partial"
+      },
+      "warnings": []
+    },
+    "s102": {
+      "candidates": [],
+      "warnings": []
+    },
+    "s103": {
+      "route": "roothide",
+      "tweakInject": {
+        "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/"
+      },
+      "dynamicLibraries": null,
+      "warnings": []
+    },
+    "s104": {
+      "route": "roothide",
+      "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+      "items": [
+        {
+          "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Ev.dylib",
+          "readable": true
+        }
+      ],
+      "unknownItems": [],
+      "warnings": []
+    },
+    "s105": {
+      "route": "roothide",
+      "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+      "pairs": [
+        {
+          "base": "Ev",
+          "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Ev.dylib",
+          "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Ev.plist"
+        }
+      ],
+      "missingPlist": [],
+      "orphanPlist": [],
+      "ambiguous": [],
+      "uncertain": [],
+      "warnings": []
+    },
+    "s106": {
+      "route": "roothide",
+      "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+      "parsed": [
+        {
+          "base": "Ev",
+          "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Ev.dylib",
+          "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Ev.plist",
+          "parseStatus": "valid",
+          "reason": null,
+          "isTweakManager": false,
+          "filter": {
+            "bundles": [
+              "com.example.ev"
+            ],
+            "classes": [],
+            "executables": [],
+            "coreFoundationVersion": null,
+            "otherKeys": [
+              "Classes",
+              "CustomKey"
+            ]
+          },
+          "skippedFields": [
+            {
+              "key": "Classes",
+              "reason": "codable_type"
+            }
+          ],
+          "validation": {
+            "status": "valid",
+            "warnings": []
+          }
+        }
+      ],
+      "notParsed": [],
+      "warnings": []
+    },
+    "s107": {
+      "route": "roothide",
+      "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+      "unresolved": [],
+      "warnings": [],
+      "sources": [
+        {
+          "base": "Ev",
+          "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Ev.dylib",
+          "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Ev.plist",
+          "sourceType": "dpkg_sileo",
+          "packageID": "pkg.ev",
+          "packageVersion": "1.0",
+          "architecture": "iphoneos-arm64e",
+          "listPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/var/lib/dpkg/info/pkg.ev.list",
+          "fileOwnership": {
+            "dylib": {
+              "owners": [
+                "pkg.ev"
+              ],
+              "match": "exact"
+            },
+            "plist": {
+              "owners": [
+                "pkg.ev"
+              ],
+              "match": "exact"
+            }
+          },
+          "confidence": "exact_record",
+          "writablePolicy": "read_only",
+          "markers": {
+            "filterkit": "absent",
+            "manual": "absent"
+          },
+          "conflicts": [],
+          "notes": [
+            "mixed_package_ownership"
+          ]
+        }
+      ]
+    }
+  }
+}

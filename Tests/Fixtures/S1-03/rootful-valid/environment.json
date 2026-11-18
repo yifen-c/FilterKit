@@ -1,0 +1,21 @@
+{
+  "fixtureId": "S1-03-ROOTFUL-001",
+  "fixtureKind": "rootful-valid",
+  "upstream": { "route": "rootful", "jbroot": null },
+  "fs": {
+    "tweakInject": {
+      "exists": true,
+      "readable": true,
+      "enumerable": true,
+      "realpath": "/usr/lib/TweakInject/",
+      "structureMatch": true
+    },
+    "dynamicLibraries": {
+      "exists": true,
+      "isSymlink": true,
+      "symlinkTarget": "/usr/lib/TweakInject/",
+      "realpath": "/usr/lib/TweakInject/",
+      "symlinkState": "resolved"
+    }
+  }
+}

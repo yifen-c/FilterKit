@@ -1,0 +1,29 @@
+{
+  "fixtureId": "S1-06-PARSE-EXECUTABLES-WRONG",
+  "expected": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "status": "partial",
+    "counts": {
+      "valid": 0,
+      "parse_failed": 0,
+      "type_mismatch": 1,
+      "read_failed": 0,
+      "not_parsed": 0
+    },
+    "statusByBase": {
+      "BadExec": "type_mismatch"
+    },
+    "filterByBase": {},
+    "otherKeysByBase": {},
+    "skippedFieldsByBase": {
+      "BadExec": [
+        "Executables"
+      ]
+    }
+  },
+  "expectedWarnings": [
+    "field_type"
+  ],
+  "expectedStatus": "partial"
+}

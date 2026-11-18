@@ -1,0 +1,16 @@
+{
+  "fixtureId": "S1-03-RH-VALID-001",
+  "expected": {
+    "route": "roothide",
+    "tiPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "tiExists": true,
+    "tiReadable": true,
+    "tiEnumerable": true,
+    "tiStatus": "confirmed",
+    "dlState": "resolved",
+    "dlTargetMatch": true,
+    "outcome": "resolved"
+  },
+  "expectedWarnings": [],
+  "expectedOutcome": "resolved"
+}

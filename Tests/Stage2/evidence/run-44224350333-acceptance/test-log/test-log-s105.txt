@@ -1,0 +1,47 @@
+[0/1] Planning build
+Building for debugging...
+[0/2] Write swift-version-7974D3F7F03D5E95.txt
+Build complete! (0.42s)
+Test Suite 'Selected tests' started at 2026-11-18 02:37:40.906.
+Test Suite 'FilterKitPackageTests.xctest' started at 2026-11-18 02:37:40.908.
+Test Suite 'PluginPairingS105FixtureTests' started at 2026-11-18 02:37:40.908.
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR001PairValid]' started.
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR001PairValid]' passed (0.002 seconds).
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR002MissingPlist]' started.
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR002MissingPlist]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR003OrphanPlist]' started.
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR003OrphanPlist]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR004Multi]' started.
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR004Multi]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR005CaseMismatch]' started.
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR005CaseMismatch]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR006CrossPath]' started.
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR006CrossPath]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR006SyntheticRouteIsolation]' started.
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR006SyntheticRouteIsolation]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR007Hidden]' started.
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR007Hidden]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR008Symlink]' started.
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR008Symlink]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR009OtherExt]' started.
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR009OtherExt]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR010Duplicate]' started.
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR010Duplicate]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR011AccessDenied]' started.
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR011AccessDenied]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR012RouteGuard]' started.
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR012RouteGuard]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR013DeterminismFixture]' started.
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR013DeterminismFixture]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR013SyntheticDeterminism]' started.
+Test Case '-[Stage2Tests.PluginPairingS105FixtureTests testPAIR013SyntheticDeterminism]' passed (0.000 seconds).
+Test Suite 'PluginPairingS105FixtureTests' passed at 2026-11-18 02:37:40.919.
+	 Executed 15 tests, with 0 failures (0 unexpected) in 0.009 (0.011) seconds
+Test Suite 'FilterKitPackageTests.xctest' passed at 2026-11-18 02:37:40.919.
+	 Executed 15 tests, with 0 failures (0 unexpected) in 0.009 (0.011) seconds
+Test Suite 'Selected tests' passed at 2026-11-18 02:37:40.919.
+	 Executed 15 tests, with 0 failures (0 unexpected) in 0.009 (0.013) seconds
+◇ Test run started.
+↳ Testing Library Version: 1902
+↳ Target Platform: arm64e-apple-macos14.0
+✔ Test run with 0 tests in 0 suites passed after 0.001 seconds.

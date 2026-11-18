@@ -1,0 +1,9 @@
+Package: com.filterkit.manager
+Name: FilterKit
+Version: 0.1.18
+Architecture: iphoneos-arm64
+Description: FilterKit 0.1.18 Unix Domain Socket IPC：新增带 getpeereid Peer UID 校验、长度前缀帧、超时与 1 MiB 上限的真实 Transport 客户端/Helper 侧 Listener；Listener 需在独立 Helper 进程启动，当前未创建 Helper Target/Daemon。
+Maintainer: FilterKit
+Author: FilterKit
+Section: Utilities
+Depends: firmware (>= 15.0)

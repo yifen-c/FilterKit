@@ -1,0 +1,15 @@
+﻿2026-11-15T14:59:41.7352270Z ##[group]Run actions/upload-artifact@v7
+2026-11-15T14:59:41.7352890Z with:
+2026-11-15T14:59:41.7353140Z   name: filterkit-test-log
+2026-11-15T14:59:41.7353510Z   path: .build/*.log
+.build/release/*.log
+
+2026-11-15T14:59:41.7353800Z   retention-days: 14
+2026-11-15T14:59:41.7354120Z   if-no-files-found: warn
+2026-11-15T14:59:41.7354440Z   compression-level: 6
+2026-11-15T14:59:41.7354670Z   overwrite: false
+2026-11-15T14:59:41.7355000Z   include-hidden-files: false
+2026-11-15T14:59:41.7355250Z   archive: true
+2026-11-15T14:59:41.7355540Z ##[endgroup]
+2026-11-15T14:59:42.4383370Z ##[warning]No files were found with the provided path: .build/*.log
+.build/release/*.log. No artifacts will be uploaded.

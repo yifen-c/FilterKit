@@ -1,0 +1,14 @@
+{
+  "fixtureId": "S1-02-ROOTFUL-001",
+  "expected": {
+    "jbroot": null,
+    "jbrand": null,
+    "realpath": null,
+    "ambiguous": false,
+    "outcome": "cross_route_only",
+    "selectedSource": null,
+    "candidateCount": 1
+  },
+  "expectedWarnings": ["rootful_route_not_jbroot"],
+  "expectedOutcome": "cross_route_only"
+}

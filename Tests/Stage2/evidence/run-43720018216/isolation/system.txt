@@ -1,0 +1,8 @@
+2026-11-15T13:38:06.3240000Z Evaluating isolation.if
+2026-11-15T13:38:06.3240000Z Evaluating: success()
+2026-11-15T13:38:06.3240000Z Result: true
+2026-11-15T13:38:06.3250000Z Requested labels: macos-latest
+2026-11-15T13:38:06.3250000Z Job defined at: yi-fen/001/.github/workflows/filterkit-build.yml@refs/heads/main
+2026-11-15T13:38:06.3250000Z Waiting for a runner to pick up this job...
+2026-11-15T13:38:06.7330000Z Job is waiting for a hosted runner to come online.
+2026-11-15T13:38:06.7340000Z Job is about to start running on the hosted runner: GitHub Actions 1000000614

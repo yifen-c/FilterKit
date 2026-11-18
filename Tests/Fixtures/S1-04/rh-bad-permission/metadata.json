@@ -1,0 +1,14 @@
+{
+  "fixtureId": "S1-04-BAD-PERM-001",
+  "expected": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "status": "partial",
+    "counts": { "dylib": 2, "plist": 0, "directory": 0, "symlink": 0, "other": 0 },
+    "itemCount": 2,
+    "unknownCount": 0,
+    "names": ["Good.dylib", "Locked.dylib"]
+  },
+  "expectedWarnings": ["partial_enumeration"],
+  "expectedStatus": "partial"
+}

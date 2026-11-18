@@ -1,0 +1,39 @@
+{
+  "fixtureId": "S1-06-PARSE-ROOTLESS-MODEL",
+  "expected": {
+    "route": "rootless",
+    "sourceDirectory": "/var/jb/usr/lib/TweakInject/",
+    "status": "enumerated",
+    "counts": {
+      "valid": 1,
+      "parse_failed": 0,
+      "type_mismatch": 0,
+      "read_failed": 0,
+      "not_parsed": 0
+    },
+    "statusByBase": {
+      "RL": "valid"
+    },
+    "filterByBase": {
+      "RL": {
+        "bundles": [
+          "com.example.app"
+        ],
+        "classes": [],
+        "executables": [
+          "rlapp"
+        ]
+      }
+    },
+    "otherKeysByBase": {
+      "RL": [
+        "Classes",
+        "CoreFoundationVersion",
+        "IsTweakManager"
+      ]
+    },
+    "skippedFieldsByBase": {}
+  },
+  "expectedWarnings": [],
+  "expectedStatus": "enumerated"
+}

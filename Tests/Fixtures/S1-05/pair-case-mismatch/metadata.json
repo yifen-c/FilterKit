@@ -1,0 +1,14 @@
+{
+  "fixtureId": "S1-05-CASE-MISMATCH-001",
+  "expected": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "status": "enumerated",
+    "counts": { "paired": 0, "missing_plist": 1, "orphan_plist": 1, "ambiguous": 0, "uncertain": 0 },
+    "pairedBases": [],
+    "missingBases": ["Example"],
+    "orphanNames": ["example.plist"]
+  },
+  "expectedWarnings": [],
+  "expectedStatus": "enumerated"
+}

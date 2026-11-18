@@ -1,0 +1,29 @@
+﻿2026-11-16T11:34:42.3010850Z ##[group]Run actions/upload-artifact@v7
+2026-11-16T11:34:42.3011820Z with:
+2026-11-16T11:34:42.3012150Z   name: filterkit-app-build
+2026-11-16T11:34:42.3012990Z   path: build/app-xcodebuild.log
+build/sim-launch.log
+build/dashboard.png
+build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app
+
+2026-11-16T11:34:42.3013700Z   retention-days: 14
+2026-11-16T11:34:42.3014290Z   if-no-files-found: warn
+2026-11-16T11:34:42.3014850Z   compression-level: 6
+2026-11-16T11:34:42.3019930Z   overwrite: false
+2026-11-16T11:34:42.3020440Z   include-hidden-files: false
+2026-11-16T11:34:42.3020770Z   archive: true
+2026-11-16T11:34:42.3798590Z ##[endgroup]
+2026-11-16T11:34:46.1889620Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-16T11:34:46.1892920Z The least common ancestor is /Users/runner/work/FilterKit/FilterKit/build. This will be the root directory of the artifact
+2026-11-16T11:34:46.2146820Z With the provided path, there will be 9 files uploaded
+2026-11-16T11:34:46.2235440Z Artifact name is valid!
+2026-11-16T11:34:46.2323100Z Root directory input is valid!
+2026-11-16T11:34:46.6236720Z Uploading artifact: filterkit-app-build.zip
+2026-11-16T11:34:46.6238250Z Beginning upload of artifact content to blob storage
+2026-11-16T11:34:47.9913060Z Uploaded bytes 1210287
+2026-11-16T11:34:48.0753250Z Finished uploading artifact content to blob storage!
+2026-11-16T11:34:48.0870060Z SHA256 digest of uploaded artifact is c030e51f05b60838d2255320ddb7246a98925c972779554f79f483a687850790
+2026-11-16T11:34:48.0877750Z Finalizing artifact upload
+2026-11-16T11:34:48.9102190Z Artifact filterkit-app-build successfully finalized. Artifact ID 14222157455
+2026-11-16T11:34:49.0380470Z Artifact filterkit-app-build has been successfully uploaded! Final size is 1210287 bytes. Artifact ID is 14222157455
+2026-11-16T11:34:49.0515290Z Artifact download URL: https://github.com/yi-fen/FilterKit/actions/runs/43857670397/artifacts/14222157455

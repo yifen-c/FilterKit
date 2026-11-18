@@ -1,0 +1,105 @@
+﻿2026-11-18T16:14:30.9607710Z ##[debug]Evaluating condition for step: 'Post Checkout'
+2026-11-18T16:14:30.9651920Z ##[debug]Evaluating: always()
+2026-11-18T16:14:30.9653050Z ##[debug]Evaluating always:
+2026-11-18T16:14:30.9657720Z ##[debug]=> true
+2026-11-18T16:14:30.9659410Z ##[debug]Result: true
+2026-11-18T16:14:30.9661220Z ##[debug]Starting: Post Checkout
+2026-11-18T16:14:30.9788840Z ##[debug]Loading inputs
+2026-11-18T16:14:30.9790850Z ##[debug]Evaluating: github.repository
+2026-11-18T16:14:30.9791260Z ##[debug]Evaluating Index:
+2026-11-18T16:14:30.9791570Z ##[debug]..Evaluating github:
+2026-11-18T16:14:30.9791870Z ##[debug]..=> Object
+2026-11-18T16:14:30.9792060Z ##[debug]..Evaluating String:
+2026-11-18T16:14:30.9792390Z ##[debug]..=> 'repository'
+2026-11-18T16:14:30.9792770Z ##[debug]=> 'yi-fen/FilterKit'
+2026-11-18T16:14:30.9793000Z ##[debug]Result: 'yi-fen/FilterKit'
+2026-11-18T16:14:30.9794730Z ##[debug]Evaluating: github.token
+2026-11-18T16:14:30.9795000Z ##[debug]Evaluating Index:
+2026-11-18T16:14:30.9795290Z ##[debug]..Evaluating github:
+2026-11-18T16:14:30.9795710Z ##[debug]..=> Object
+2026-11-18T16:14:30.9795950Z ##[debug]..Evaluating String:
+2026-11-18T16:14:30.9796150Z ##[debug]..=> 'token'
+2026-11-18T16:14:30.9798340Z ##[debug]=> '***'
+2026-11-18T16:14:30.9800380Z ##[debug]Result: '***'
+2026-11-18T16:14:30.9813830Z ##[debug]Loading env
+2026-11-18T16:14:30.9819190Z Post job cleanup.
+2026-11-18T16:14:31.1376750Z ##[debug]Getting git version
+2026-11-18T16:14:31.1397910Z [command]/opt/homebrew/bin/git version
+2026-11-18T16:14:31.1507780Z git version 2.56.1
+2026-11-18T16:14:31.1518400Z ##[debug]0
+2026-11-18T16:14:31.1519310Z ##[debug]git version 2.56.1
+2026-11-18T16:14:31.1519950Z ##[debug]
+2026-11-18T16:14:31.1521700Z ##[debug]Set git useragent to: git/2.56.1 (github-actions-checkout) actions_orchestration_id/891d921e-cdc0-821e-a24c-cb0c86c13f82.artifact.__default
+2026-11-18T16:14:31.1523510Z ::add-mask::***
+2026-11-18T16:14:31.1531120Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/9b7c2d60-0a66-411b-9c9b-be1539150909/.gitconfig'
+2026-11-18T16:14:31.1542010Z Temporarily overriding HOME='/Users/runner/work/_temp/9b7c2d60-0a66-411b-9c9b-be1539150909' before making global git config changes
+2026-11-18T16:14:31.1544250Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-18T16:14:31.1546660Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/FilterKit/FilterKit
+2026-11-18T16:14:31.1625690Z ##[debug]0
+2026-11-18T16:14:31.1626520Z ##[debug]
+2026-11-18T16:14:31.1627030Z Removing SSH command configuration
+2026-11-18T16:14:31.1631230Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-18T16:14:31.1710990Z ##[debug]1
+2026-11-18T16:14:31.1712340Z ##[debug]
+2026-11-18T16:14:31.1716900Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-18T16:14:31.3392190Z ##[debug]0
+2026-11-18T16:14:31.3494270Z ##[debug]
+2026-11-18T16:14:31.3595640Z Removing HTTP extra header
+2026-11-18T16:14:31.3689040Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-18T16:14:31.3733010Z ##[debug]1
+2026-11-18T16:14:31.3789410Z ##[debug]
+2026-11-18T16:14:31.3797490Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-18T16:14:31.5295740Z ##[debug]0
+2026-11-18T16:14:31.5398860Z ##[debug]
+2026-11-18T16:14:31.5618480Z Removing includeIf entries pointing to credentials config files
+2026-11-18T16:14:31.5620340Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-18T16:14:31.5722170Z includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git.path
+2026-11-18T16:14:31.5824330Z includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git/worktrees/*.path
+2026-11-18T16:14:31.5926680Z includeif.gitdir:/github/workspace/.git.path
+2026-11-18T16:14:31.6027350Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-18T16:14:31.6129940Z ##[debug]0
+2026-11-18T16:14:31.6234400Z ##[debug]includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git.path
+2026-11-18T16:14:31.6236080Z ##[debug]includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git/worktrees/*.path
+2026-11-18T16:14:31.6237420Z ##[debug]includeif.gitdir:/github/workspace/.git.path
+2026-11-18T16:14:31.6238560Z ##[debug]includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-18T16:14:31.6239660Z ##[debug]
+2026-11-18T16:14:31.6356110Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git.path
+2026-11-18T16:14:31.6457890Z /Users/runner/work/_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:31.6464510Z ##[debug]0
+2026-11-18T16:14:31.6467050Z ##[debug]/Users/runner/work/_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:31.6468350Z ##[debug]
+2026-11-18T16:14:31.6491690Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git.path /Users/runner/work/_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:31.6495160Z ##[debug]0
+2026-11-18T16:14:31.6496960Z ##[debug]
+2026-11-18T16:14:31.6497750Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git/worktrees/*.path
+2026-11-18T16:14:31.6499560Z /Users/runner/work/_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:31.6501410Z ##[debug]0
+2026-11-18T16:14:31.6503240Z ##[debug]/Users/runner/work/_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:31.6504290Z ##[debug]
+2026-11-18T16:14:31.6506570Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git/worktrees/*.path /Users/runner/work/_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:31.6509510Z ##[debug]0
+2026-11-18T16:14:31.6510910Z ##[debug]
+2026-11-18T16:14:31.6512160Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-18T16:14:31.6514070Z /github/runner_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:31.6515660Z ##[debug]0
+2026-11-18T16:14:31.6517170Z ##[debug]/github/runner_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:31.6518120Z ##[debug]
+2026-11-18T16:14:31.6519920Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:31.6618560Z ##[debug]0
+2026-11-18T16:14:31.6619630Z ##[debug]
+2026-11-18T16:14:31.6622460Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-18T16:14:31.6631330Z /github/runner_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:31.6633370Z ##[debug]0
+2026-11-18T16:14:31.6635070Z ##[debug]/github/runner_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:31.6636040Z ##[debug]
+2026-11-18T16:14:31.6637990Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config
+2026-11-18T16:14:31.6640340Z ##[debug]0
+2026-11-18T16:14:31.6641340Z ##[debug]
+2026-11-18T16:14:31.6642800Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-18T16:14:31.8905290Z ##[debug]0
+2026-11-18T16:14:31.8981250Z ##[debug]
+2026-11-18T16:14:31.8985470Z Removing credentials config '/Users/runner/work/_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config'
+2026-11-18T16:14:31.8987090Z ##[debug]Skipping removal of credentials config '/github/runner_temp/git-credentials-faaa710a-b1f6-4a5b-8469-92ac0f73713d.config' - not under RUNNER_TEMP
+2026-11-18T16:14:31.8988510Z ##[debug]Unsetting HOME override
+2026-11-18T16:14:31.8993570Z ##[debug]Node Action run completed with exit code 0
+2026-11-18T16:14:31.8998040Z ##[debug]Finishing: Post Checkout

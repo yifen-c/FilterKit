@@ -1,0 +1,17 @@
+{
+  "fixtureId": "S1-06-ROUTE-GUARD",
+  "fixtureKind": "route-guard",
+  "upstream": {
+    "route": "roothide",
+    "sourceDirectory": null,
+    "inventoryStatus": "unresolved"
+  },
+  "pairing": {
+    "pairs": [],
+    "missingPlist": [],
+    "orphanPlist": [],
+    "ambiguous": [],
+    "uncertain": []
+  },
+  "plists": []
+}

@@ -1,0 +1,15 @@
+{
+  "fixtureId": "S1-01-UNKNOWN-001",
+  "expected": {
+    "jailbreakType": "unknown",
+    "architecture": "unknown",
+    "iosVersion": "unknown",
+    "bootstrap": { "name": null, "version": null },
+    "ellekitImplementation": "unknown",
+    "ellekitVersion": null,
+    "ellekitVersionStatus": "not_installed",
+    "adapterProfile": null
+  },
+  "expectedWarnings": ["no_jailbreak_signals"],
+  "expectedOutcome": "unknown"
+}

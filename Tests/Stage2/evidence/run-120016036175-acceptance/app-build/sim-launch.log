@@ -1,0 +1,4 @@
+com.filterkit.manager: 13225
+--- alive check 2026-11-18T16:08:31Z ---
+device_id=5AB3DACF-C352-49D1-BF9A-3C0104FA4ED3 app_pid=13225 bundle=com.filterkit.manager
+13225	0	UIKitApplication:com.filterkit.manager[134d][rb-legacy]

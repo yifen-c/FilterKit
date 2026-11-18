@@ -1,0 +1,19 @@
+﻿2026-11-15T15:29:06.8559380Z ##[group]Run actions/upload-artifact@v7
+2026-11-15T15:29:06.8559620Z with:
+2026-11-15T15:29:06.8559800Z   name: filterkit-app-build
+2026-11-15T15:29:06.8560210Z   path: build/app-xcodebuild.log
+build/sim-launch.log
+build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app
+
+2026-11-15T15:29:06.8560720Z   retention-days: 14
+2026-11-15T15:29:06.8560930Z   if-no-files-found: warn
+2026-11-15T15:29:06.8561150Z   compression-level: 6
+2026-11-15T15:29:06.8561370Z   overwrite: false
+2026-11-15T15:29:06.8561920Z   include-hidden-files: false
+2026-11-15T15:29:06.8562150Z   archive: true
+2026-11-15T15:29:06.8562350Z ##[endgroup]
+2026-11-15T15:29:06.9661670Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-15T15:29:06.9662780Z The least common ancestor is /Users/runner/work/004/004/build. This will be the root directory of the artifact
+2026-11-15T15:29:06.9672640Z ##[warning]No files were found with the provided path: build/app-xcodebuild.log
+build/sim-launch.log
+build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app. No artifacts will be uploaded.

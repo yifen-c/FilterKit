@@ -1,0 +1,16 @@
+{
+  "fixtureId": "S1-04-ROOTLESS-MIXED-001",
+  "fixtureKind": "rootless-mixed",
+  "upstream": {
+    "route": "rootless",
+    "sourceDirectory": "/var/jb/usr/lib/TweakInject/",
+    "enumerationStatus": "enumerated"
+  },
+  "fs": {
+    "enumerable": true,
+    "entries": [
+      { "name": "Rootless.dylib", "type": "file", "exists": true, "readable": true, "isSymlink": false, "symlinkTarget": null, "realpath": "/var/jb/usr/lib/TweakInject/Rootless.dylib", "size": 13107, "hash": "sha256:ggg777", "hidden": false, "entryStatus": "ok" },
+      { "name": "Rootless.plist", "type": "file", "exists": true, "readable": true, "isSymlink": false, "symlinkTarget": null, "realpath": "/var/jb/usr/lib/TweakInject/Rootless.plist", "size": 384, "hash": null, "hidden": false, "entryStatus": "ok" }
+    ]
+  }
+}

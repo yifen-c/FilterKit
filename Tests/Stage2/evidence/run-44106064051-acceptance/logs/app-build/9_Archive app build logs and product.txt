@@ -1,0 +1,29 @@
+﻿2026-11-17T14:53:22.3878800Z ##[group]Run actions/upload-artifact@v7
+2026-11-17T14:53:22.3879380Z with:
+2026-11-17T14:53:22.3879880Z   name: filterkit-app-build
+2026-11-17T14:53:22.3880500Z   path: build/app-xcodebuild.log
+build/sim-launch.log
+build/dashboard.png
+build/DerivedData/Build/Products/Debug-iphonesimulator/FilterKit.app
+
+2026-11-17T14:53:22.3881800Z   retention-days: 14
+2026-11-17T14:53:22.3882110Z   if-no-files-found: warn
+2026-11-17T14:53:22.3882960Z   compression-level: 6
+2026-11-17T14:53:22.3883380Z   overwrite: false
+2026-11-17T14:53:22.3884020Z   include-hidden-files: false
+2026-11-17T14:53:22.3885030Z   archive: true
+2026-11-17T14:53:22.3885280Z ##[endgroup]
+2026-11-17T14:53:24.4107780Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-17T14:53:24.4819480Z The least common ancestor is /Users/runner/work/FilterKit/FilterKit/build. This will be the root directory of the artifact
+2026-11-17T14:53:24.4931710Z With the provided path, there will be 9 files uploaded
+2026-11-17T14:53:24.5170340Z Artifact name is valid!
+2026-11-17T14:53:24.5276320Z Root directory input is valid!
+2026-11-17T14:53:24.7174990Z Uploading artifact: filterkit-app-build.zip
+2026-11-17T14:53:24.7535390Z Beginning upload of artifact content to blob storage
+2026-11-17T14:53:28.4448810Z Uploaded bytes 1466021
+2026-11-17T14:53:28.6197530Z Finished uploading artifact content to blob storage!
+2026-11-17T14:53:28.6330700Z SHA256 digest of uploaded artifact is 0b59f0fd4b6aeb65fadb085b947d74c7dddd830448efd138d6a574c0c4207d8f
+2026-11-17T14:53:28.6463930Z Finalizing artifact upload
+2026-11-17T14:53:29.2791960Z Artifact filterkit-app-build successfully finalized. Artifact ID 14339497228
+2026-11-17T14:53:29.2898540Z Artifact filterkit-app-build has been successfully uploaded! Final size is 1466021 bytes. Artifact ID is 14339497228
+2026-11-17T14:53:29.2925780Z Artifact download URL: https://github.com/yi-fen/FilterKit/actions/runs/44106064051/artifacts/14339497228

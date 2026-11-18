@@ -1,0 +1,59 @@
+{
+  "upstream": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "inventoryStatus": "enumerated"
+  },
+  "dpkg": {
+    "dbStatus": "ok",
+    "statusPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4var/lib/dpkg/status",
+    "packages": [
+      {
+        "id": "z.weifeng",
+        "version": "1.5",
+        "architecture": "iphoneos-arm64e",
+        "state": "install ok installed",
+        "listPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/var/lib/dpkg/info/z.weifeng.list",
+        "files": [
+          "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Owned.dylib",
+          "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Owned.plist"
+        ]
+      },
+      {
+        "id": "ghost.pkg",
+        "version": "0.1",
+        "architecture": "iphoneos-arm64",
+        "state": "install ok unpacked",
+        "listPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/var/lib/dpkg/info/ghost.pkg.list",
+        "files": [
+          "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Owned.dylib"
+        ]
+      }
+    ]
+  },
+  "markers": {
+    "filterkit": {
+      "byBase": {
+        "Owned": {
+          "state": "present"
+        }
+      }
+    },
+    "manual": {
+      "byBase": {
+        "Owned": {
+          "state": "absent"
+        }
+      }
+    }
+  },
+  "entries": [
+    {
+      "base": "Owned",
+      "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Owned.dylib",
+      "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Owned.plist",
+      "parseStatus": "valid",
+      "pairing": "paired"
+    }
+  ]
+}

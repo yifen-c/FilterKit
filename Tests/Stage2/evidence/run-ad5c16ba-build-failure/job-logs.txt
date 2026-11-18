@@ -1,0 +1,516 @@
+﻿2026-11-16T12:42:41.8134100Z Current runner version: '2.338.2'
+2026-11-16T12:42:41.8153410Z ##[group]Runner Image Provisioner
+2026-11-16T12:42:41.8153950Z Hosted Compute Agent
+2026-11-16T12:42:41.8154310Z Version: 20261028.624
+2026-11-16T12:42:41.8154710Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+2026-11-16T12:42:41.8155240Z Build Date: 2026-10-28T21:51:42Z
+2026-11-16T12:42:41.8155670Z Worker ID: {b7a3d6b6-1afe-40e2-bb12-33a90b78508a}
+2026-11-16T12:42:41.8156120Z Region: westus
+2026-11-16T12:42:41.8156460Z Cloud: MacCloud
+2026-11-16T12:42:41.8156800Z ##[endgroup]
+2026-11-16T12:42:41.8157730Z ##[group]Operating System
+2026-11-16T12:42:41.8158120Z macOS
+2026-11-16T12:42:41.8159090Z 26.7.2
+2026-11-16T12:42:41.8159610Z 25G332
+2026-11-16T12:42:41.8159970Z ##[endgroup]
+2026-11-16T12:42:41.8160340Z ##[group]Runner Image
+2026-11-16T12:42:41.8160730Z Image: macos-26-arm64
+2026-11-16T12:42:41.8161130Z Version: 20261102.0473.1
+2026-11-16T12:42:41.8162070Z Included Software: https://github.com/actions/runner-images/blob/macos-26-arm64/20261102.0473/images/macos/macos-26-arm64-Readme.md
+2026-11-16T12:42:41.8163330Z Image Release: https://github.com/actions/runner-images/releases/tag/macos-26-arm64%2F20261102.0473
+2026-11-16T12:42:41.8164000Z ##[endgroup]
+2026-11-16T12:42:41.8166330Z ##[group]GITHUB_TOKEN Permissions
+2026-11-16T12:42:41.8167910Z Actions: write
+2026-11-16T12:42:41.8168280Z ArtifactMetadata: write
+2026-11-16T12:42:41.8168660Z Attestations: write
+2026-11-16T12:42:41.8169010Z Checks: write
+2026-11-16T12:42:41.8169350Z CodeQuality: write
+2026-11-16T12:42:41.8169700Z Contents: write
+2026-11-16T12:42:41.8170100Z CopilotRequests: write
+2026-11-16T12:42:41.8170510Z Deployments: write
+2026-11-16T12:42:41.8170860Z Discussions: write
+2026-11-16T12:42:41.8171200Z Drives: write
+2026-11-16T12:42:41.8171540Z Issues: write
+2026-11-16T12:42:41.8171930Z Metadata: read
+2026-11-16T12:42:41.8172280Z Models: read
+2026-11-16T12:42:41.8172610Z Packages: write
+2026-11-16T12:42:41.8172960Z Pages: write
+2026-11-16T12:42:41.8173310Z PullRequests: write
+2026-11-16T12:42:41.8173680Z RepositoryProjects: write
+2026-11-16T12:42:41.8174080Z SecurityEvents: write
+2026-11-16T12:42:41.8174460Z Statuses: write
+2026-11-16T12:42:41.8174820Z VulnerabilityAlerts: read
+2026-11-16T12:42:41.8175220Z ##[endgroup]
+2026-11-16T12:42:41.8179370Z Secret source: Actions
+2026-11-16T12:42:41.8181350Z Cache mode: write
+2026-11-16T12:42:41.8182680Z Prepare workflow directory
+2026-11-16T12:42:41.8770420Z Prepare all required actions
+2026-11-16T12:42:41.8809160Z Getting action download info
+2026-11-16T12:42:42.0187150Z Download action repository 'actions/checkout@v6' (SHA:d23441a48e516b6c34aea4fa41551a30e30af803)
+2026-11-16T12:42:42.4408030Z Complete job name: build
+2026-11-16T12:42:42.5202250Z ##[group]Run actions/checkout@v6
+2026-11-16T12:42:42.5203290Z with:
+2026-11-16T12:42:42.5203680Z   repository: yi-fen/FilterKit
+2026-11-16T12:42:42.5206790Z   token: ***
+2026-11-16T12:42:42.5207120Z   ssh-strict: true
+2026-11-16T12:42:42.5207440Z   ssh-user: git
+2026-11-16T12:42:42.5207780Z   persist-credentials: true
+2026-11-16T12:42:42.5208190Z   clean: true
+2026-11-16T12:42:42.5208520Z   sparse-checkout-cone-mode: true
+2026-11-16T12:42:42.5208900Z   fetch-depth: 1
+2026-11-16T12:42:42.5209220Z   fetch-tags: false
+2026-11-16T12:42:42.5209560Z   show-progress: true
+2026-11-16T12:42:42.5209900Z   lfs: false
+2026-11-16T12:42:42.5210220Z   submodules: false
+2026-11-16T12:42:42.5210560Z   set-safe-directory: true
+2026-11-16T12:42:42.5210940Z   allow-unsafe-pr-checkout: false
+2026-11-16T12:42:42.5211620Z ##[endgroup]
+2026-11-16T12:42:42.9883540Z Syncing repository: yi-fen/FilterKit
+2026-11-16T12:42:42.9885070Z ##[group]Getting Git version info
+2026-11-16T12:42:42.9885940Z Working directory is '/Users/runner/work/FilterKit/FilterKit'
+2026-11-16T12:42:42.9886760Z [command]/opt/homebrew/bin/git version
+2026-11-16T12:42:43.0456650Z git version 2.56.0
+2026-11-16T12:42:43.0470990Z ##[endgroup]
+2026-11-16T12:42:43.0480830Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/2f3c4693-eea2-42c9-9de4-ee41c44b8a64/.gitconfig'
+2026-11-16T12:42:43.0489430Z Temporarily overriding HOME='/Users/runner/work/_temp/2f3c4693-eea2-42c9-9de4-ee41c44b8a64' before making global git config changes
+2026-11-16T12:42:43.0490820Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-16T12:42:43.0493580Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/FilterKit/FilterKit
+2026-11-16T12:42:43.0623640Z Deleting the contents of '/Users/runner/work/FilterKit/FilterKit'
+2026-11-16T12:42:43.0627690Z ##[group]Determining repository object format
+2026-11-16T12:42:43.0628920Z ##[endgroup]
+2026-11-16T12:42:43.0629620Z ##[group]Initializing the repository
+2026-11-16T12:42:43.0633190Z [command]/opt/homebrew/bin/git init /Users/runner/work/FilterKit/FilterKit
+2026-11-16T12:42:43.0918840Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-16T12:42:43.0919990Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-16T12:42:43.0920910Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-16T12:42:43.0921590Z hint: call:
+2026-11-16T12:42:43.0921930Z hint:
+2026-11-16T12:42:43.0922480Z hint: 	git config --global init.defaultBranch <name>
+2026-11-16T12:42:43.0923040Z hint:
+2026-11-16T12:42:43.0923510Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-16T12:42:43.0924210Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-16T12:42:43.0925330Z hint:
+2026-11-16T12:42:43.0925710Z hint: 	git branch -m <name>
+2026-11-16T12:42:43.0926160Z hint:
+2026-11-16T12:42:43.0926730Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-16T12:42:43.0933780Z Initialized empty Git repository in /Users/runner/work/FilterKit/FilterKit/.git/
+2026-11-16T12:42:43.0944440Z [command]/opt/homebrew/bin/git remote add origin https://github.com/yi-fen/FilterKit
+2026-11-16T12:42:43.1034940Z ##[endgroup]
+2026-11-16T12:42:43.1035660Z ##[group]Disabling automatic garbage collection
+2026-11-16T12:42:43.1037800Z [command]/opt/homebrew/bin/git config --local gc.auto 0
+2026-11-16T12:42:43.1119200Z ##[endgroup]
+2026-11-16T12:42:43.1121270Z ##[group]Setting up auth
+2026-11-16T12:42:43.1121810Z Removing SSH command configuration
+2026-11-16T12:42:43.1123870Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-16T12:42:43.1210180Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-16T12:42:43.2486280Z Removing HTTP extra header
+2026-11-16T12:42:43.2490070Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-16T12:42:43.2572430Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-16T12:42:43.3702740Z Removing includeIf entries pointing to credentials config files
+2026-11-16T12:42:43.3704310Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-16T12:42:43.3708010Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-16T12:42:43.4698010Z [command]/opt/homebrew/bin/git config --file /Users/runner/work/_temp/git-credentials-08af7874-34d5-4ed0-8d60-a5e9624d28e6.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-16T12:42:43.4786980Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/Users/runner/work/FilterKit/FilterKit/.git.path /Users/runner/work/_temp/git-credentials-08af7874-34d5-4ed0-8d60-a5e9624d28e6.config
+2026-11-16T12:42:43.4895760Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/Users/runner/work/FilterKit/FilterKit/.git/worktrees/*.path /Users/runner/work/_temp/git-credentials-08af7874-34d5-4ed0-8d60-a5e9624d28e6.config
+2026-11-16T12:42:43.4969800Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-08af7874-34d5-4ed0-8d60-a5e9624d28e6.config
+2026-11-16T12:42:43.5096820Z [command]/opt/homebrew/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-08af7874-34d5-4ed0-8d60-a5e9624d28e6.config
+2026-11-16T12:42:43.5203970Z ##[endgroup]
+2026-11-16T12:42:43.5205100Z ##[group]Fetching the repository
+2026-11-16T12:42:43.5214620Z [command]/opt/homebrew/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +86f5269eede652a9cdede501eff261856ae37685:refs/remotes/origin/C3
+2026-11-16T12:42:44.8100880Z From https://github.com/yi-fen/FilterKit
+2026-11-16T12:42:44.8123380Z  * [new ref]         86f5269eede652a9cdede501eff261856ae37685 -> origin/C3
+2026-11-16T12:42:44.8133130Z [command]/opt/homebrew/bin/git branch --list --remote origin/C3
+2026-11-16T12:42:44.8212370Z   origin/C3
+2026-11-16T12:42:44.8220630Z [command]/opt/homebrew/bin/git rev-parse refs/remotes/origin/C3
+2026-11-16T12:42:44.8360850Z 86f5269eede652a9cdede501eff261856ae37685
+2026-11-16T12:42:44.8364210Z ##[endgroup]
+2026-11-16T12:42:44.8365020Z ##[group]Determining the checkout info
+2026-11-16T12:42:44.8365690Z ##[endgroup]
+2026-11-16T12:42:44.8369970Z [command]/opt/homebrew/bin/git sparse-checkout disable
+2026-11-16T12:42:44.8600440Z [command]/opt/homebrew/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-16T12:42:44.8749200Z ##[group]Checking out the ref
+2026-11-16T12:42:44.8752190Z [command]/opt/homebrew/bin/git checkout --progress --force -B C3 refs/remotes/origin/C3
+2026-11-16T12:42:45.1255590Z Switched to a new branch 'C3'
+2026-11-16T12:42:45.1259960Z branch 'C3' set up to track 'origin/C3'.
+2026-11-16T12:42:45.1267420Z ##[endgroup]
+2026-11-16T12:42:45.1443500Z [command]/opt/homebrew/bin/git log -1 --format=%H
+2026-11-16T12:42:45.1540900Z 86f5269eede652a9cdede501eff261856ae37685
+2026-11-16T12:42:45.1781180Z ##[group]Run swift build
+2026-11-16T12:42:45.1781450Z [36;1mswift build[0m
+2026-11-16T12:42:45.1822710Z shell: /bin/bash -e {0}
+2026-11-16T12:42:45.1822900Z ##[endgroup]
+2026-11-16T12:43:09.4084380Z Building for debugging...
+2026-11-16T12:43:09.4163330Z [0/4] Write sources
+2026-11-16T12:43:09.6700480Z [3/4] Write swift-version-7974D3F7F03D5E95.txt
+2026-11-16T12:43:17.7724050Z [5/11] Emitting module Models
+2026-11-16T12:43:17.7742460Z [6/11] Compiling Models EnvironmentAdvisor.swift
+2026-11-16T12:43:17.7843800Z [7/11] Compiling Models EnvironmentModels.swift
+2026-11-16T12:43:17.7909070Z [8/11] Compiling Models ModelEnums.swift
+2026-11-16T12:43:17.7910570Z [9/11] Compiling Models PluginEntryStatus.swift
+2026-11-16T12:43:17.7917010Z [10/11] Compiling Models PluginFileEvidence.swift
+2026-11-16T12:43:17.7917560Z [11/11] Compiling Models PluginFileKind.swift
+2026-11-16T12:43:18.7929730Z [12/13] Compiling Models PluginModels.swift
+2026-11-16T12:43:18.7930700Z [13/13] Compiling Models ReportEnvelope.swift
+2026-11-16T12:43:19.4960280Z [14/16] Emitting module Adapters
+2026-11-16T12:43:19.4988390Z [15/16] Compiling Adapters RootHideAdapter.swift
+2026-11-16T12:43:19.5008490Z [16/16] Compiling Adapters ElleKitAdapter.swift
+2026-11-16T12:43:19.7773410Z [17/17] Compiling Adapters RootlessAdapter.swift
+2026-11-16T12:43:20.8364620Z [18/54] Compiling Core EnvironmentRouteMapper.swift
+2026-11-16T12:43:20.8547960Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:43:35: error: missing argument label 'error:' in call
+2026-11-16T12:43:20.8684340Z 41 |         let ns = error as NSError
+2026-11-16T12:43:20.8809800Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:20.8960850Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:20.9309830Z    |                                   `- error: missing argument label 'error:' in call
+2026-11-16T12:43:20.9430810Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:20.9555860Z 45 |                 return mapped
+2026-11-16T12:43:20.9659730Z 
+2026-11-16T12:43:20.9786960Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:44:34: error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:20.9903050Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.0007290Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.0132400Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.0233230Z    |                                  `- error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.0335000Z 45 |                 return mapped
+2026-11-16T12:43:21.0436940Z 46 |             }
+2026-11-16T12:43:21.0538290Z [19/54] Compiling Core JBRootToDirectoryBridge.swift
+2026-11-16T12:43:21.0641200Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:43:35: error: missing argument label 'error:' in call
+2026-11-16T12:43:21.0744530Z 41 |         let ns = error as NSError
+2026-11-16T12:43:21.0816090Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.0918640Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.0976540Z    |                                   `- error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1078580Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1181350Z 45 |                 return mapped
+2026-11-16T12:43:21.1286320Z 
+2026-11-16T12:43:21.1316100Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:44:34: error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1317140Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1321150Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1326630Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1401740Z    |                                  `- error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1402350Z 45 |                 return mapped
+2026-11-16T12:43:21.1402700Z 46 |             }
+2026-11-16T12:43:21.1403070Z [20/54] Compiling Core PlistDecodeResult.swift
+2026-11-16T12:43:21.1425350Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:43:35: error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1426140Z 41 |         let ns = error as NSError
+2026-11-16T12:43:21.1426590Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1427010Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1427460Z    |                                   `- error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1427900Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1428260Z 45 |                 return mapped
+2026-11-16T12:43:21.1428460Z 
+2026-11-16T12:43:21.1429030Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:44:34: error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1429750Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1430320Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1430650Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1431210Z    |                                  `- error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1431720Z 45 |                 return mapped
+2026-11-16T12:43:21.1432080Z 46 |             }
+2026-11-16T12:43:21.1432340Z [21/54] Compiling Core PlistDecodeStatus.swift
+2026-11-16T12:43:21.1433640Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:43:35: error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1436630Z 41 |         let ns = error as NSError
+2026-11-16T12:43:21.1437050Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1437580Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1438000Z    |                                   `- error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1483610Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1483960Z 45 |                 return mapped
+2026-11-16T12:43:21.1484160Z 
+2026-11-16T12:43:21.1484650Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:44:34: error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1485580Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1486050Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1486590Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1487030Z    |                                  `- error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1490500Z 45 |                 return mapped
+2026-11-16T12:43:21.1490830Z 46 |             }
+2026-11-16T12:43:21.1491140Z [22/54] Compiling Core PlistDecodedObject.swift
+2026-11-16T12:43:21.1491740Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:43:35: error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1492500Z 41 |         let ns = error as NSError
+2026-11-16T12:43:21.1492950Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1493350Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1493870Z    |                                   `- error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1494270Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1495540Z 45 |                 return mapped
+2026-11-16T12:43:21.1496150Z 
+2026-11-16T12:43:21.1496590Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:44:34: error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1497900Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1501440Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1507210Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1507830Z    |                                  `- error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1508230Z 45 |                 return mapped
+2026-11-16T12:43:21.1508600Z 46 |             }
+2026-11-16T12:43:21.1508840Z [23/54] Compiling Core PlistDecoder.swift
+2026-11-16T12:43:21.1509630Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:43:35: error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1514010Z 41 |         let ns = error as NSError
+2026-11-16T12:43:21.1514410Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1514890Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1515260Z    |                                   `- error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1515900Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1516250Z 45 |                 return mapped
+2026-11-16T12:43:21.1516440Z 
+2026-11-16T12:43:21.1516990Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:44:34: error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1517840Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1518870Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1519690Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1520220Z    |                                  `- error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1520800Z 45 |                 return mapped
+2026-11-16T12:43:21.1521130Z 46 |             }
+2026-11-16T12:43:21.1545960Z [24/54] Compiling Core PlistValueKind.swift
+2026-11-16T12:43:21.1548210Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:43:35: error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1549330Z 41 |         let ns = error as NSError
+2026-11-16T12:43:21.1550220Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1550910Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1551400Z    |                                   `- error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1552260Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1552580Z 45 |                 return mapped
+2026-11-16T12:43:21.1552800Z 
+2026-11-16T12:43:21.1553290Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:44:34: error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1554000Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1554550Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1555050Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1555600Z    |                                  `- error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1556940Z 45 |                 return mapped
+2026-11-16T12:43:21.1557250Z 46 |             }
+2026-11-16T12:43:21.1557510Z [25/54] Compiling Core PlistDataReader.swift
+2026-11-16T12:43:21.1558130Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:43:35: error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1559580Z 41 |         let ns = error as NSError
+2026-11-16T12:43:21.1561260Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1561700Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1562080Z    |                                   `- error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1562480Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1562740Z 45 |                 return mapped
+2026-11-16T12:43:21.1562930Z 
+2026-11-16T12:43:21.1564080Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:44:34: error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1565410Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1568300Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1568710Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1569140Z    |                                  `- error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1569640Z 45 |                 return mapped
+2026-11-16T12:43:21.1682530Z 46 |             }
+2026-11-16T12:43:21.1682900Z [26/54] Compiling Core PlistReadResult.swift
+2026-11-16T12:43:21.1683880Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:43:35: error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1684970Z 41 |         let ns = error as NSError
+2026-11-16T12:43:21.1685370Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1685850Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1686230Z    |                                   `- error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1687290Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1687600Z 45 |                 return mapped
+2026-11-16T12:43:21.1687740Z 
+2026-11-16T12:43:21.1688250Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:44:34: error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1689080Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1689530Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1689780Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1690210Z    |                                  `- error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1690720Z 45 |                 return mapped
+2026-11-16T12:43:21.1690970Z 46 |             }
+2026-11-16T12:43:21.1691300Z [27/54] Compiling Core PlistReadStatus.swift
+2026-11-16T12:43:21.1691890Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:43:35: error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1692660Z 41 |         let ns = error as NSError
+2026-11-16T12:43:21.1693030Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1693600Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1693980Z    |                                   `- error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1694470Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1694850Z 45 |                 return mapped
+2026-11-16T12:43:21.1694980Z 
+2026-11-16T12:43:21.1695400Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:44:34: error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1696170Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1696580Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1696940Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1697680Z    |                                  `- error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1698050Z 45 |                 return mapped
+2026-11-16T12:43:21.1698310Z 46 |             }
+2026-11-16T12:43:21.1698510Z [28/54] Compiling Core PluginPairingClassifier.swift
+2026-11-16T12:43:21.1699110Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:43:35: error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1699690Z 41 |         let ns = error as NSError
+2026-11-16T12:43:21.1700110Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1700590Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1701060Z    |                                   `- error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1701370Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1701740Z 45 |                 return mapped
+2026-11-16T12:43:21.1701960Z 
+2026-11-16T12:43:21.1702470Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:44:34: error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1703260Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1703600Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1703950Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1704360Z    |                                  `- error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1704700Z 45 |                 return mapped
+2026-11-16T12:43:21.1704940Z 46 |             }
+2026-11-16T12:43:21.1705580Z [29/54] Compiling Core PluginPairingEngine.swift
+2026-11-16T12:43:21.1706160Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:43:35: error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1707270Z 41 |         let ns = error as NSError
+2026-11-16T12:43:21.1707660Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1708050Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1708350Z    |                                   `- error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1709110Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1709360Z 45 |                 return mapped
+2026-11-16T12:43:21.1709520Z 
+2026-11-16T12:43:21.1712640Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:44:34: error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1725150Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1726280Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1727340Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1728540Z    |                                  `- error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1729450Z 45 |                 return mapped
+2026-11-16T12:43:21.1729930Z 46 |             }
+2026-11-16T12:43:21.1731130Z [30/54] Compiling Core PluginPairingSnapshotBuilder.swift
+2026-11-16T12:43:21.1732600Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:43:35: error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1735370Z 41 |         let ns = error as NSError
+2026-11-16T12:43:21.1737100Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1738150Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1739170Z    |                                   `- error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1740040Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1741150Z 45 |                 return mapped
+2026-11-16T12:43:21.1744460Z 
+2026-11-16T12:43:21.1745000Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:44:34: error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1748970Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1749590Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1749870Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1750300Z    |                                  `- error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1752490Z 45 |                 return mapped
+2026-11-16T12:43:21.1753600Z 46 |             }
+2026-11-16T12:43:21.1754100Z [31/54] Compiling Core PluginPairingIndex.swift
+2026-11-16T12:43:21.1754730Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:43:35: error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1755540Z 41 |         let ns = error as NSError
+2026-11-16T12:43:21.1755950Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1756360Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1756820Z    |                                   `- error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1757900Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1758600Z 45 |                 return mapped
+2026-11-16T12:43:21.1758880Z 
+2026-11-16T12:43:21.1759690Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:44:34: error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1794050Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1795290Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1796890Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1799320Z    |                                  `- error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1800790Z 45 |                 return mapped
+2026-11-16T12:43:21.1802350Z 46 |             }
+2026-11-16T12:43:21.1803120Z [32/54] Compiling Core PluginPairingIndexBuilder.swift
+2026-11-16T12:43:21.1805310Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:43:35: error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1806850Z 41 |         let ns = error as NSError
+2026-11-16T12:43:21.1808040Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1809020Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1809900Z    |                                   `- error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1811020Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1811780Z 45 |                 return mapped
+2026-11-16T12:43:21.1813420Z 
+2026-11-16T12:43:21.1814020Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:44:34: error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1814820Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1815230Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1815570Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1816040Z    |                                  `- error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1816590Z 45 |                 return mapped
+2026-11-16T12:43:21.1817360Z 46 |             }
+2026-11-16T12:43:21.1817970Z [33/54] Compiling Core PluginPairingInput.swift
+2026-11-16T12:43:21.1819590Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:43:35: error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1823110Z 41 |         let ns = error as NSError
+2026-11-16T12:43:21.1824050Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1825030Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1825910Z    |                                   `- error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1826780Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1827460Z 45 |                 return mapped
+2026-11-16T12:43:21.1828020Z 
+2026-11-16T12:43:21.1829840Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:44:34: error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1832220Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1832900Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1833350Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1840210Z    |                                  `- error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1840710Z 45 |                 return mapped
+2026-11-16T12:43:21.1840950Z 46 |             }
+2026-11-16T12:43:21.1841220Z [34/54] Compiling Core PluginPairingInputAdapter.swift
+2026-11-16T12:43:21.1841950Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:43:35: error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1842610Z 41 |         let ns = error as NSError
+2026-11-16T12:43:21.1843060Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1843940Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1844250Z    |                                   `- error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1844550Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1846620Z 45 |                 return mapped
+2026-11-16T12:43:21.1846940Z 
+2026-11-16T12:43:21.1847520Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:44:34: error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1850290Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1850780Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1851330Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1852500Z    |                                  `- error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1853590Z 45 |                 return mapped
+2026-11-16T12:43:21.1854790Z 46 |             }
+2026-11-16T12:43:21.1858980Z [35/54] Compiling Core PluginPairingIntegrationResult.swift
+2026-11-16T12:43:21.1863390Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:43:35: error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1864130Z 41 |         let ns = error as NSError
+2026-11-16T12:43:21.1864490Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1864870Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1865230Z    |                                   `- error: missing argument label 'error:' in call
+2026-11-16T12:43:21.1865590Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1865890Z 45 |                 return mapped
+2026-11-16T12:43:21.1866060Z 
+2026-11-16T12:43:21.1867550Z /Users/runner/work/FilterKit/FilterKit/Core/PlistParser/Reader/PlistDataReader.swift:44:34: error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1868880Z 42 |         if let underlying = ns.userInfo[NSUnderlyingErrorKey] as? NSError {
+2026-11-16T12:43:21.1869290Z 43 |             let mapped = classify(underlying as Error)
+2026-11-16T12:43:21.1871120Z 44 |             if mapped.status != .readFailed {
+2026-11-16T12:43:21.1873410Z    |                                  `- error: cannot infer contextual base in reference to member 'readFailed'
+2026-11-16T12:43:21.1874510Z 45 |                 return mapped
+2026-11-16T12:43:21.1875170Z 46 |             }
+2026-11-16T12:43:22.7103840Z [36/71] Compiling Core PluginPairingIntegrationValidator.swift
+2026-11-16T12:43:22.7104560Z [37/71] Compiling Core PluginPairingPipeline.swift
+2026-11-16T12:43:22.7106960Z [38/71] Compiling Core PluginPairingKeyBuilder.swift
+2026-11-16T12:43:22.7107730Z [39/71] Compiling Core PairingCategory.swift
+2026-11-16T12:43:22.7109530Z [40/71] Compiling Core PairingEvidenceBasis.swift
+2026-11-16T12:43:22.7110390Z [41/71] Compiling Core PairingStatus.swift
+2026-11-16T12:43:22.7111280Z [42/71] Compiling Core PluginPairingCounts.swift
+2026-11-16T12:43:22.7112120Z [43/71] Compiling Core PluginPairingRecord.swift
+2026-11-16T12:43:22.7113580Z [44/71] Compiling Core PluginPairingSnapshot.swift
+2026-11-16T12:43:22.7114690Z [45/71] Compiling Core EnumerationStatus.swift
+2026-11-16T12:43:22.7115630Z [46/71] Compiling Core PluginDirectoryEnumerator.swift
+2026-11-16T12:43:22.7116560Z [47/71] Compiling Core PluginEntryClassifier.swift
+2026-11-16T12:43:22.7117700Z [48/71] Compiling Core PluginFileEvidenceBuilder.swift
+2026-11-16T12:43:22.7135210Z [49/71] Compiling Core PluginInventoryBuilder.swift
+2026-11-16T12:43:22.7136240Z [50/71] Compiling Core PluginInventoryFixtureSignal.swift
+2026-11-16T12:43:22.7137170Z [51/71] Compiling Core PluginInventorySnapshot.swift
+2026-11-16T12:43:22.7138080Z [52/71] Compiling Core PluginKindCounts.swift
+2026-11-16T12:43:22.7683800Z [53/71] Emitting module Core
+2026-11-16T12:43:22.7688610Z [54/71] Compiling Core CoreServices.swift
+2026-11-16T12:43:22.7689180Z [55/71] Compiling Core EnvironmentDetector.swift
+2026-11-16T12:43:22.7689700Z [56/71] Compiling Core EnvironmentSnapshot.swift
+2026-11-16T12:43:22.7690070Z [57/71] Compiling Core VersionParser.swift
+2026-11-16T12:43:22.7691270Z [58/71] Compiling Core ElleKitDirectoryResolution.swift
+2026-11-16T12:43:22.7691700Z [59/71] Compiling Core ElleKitDirectoryResolver.swift
+2026-11-16T12:43:22.7692120Z [60/71] Compiling Core ElleKitDirectorySnapshot.swift
+2026-11-16T12:43:22.7692550Z [61/71] Compiling Core ElleKitDirectoryValidator.swift
+2026-11-16T12:43:22.7692980Z [62/71] Compiling Core ElleKitPathDeriver.swift
+2026-11-16T12:43:22.7693390Z [63/71] Compiling Core ElleKitSymlinkInspector.swift
+2026-11-16T12:43:22.7693800Z [64/71] Compiling Core JBRootCandidateCollector.swift
+2026-11-16T12:43:22.7694210Z [65/71] Compiling Core JBRootCandidateSnapshot.swift
+2026-11-16T12:43:22.7694700Z [66/71] Compiling Core JBRootDecisionResolver.swift
+2026-11-16T12:43:22.7695140Z [67/71] Compiling Core JBRootNameValidator.swift
+2026-11-16T12:43:22.7695510Z [68/71] Compiling Core JBRootResolver.swift
+2026-11-16T12:43:22.7695890Z [69/71] Compiling Core JBRootStatusClassifier.swift
+2026-11-16T12:43:22.7696280Z [70/71] Compiling Core JBRootValidator.swift
+2026-11-16T12:43:22.7696670Z [71/71] Compiling Core ElleKitDirectoryPipeline.swift
+2026-11-16T12:43:22.8273550Z ##[error]Process completed with exit code 1.
+2026-11-16T12:43:22.8764620Z Post job cleanup.
+2026-11-16T12:43:23.5485670Z [command]/opt/homebrew/bin/git version
+2026-11-16T12:43:23.5811970Z git version 2.56.0
+2026-11-16T12:43:23.5863140Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/34e08b8d-fd3b-457c-a443-748e2cc836cc/.gitconfig'
+2026-11-16T12:43:23.5887390Z Temporarily overriding HOME='/Users/runner/work/_temp/34e08b8d-fd3b-457c-a443-748e2cc836cc' before making global git config changes
+2026-11-16T12:43:23.5897620Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-16T12:43:23.5898530Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/FilterKit/FilterKit
+2026-11-16T12:43:23.6111280Z Removing SSH command configuration
+2026-11-16T12:43:23.6112870Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-16T12:43:23.6261520Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-16T12:43:23.7868780Z Removing HTTP extra header
+2026-11-16T12:43:23.7874680Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-16T12:43:23.8002060Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-16T12:43:23.9391220Z Removing includeIf entries pointing to credentials config files
+2026-11-16T12:43:23.9402030Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-16T12:43:23.9478960Z includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git.path
+2026-11-16T12:43:23.9480290Z includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git/worktrees/*.path
+2026-11-16T12:43:23.9481520Z includeif.gitdir:/github/workspace/.git.path
+2026-11-16T12:43:23.9482450Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-16T12:43:23.9486490Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git.path
+2026-11-16T12:43:23.9558730Z /Users/runner/work/_temp/git-credentials-08af7874-34d5-4ed0-8d60-a5e9624d28e6.config
+2026-11-16T12:43:23.9566530Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git.path /Users/runner/work/_temp/git-credentials-08af7874-34d5-4ed0-8d60-a5e9624d28e6.config
+2026-11-16T12:43:23.9672490Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git/worktrees/*.path
+2026-11-16T12:43:23.9759640Z /Users/runner/work/_temp/git-credentials-08af7874-34d5-4ed0-8d60-a5e9624d28e6.config
+2026-11-16T12:43:23.9769990Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/Users/runner/work/FilterKit/FilterKit/.git/worktrees/*.path /Users/runner/work/_temp/git-credentials-08af7874-34d5-4ed0-8d60-a5e9624d28e6.config
+2026-11-16T12:43:23.9883850Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-11-16T12:43:23.9972910Z /github/runner_temp/git-credentials-08af7874-34d5-4ed0-8d60-a5e9624d28e6.config
+2026-11-16T12:43:23.9987710Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-08af7874-34d5-4ed0-8d60-a5e9624d28e6.config
+2026-11-16T12:43:24.0090460Z [command]/opt/homebrew/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-11-16T12:43:24.0186990Z /github/runner_temp/git-credentials-08af7874-34d5-4ed0-8d60-a5e9624d28e6.config
+2026-11-16T12:43:24.0197720Z [command]/opt/homebrew/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-08af7874-34d5-4ed0-8d60-a5e9624d28e6.config
+2026-11-16T12:43:24.0294150Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-16T12:43:24.1726860Z Removing credentials config '/Users/runner/work/_temp/git-credentials-08af7874-34d5-4ed0-8d60-a5e9624d28e6.config'
+2026-11-16T12:43:24.1952220Z Cleaning up orphan processes

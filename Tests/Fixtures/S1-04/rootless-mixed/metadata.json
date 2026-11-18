@@ -1,0 +1,14 @@
+{
+  "fixtureId": "S1-04-ROOTLESS-MIXED-001",
+  "expected": {
+    "route": "rootless",
+    "sourceDirectory": "/var/jb/usr/lib/TweakInject/",
+    "status": "enumerated",
+    "counts": { "dylib": 1, "plist": 1, "directory": 0, "symlink": 0, "other": 0 },
+    "itemCount": 2,
+    "unknownCount": 0,
+    "names": ["Rootless.dylib", "Rootless.plist"]
+  },
+  "expectedWarnings": [],
+  "expectedStatus": "enumerated"
+}

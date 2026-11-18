@@ -1,0 +1,120 @@
+Test Suite 'EngineC2BaselineIntegrationTests' started at 2026-11-17 14:44:49.344.
+Test Case '-[Stage2Tests.EngineC2BaselineIntegrationTests testBaselinesRunThroughFullEngineChain]' started.
+Test Case '-[Stage2Tests.EngineC2BaselineIntegrationTests testBaselinesRunThroughFullEngineChain]' passed (0.006 seconds).
+Test Case '-[Stage2Tests.EngineC2BaselineIntegrationTests testEngineChainMatchesDirectParserForRootHide]' started.
+Test Case '-[Stage2Tests.EngineC2BaselineIntegrationTests testEngineChainMatchesDirectParserForRootHide]' passed (0.005 seconds).
+Test Suite 'EngineC2BaselineIntegrationTests' passed at 2026-11-17 14:44:49.355.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.011 (0.012) seconds
+Test Suite 'EngineC2BatchIsolationTests' started at 2026-11-17 14:44:49.355.
+Test Case '-[Stage2Tests.EngineC2BatchIsolationTests testFailureDoesNotStopFollowingPlugins]' started.
+Test Case '-[Stage2Tests.EngineC2BatchIsolationTests testFailureDoesNotStopFollowingPlugins]' passed (0.002 seconds).
+Test Case '-[Stage2Tests.EngineC2BatchIsolationTests testMixedFivePluginSingleBatch]' started.
+Test Case '-[Stage2Tests.EngineC2BatchIsolationTests testMixedFivePluginSingleBatch]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.EngineC2BatchIsolationTests testStatesAreMutexAndFilterOwnedByValidOnly]' started.
+Test Case '-[Stage2Tests.EngineC2BatchIsolationTests testStatesAreMutexAndFilterOwnedByValidOnly]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2BatchIsolationTests testStatesTransferWithoutConversion]' started.
+Test Case '-[Stage2Tests.EngineC2BatchIsolationTests testStatesTransferWithoutConversion]' passed (0.001 seconds).
+Test Suite 'EngineC2BatchIsolationTests' passed at 2026-11-17 14:44:49.360.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.003 (0.004) seconds
+Test Suite 'EngineC2CombinedScenarioTests' started at 2026-11-17 14:44:49.360.
+Test Case '-[Stage2Tests.EngineC2CombinedScenarioTests testCombinedInputSnapshotNotMutated]' started.
+Test Case '-[Stage2Tests.EngineC2CombinedScenarioTests testCombinedInputSnapshotNotMutated]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2CombinedScenarioTests testCombinedMixedStatesSingleBatch]' started.
+Test Case '-[Stage2Tests.EngineC2CombinedScenarioTests testCombinedMixedStatesSingleBatch]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2CombinedScenarioTests testCombinedRouteIsolationAcrossSnapshots]' started.
+Test Case '-[Stage2Tests.EngineC2CombinedScenarioTests testCombinedRouteIsolationAcrossSnapshots]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.EngineC2CombinedScenarioTests testCombinedScenarioDeterministicAcrossRepeatedRuns]' started.
+Test Case '-[Stage2Tests.EngineC2CombinedScenarioTests testCombinedScenarioDeterministicAcrossRepeatedRuns]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.EngineC2CombinedScenarioTests testCombinedWarningsAndUnknownItemsPreserved]' started.
+Test Case '-[Stage2Tests.EngineC2CombinedScenarioTests testCombinedWarningsAndUnknownItemsPreserved]' passed (0.000 seconds).
+Test Suite 'EngineC2CombinedScenarioTests' passed at 2026-11-17 14:44:49.365.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+Test Suite 'EngineC2ERegressionPlanTests' started at 2026-11-17 14:44:49.365.
+Test Case '-[Stage2Tests.EngineC2ERegressionPlanTests testC1BaselineRegistryRetainsTwentyTwoItems]' started.
+Test Case '-[Stage2Tests.EngineC2ERegressionPlanTests testC1BaselineRegistryRetainsTwentyTwoItems]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2ERegressionPlanTests testC2DCasesRemainPendingRunner]' started.
+Test Case '-[Stage2Tests.EngineC2ERegressionPlanTests testC2DCasesRemainPendingRunner]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2ERegressionPlanTests testDependencyReferencesExistingCase]' started.
+Test Case '-[Stage2Tests.EngineC2ERegressionPlanTests testDependencyReferencesExistingCase]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2ERegressionPlanTests testEvidenceStateMatchesEvidenceRun]' started.
+Test Case '-[Stage2Tests.EngineC2ERegressionPlanTests testEvidenceStateMatchesEvidenceRun]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2ERegressionPlanTests testNoCaseAllowsSkipByDefault]' started.
+Test Case '-[Stage2Tests.EngineC2ERegressionPlanTests testNoCaseAllowsSkipByDefault]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2ERegressionPlanTests testParse009BRemainsIndependentReview]' started.
+Test Case '-[Stage2Tests.EngineC2ERegressionPlanTests testParse009BRemainsIndependentReview]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2ERegressionPlanTests testParse015AReleasedFromPendingRunner]' started.
+Test Case '-[Stage2Tests.EngineC2ERegressionPlanTests testParse015AReleasedFromPendingRunner]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2ERegressionPlanTests testRegistryCoversAllKnownSuites]' started.
+Test Case '-[Stage2Tests.EngineC2ERegressionPlanTests testRegistryCoversAllKnownSuites]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2ERegressionPlanTests testRegressionIDsUnique]' started.
+Test Case '-[Stage2Tests.EngineC2ERegressionPlanTests testRegressionIDsUnique]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2ERegressionPlanTests testStage1MappingEntriesPresent]' started.
+Test Case '-[Stage2Tests.EngineC2ERegressionPlanTests testStage1MappingEntriesPresent]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.EngineC2ERegressionPlanTests testSuiteIdentityFieldsPresent]' started.
+Test Case '-[Stage2Tests.EngineC2ERegressionPlanTests testSuiteIdentityFieldsPresent]' passed (0.000 seconds).
+Test Suite 'EngineC2ERegressionPlanTests' passed at 2026-11-17 14:44:49.370.
+	 Executed 11 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+Test Suite 'EngineC2EndToEndTests' started at 2026-11-17 14:44:49.370.
+Test Case '-[Stage2Tests.EngineC2EndToEndTests testNonPairedNeverEntersReader]' started.
+Test Case '-[Stage2Tests.EngineC2EndToEndTests testNonPairedNeverEntersReader]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.EngineC2EndToEndTests testRootHideMultiPluginMixedStatusEndToEnd]' started.
+Test Case '-[Stage2Tests.EngineC2EndToEndTests testRootHideMultiPluginMixedStatusEndToEnd]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2EndToEndTests testRootHideMultiPluginValidEndToEnd]' started.
+Test Case '-[Stage2Tests.EngineC2EndToEndTests testRootHideMultiPluginValidEndToEnd]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2EndToEndTests testRootHideSingleValidEndToEnd]' started.
+Test Case '-[Stage2Tests.EngineC2EndToEndTests testRootHideSingleValidEndToEnd]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2EndToEndTests testRootlessSymmetricEndToEnd]' started.
+Test Case '-[Stage2Tests.EngineC2EndToEndTests testRootlessSymmetricEndToEnd]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2EndToEndTests testUnknownRouteNeverEntersDownstream]' started.
+Test Case '-[Stage2Tests.EngineC2EndToEndTests testUnknownRouteNeverEntersDownstream]' passed (0.000 seconds).
+Test Suite 'EngineC2EndToEndTests' passed at 2026-11-17 14:44:49.372.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.002 (0.003) seconds
+Test Suite 'EngineC2EvidenceTraceTests' started at 2026-11-17 14:44:49.372.
+Test Case '-[Stage2Tests.EngineC2EvidenceTraceTests testAccessDeniedCarriesReaderSpecificReason]' started.
+Test Case '-[Stage2Tests.EngineC2EvidenceTraceTests testAccessDeniedCarriesReaderSpecificReason]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2EvidenceTraceTests testDecoderFailureStopsBeforeParser]' started.
+Test Case '-[Stage2Tests.EngineC2EvidenceTraceTests testDecoderFailureStopsBeforeParser]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2EvidenceTraceTests testNoFailureStateCarriesValidRule]' started.
+Test Case '-[Stage2Tests.EngineC2EvidenceTraceTests testNoFailureStateCarriesValidRule]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2EvidenceTraceTests testNonPairedRecordBecomesUnknownItemWithoutReader]' started.
+Test Case '-[Stage2Tests.EngineC2EvidenceTraceTests testNonPairedRecordBecomesUnknownItemWithoutReader]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2EvidenceTraceTests testReadFailureStopsBeforeDecoderAndParser]' started.
+Test Case '-[Stage2Tests.EngineC2EvidenceTraceTests testReadFailureStopsBeforeDecoderAndParser]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2EvidenceTraceTests testTypeMismatchCarriesFieldLevelSkippedEvidence]' started.
+Test Case '-[Stage2Tests.EngineC2EvidenceTraceTests testTypeMismatchCarriesFieldLevelSkippedEvidence]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2EvidenceTraceTests testUnknownRouteRecordBecomesUnknownItemWithoutRetry]' started.
+Test Case '-[Stage2Tests.EngineC2EvidenceTraceTests testUnknownRouteRecordBecomesUnknownItemWithoutRetry]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2EvidenceTraceTests testValidEntryCarriesFullIdentityEvidence]' started.
+Test Case '-[Stage2Tests.EngineC2EvidenceTraceTests testValidEntryCarriesFullIdentityEvidence]' passed (0.001 seconds).
+Test Suite 'EngineC2EvidenceTraceTests' passed at 2026-11-17 14:44:49.377.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 0.003 (0.005) seconds
+Test Suite 'EngineC2RouteSymmetryTests' started at 2026-11-17 14:44:49.377.
+Test Case '-[Stage2Tests.EngineC2RouteSymmetryTests testBothRoutesShareCommonFilterRuleModel]' started.
+Test Case '-[Stage2Tests.EngineC2RouteSymmetryTests testBothRoutesShareCommonFilterRuleModel]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.EngineC2RouteSymmetryTests testRootHideRouteSelectsHideParserOnly]' started.
+Test Case '-[Stage2Tests.EngineC2RouteSymmetryTests testRootHideRouteSelectsHideParserOnly]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.EngineC2RouteSymmetryTests testRootHideStrictTypeFailureIsTypeMismatch]' started.
+Test Case '-[Stage2Tests.EngineC2RouteSymmetryTests testRootHideStrictTypeFailureIsTypeMismatch]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2RouteSymmetryTests testRootlessCodableFailureIsParseFailed]' started.
+Test Case '-[Stage2Tests.EngineC2RouteSymmetryTests testRootlessCodableFailureIsParseFailed]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2RouteSymmetryTests testRootlessRouteSelectsLessParserOnly]' started.
+Test Case '-[Stage2Tests.EngineC2RouteSymmetryTests testRootlessRouteSelectsLessParserOnly]' passed (0.000 seconds).
+Test Case '-[Stage2Tests.EngineC2RouteSymmetryTests testRouteSelectionDoesNotCrossFallback]' started.
+Test Case '-[Stage2Tests.EngineC2RouteSymmetryTests testRouteSelectionDoesNotCrossFallback]' passed (0.001 seconds).
+Test Suite 'EngineC2RouteSymmetryTests' passed at 2026-11-17 14:44:49.383.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+Test Suite 'EngineC2SnapshotWarningsTests' started at 2026-11-17 14:44:49.383.
+Test Case '-[Stage2Tests.EngineC2SnapshotWarningsTests testCountsMatchInputRecords]' started.
+Test Case '-[Stage2Tests.EngineC2SnapshotWarningsTests testCountsMatchInputRecords]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.EngineC2SnapshotWarningsTests testInputSnapshotNotMutated]' started.
+Test Case '-[Stage2Tests.EngineC2SnapshotWarningsTests testInputSnapshotNotMutated]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.EngineC2SnapshotWarningsTests testParserResultTracesBackToRecordAndSnapshot]' started.
+Test Case '-[Stage2Tests.EngineC2SnapshotWarningsTests testParserResultTracesBackToRecordAndSnapshot]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.EngineC2SnapshotWarningsTests testSnapshotDeterminismDeepEqual]' started.
+Test Case '-[Stage2Tests.EngineC2SnapshotWarningsTests testSnapshotDeterminismDeepEqual]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.EngineC2SnapshotWarningsTests testUpstreamWarningsAndUnknownItemsPreserved]' started.
+Test Case '-[Stage2Tests.EngineC2SnapshotWarningsTests testUpstreamWarningsAndUnknownItemsPreserved]' passed (0.001 seconds).
+Test Case '-[Stage2Tests.EngineC2SnapshotWarningsTests testWarningMergeOrderDedicated]' started.
+Test Case '-[Stage2Tests.EngineC2SnapshotWarningsTests testWarningMergeOrderDedicated]' passed (0.001 seconds).
+Test Suite 'EngineC2SnapshotWarningsTests' passed at 2026-11-17 14:44:49.391.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.007 (0.009) seconds

@@ -1,0 +1,75 @@
+{
+  "version": "0.1.17",
+  "build": 117,
+  "helper_build_id": "FKH-0117",
+  "baseline": {
+    "source_archive": "FilterKit-0.1.16-source.zip",
+    "report_archive": "FilterKit-0.1.16-report.zip",
+    "version": "0.1.16",
+    "user_confirmed_online_compilation": true,
+    "uploaded_report": {
+      "test_suites": 36,
+      "registered_assertions": 417,
+      "executed": false,
+      "objective_c_compilation_in_report": "not_run_environment_unavailable",
+      "device_test": "not_run"
+    }
+  },
+  "changes": {
+    "trust_anchor_model_and_store": true,
+    "production_anchor_default_empty": true,
+    "caller_supplied_anchor_cannot_be_production_root": true,
+    "release_verification_coordinator": true,
+    "release_verification_requires_external_signature_verifier": true,
+    "system_peer_credential_collector_implemented": false,
+    "mock_and_self_reported_peer_credentials_rejected": true,
+    "transport_readiness_evaluator": true,
+    "readiness_report_and_blocking_reasons": true,
+    "helper_details_readiness_rows": true,
+    "helper_target_implemented": false,
+    "real_transport_implemented": false,
+    "real_ipc_ready": false,
+    "write_operations_allowed": false
+  },
+  "validation": {
+    "project_static_validator": "passed",
+    "javascript_syntax": "passed",
+    "plist_lint": "passed",
+    "json_validation": "passed_all_project_json_files",
+    "makefile_source_reference_check": {
+      "status": "passed",
+      "objective_c_m_sources": 168,
+      "missing": 0,
+      "duplicates": 0
+    },
+    "test_registration": {
+      "suites": 41,
+      "registered_assertions": 459,
+      "executed": false
+    },
+    "objective_c_compilation": "not_run_environment_unavailable",
+    "runtime_unit_tests": "not_run",
+    "device_test": "not_run",
+    "real_ipc_test": "not_run",
+    "zip_integrity": {
+      "status": "passed",
+      "source_archive_entries": 420,
+      "report_archive_entries": 4
+    },
+    "patch_generation": "completed"
+  },
+  "safety": {
+    "production_trust_anchor_configured": false,
+    "system_peer_credentials_collected": false,
+    "real_transport_implemented": false,
+    "helper_target_present": false,
+    "daemon_deployment_allowed": false,
+    "privileged_launch_allowed": false,
+    "real_ipc_ready": false,
+    "read_only_operations_allowed": false,
+    "write_operations_allowed": false,
+    "plugin_enable_disable_allowed": false,
+    "injector_configuration_write_allowed": false,
+    "arbitrary_injection_allowed": false
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "fixtureId": "S1-07-OWN-001",
+  "expected": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "status": "enumerated",
+    "counts": {
+      "owned_package": 1,
+      "filterkit_managed": 0,
+      "manual_import": 0,
+      "unknown": 0,
+      "conflict": 0,
+      "dpkg_unavailable": 0
+    },
+    "byBase": {
+      "Owned": {
+        "sourceType": "dpkg_sileo",
+        "ownership": "owned_package",
+        "packageID": "z.weifeng",
+        "packageVersion": "1.5",
+        "architecture": "iphoneos-arm64e",
+        "listPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/var/lib/dpkg/info/z.weifeng.list",
+        "confidence": "exact_record",
+        "writablePolicy": "read_only",
+        "fileOwnership": {
+          "dylib": {
+            "owners": [
+              "z.weifeng"
+            ],
+            "match": "exact"
+          },
+          "plist": {
+            "owners": [
+              "z.weifeng"
+            ],
+            "match": "exact"
+          }
+        },
+        "markers": {
+          "filterkit": "present",
+          "manual": "absent"
+        },
+        "notesIncludes": [
+          "marker_not_overridden"
+        ]
+      }
+    }
+  },
+  "expectedWarnings": [],
+  "expectedStatus": "enumerated"
+}

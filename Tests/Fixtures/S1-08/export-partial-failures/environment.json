@@ -1,0 +1,129 @@
+{
+  "upstream": {
+    "s101": {
+      "jailbreakType": "roothide",
+      "architecture": "iphoneos-arm64e",
+      "ellekitVersionStatus": "recognized",
+      "adapterProfile": "RootHideProfile_1_2_3",
+      "evidence": {
+        "level": "partial"
+      },
+      "warnings": []
+    },
+    "s102": {
+      "candidates": [],
+      "warnings": []
+    },
+    "s103": {
+      "route": "roothide",
+      "tweakInject": {
+        "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+        "exists": true,
+        "readable": true
+      },
+      "dynamicLibraries": null,
+      "warnings": []
+    },
+    "s104": {
+      "route": "roothide",
+      "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+      "items": [
+        {
+          "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Bad.dylib",
+          "readable": true,
+          "entryStatus": "ok"
+        }
+      ],
+      "unknownItems": [],
+      "warnings": []
+    },
+    "s105": {
+      "route": "roothide",
+      "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+      "pairs": [
+        {
+          "base": "Bad",
+          "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Bad.dylib",
+          "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Bad.plist",
+          "pairing": "paired"
+        }
+      ],
+      "missingPlist": [],
+      "orphanPlist": [
+        {
+          "base": "Orphan",
+          "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Orphan.plist"
+        }
+      ],
+      "ambiguous": [
+        {
+          "base": "Amb",
+          "path": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Amb.dylib"
+        }
+      ],
+      "uncertain": [],
+      "status": "partial",
+      "warnings": []
+    },
+    "s106": {
+      "route": "roothide",
+      "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+      "parsed": [
+        {
+          "base": "Bad",
+          "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Bad.dylib",
+          "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Bad.plist",
+          "parseStatus": "parse_failed",
+          "reason": "invalid_plist",
+          "isTweakManager": false,
+          "filter": null,
+          "skippedFields": [],
+          "validation": {
+            "status": "parse_failed",
+            "warnings": [
+              "invalid_plist"
+            ]
+          }
+        }
+      ],
+      "notParsed": [],
+      "warnings": []
+    },
+    "s107": {
+      "route": "roothide",
+      "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+      "unresolved": [],
+      "warnings": [],
+      "sources": [
+        {
+          "base": "Bad",
+          "dylibPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Bad.dylib",
+          "plistPath": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/Bad.plist",
+          "sourceType": "unknown",
+          "packageID": null,
+          "packageVersion": null,
+          "architecture": null,
+          "listPath": null,
+          "fileOwnership": {
+            "dylib": {
+              "owners": [],
+              "match": "none"
+            },
+            "plist": {
+              "owners": [],
+              "match": "none"
+            }
+          },
+          "confidence": "unknown",
+          "writablePolicy": "read_only",
+          "markers": {
+            "filterkit": "absent",
+            "manual": "absent"
+          },
+          "conflicts": [],
+          "notes": []
+        }
+      ]
+    }
+  }
+}

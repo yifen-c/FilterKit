@@ -1,0 +1,13 @@
+{
+  "fixtureId": "S1-01-CONFLICT-001",
+  "fixtureKind": "conflicting",
+  "signals": {
+    "jailbreakType": { "value": "roothide", "source": "fixture", "present": true },
+    "rootlessPathPresent": { "value": true, "source": "fixture", "present": true },
+    "architecture": { "value": "arm64e", "source": "fixture", "present": true },
+    "iosVersion": { "value": "17.0.2", "source": "fixture", "present": true },
+    "bootstrap": { "name": "dopamine-roothide", "version": "3.0.13-30", "source": "fixture", "present": true },
+    "ellekitImplementation": { "value": "upstream", "source": "fixture", "present": true },
+    "ellekitVersion": { "value": "1.2-3", "source": "fixture", "present": true, "readability": "readable", "raw": "1.2-3" }
+  }
+}

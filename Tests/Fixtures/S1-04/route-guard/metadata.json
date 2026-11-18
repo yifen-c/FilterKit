@@ -1,0 +1,14 @@
+{
+  "fixtureId": "S1-04-ROUTE-GUARD-001",
+  "expected": {
+    "route": "roothide",
+    "sourceDirectory": null,
+    "status": "unresolved",
+    "counts": { "dylib": 0, "plist": 0, "directory": 0, "symlink": 0, "other": 0 },
+    "itemCount": 0,
+    "unknownCount": 0,
+    "names": []
+  },
+  "expectedWarnings": ["directory_unresolved"],
+  "expectedStatus": "unresolved"
+}

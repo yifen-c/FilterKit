@@ -1,0 +1,18 @@
+{
+  "fixtureId": "S1-04-RH-MIXED-001",
+  "fixtureKind": "rh-mixed",
+  "upstream": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "enumerationStatus": "enumerated"
+  },
+  "fs": {
+    "enumerable": true,
+    "entries": [
+      { "name": "Example.dylib", "type": "file", "exists": true, "readable": true, "isSymlink": false, "symlinkTarget": null, "realpath": "/private/var/.../Example.dylib", "size": 20480, "hash": "sha256:aaa111", "hidden": false, "entryStatus": "ok" },
+      { "name": "Helper.dylib", "type": "file", "exists": true, "readable": true, "isSymlink": false, "symlinkTarget": null, "realpath": "/private/var/.../Helper.dylib", "size": 16384, "hash": "sha256:bbb222", "hidden": false, "entryStatus": "ok" },
+      { "name": "Example.plist", "type": "file", "exists": true, "readable": true, "isSymlink": false, "symlinkTarget": null, "realpath": "/private/var/.../Example.plist", "size": 512, "hash": null, "hidden": false, "entryStatus": "ok" },
+      { "name": "Notes.txt", "type": "file", "exists": true, "readable": true, "isSymlink": false, "symlinkTarget": null, "realpath": "/private/var/.../Notes.txt", "size": 128, "hash": null, "hidden": false, "entryStatus": "ok" }
+    ]
+  }
+}

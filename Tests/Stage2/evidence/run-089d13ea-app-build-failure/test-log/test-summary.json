@@ -1,0 +1,272 @@
+{
+  "evidenceRole": "C-F1 补证：386f18cb 版本（第二轮 app-build 失败轮次）的 SwiftPM XCTest 日志；该轮 test job 成功，app-build 因四视图缺 import Core 失败（见上级 RUN-METADATA.md）。",
+  "workflowRun": "6069c747-f6ab-5151-8e4f-63a29b822c47 (app-build job)；同轮 test job 编号未在归档日志中留存",
+  "checkedOutSha": "386f18cbd528a9ad11f8e690e883a6d76c5f8409",
+  "logTimeUtc": "2026-11-18 15:12:02",
+  "targetPlatform": "arm64e-apple-macos14.0",
+  "testingLibrary": "1902",
+  "command": "swift test（Stage2Tests）；S1-05 为 swift test --filter PluginPairingS105FixtureTests",
+  "result": {
+    "totalTests": 405,
+    "failures": 0,
+    "unexpectedFailures": 0,
+    "skipped": 0,
+    "note": "skipped=0 依据全日志无 XCTSkip / skipped 记录；最终 All tests 行：Executed 405 tests, with 0 failures (0 unexpected)。"
+  },
+  "breakdown": {
+    "baselineRegression": 397,
+    "guiPresentation": 8,
+    "reporting": 18,
+    "s105IndependentFilter": 15,
+    "note": "S1-05 15 例已计入 397 基线；GUI 8 例为 0.1-C 新增；Reporting 18 例（Builder 6 / Validator 4 / Exporter 5 / Service 3）含在基线内。"
+  },
+  "keySuites": {
+    "GUIPresentationTests": 8,
+    "PluginPairingS105FixtureTests": 15,
+    "ReportBuilderTests": 6,
+    "ReportValidatorTests": 4,
+    "ReportExporterTests": 5,
+    "ReportServiceTests": 3
+  },
+  "suites": [
+    {
+      "name": "B5DeterminismTests",
+      "tests": 6,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "B5FixtureComparisonTests",
+      "tests": 4,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "B5IntegrationTests",
+      "tests": 10,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "ElleKitDirectoryTests",
+      "tests": 15,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "EngineC1EngineBaselineTests",
+      "tests": 7,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "EngineC1ParserBaselineTests",
+      "tests": 8,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "EngineC2BaselineIntegrationTests",
+      "tests": 2,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "EngineC2BatchIsolationTests",
+      "tests": 4,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "EngineC2CombinedScenarioTests",
+      "tests": 5,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "EngineC2ERegressionPlanTests",
+      "tests": 11,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "EngineC2EndToEndTests",
+      "tests": 6,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "EngineC2EvidenceTraceTests",
+      "tests": 8,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "EngineC2RouteSymmetryTests",
+      "tests": 6,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "EngineC2SnapshotWarningsTests",
+      "tests": 6,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "EnvironmentDetectionTests",
+      "tests": 7,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "FilterParseEngineTests",
+      "tests": 19,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "FilterParseResultTests",
+      "tests": 7,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "GUIPresentationTests",
+      "tests": 8,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "JBRootCandidateCollectionTests",
+      "tests": 10,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "JBRootValidationTests",
+      "tests": 18,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "ModelsCodableTests",
+      "tests": 21,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "PlistDecoderTests",
+      "tests": 9,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "PlistReaderTests",
+      "tests": 6,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "PlistValueKindTests",
+      "tests": 11,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "PluginEnumerationTests",
+      "tests": 14,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "PluginInventoryCodableTests",
+      "tests": 9,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "PluginPairingCodableTests",
+      "tests": 12,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "PluginPairingEngineTests",
+      "tests": 21,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "PluginPairingIndexTests",
+      "tests": 5,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "PluginPairingIntegrationTests",
+      "tests": 32,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "PluginPairingKeyTests",
+      "tests": 11,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "PluginPairingS105FixtureTests",
+      "tests": 15,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "ReportBuilderTests",
+      "tests": 6,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "ReportExporterTests",
+      "tests": 5,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "ReportServiceTests",
+      "tests": 3,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "ReportValidatorTests",
+      "tests": 4,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "RootHideFilterParserTests",
+      "tests": 32,
+      "failures": 0,
+      "unexpected": 0
+    },
+    {
+      "name": "RootlessFilterParserTests",
+      "tests": 22,
+      "failures": 0,
+      "unexpected": 0
+    }
+  ],
+  "artifacts": {
+    "filterkit-test-log.txt": {
+      "sha256": "81c54746e1561ddac6b751a3b0fabc0e62ad27bbb02db74c86680cd7dcdba462",
+      "lines": 1081
+    },
+    "test-log-s105.txt": {
+      "sha256": "7ddde01dd4707c012d0086a00d1c7ae70c078da38d328a872bb0ac847f2f2dd0",
+      "lines": 47
+    }
+  },
+  "scopeNote": "SwiftPM test 目标不编译 App SwiftUI 视图；本日志不构成 App target 编译或模拟器交互证据。f50c284d 轮次（run 120016036175）的 test-log 未随包提供，待 C-F1 后续补证。"
+}

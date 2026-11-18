@@ -1,0 +1,50 @@
+﻿2026-11-15T16:34:06.9950400Z ##[group]Run set -o pipefail
+2026-11-15T16:34:06.9950810Z [36;1mset -o pipefail[0m
+2026-11-15T16:34:06.9951040Z [36;1mmkdir -p .build[0m
+2026-11-15T16:34:06.9951480Z [36;1mswift test 2>&1 | tee .build/test-log.txt[0m
+2026-11-15T16:34:06.9996730Z shell: /bin/bash -e {0}
+2026-11-15T16:34:06.9997060Z ##[endgroup]
+2026-11-15T16:34:31.5687700Z Building for debugging...
+2026-11-15T16:34:31.5816840Z [0/9] Write sources
+2026-11-15T16:34:31.5833970Z [0/9] /Users/runner/work/004/004/.build/arm64-apple-macosx/debug/FilterKitPackageTests.derived/runner.swift
+2026-11-15T16:34:31.5878560Z [0/9] Write sources
+2026-11-15T16:34:31.8133210Z [6/9] Write swift-version-7974D3F7F03D5E95.txt
+2026-11-15T16:34:39.7800690Z [8/13] Emitting module Models
+2026-11-15T16:34:39.7809830Z [9/13] Compiling Models PluginModels.swift
+2026-11-15T16:34:39.7815090Z [10/13] Compiling Models EnvironmentModels.swift
+2026-11-15T16:34:39.7815910Z [11/13] Compiling Models ModelEnums.swift
+2026-11-15T16:34:40.2072720Z [12/14] Compiling Models ReportEnvelope.swift
+2026-11-15T16:34:40.6381370Z [13/19] Compiling Adapters RootHideAdapter.swift
+2026-11-15T16:34:40.7346440Z [14/20] Emitting module Adapters
+2026-11-15T16:34:40.7347780Z [15/20] Compiling Adapters ElleKitAdapter.swift
+2026-11-15T16:34:40.8400190Z [16/20] Compiling Adapters RootlessAdapter.swift
+2026-11-15T16:34:41.1604640Z [17/22] Emitting module Core
+2026-11-15T16:34:41.1616760Z [18/22] Compiling Core CoreServices.swift
+2026-11-15T16:34:59.9505510Z [19/22] Emitting module Stage2Tests
+2026-11-15T16:34:59.9520850Z [20/22] Compiling Stage2Tests ModelsCodableTests.swift
+2026-11-15T16:35:01.8621170Z [21/24] Emitting module FilterKitPackageTests
+2026-11-15T16:35:01.8621740Z [22/24] Compiling FilterKitPackageTests runner.swift
+2026-11-15T16:35:01.8672770Z [22/24] Write Objects.LinkFileList
+2026-11-15T16:35:02.7713240Z [23/24] Linking FilterKitPackageTests
+2026-11-15T16:35:02.7736350Z Build complete! (33.95s)
+2026-11-15T16:35:03.7933480Z Test Suite 'All tests' started at 2026-11-15 16:35:03.686.
+2026-11-15T16:35:03.7935830Z Test Suite 'FilterKitPackageTests.xctest' started at 2026-11-15 16:35:03.688.
+2026-11-15T16:35:03.7941860Z Test Suite 'ModelsCodableTests' started at 2026-11-15 16:35:03.688.
+2026-11-15T16:35:03.7942750Z Test Case '-[Stage2Tests.ModelsCodableTests testDefaultPluginStateIsUnknownAndUndetermined]' started.
+2026-11-15T16:35:03.7944010Z Test Case '-[Stage2Tests.ModelsCodableTests testDefaultPluginStateIsUnknownAndUndetermined]' passed (0.004 seconds).
+2026-11-15T16:35:03.7945030Z Test Case '-[Stage2Tests.ModelsCodableTests testEnvelopeRoundTrip]' started.
+2026-11-15T16:35:03.7945720Z Test Case '-[Stage2Tests.ModelsCodableTests testEnvelopeRoundTrip]' passed (0.001 seconds).
+2026-11-15T16:35:03.7949320Z Test Case '-[Stage2Tests.ModelsCodableTests testSourceTypeRawValues]' started.
+2026-11-15T16:35:03.7950360Z Test Case '-[Stage2Tests.ModelsCodableTests testSourceTypeRawValues]' passed (0.000 seconds).
+2026-11-15T16:35:03.7951110Z Test Case '-[Stage2Tests.ModelsCodableTests testWritablePolicyRawValues]' started.
+2026-11-15T16:35:03.7951800Z Test Case '-[Stage2Tests.ModelsCodableTests testWritablePolicyRawValues]' passed (0.000 seconds).
+2026-11-15T16:35:03.7952490Z Test Suite 'ModelsCodableTests' passed at 2026-11-15 16:35:03.694.
+2026-11-15T16:35:03.7953230Z 	 Executed 4 tests, with 0 failures (0 unexpected) in 0.005 (0.006) seconds
+2026-11-15T16:35:03.7953820Z Test Suite 'FilterKitPackageTests.xctest' passed at 2026-11-15 16:35:03.694.
+2026-11-15T16:35:03.7955760Z 	 Executed 4 tests, with 0 failures (0 unexpected) in 0.005 (0.006) seconds
+2026-11-15T16:35:03.7956340Z Test Suite 'All tests' passed at 2026-11-15 16:35:03.694.
+2026-11-15T16:35:03.7956750Z 	 Executed 4 tests, with 0 failures (0 unexpected) in 0.005 (0.008) seconds
+2026-11-15T16:35:03.7975650Z ◇ Test run started.
+2026-11-15T16:35:03.7976580Z ↳ Testing Library Version: 1902
+2026-11-15T16:35:03.7976920Z ↳ Target Platform: arm64e-apple-macos14.0
+2026-11-15T16:35:03.7977460Z ✔ Test run with 0 tests in 0 suites passed after 0.001 seconds.

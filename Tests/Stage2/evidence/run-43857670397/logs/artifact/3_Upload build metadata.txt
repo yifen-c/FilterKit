@@ -1,0 +1,30 @@
+﻿2026-11-16T11:35:25.2259950Z ##[group]Run actions/upload-artifact@v7
+2026-11-16T11:35:25.2260190Z with:
+2026-11-16T11:35:25.2260350Z   name: filterkit-build-metadata
+2026-11-16T11:35:25.2260620Z   path: Package.swift
+Makefile
+control
+project.yml
+.github/workflows/
+
+2026-11-16T11:35:25.2260920Z   retention-days: 14
+2026-11-16T11:35:25.2261090Z   if-no-files-found: warn
+2026-11-16T11:35:25.2261260Z   compression-level: 6
+2026-11-16T11:35:25.2261410Z   overwrite: false
+2026-11-16T11:35:25.2261570Z   include-hidden-files: false
+2026-11-16T11:35:25.2261770Z   archive: true
+2026-11-16T11:35:25.2261920Z ##[endgroup]
+2026-11-16T11:35:25.3393540Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-16T11:35:25.3395280Z The least common ancestor is /Users/runner/work/FilterKit/FilterKit. This will be the root directory of the artifact
+2026-11-16T11:35:25.3395830Z With the provided path, there will be 5 files uploaded
+2026-11-16T11:35:25.3397900Z Artifact name is valid!
+2026-11-16T11:35:25.3398250Z Root directory input is valid!
+2026-11-16T11:35:25.5292620Z Uploading artifact: filterkit-build-metadata.zip
+2026-11-16T11:35:25.5310480Z Beginning upload of artifact content to blob storage
+2026-11-16T11:35:25.5706980Z Uploaded bytes 7188
+2026-11-16T11:35:25.5808470Z Finished uploading artifact content to blob storage!
+2026-11-16T11:35:25.5809410Z SHA256 digest of uploaded artifact is 49af5e23da82a5061fde374bbaad0e262989a44177fbab695d9f8c157c8001d5
+2026-11-16T11:35:25.5810920Z Finalizing artifact upload
+2026-11-16T11:35:25.9387580Z Artifact filterkit-build-metadata successfully finalized. Artifact ID 14222656867
+2026-11-16T11:35:25.9388330Z Artifact filterkit-build-metadata has been successfully uploaded! Final size is 7188 bytes. Artifact ID is 14222656867
+2026-11-16T11:35:25.9394080Z Artifact download URL: https://github.com/yi-fen/FilterKit/actions/runs/43857670397/artifacts/14222656867

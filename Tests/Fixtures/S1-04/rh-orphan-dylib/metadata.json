@@ -1,0 +1,14 @@
+{
+  "fixtureId": "S1-04-ORPHAN-DYLIB-001",
+  "expected": {
+    "route": "roothide",
+    "sourceDirectory": "/var/containers/Bundle/Application/.jbroot-9C414BB7D5DCECC4/usr/lib/TweakInject/",
+    "status": "enumerated",
+    "counts": { "dylib": 1, "plist": 0, "directory": 0, "symlink": 0, "other": 0 },
+    "itemCount": 1,
+    "unknownCount": 0,
+    "names": ["Lone.dylib"]
+  },
+  "expectedWarnings": [],
+  "expectedStatus": "enumerated"
+}

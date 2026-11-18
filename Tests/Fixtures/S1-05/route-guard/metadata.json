@@ -1,0 +1,14 @@
+{
+  "fixtureId": "S1-05-ROUTE-GUARD-001",
+  "expected": {
+    "route": "roothide",
+    "sourceDirectory": null,
+    "status": "unresolved",
+    "counts": { "paired": 0, "missing_plist": 0, "orphan_plist": 0, "ambiguous": 0, "uncertain": 0 },
+    "pairedBases": [],
+    "missingBases": [],
+    "orphanNames": []
+  },
+  "expectedWarnings": ["inventory_unresolved"],
+  "expectedStatus": "unresolved"
+}
